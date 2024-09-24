@@ -1,6 +1,6 @@
 # Figma Design
 
-[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/design/FMm33PTX86n5COHgPKT25H/JSChileConf?node-id=1-3&node-type=canvas&t=eVZEl3h9Ao8fLb4r-0)
+[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](<https://www.figma.com/design/d2N1dAGXytUaR9MdPMJyfJ/jsconf-(uxcorp)?node-id=0-1&node-type=canvas&t=Ublvjpj5a9NkMs3a-0>)
 
 ## 🚀 Project Structure
 
