@@ -1,0 +1,11 @@
+pnpm-lock.yaml
+
+.eslintcache
+.eslintignore
+.prettieriignore
+.gitignore
+
+*.yml
+
+.github/*
+.lintstagedrc.json
