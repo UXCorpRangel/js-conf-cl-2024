@@ -1,0 +1,96 @@
+---
+type ButtonMode =
+  | 'solid-white'
+  | 'solid-yellow'
+  | 'stroke-white'
+  | 'stroke-yellow'
+  | 'ghost-white'
+  | 'ghost-yellow'
+  | 'icon-white'
+  | 'icon-yellow';
+
+interface Props {
+  mode?: ButtonMode;
+  link: string;
+}
+
+const { mode = 'solid-yellow', link } = Astro.props;
+---
+
+<a href={link} class:list={['button', mode]}>
+  <slot />
+</a>
+
+<style>
+  .button {
+    height: 40px;
+    border-radius: 6px;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    text-decoration: none;
+  }
+
+  /* MODE */
+
+  .solid-yellow {
+    background: var(--yellow);
+    color: var(--black);
+
+    &:hover {
+      background: var(--yellow-100);
+    }
+  }
+
+  .solid-white {
+    background: var(--white);
+    color: var(--black);
+
+    &:hover {
+      background: var(--gray-50);
+    }
+  }
+
+  .stroke-white {
+    background: none;
+    border: 1px solid var(--white);
+    color: var(--white);
+
+    &:hover {
+      background: var(--white-disable);
+      color: var(--black);
+    }
+  }
+
+  .stroke-yellow {
+    background: none;
+    border: 1px solid var(--yellow);
+    color: var(--white);
+
+    &:hover {
+      background: var(--yellow-400);
+      color: var(--black);
+    }
+  }
+
+  .ghost-white {
+    background: none;
+    border: 0;
+    color: var(--white);
+
+    &:hover {
+      background: var(--white-disable);
+    }
+  }
+
+  .ghost-yellow {
+    background: none;
+    border: 0;
+    color: var(--yellow);
+
+    &:hover {
+      background: var(--yellow-400);
+    }
+  }
+</style>
