@@ -1,15 +1,15 @@
 ---
-
+const { imgSrc, speakerName, speakerInfo, speakerBrand, link } = Astro.props;
 ---
 
-<a href="#" class="card-body">
+<a href={link} class="card-body">
   <div class="speaker">
-    <img src="imgs/midudev.png" alt="speaker-name" class="speaker-avatar" />
-    <h3 class="speaker-name">Miguel Ángel "Midudev" Durán</h3>
+    <img src={imgSrc} alt={speakerName} class="speaker-avatar" />
+    <h3 class="speaker-name">{speakerName}</h3>
   </div>
-  <p class="card-info">Ingeniero de Software y Divulgador de Programación</p>
+  <p class="card-info">{speakerInfo}</p>
   <div class="speaker-brand">
-    <img src="imgs/midulogo.png" alt="speaker-brand" />
+    <img src={speakerBrand} alt="speaker-brand" />
   </div>
 </a>
 
