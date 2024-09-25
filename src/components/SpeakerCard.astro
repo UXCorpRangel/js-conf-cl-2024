@@ -1,16 +1,26 @@
 ---
 const { imgSrc, speakerName, speakerInfo, speakerBrand, link } = Astro.props;
+
+const defaultImgSrc = 'imgs/speaker-stock.png';
+const defaultBrandSrc = 'imgs/small-logo.png';
+
+const speakerImage = imgSrc || defaultImgSrc;
+const brandImage = speakerBrand || defaultBrandSrc;
 ---
 
 <a href={link} class="card-body">
   <div class="speaker">
-    <img src={imgSrc} alt={speakerName} class="speaker-avatar" />
+    <picture>
+      <source srcset={speakerImage} media="(min-width: 768px)" />
+      <img src={speakerImage} alt={speakerName} class="speaker-avatar" />
+    </picture>
     <h3 class="speaker-name">{speakerName}</h3>
   </div>
   <p class="card-info">{speakerInfo}</p>
-  <div class="speaker-brand">
-    <img src={speakerBrand} alt="speaker-brand" />
-  </div>
+  <picture>
+    <source srcset={brandImage} media="(min-width: 768px)" />
+    <img src={brandImage} alt="speaker-brand" class="speaker-brand" />
+  </picture>
 </a>
 
 <style>
@@ -27,6 +37,7 @@ const { imgSrc, speakerName, speakerInfo, speakerBrand, link } = Astro.props;
     text-decoration: none;
     background-color: var(--bg-color);
     position: relative;
+    transition: transform 0.3s;
 
     &::after {
       content: '';
@@ -46,17 +57,32 @@ const { imgSrc, speakerName, speakerInfo, speakerBrand, link } = Astro.props;
       justify-content: center;
       align-items: center;
       gap: 24px;
+    }
+  }
 
-      .speaker-avatar {
-        width: 85px;
-        aspect-ratio: 1;
-        border: 1px solid var(--white);
-        border-radius: 100%;
-        filter: grayscale();
-      }
+  .speaker-avatar {
+    width: 85px;
+    aspect-ratio: 1;
+    border: 1px solid var(--white);
+    border-radius: 100%;
+    filter: grayscale(1);
+    transition: filter 0.3s;
+
+    .card-body:hover & {
+      filter: grayscale(0);
     }
-    .card-info {
-      text-align: center;
+  }
+
+  .speaker-brand {
+    filter: grayscale(1);
+    transition: filter 0.3s;
+
+    .card-body:hover & {
+      filter: grayscale(0);
     }
+  }
+
+  .card-info {
+    text-align: center;
   }
 </style>
