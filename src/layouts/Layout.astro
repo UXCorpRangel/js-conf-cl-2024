@@ -1,50 +1,142 @@
 ---
+import '@fontsource/barlow/400.css';
+import '@fontsource/barlow/600.css';
+import '@fontsource/barlow/800.css';
+import '@fontsource/barlow/400-italic.css';
+
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+  :root {
+    --yellow: #ede060;
+    --yellow-100: #c8bc4f;
+    --yellow-200: #aaa255;
+    --yellow-400: #56522b;
+    --yellow-500: #413e21;
+    --yellow-600: #252313;
+    --yellow-700: #1d1b0e;
+    --yellow-800: #0c0b06;
+    --yellow-disable: #ede06050;
+    --gray-50: #e2e2e2;
+    --gray-1: #a8a8a8;
+    --gray-2: #727171;
+    --gray-3: #2d2d2d;
+    --white: #ffffff;
+    --white-disable: #ffffff50;
+    --black: #000000;
+
+    --bg-color: #090907;
+
+    --gradient-1: linear-gradient(180deg, #2a2401 0%, #9a8025 39.57%, #ede060 100%);
+    --gradient-2: linear-gradient(
+      47deg,
+      #090907 46.45%,
+      #1d1b0e 63.08%,
+      #413e21 78.39%,
+      #aaa255 86.07%
+    );
+    --gradient-stars: radial-gradient(
+      50.01% 50.01% at 50% 50%,
+      #eddd60 0%,
+      rgba(136, 115, 31, 0.31) 28.03%,
+      rgba(136, 111, 31, 0.2) 53.92%,
+      rgba(42, 37, 1, 0.45) 75.24%,
+      rgba(12, 12, 12, 0.05) 91.2%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    --gradient-linear: linear-gradient(
+      81deg,
+      #090907 18.77%,
+      #1d1b0e 33.57%,
+      #413e21 50.62%,
+      #aaa255 60.49%,
+      #333019 82.03%,
+      #14130b 93.25%,
+      #090907 99.53%
+    );
+
+    --bg-sponsor-platinum: linear-gradient(
+      0deg,
+      rgba(64, 64, 64, 0.2) 0.03%,
+      rgba(255, 255, 255, 0) 95.96%
+    );
+    --border-sponsor-platinum: linear-gradient(327deg, #fff 31.78%, #272727 63.2%, #656565 93.99%);
+    --bg-sponsor-gold: linear-gradient(0deg, rgba(80, 72, 29, 0.2) 0.03%, rgba(0, 0, 0, 0) 95.96%);
+    --border-sponsor-gold: linear-gradient(180deg, #2a2401 0%, #9a8025 39.57%, #ede060 100%);
+    --bg-sponsor-silver: linear-gradient(
+      0deg,
+      rgba(91, 91, 91, 0.2) 0.03%,
+      rgba(0, 0, 0, 0) 95.96%
+    );
+    --border-sponsor-silver: linear-gradient(327deg, #2d2d2d 31.78%, #2d2d2d 63.2%, #999 93.99%);
+    --bg-sponsor-bronze: linear-gradient(
+      0deg,
+      rgba(54, 28, 19, 0.2) 0.03%,
+      rgba(0, 0, 0, 0) 95.96%
+    );
+    --border-sponsor-bronze: linear-gradient(327deg, #2d2d2d 31.78%, #2a1701 63.2%, #60301f 93.99%);
+    --gradient-footer: radial-gradient(
+      291.81% 75.32% at 22.97% 22.4%,
+      rgba(42, 36, 1, 0.6) 0%,
+      rgba(9, 9, 7, 0.6) 100%
+    );
+    --gradient-card-agenda: linear-gradient(258deg, #121212 7.65%, #1d1b0e 57.4%, #413e21 98.66%);
+  }
+
+  html {
+    font-family: 'Barlow', sans-serif;
+    background: var(--bg-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    color: var(--white);
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 800;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+  }
 </style>
