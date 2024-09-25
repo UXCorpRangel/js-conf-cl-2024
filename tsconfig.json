@@ -6,7 +6,11 @@
       "@components/*": ["./src/components/*"],
       "@components": ["./src/components"],
 
-      "@layouts/*": ["./src/layouts/*"]
+      "@contracts/*": ["./src/contracts/*"],
+
+      "@layouts/*": ["./src/layouts/*"],
+
+      "@sections/*": ["./src/sections/*"],
     }
   }
 }
