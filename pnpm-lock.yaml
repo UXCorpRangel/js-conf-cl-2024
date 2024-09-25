@@ -17,9 +17,6 @@ importers:
       astro:
         specifier: ^4.15.9
         version: 4.15.9(@types/node@20.16.6)(lightningcss@1.27.0)(rollup@4.22.4)(typescript@5.6.2)
-      typescript:
-        specifier: ^5.6.2
-        version: 5.6.2
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.3.0
@@ -66,6 +63,9 @@ importers:
       prettier-plugin-astro:
         specifier: ^0.14.0
         version: 0.14.1
+      typescript:
+        specifier: ^5.6.2
+        version: 5.6.2
 
 packages:
 
