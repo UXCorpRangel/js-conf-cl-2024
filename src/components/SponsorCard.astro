@@ -43,7 +43,7 @@ const selectedCategory = sponsorStyles[category as ISponsorStyles];
     width: 100%;
     display: grid;
     gap: 2rem;
-    @media (--min-screen-lg) {
+    @media (min-width: 1280px) {
       grid-template-columns: 1fr 2fr;
     }
 
@@ -58,7 +58,7 @@ const selectedCategory = sponsorStyles[category as ISponsorStyles];
       }
     }
     .card--content__lists {
-      @media (--min-screen-lg) {
+      @media (min-width: 1280px) {
         &:has(br) {
           display: flex;
           gap: 1.5rem;
@@ -93,12 +93,6 @@ const selectedCategory = sponsorStyles[category as ISponsorStyles];
           }
         }
       }
-    }
-  }
-
-  @media (--screen-lg) {
-    .card--content {
-      grid-template-columns: 1fr;
     }
   }
 
