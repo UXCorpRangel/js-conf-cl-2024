@@ -1,7 +1,3 @@
----
-order: 2
----
-
 - **5 Entradas a la JSConf Chile.**
 
 - 2 Tweets o publicaciones dedicadas de las cuentas de redes sociales oficiales de JSConf Chile.

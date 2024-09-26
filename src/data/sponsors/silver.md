@@ -1,7 +1,3 @@
----
-order: 3
----
-
 - **2 Ticket to the JSConf Chile.**
 
 - Tu logo, en nuestro sitio web, junto con todos los demás patrocinadores.
