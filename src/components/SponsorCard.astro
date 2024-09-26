@@ -1,37 +1,123 @@
-<section class="sponsor--card">
-  <div class="sponsor--card__content">Hola</div>
+---
+import { Image } from 'astro:assets';
+import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
+import { sponsorStyles, type ISponsorStyles } from '@/data/sponsors/sponsorStyles';
+import Button from './Button.astro';
+
+type Props = {
+  category: ISponsorStyles | string;
+  Content: AstroComponentFactory;
+};
+const { category = 'platinum', Content }: Props = Astro.props;
+const selectedCategory = sponsorStyles[category as ISponsorStyles];
+---
+
+<section class="sponsor--card__container" style={selectedCategory.styles}>
+  <div class="card--content">
+    <div class="card--actions">
+      <Image
+        src={selectedCategory.icon}
+        width="200"
+        height="200"
+        class="card--actions__icon"
+        alt={selectedCategory.name}
+      />
+      <h2 class="card--actions__title">
+        {selectedCategory.name}
+      </h2>
+      <Button variant="solid" color="yellow" size="large" link="#" icon="arrow-up-right"
+        >Ser sponsor</Button
+      >
+    </div>
+    <div class="card--content__lists">
+      <Content />
+    </div>
+  </div>
 </section>
 
-<style>
-  .sponsor--card__content {
-    background: linear-gradient(0.07deg, rgba(80, 72, 29, 0.2) 0.03%, rgba(0, 0, 0, 0) 95.96%),
-      radial-gradient(
-        95.25% 166.54% at 98.39% 2.85%,
-        rgba(54, 53, 38, 0.62) 8%,
-        rgba(9, 9, 7, 0) 80%
-      );
-    padding: 0.5rem 1rem;
+<style is:global>
+  .card--content {
+    background: var(--background);
+    padding: 4rem 2rem;
     border-radius: inherit;
-    height: 500px;
     width: 100%;
+    display: grid;
+    gap: 2rem;
+    @media (--min-screen-lg) {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    .card--actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .card--actions__title {
+        margin-bottom: 1.5rem;
+      }
+    }
+    .card--content__lists {
+      @media (--min-screen-lg) {
+        &:has(br) {
+          display: flex;
+          gap: 1.5rem;
+
+          br {
+            display: none;
+          }
+        }
+      }
+      ul {
+        display: grid;
+        gap: 1rem;
+
+        li {
+          display: grid;
+          align-items: center;
+          grid-template-columns: 16px 1fr;
+          gap: 1.5rem;
+
+          strong {
+            font-weight: 600;
+          }
+
+          &::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            background-image: url("data:image/svg+xml, %3Csvg width='16' height='17' viewBox='0 0 16 17' fill='none' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath d='M13.3333 4.5L6 11.8333L2.66667 8.5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E");
+            background-repeat: no-repeat no-repeat;
+            background-position: center center;
+            background-size: cover;
+          }
+        }
+      }
+    }
   }
 
-  .sponsor--card {
-    max-width: 1133px;
-    max-height: 771px;
-    width: 100%;
+  @media (--screen-lg) {
+    .card--content {
+      grid-template-columns: 1fr;
+    }
+  }
 
-    gap: 24px;
-    margin: 3rem auto;
-    filter: drop-shadow(0px 4px 85.3px rgba(85, 85, 46, 0.1));
+  .sponsor--card__container {
+    max-width: 1133px;
+    width: 100%;
+    order: var(--order);
+
+    margin: 0 auto;
+    filter: drop-shadow(var(--shadow));
+    box-shadow: var(--shadow);
 
     --radius: 15px;
-    --border-width: 1px;
+    --border-width: 2px;
     border-radius: var(--radius);
     position: relative;
   }
 
-  .sponsor--card::before {
+  .sponsor--card__container::before {
     content: '';
     border-radius: var(--radius);
     padding: var(--border-width);
@@ -45,7 +131,7 @@
     mask-composite: exclude;
     background-size: cover;
     background-repeat: repeat;
-    --background-value: linear-gradient(180deg, #2a2401 0%, #9a8025 39.57%, #ede060 100%);
-    background: var(--background-value); /* Asegúrate de definir esta variable en tu CSS */
+    background: var(--border);
+    pointer-events: none;
   }
 </style>

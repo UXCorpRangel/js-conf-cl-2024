@@ -11,6 +11,8 @@
       "@layouts/*": ["./src/layouts/*"],
 
       "@sections/*": ["./src/sections/*"],
+      "@public/*": ["./public/*"],
+      "@/*": ["./src/*"]
     }
   }
 }
