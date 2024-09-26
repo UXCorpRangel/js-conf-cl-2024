@@ -105,25 +105,13 @@ const { title } = Astro.props;
     --gradient-card-agenda: linear-gradient(258deg, #121212 7.65%, #1d1b0e 57.4%, #413e21 98.66%);
   }
 
-  html {
+  body {
     font-family: 'Barlow', sans-serif;
     background: var(--bg-color);
-  }
-
-  body {
+    color: var(--white);
     max-width: 80rem;
     padding: 0 4.5rem;
     margin: 0 auto;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    color: var(--white);
   }
 
   h1 {
@@ -148,5 +136,9 @@ const { title } = Astro.props;
     font-size: 1rem;
     line-height: 1.5;
     font-weight: 400;
+  }
+
+  :where(a) {
+    color: var(--white);
   }
 </style>
