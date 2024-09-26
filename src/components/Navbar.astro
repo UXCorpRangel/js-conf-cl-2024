@@ -1,0 +1,276 @@
+---
+import type { NavbarItem } from '@contracts/Navbar.type';
+import Button from './Button.astro';
+
+const items: NavbarItem[] = [
+  {
+    name: 'Home',
+    url: '/'
+  },
+  {
+    name: 'Agenda',
+    url: '/agenda'
+  },
+  {
+    name: 'Charlistas',
+    url: '/charlistas'
+  },
+  {
+    name: 'Sponsors',
+    url: '/sponsors'
+  },
+  {
+    name: '¿Por qué?',
+    url: '/porque'
+  },
+  {
+    name: 'Tickets',
+    url: '/tickets'
+  },
+  {
+    name: 'Ubicación',
+    url: '/ubicacion'
+  },
+  {
+    name: 'Voluntario',
+    url: '/voluntario'
+  },
+  {
+    name: 'Código de Conducta',
+    url: '/codigodeconducta'
+  },
+  {
+    name: 'CFP',
+    url: 'cfp'
+  },
+  {
+    name: 'Preguntas',
+    url: '/preguntas'
+  }
+];
+---
+
+<header class="nav-cont">
+  <nav class="navbar">
+    <img src="/svg/logo-js-conf.svg" alt="JSConf Chile" width="36" height="36" />
+    <ul class="list" data-status="close" aria-hidden="true">
+      {
+        items.map(item => (
+          <li>
+            <a
+              href={item.url}
+              class:list={['list-item', { isActive: Astro.url.pathname === item.url }]}
+            >
+              {item.name}
+            </a>
+          </li>
+        ))
+      }
+      <li>
+        <Button variant="stroke" size="fit" color="yellow" link="/tickets" icon="log-out"
+          >Ingresar</Button
+        >
+      </li>
+    </ul>
+    <div class="burger" data-status="close">
+      <span class="bars bar-top"></span>
+      <span class="bars bar-middle"></span>
+      <span class="bars bar-bottom"></span>
+    </div>
+  </nav>
+  <style>
+    .nav-cont {
+      display: flex;
+
+      & .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        /* position: relative; */
+
+        & .list {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-left: 0;
+          gap: 1.5rem;
+          position: absolute;
+          list-style: none;
+          transform: translateY(-300%);
+          opacity: 1;
+          transition:
+            transform 300ms ease-in-out,
+            opacity 300ms ease-in-out;
+          z-index: 1;
+
+          @media (width >= 768px) {
+            position: sticky;
+            transform: translateY();
+          }
+
+          &[data-status='open'] {
+            background-color: var(--black-opacity);
+            transform: translateY(290px);
+            backdrop-filter: blur(1rem);
+            inline-size: 90%;
+          }
+
+          @media (width >= 768px) {
+            flex-direction: row;
+            inline-size: auto;
+            transform: translateY(0);
+
+            & li:nth-child(11) {
+              padding-block-end: 0;
+            }
+          }
+          & li:last-child {
+            order: -1;
+            padding-block-start: 0.5rem;
+
+            @media (width >= 768px) {
+              order: initial;
+            }
+          }
+
+          & li:nth-child(11) {
+            padding-block-end: 0.5rem;
+
+            @media (width >= 768px) {
+              padding-block-end: 0;
+            }
+          }
+
+          & .list-item {
+            color: var(--white);
+            text-decoration: none;
+
+            &:active,
+            &.isActive {
+              color: var(--yellow);
+              text-decoration: underline;
+            }
+
+            @media (any-hover: hover) {
+              &:hover {
+                color: var(--yellow);
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        &[data-status='open'] {
+          background-color: var(--color-menu-open);
+          transform: translateX(0);
+          opacity: 100;
+          backdrop-filter: blur(0.1rem);
+        }
+
+        .burger {
+          position: relative;
+          inset-block-start: 1rem;
+
+          z-index: 2;
+
+          inline-size: 2rem;
+          block-size: 2.8125rem;
+
+          transform: rotate(0deg);
+          cursor: pointer;
+
+          transition:
+            transform 0.25s ease-in-out,
+            opacity 0.25s ease-in-out,
+            inset 0.25s ease-in-out;
+
+          & .bars {
+            position: absolute;
+            inset-inline-start: 0;
+
+            display: block;
+            inline-size: 100%;
+            block-size: 0.3rem;
+
+            border-radius: 0.5625rem;
+
+            background: var(--yellow);
+            transform: rotate(0deg);
+            opacity: 1;
+
+            transition:
+              transform 0.25s ease-in-out,
+              opacity 0.25s ease-in-out,
+              inset 0.25s ease-in-out;
+
+            &.bar-middle {
+              inset-block-start: 0.65rem;
+            }
+
+            &.bar-bottom {
+              inset-block-start: 1.25rem;
+            }
+
+            @media (width >= 768px) {
+              & {
+                display: none;
+                content-visibility: hidden;
+              }
+            }
+
+            &[data-status='open'] {
+              & .bar-top {
+                inset-block-start: 1.125rem;
+
+                transform: rotate(135deg);
+              }
+
+              & .bar-middle {
+                inset-inline-start: -3.75rem;
+
+                opacity: 0;
+              }
+
+              & .bar-bottom {
+                inset-block-start: 1.125rem;
+
+                transform: rotate(-135deg);
+              }
+            }
+          }
+        }
+      }
+    }
+  </style>
+
+  <script>
+    const items = document.querySelectorAll('.list-item  a');
+    const list = document.querySelector('.list');
+    const burgerMenu = document.querySelector('.burger');
+    const dataStatus = 'data-status';
+
+    items.forEach(anchor => {
+      anchor.addEventListener('click', () => {
+        list.setAttribute(dataStatus, 'open');
+        burgerMenu.click();
+      });
+    });
+
+    // Animation to the three spans, if get touch, will be a X
+    burgerMenu.addEventListener('click', () => {
+      const isOpen = list.getAttribute(dataStatus) === 'open';
+
+      if (isOpen) {
+        document.querySelector('body').style.removeProperty('overflow-y');
+        list.setAttribute(dataStatus, 'close');
+        burgerMenu.setAttribute(dataStatus, 'close');
+      } else {
+        document.querySelector('body').style.overflowY = 'hidden';
+        list.setAttribute(dataStatus, 'open');
+        burgerMenu.setAttribute(dataStatus, 'open');
+      }
+    });
+  </script>
+</header>
