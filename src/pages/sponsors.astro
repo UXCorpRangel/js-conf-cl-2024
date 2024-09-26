@@ -7,7 +7,7 @@ const sponsors = await Astro.glob('/src/data/sponsors/*.md');
 ---
 
 <Layout title="JSConf Chile 2024">
-  <main class="~p-4/8">
+  <main>
     <HeroSection />
     {
       sponsors.map(({ file, Content }) => (
@@ -18,13 +18,11 @@ const sponsors = await Astro.glob('/src/data/sponsors/*.md');
 </Layout>
 
 <style>
-  .\~p-4\/8 {
-    padding: clamp(1rem, 0.29rem + 1.79vw, 2rem);
-  }
   main {
-    max-width: 1133px;
+    max-width: 1280px;
     margin: 0 auto;
     display: grid;
     gap: 4rem;
+    padding: 0 72px;
   }
 </style>
