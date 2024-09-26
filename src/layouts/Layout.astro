@@ -25,10 +25,6 @@ const { title } = Astro.props;
   </body>
 </html>
 <style is:global>
-  body {
-    font-family: 'Barlow', sans-serif;
-  }
-
   :root {
     --yellow: #ede060;
     --yellow-100: #c8bc4f;
@@ -104,10 +100,25 @@ const { title } = Astro.props;
     );
     --gradient-card-agenda: linear-gradient(258deg, #121212 7.65%, #1d1b0e 57.4%, #413e21 98.66%);
   }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
 
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
   html {
     font-family: 'Barlow', sans-serif;
     background: var(--bg-color);
+  }
+  body {
+    font-family: 'Barlow', sans-serif;
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
   }
 
   h1,
