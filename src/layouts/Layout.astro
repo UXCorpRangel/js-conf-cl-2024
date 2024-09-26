@@ -3,6 +3,10 @@ import '@fontsource/barlow/400.css';
 import '@fontsource/barlow/600.css';
 import '@fontsource/barlow/800.css';
 import '@fontsource/barlow/400-italic.css';
+import 'sanitize.css';
+import 'sanitize.css/forms.css';
+import 'sanitize.css/assets.css';
+import 'sanitize.css/typography.css';
 
 interface Props {
   title: string;
@@ -99,14 +103,6 @@ const { title } = Astro.props;
       rgba(9, 9, 7, 0.6) 100%
     );
     --gradient-card-agenda: linear-gradient(258deg, #121212 7.65%, #1d1b0e 57.4%, #413e21 98.66%);
-  }
-
-  *,
-  ::before,
-  ::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
   }
 
   html {
