@@ -1,0 +1,41 @@
+---
+import HeroSection from '@sections/sponsors/HeroSection.astro';
+import SponsorCard from '@components/SponsorCard.astro';
+import Layout from '@layouts/Layout.astro';
+---
+
+<Layout title="JSConf Chile 2024">
+  <main class="~p-4/8">
+    <HeroSection />
+    <SponsorCard />
+  </main>
+</Layout>
+<style is:global>
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  /* 
+  xs: 320px
+  sm: 640px
+  md: 768px
+  lg: 1024px
+  xl: 1280px
+  2xl:  1536px
+   */
+
+  .\~p-4\/8 {
+    padding: clamp(1rem, 0.29rem + 1.79vw, 2rem);
+  }
+</style>

@@ -1,0 +1,51 @@
+<section class="sponsor--card">
+  <div class="sponsor--card__content">Hola</div>
+</section>
+
+<style>
+  .sponsor--card__content {
+    background: linear-gradient(0.07deg, rgba(80, 72, 29, 0.2) 0.03%, rgba(0, 0, 0, 0) 95.96%),
+      radial-gradient(
+        95.25% 166.54% at 98.39% 2.85%,
+        rgba(54, 53, 38, 0.62) 8%,
+        rgba(9, 9, 7, 0) 80%
+      );
+    padding: 0.5rem 1rem;
+    border-radius: inherit;
+    height: 500px;
+    width: 100%;
+  }
+
+  .sponsor--card {
+    max-width: 1133px;
+    max-height: 771px;
+    width: 100%;
+
+    gap: 24px;
+    margin: 3rem auto;
+    filter: drop-shadow(0px 4px 85.3px rgba(85, 85, 46, 0.1));
+
+    --radius: 15px;
+    --border-width: 1px;
+    border-radius: var(--radius);
+    position: relative;
+  }
+
+  .sponsor--card::before {
+    content: '';
+    border-radius: var(--radius);
+    padding: var(--border-width);
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+    mask-clip: content-box, border-box;
+    mask-origin: content-box, border-box;
+    mask-composite: exclude;
+    background-size: cover;
+    background-repeat: repeat;
+    --background-value: linear-gradient(180deg, #2a2401 0%, #9a8025 39.57%, #ede060 100%);
+    background: var(--background-value); /* Asegúrate de definir esta variable en tu CSS */
+  }
+</style>
