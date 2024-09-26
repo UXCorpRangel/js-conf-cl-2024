@@ -1,55 +1,70 @@
 ---
 import Button from '@components/Button.astro';
-import CardSchelude from '@components/CardSchelude.astro';
-import SpeakerCard from '@components/SpeakerCard.astro';
+import DateInfoHome from '@components/DateInfoHome.astro';
 import Layout from '@layouts/Layout.astro';
-
-const event = {
-  startTime: '2024-09-26T14:00:00',
-  endTime: '2024-09-26T16:00:00',
-  speakerName: 'MiduDev',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
-  isLive: true
-};
 ---
 
 <Layout title="JSConf Chile 2024">
   <main>
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <p>Paragraph</p>
-    <Button variant="solid" color="white" link="#" icon="star">Botoncito</Button>
-    <Button variant="solid" color="yellow" link="#" icon="star">Botoncito</Button>
-    <Button variant="stroke" color="white" link="#" icon="star">Botoncito</Button>
-    <Button variant="stroke" color="yellow" link="#" icon="star">Botoncito</Button>
-    <Button variant="ghost" color="white" link="#" icon="star">Botoncito</Button>
-    <Button variant="ghost" color="yellow" link="#" icon="star">Botoncito</Button>
-    <br />
-    <SpeakerCard
-      imgSrc="imgs/midudev.png"
-      speakerName='Miguel Ángel "Midudev" Durán'
-      speakerInfo="Ingeniero de Software y Divulgador de Programación"
-      speakerBrand="imgs/midulogo.png"
-      link="#"
-    />
-    <br />
-    <SpeakerCard
-      imgSrc=""
-      speakerName="Facundo D'Andrea"
-      speakerInfo="Metro sesenta de ternura"
-      speakerBrand=""
-      link="#"
-    />
-    <br />
-    <CardSchelude
-      startTime={event.startTime}
-      endTime={event.endTime}
-      speakerName={event.speakerName}
-      description={event.description}
-      isLive={event.isLive}
-    />
+    <section class="hero">
+      <div class="hero-info">
+        <img src="/assets/JSCONF.svg" alt="" />
+        <p>
+          Acompáñanos, en la primera edición Chilena, de la más prestigiosa conferencia de
+          JavaScript. 2 días de Charlistas internacionales, comunidad, aprendizaje y conexiones,
+          este 5, 6 y 7 de diciembre, 2024
+        </p>
+        <div class="info-buttons">
+          <Button color="white" link="#" icon="star"> Sponsor </Button>
+          <Button variant="stroke" color="white" link="#" icon="ticket"> Tickets </Button>
+        </div>
+      </div>
+      <div class="hero-date">
+        <DateInfoHome left="Place" right={'("Santiago");'} filled position="first" />
+        <DateInfoHome left="Date" right={'(“Feb 00 2024”);'} filled position="second" />
+        <DateInfoHome left="Time" right={'("00:00");'} filled position="third" />
+        <DateInfoHome left="Torres del Paime -" right="Región del Magallanes" position="fourth" />
+      </div>
+    </section>
   </main>
 </Layout>
 
-<style></style>
+<style>
+  .hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    & .hero-info {
+      width: 50%;
+
+      & p {
+        max-width: 439px;
+      }
+
+      & .info-buttons {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 2rem 0;
+      }
+    }
+    & .hero-date {
+      width: 50%;
+      height: 502px;
+      background-image: url(/assets/torres_del_paine.avif);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        background: radial-gradient(circle, transparent 25%, var(--bg-color) 70%);
+        width: 600px;
+        height: 502px;
+      }
+    }
+  }
+</style>

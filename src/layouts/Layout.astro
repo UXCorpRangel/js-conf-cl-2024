@@ -102,8 +102,8 @@ const { title } = Astro.props;
   }
 
   *,
-  ::before,
-  ::after {
+  *::before,
+  *::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -116,7 +116,7 @@ const { title } = Astro.props;
 
   body {
     max-width: 80rem;
-    padding: 0 4.5rem;
+    padding: 0 2.5rem;
     margin: 0 auto;
   }
 
