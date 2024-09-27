@@ -1,15 +1,16 @@
 ---
+import type { SponsorTier } from '@contracts/sponsor.types';
 import { Image } from 'astro:assets';
 import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
-import { sponsorStyles, type ISponsorStyles } from '@/data/sponsors/sponsorStyles';
+import { sponsorStyles } from '@data/sponsors/sponsorStyles';
 import Button from './Button.astro';
 
 type Props = {
-  category: ISponsorStyles | string;
+  category: SponsorTier | string;
   Content: AstroComponentFactory;
 };
 const { category = 'platinum', Content }: Props = Astro.props;
-const selectedCategory = sponsorStyles[category as ISponsorStyles];
+const selectedCategory = sponsorStyles[category as SponsorTier];
 ---
 
 <section class="sponsor--card__container" style={selectedCategory.styles}>
@@ -55,6 +56,7 @@ const selectedCategory = sponsorStyles[category as ISponsorStyles];
 
       .card--actions__title {
         margin-bottom: 1.5rem;
+        text-transform: uppercase;
       }
     }
     .card--content__lists {
