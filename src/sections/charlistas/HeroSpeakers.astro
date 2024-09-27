@@ -1,0 +1,113 @@
+---
+import Desierto from '@public/assets/desierto-floreado-atacama.webp';
+import ImgGlass from '@public/assets/glass.webp';
+import { Image } from 'astro:assets';
+---
+
+<section class="hero">
+  <div class="hero--content">
+    <Image src={ImgGlass} alt="bell icon" class="hero--decoration" />
+    <div class="hero--content--text">
+      <h2>Charlistas y workshops</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur. Sapien suspendisse semper ultrices scelerisque.
+        Lobortis justo commodo sit mauris amet ac. Non molestie rhoncus senectus commodo. Velit non
+        et sed vitae risus aliquam.
+      </p>
+    </div>
+  </div>
+  <div class="hero--asset">
+    <Image
+      src={Desierto}
+      alt="Desierto floreado Atacama"
+      loading="lazy"
+      decoding="async"
+      widths={[240, 540, 720, Desierto.width]}
+      sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${Desierto.width}px`}
+    />
+    <div class="hero--asset--caption">
+      <span>Desierto florido de atacama - </span>Región de Atacama.
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 406px;
+  }
+  .hero--content {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1.2rem;
+    h1 {
+      font-family: Barlow;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 36px;
+      letter-spacing: -0.0075em;
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-family: Barlow;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      text-align: left;
+      max-width: 560px;
+    }
+    .hero--decoration {
+      transform: translateY(-20px);
+    }
+  }
+  .hero--asset {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .hero--asset--caption {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 24px;
+      text-align: right;
+      color: var(--white);
+      & span {
+        color: var(--yellow);
+      }
+    }
+  }
+  @media (max-width: 1280px) {
+    .hero {
+      grid-template-columns: 1fr;
+    }
+    .hero--content {
+      place-content: center;
+      order: 2;
+      .hero--content__actions {
+        display: block;
+        margin-top: 1rem;
+        a {
+          color: var(--yellow);
+          text-decoration: underline;
+        }
+      }
+    }
+    .hero--asset {
+      order: 1;
+    }
+    h1,
+    .hero--actions {
+      display: none;
+    }
+  }
+</style>
