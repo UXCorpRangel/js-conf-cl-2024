@@ -67,9 +67,13 @@ const { data } = Astro.props;
 
   .tabs-contents {
     text-align: center;
+    --pt-content: clamp(1rem, 4vw, 4rem);
   }
   .tabs-contents .tab-content[data-status='closed'] {
     display: none;
+  }
+  .tab-content {
+    padding-top: var(--pt-content);
   }
 
   .tabs-actions {

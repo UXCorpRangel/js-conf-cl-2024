@@ -1,7 +1,7 @@
 ---
-import ContentTab1 from '@components/ContentTab-1.astro';
-import ContentTab2 from '@components/ContentTab-2.astro';
-import ContentTab3 from '@components/ContentTab-3.astro';
+import ContentTab1 from '@sections/agenda/ContentTab-1.astro';
+import ContentTab2 from '@sections/agenda/ContentTab-2.astro';
+import ContentTab3 from '@sections/agenda/ContentTab-3.astro';
 import TabsSchedule from '@components/TabsSchedule.astro';
 import Layout from '@layouts/Layout.astro';
 ---
@@ -44,11 +44,30 @@ import Layout from '@layouts/Layout.astro';
     letter-spacing: -0.012em;
     text-align: center;
     position: relative;
+    display: grid;
+    place-items: center;
 
+    &::before {
+      --scaleX: 0.8;
+      --scaleY: 2;
+      --blur: 10px;
+      --bg-radial: 43.41%;
+    }
+    @media (width <= 720px) {
+      height: 170px;
+      max-width: 490px;
+      margin: 0 auto;
+      &::before {
+        --scaleX: 1;
+        --scaleY: 0.78;
+        --blur: 30px;
+        --bg-radial: 89.41%;
+      }
+    }
     &::before {
       content: '';
       background: radial-gradient(
-        43.41% 43.41% at 50% 50%,
+        var(--bg-radial) var(--bg-radial) at 50% 50%,
         rgba(92, 92, 92, 0.5) 0%,
         rgba(63, 63, 59, 0) 100%
       );
@@ -57,7 +76,8 @@ import Layout from '@layouts/Layout.astro';
       position: absolute;
       inset: 0;
       z-index: -1;
-      border-radius: 9999px;
+      transform: scale(var(--scaleX), var(--scaleY));
+      filter: blur(var(--blur));
     }
   }
   .description-page {
@@ -67,5 +87,13 @@ import Layout from '@layouts/Layout.astro';
     line-height: 28px;
     text-align: center;
     color: var(--white);
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    height: 28px;
+
+    @media (width <= 720px) {
+      max-width: 325px;
+      height: 56px;
+    }
   }
 </style>
