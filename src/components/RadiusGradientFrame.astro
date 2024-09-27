@@ -1,5 +1,7 @@
 ---
-type Props = astroHTML.JSX.HTMLAttributes;
+import type { HTMLAttributes } from 'astro/types';
+
+type Props = HTMLAttributes<'div'>;
 const { ...rest } = Astro.props;
 ---
 
