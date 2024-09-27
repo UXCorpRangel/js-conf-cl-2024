@@ -1,12 +1,9 @@
-import ImgBronzeSponsor from '@public/assets/bronze-sponsor.webp';
-import ImgGoldSponsor from '@public/assets/gold-sponsor.webp';
-import ImgPlatinumSponsor from '@public/assets/platinum-sponsor.webp';
-import ImgSilverSponsor from '@public/assets/silver-sponsor.webp';
+import type { SponsorMap } from '@contracts/sponsor.types';
 
-export const sponsorStyles = {
+export const sponsorStyles: SponsorMap = {
   gold: {
-    name: 'GOLD SPONSOR',
-    icon: ImgGoldSponsor,
+    name: 'Gold Sponsor',
+    icon: '/assets/gold-sponsor.webp',
     styles: {
       '--order': 2,
       '--background': `linear-gradient(0.07deg, rgba(80, 72, 29, 0.2) 0.03%, rgba(0, 0, 0, 0) 95.96%),
@@ -16,8 +13,8 @@ export const sponsorStyles = {
     }
   },
   platinum: {
-    name: 'PLATINUM SPONSOR',
-    icon: ImgPlatinumSponsor,
+    name: 'Platinum Sponsor',
+    icon: '/assets/platinum-sponsor.webp',
     styles: {
       '--order': 1,
       '--background': `radial-gradient(95.25% 166.54% at 98.39% 2.85%, #272727 8%, rgba(9, 9, 7, 0) 80%),
@@ -27,8 +24,8 @@ export const sponsorStyles = {
     }
   },
   silver: {
-    name: 'SILVER SPONSOR',
-    icon: ImgSilverSponsor,
+    name: 'Silver Sponsor',
+    icon: '/assets/silver-sponsor.webp',
     styles: {
       '--order': 3,
       '--background': `radial-gradient(95.25% 166.54% at 98.39% 2.85%, rgba(210, 220, 232, 0.08) 8%, rgba(9, 9, 7, 0) 80%),
@@ -38,8 +35,8 @@ export const sponsorStyles = {
     }
   },
   bronze: {
-    name: 'BRONZE SPONSOR',
-    icon: ImgBronzeSponsor,
+    name: 'Bronze Sponsor',
+    icon: '/assets/bronze-sponsor.webp',
     styles: {
       '--order': 4,
       '--background': `radial-gradient(95.25% 166.54% at 98.39% 2.85%, #221B16 8%, rgba(9, 9, 7, 0) 80%),
@@ -49,5 +46,3 @@ export const sponsorStyles = {
     }
   }
 };
-
-export type ISponsorStyles = keyof typeof sponsorStyles;
