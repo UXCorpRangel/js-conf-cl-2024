@@ -7,10 +7,19 @@ const sponsors = await Astro.glob('/src/data/sponsors/*.md');
 ---
 
 <Layout title="JSConf Chile 2024">
-  <HeroSection />
-  {
-    sponsors.map(({ file, Content }) => (
-      <SponsorCard category={file.split('/').pop()!.replace('.md', '')} Content={Content} />
-    ))
-  }
+  <div>
+    <HeroSection />
+    {
+      sponsors.map(({ file, Content }) => (
+        <SponsorCard category={file.split('/').pop()!.replace('.md', '')} Content={Content} />
+      ))
+    }
+  </div>
 </Layout>
+
+<style>
+  div {
+    display: grid;
+    gap: clamp(2rem, 4vw, 4rem);
+  }
+</style>
