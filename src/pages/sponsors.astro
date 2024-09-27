@@ -1,0 +1,28 @@
+---
+import HeroSection from '@sections/sponsors/HeroSection.astro';
+import SponsorCard from '@components/SponsorCard.astro';
+import Layout from '@layouts/Layout.astro';
+
+const sponsors = await Astro.glob('/src/data/sponsors/*.md');
+---
+
+<Layout title="JSConf Chile 2024">
+  <main>
+    <HeroSection />
+    {
+      sponsors.map(({ file, Content }) => (
+        <SponsorCard category={file.split('/').pop()!.replace('.md', '')} Content={Content} />
+      ))
+    }
+  </main>
+</Layout>
+
+<style>
+  main {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    gap: 4rem;
+    padding: 0 72px;
+  }
+</style>
