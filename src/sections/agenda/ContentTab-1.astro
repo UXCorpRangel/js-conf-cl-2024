@@ -1,5 +1,45 @@
 ---
-
+import RadiusGradientFrame from '@components/RadiusGradientFrame.astro';
 ---
 
-<div>tab 1</div>
+<div>
+  tab 1
+
+  <RadiusGradientFrame class="card-demo">Hola mundo</RadiusGradientFrame>
+</div>
+
+<style>
+  .card-demo {
+    --border-color: linear-gradient(180deg, #2a2401 0%, #9a8025 39.57%, #ede060 100%);
+    --border-width: 2px;
+    --shadow: 0px 4px 85.3px rgba(85, 85, 46, 0.1);
+    --radius: 20px;
+
+    @media (width <= 800px) {
+      --shadow: 0px 4px 85.3px rgba(64, 64, 64, 0.1);
+      --radius: 10px;
+      --border-color: linear-gradient(327.26deg, #ffffff 31.78%, #272727 63.2%, #656565 93.99%);
+
+      background: radial-gradient(95.25% 166.54% at 98.39% 2.85%, #272727 8%, rgba(9, 9, 7, 0) 80%),
+        linear-gradient(0.07deg, rgba(64, 64, 64, 0.2) 0.03%, rgba(255, 255, 255, 0) 95.96%);
+    }
+  }
+
+  .card-demo {
+    height: 300px;
+    width: 100%;
+    max-width: 700px;
+    margin: 2rem auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 2rem 1rem;
+    font-size: clamp(1rem, 4vw, 4rem);
+    font-weight: 600;
+
+    background: linear-gradient(0.07deg, rgba(80, 72, 29, 0.2) 0.03%, rgba(0, 0, 0, 0) 95.96%),
+      radial-gradient(
+        95.25% 166.54% at 98.39% 2.85%,
+        rgba(54, 53, 38, 0.62) 8%,
+        rgba(9, 9, 7, 0) 80%
+      );
+  }
+</style>
