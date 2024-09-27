@@ -110,17 +110,28 @@ const { title } = Astro.props;
     );
     --gradient-card-agenda: linear-gradient(258deg, #121212 7.65%, #1d1b0e 57.4%, #413e21 98.66%);
   }
-
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  * {
+    box-sizing: border-box;
+  }
   body {
     font-family: 'Barlow', sans-serif;
     background: var(--bg-color);
     color: var(--white);
+    max-width: 80rem;
+    padding: 0 1rem;
+    margin: 0 auto;
 
     & .container {
       max-width: 80rem;
       padding: 0 1rem;
       margin: 0 auto;
     }
+
   }
 
   h1 {
