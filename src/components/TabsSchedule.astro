@@ -1,40 +1,33 @@
 ---
+import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
+
+type Props = {
+  data: {
+    triggerTitle: string;
+    status: string;
+    Content: AstroComponentFactory;
+  }[];
+};
 const context = crypto.randomUUID();
-const data = [
-  {
-    trigger: 'Viernes 00 Nov',
-    status: 'open',
-    content: 'viernes'
-  },
-  {
-    trigger: 'Sábado 00 Nov',
-    status: 'closed',
-    content: 'sábado'
-  },
-  {
-    trigger: 'Domingo 00 Nov',
-    status: 'closed',
-    content: 'domingo'
-  }
-];
+const { data } = Astro.props;
 ---
 
 <div class="tabs" data-context={context}>
   <div class="tabs-actions">
     <div class="tab-switcher_pill" data-context={context}></div>
     {
-      data.map(({ trigger, status }, index) => (
+      data.map(({ triggerTitle, status }, index) => (
         <button class="tab-action" data-status={status} data-tab={index} data-context={context}>
-          {trigger}
+          {triggerTitle}
         </button>
       ))
     }
   </div>
   <div class="tabs-contents">
     {
-      data.map(({ content, status }, index) => (
+      data.map(({ Content, status }, index) => (
         <div class="tab-content" data-tab={index} data-context={context} data-status={status}>
-          <h2>{content}</h2>
+          <Content />
         </div>
       ))
     }
