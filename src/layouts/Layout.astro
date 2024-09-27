@@ -8,7 +8,7 @@ import 'sanitize.css/forms.css';
 import 'sanitize.css/assets.css';
 import 'sanitize.css/typography.css';
 
-import Navbar from '@components/Navbar.astro';
+import Navbar from '@components/Navbar/Navbar.astro';
 
 interface Props {
   title: string;
@@ -124,7 +124,7 @@ const { title } = Astro.props;
     color: var(--white);
 
     & .container {
-      max-width: 80rem;
+      width: min(80rem, 100vw);
       padding: 0 1rem;
       margin: 0 auto;
     }
