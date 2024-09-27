@@ -33,6 +33,7 @@ const { title } = Astro.props;
     </main>
   </body>
 </html>
+
 <style is:global>
   :root {
     --yellow: #ede060;
@@ -110,6 +111,11 @@ const { title } = Astro.props;
     );
     --gradient-card-agenda: linear-gradient(258deg, #121212 7.65%, #1d1b0e 57.4%, #413e21 98.66%);
   }
+
+  @view-transition {
+    navigation: auto;
+  }
+
   *,
   *::before,
   *::after {
