@@ -23,6 +23,10 @@ const { left, right, filled = false, position } = Astro.props;
     font-weight: 700;
     font-size: 12px;
 
+    & p {
+      margin: 0;
+    }
+
     &.filled::before {
       content: '';
       position: absolute;
@@ -46,16 +50,16 @@ const { left, right, filled = false, position } = Astro.props;
       inset-block-end: 40%;
     }
     &.second {
-      inset-inline-start: 9%;
-      inset-block-end: 27%;
+      inset-inline-start: 12%;
+      inset-block-end: 29%;
     }
     &.third {
-      inset-inline-end: 25%;
+      inset-inline-end: 30%;
       inset-block-end: 15%;
     }
     &.fourth {
-      inset-inline-start: 0%;
-      inset-block-start: 13%;
+      inset-inline-end: -8%;
+      inset-block-start: -3%;
     }
   }
 </style>
