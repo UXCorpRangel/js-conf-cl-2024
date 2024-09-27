@@ -28,7 +28,9 @@ const { title } = Astro.props;
   </head>
   <body>
     <Navbar />
-    <slot />
+    <main class="container">
+      <slot />
+    </main>
   </body>
 </html>
 <style is:global>
@@ -124,8 +126,12 @@ const { title } = Astro.props;
     padding: 0 1rem;
     margin: 0 auto;
 
-    text-rendering: optimizeSpeed;
-    -webkit-font-smoothing: antialiased;
+    & .container {
+      max-width: 80rem;
+      padding: 0 1rem;
+      margin: 0 auto;
+    }
+
   }
 
   h1 {
