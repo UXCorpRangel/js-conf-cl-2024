@@ -1,0 +1,181 @@
+---
+const { date, hour, workshopTitle, speakers, language, equipment, link } = Astro.props;
+const getEquipmentIcon = (item: string) => {
+  if (item === 'book') {
+    return '/src/icons/book.svg';
+  } else if (item === 'laptop') {
+    return '/src/icons/laptop.svg';
+  }
+  return null;
+};
+---
+
+<a href={link} class="card-workshop">
+  <div class="date">
+    <p>{date}</p>
+    <p>{hour}</p>
+  </div>
+  <p class="workshop-title">{workshopTitle}</p>
+
+  <div class="speakers">
+    {speakers.map((speaker: string) => <p>{speaker}</p>)}
+  </div>
+
+  <div class="language-equipment">
+    <p class="language-speak">
+      {language}
+      {
+        language !== 'ESP' && language.toLowerCase() !== 'español' && (
+          <>
+            <br />
+            (traducción)
+          </>
+        )
+      }
+    </p>
+
+    <div class="equipment">
+      {
+        equipment.map((item: string) => {
+          const icon = getEquipmentIcon(item);
+          return icon ? <img src={icon} alt={item} class="equipment-icon" /> : <p>{item}</p>;
+        })
+      }
+    </div>
+  </div>
+</a>
+
+<style>
+  .card-workshop {
+    position: relative;
+    z-index: 1;
+    max-height: 63px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    text-decoration: none;
+    padding: 8px 24px;
+    border-radius: 16px;
+    background: linear-gradient(0.07deg, rgba(80, 72, 29, 0.2) 0.03%, rgba(0, 0, 0, 0) 95.96%),
+      radial-gradient(
+        95.25% 166.54% at 98.39% 2.85%,
+        rgba(54, 53, 38, 0.62) 8%,
+        rgba(9, 9, 7, 0) 80%
+      );
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 16px;
+      padding: 2px;
+      background: var(--gradient-1);
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      mask-composite: exclude;
+      z-index: -1;
+    }
+
+    .date {
+      min-width: 152px;
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+    }
+
+    .workshop-title {
+      max-width: 438px;
+      width: 100%;
+    }
+
+    .speakers {
+      max-width: 225px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      text-align: center;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .language-equipment {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+
+      .language-speak {
+        max-width: 113px;
+        min-width: 113px;
+        width: 100%;
+      }
+
+      .equipment {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        min-width: 60px;
+        max-width: 60px;
+
+        img {
+          width: 24px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .workshop-title {
+      max-width: fit-content;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1020px) {
+    .card-workshop {
+      flex-direction: column;
+      align-items: center;
+      max-height: none;
+      gap: 16px;
+    }
+
+    .language-equipment {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 8px;
+    }
+
+    .date {
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .speakers {
+      max-width: 100%;
+    }
+
+    .language-speak {
+      max-width: 100%;
+      min-width: auto;
+    }
+
+    .equipment {
+      justify-content: center;
+    }
+  }
+</style>
