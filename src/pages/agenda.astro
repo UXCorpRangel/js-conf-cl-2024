@@ -7,31 +7,29 @@ import Layout from '@layouts/Layout.astro';
 ---
 
 <Layout title="JSConf Chile Agenda">
-  <main>
-    <h1 class="title-page">AGENDA DE LA CONFERENCIA</h1>
-    <p class="description-page">
-      Lorem ipsum dolor sit amet consectetur. Eget eget eu imperdiet quis molestie nulla.
-    </p>
-    <TabsSchedule
-      data={[
-        {
-          status: 'open',
-          Content: ContentTab1,
-          triggerTitle: 'Viernes 00 Nov'
-        },
-        {
-          status: 'closed',
-          Content: ContentTab2,
-          triggerTitle: 'Sábado 00 Nov'
-        },
-        {
-          status: 'closed',
-          Content: ContentTab3,
-          triggerTitle: 'Domingo 00 Nov'
-        }
-      ]}
-    />
-  </main>
+  <h1 class="title-page">AGENDA DE LA CONFERENCIA</h1>
+  <p class="description-page">
+    Lorem ipsum dolor sit amet consectetur. Eget eget eu imperdiet quis molestie nulla.
+  </p>
+  <TabsSchedule
+    data={[
+      {
+        status: 'open',
+        Content: ContentTab1,
+        triggerTitle: 'Viernes 00 Nov'
+      },
+      {
+        status: 'closed',
+        Content: ContentTab2,
+        triggerTitle: 'Sábado 00 Nov'
+      },
+      {
+        status: 'closed',
+        Content: ContentTab3,
+        triggerTitle: 'Domingo 00 Nov'
+      }
+    ]}
+  />
 </Layout>
 
 <style>
