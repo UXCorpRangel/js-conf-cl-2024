@@ -125,6 +125,8 @@ const { title } = Astro.props;
     box-sizing: border-box;
   }
   body {
+    --scrollbar-size: 0.4rem;
+
     font-family: 'Barlow', sans-serif;
     background: var(--bg-color);
     color: var(--white);
@@ -133,6 +135,27 @@ const { title } = Astro.props;
       width: min(80rem, 100vw);
       padding: 0 1rem;
       margin: 0 auto;
+    }
+
+    &::-webkit-scrollbar {
+      width: var(--scrollbar-size);
+      height: var(--scrollbar-size);
+    }
+
+    &::-webkit-scrollbar-track {
+      background: var(--bg-color);
+      border-radius: 0.2rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--yellow);
+      border-radius: 0.2rem;
+    }
+  }
+
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+      scrollbar-color: var(--yellow) var(--bg-color);
     }
   }
 
