@@ -8,7 +8,7 @@ import 'sanitize.css/forms.css';
 import 'sanitize.css/assets.css';
 import 'sanitize.css/typography.css';
 
-import Navbar from '@components/Navbar.astro';
+import Navbar from '@components/Navbar/Navbar.astro';
 
 interface Props {
   title: string;
@@ -33,6 +33,7 @@ const { title } = Astro.props;
     </main>
   </body>
 </html>
+
 <style is:global>
   :root {
     --yellow: #ede060;
@@ -110,6 +111,11 @@ const { title } = Astro.props;
     );
     --gradient-card-agenda: linear-gradient(258deg, #121212 7.65%, #1d1b0e 57.4%, #413e21 98.66%);
   }
+
+  @view-transition {
+    navigation: auto;
+  }
+
   *,
   *::before,
   *::after {
@@ -119,14 +125,37 @@ const { title } = Astro.props;
     box-sizing: border-box;
   }
   body {
+    --scrollbar-size: 0.4rem;
+
     font-family: 'Barlow', sans-serif;
     background: var(--bg-color);
     color: var(--white);
 
-    & .container {
-      max-width: 80rem;
+    & main.container {
+      width: min(80rem, 100vw);
       padding: 0 1rem;
       margin: 0 auto;
+    }
+
+    &::-webkit-scrollbar {
+      width: var(--scrollbar-size);
+      height: var(--scrollbar-size);
+    }
+
+    &::-webkit-scrollbar-track {
+      background: var(--bg-color);
+      border-radius: 0.2rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--yellow);
+      border-radius: 0.2rem;
+    }
+  }
+
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+      scrollbar-color: var(--yellow) var(--bg-color);
     }
   }
 
