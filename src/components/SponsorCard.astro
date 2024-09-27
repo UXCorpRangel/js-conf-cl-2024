@@ -69,15 +69,18 @@ const selectedCategory = sponsorStyles[category as ISponsorStyles];
         }
       }
       ul {
-        display: grid;
-        gap: 1rem;
+        display: flex;
+        flex-direction: column;
 
         li {
           display: grid;
           align-items: center;
           grid-template-columns: 16px 1fr;
           gap: 1.5rem;
-
+          margin: -0.5rem 0;
+          p {
+            line-height: 28px !important;
+          }
           strong {
             font-weight: 600;
           }
