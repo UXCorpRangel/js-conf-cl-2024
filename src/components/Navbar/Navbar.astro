@@ -11,7 +11,7 @@ import Logo from './Logo.astro';
     </a>
 
     <nav class="navbar">
-      <ul class="menu" data-status="close" aria-hidden="true">
+      <ul class="menu" aria-hidden="true">
         {
           items.map(({ label, title, url }) => (
             <li class="menu-item">
@@ -31,7 +31,7 @@ import Logo from './Logo.astro';
         Ingresar
       </Button>
 
-      <label class="burger" data-status="close" role="button">
+      <label class="burger" role="button">
         <span class="bar"></span>
         <input id="burger-input" type="checkbox" hidden />
       </label>
@@ -296,31 +296,3 @@ import Logo from './Logo.astro';
     }
   }
 </style>
-
-<script>
-  // const items = document.querySelectorAll<HTMLElement>('.list-item  a');
-  // const list = document.querySelector<HTMLElement>('.list');
-  // const burgerMenu = document.querySelector<HTMLElement>('.burger');
-  // const dataStatus = 'data-status';
-
-  // items.forEach(anchor => {
-  //   anchor.addEventListener('click', () => {
-  //     list?.setAttribute(dataStatus, 'open');
-  //     burgerMenu?.click();
-  //   });
-  // });
-
-  // Animation to the three spans, if get touch, will be a X
-  // burgerMenu?.addEventListener('click', () => {
-  // const isOpen = list?.getAttribute(dataStatus) === 'open';
-  // if (isOpen) {
-  //   document.body.style.removeProperty('overflow-y');
-  //   list?.setAttribute(dataStatus, 'close');
-  //   burgerMenu?.setAttribute(dataStatus, 'close');
-  // } else {
-  //   document.body.style.overflowY = 'hidden';
-  //   list?.setAttribute(dataStatus, 'open');
-  //   burgerMenu?.setAttribute(dataStatus, 'open');
-  // }
-  // });
-</script>
