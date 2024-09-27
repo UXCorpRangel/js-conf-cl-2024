@@ -1,0 +1,188 @@
+---
+import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
+
+type Props = {
+  data: {
+    triggerTitle: string;
+    status: string;
+    Content: AstroComponentFactory;
+  }[];
+};
+const context = crypto.randomUUID();
+const { data } = Astro.props;
+---
+
+<div class="tabs" data-context={context}>
+  <div class="tabs-actions">
+    <div class="tab-switcher_pill" data-context={context}></div>
+    {
+      data.map(({ triggerTitle, status }, index) => (
+        <button class="tab-action" data-status={status} data-tab={index} data-context={context}>
+          {triggerTitle}
+        </button>
+      ))
+    }
+  </div>
+  <div class="tabs-contents">
+    {
+      data.map(({ Content, status }, index) => (
+        <div class="tab-content" data-tab={index} data-context={context} data-status={status}>
+          <Content />
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .tabs-actions {
+    /* implementacion de figma */
+    /* --py: 5px;
+    --px: 5px;
+    --px-action: 24px;
+    --py-action: 12px;
+    --radius: 6px;
+    --font-size: 24px;
+    --line-height: 30px;
+
+    @media (width <= 1280px) {
+      --py: 2.52px;
+      --px: 2.52px;
+      --px-action: 12.1px;
+      --py-action: 6.05px;
+      --radius: 3.02px;
+      --font-size: 12.1px;
+      --line-height: 10.08px;
+    } */
+
+    /* Mi implementacion responsive */
+    --py: clamp(2px, 0.9vw, 5px);
+    --px: clamp(2px, 20vw, 5px);
+    --px-action: clamp(10px, 2vw, 24px);
+    --py-action: clamp(5px, 1vw, 12px);
+    --radius: clamp(2px, 0.5vw, 6px);
+    --font-size: clamp(12px, 3.9vw, 24px);
+    --line-height: clamp(15px, 5vw, 30px);
+  }
+
+  .tabs-contents {
+    text-align: center;
+    --pt-content: clamp(1rem, 4vw, 4rem);
+  }
+  .tabs-contents .tab-content[data-status='closed'] {
+    display: none;
+  }
+  .tab-content {
+    padding-top: var(--pt-content);
+  }
+
+  .tabs-actions {
+    width: fit-content;
+    padding: var(--py) var(--px);
+    margin: 0 auto;
+    background: #2d2d2d;
+    border-radius: var(--radius);
+    position: relative;
+    display: flex;
+
+    .tab-switcher_pill {
+      opacity: 0;
+      position: absolute;
+      background: var(--yellow);
+      height: 100%;
+      width: 100px;
+      top: calc(var(--py));
+      left: calc(var(--px));
+      height: calc(100% - (var(--py) * 2));
+      border-radius: calc(var(--radius) / 2);
+
+      z-index: 1;
+    }
+
+    .tab-switcher_pill.motion {
+      transition:
+        left 0.3s cubic-bezier(0.64, 0.57, 0.67, 1.1),
+        width 0.3s cubic-bezier(0.64, 0.57, 0.67, 1.1),
+        opacity 0.3s cubic-bezier(0.64, 0.57, 0.67, 1.1);
+      will-change: left, width, opacity;
+    }
+
+    .tab-action {
+      border: none;
+      background: transparent;
+      z-index: 2;
+      padding: var(--py-action) var(--px-action);
+      font-family: Barlow;
+      font-size: var(--font-size);
+      font-weight: 500;
+      line-height: var(--line-height);
+      text-align: center;
+      color: var(--gray-2);
+      transition: color 0.3s;
+    }
+    .tab-action[data-status='open'] {
+      color: var(--black);
+    }
+  }
+</style>
+
+<script>
+  const $ = (s: string) => document.querySelector<HTMLElement>(s);
+  const $$ = (s: string) => document.querySelectorAll<HTMLElement>(s);
+
+  const handleClick = (event: MouseEvent) => {
+    const target = event.target as HTMLElement;
+    const action = target.closest('.tab-action') as HTMLElement | null;
+
+    if (action) {
+      const { context, tab } = action.dataset;
+      const actions = $$(`.tab-action[data-context="${context}"]`);
+      const contents = $$(`.tab-content[data-context="${context}"]`);
+
+      updateStatus(actions, contents, action, tab!);
+      updatePillPosition(action, context!);
+    }
+  };
+
+  const handleResizeAndLoad = () => {
+    const actions = $$('.tab-action[data-status="open"]');
+    actions.forEach(action => {
+      const { context } = action.dataset;
+      updatePillPosition(action, context!);
+    });
+  };
+
+  const updateStatus = (
+    actions: NodeListOf<HTMLElement>,
+    contents: NodeListOf<HTMLElement>,
+    activeAction: HTMLElement,
+    activeTab: string
+  ) => {
+    actions.forEach(action => (action.dataset.status = 'closed'));
+    contents.forEach(content => (content.dataset.status = 'closed'));
+
+    activeAction.dataset.status = 'open';
+    const content = $(
+      `.tab-content[data-tab="${activeTab}"][data-context="${activeAction.dataset.context}"]`
+    );
+
+    if (content) {
+      content.dataset.status = 'open';
+    }
+  };
+
+  const updatePillPosition = (action: HTMLElement, context: string) => {
+    const pill = $(`.tab-switcher_pill[data-context="${context}"]`) || $('.tab-switcher_pill');
+
+    if (pill) {
+      if (!pill.classList.contains('motion')) pill.classList.add('motion');
+      pill.style.opacity = '1';
+      pill.style.left = `${action.offsetLeft}px`;
+      pill.style.width = `${action.offsetWidth}px`;
+    }
+  };
+
+  document.addEventListener('click', handleClick);
+  document.addEventListener('DOMContentLoaded', handleResizeAndLoad);
+  window.addEventListener('resize', handleResizeAndLoad);
+</script>
