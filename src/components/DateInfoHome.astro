@@ -1,0 +1,65 @@
+---
+interface Props {
+  left: string;
+  right: string;
+  filled?: boolean;
+  position: 'first' | 'second' | 'third' | 'fourth';
+}
+
+const { left, right, filled = false, position } = Astro.props;
+---
+
+<div class:list={['date-info', filled && 'filled', position]}>
+  <p><span>{left}</span> {right}</p>
+</div>
+
+<style>
+  .date-info {
+    position: absolute;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    z-index: 10;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 12px;
+
+    & p {
+      margin: 0;
+    }
+
+    &.filled::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 0.125rem solid transparent;
+      border-radius: 0.5rem;
+      background:
+        linear-gradient(0, var(--bg-color), var(--bg-color)) padding-box,
+        var(--gradient-2) border-box;
+      backdrop-filter: blur(0.75rem);
+      opacity: 70%;
+      z-index: -1;
+    }
+
+    & span {
+      color: var(--yellow);
+    }
+
+    &.first {
+      inset-inline-end: 15%;
+      inset-block-end: 40%;
+    }
+    &.second {
+      inset-inline-start: 12%;
+      inset-block-end: 29%;
+    }
+    &.third {
+      inset-inline-end: 30%;
+      inset-block-end: 15%;
+    }
+    &.fourth {
+      inset-inline-end: -8%;
+      inset-block-start: -3%;
+    }
+  }
+</style>
