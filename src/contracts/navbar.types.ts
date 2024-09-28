@@ -17,3 +17,13 @@ export type NavbarItem = {
    */
   label: string;
 };
+
+/**
+ * Definición de Iconos de la barra de navegación con iconos
+ */
+export type NavbarIconItem = NavbarItem & {
+  /**
+   * Icono del elemento de la barra de navegación
+   */
+  icon: string;
+};
