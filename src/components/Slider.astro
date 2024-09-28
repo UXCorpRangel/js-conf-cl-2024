@@ -1,0 +1,94 @@
+---
+import Button from './Button.astro';
+
+const slideItem = [
+  {
+    title: 'Woman Tech Makers',
+    image: '/assets/wtm-chile.avif',
+    index: 0
+  },
+  {
+    title: 'Community OS',
+    image: '/assets/community-os.avif',
+    index: 1
+  },
+  {
+    title: '9 punto 5',
+    image: '/assets/9p5.avif',
+    index: 2
+  }
+];
+---
+
+<div class="slide-component">
+  {
+    slideItem.map((slideItem: { image: string; title: string; index: number }) => (
+      <span class="slider" style={{ '--index': slideItem.index }}>
+        <img src={slideItem.image} alt={slideItem.title} />
+        <Button variant="ghost" link="#" icon="arrow-up-right">
+          Ver más
+        </Button>
+      </span>
+    ))
+  }
+</div>
+
+<style define:vars={{ total: slideItem.length }}>
+  .slide-component {
+    --width: 7.5rem;
+    --height: 13rem;
+
+    width: 29rem;
+    height: var(--height);
+    overflow: hidden;
+    margin-inline: auto;
+    position: relative;
+    mask-image: linear-gradient(
+      to right,
+      rgb(0 0 0 / 0),
+      rgb(0 0 0 / 1) 20%,
+      rgb(0 0 0 / 1) 80%,
+      rgb(0 0 0 / 0)
+    );
+
+    &:hover {
+      & .slider {
+        animation-play-state: paused;
+      }
+    }
+
+    & .slider {
+      --index: 0;
+      --duration: 15s;
+
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      position: absolute;
+      width: var(--width);
+      height: var(--height);
+      filter: drop-shadow(0 0 0.5rem var(--secondary-color));
+      inset-inline-start: max(calc(var(--width) * var(--total)), 100%);
+      inset-block-start: 0;
+
+      display: grid;
+      place-items: center;
+
+      animation-name: scroll-left;
+      animation-duration: var(--duration);
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-delay: calc(var(--duration) / var(--total) * (var(--total) - var(--index)) * -1);
+
+      & .skill-icon {
+        font-size: calc(var(--width) / 2);
+      }
+    }
+  }
+
+  @keyframes scroll-left {
+    to {
+      inset-inline-start: calc((var(--width) + 3.125rem) * -1);
+    }
+  }
+</style>
