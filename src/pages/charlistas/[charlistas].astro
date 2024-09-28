@@ -1,0 +1,24 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Layout from '@layouts/Layout.astro';
+import charlistasData from '../../data/speakers/charlistas.json';
+
+export const getStaticPaths = (() => {
+  const paths = charlistasData.map(charlista => ({
+    params: { charlistas: charlista.slug }
+  }));
+  return paths;
+}) satisfies GetStaticPaths;
+
+const { charlistas } = Astro.params;
+
+const charlistaDetails = charlistasData.find(charlista => charlista.slug === charlistas);
+---
+
+<Layout
+  title={`JSConf Chile 2024 | ${charlistaDetails?.fullName || 'Charlista'}`}
+  description="Conoce a los charlistas de JSConf Chile 2024. Descubre a los expertos en JavaScript y desarrollo web que estarán compartiendo sus conocimientos del 5 al 7 de diciembre en Santiago. ¡Explora sus perfiles y temas!"
+>
+  <h1>{charlistaDetails?.fullName || 'Nombre no encontrado'}</h1>
+  <p>{charlistaDetails?.bio || 'Biografía no disponible'}</p>
+</Layout>
