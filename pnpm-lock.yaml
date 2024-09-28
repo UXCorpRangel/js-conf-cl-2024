@@ -20,9 +20,15 @@ importers:
       astro-icon:
         specifier: ^1.1.1
         version: 1.1.1
+      astro-seo-schema:
+        specifier: ^4.0.2
+        version: 4.0.2(astro@4.15.9(@types/node@20.16.6)(lightningcss@1.27.0)(rollup@4.22.4)(typescript@5.6.2))(schema-dts@1.1.2(typescript@5.6.2))
       sanitize.css:
         specifier: ^13.0.0
         version: 13.0.0
+      schema-dts:
+        specifier: ^1.1.2
+        version: 1.1.2(typescript@5.6.2)
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.3.0
@@ -995,6 +1001,12 @@ packages:
 
   astro-icon@1.1.1:
     resolution: {integrity: sha512-HKBesWk2Faw/0+klLX+epQVqdTfSzZz/9+5vxXUjTJaN/HnpDf608gRPgHh7ZtwBPNJMEFoU5GLegxoDcT56OQ==}
+
+  astro-seo-schema@4.0.2:
+    resolution: {integrity: sha512-OI9DWasORMpIzKsAmF4s6ghVX8F1INROla4JKBT8WDm/du25jxQsoQcJx99NY3gOQJ7Rv9a+cFPAfr17LsYXEg==}
+    peerDependencies:
+      astro: ^4.0.0
+      schema-dts: ^1.1.0
 
   astro@4.15.9:
     resolution: {integrity: sha512-51oXq9qrZ5OPWYmEXt1kGrvWmVeWsx28SgBTzi2XW6iwcnW/wC5ONm6ol6qBGSCF93tQvZplXvuzpaw1injECA==}
@@ -2591,6 +2603,11 @@ packages:
   sass-formatter@0.7.9:
     resolution: {integrity: sha512-CWZ8XiSim+fJVG0cFLStwDvft1VI7uvXdCNJYXhDvowiv+DsbD1nXLiQ4zrE5UBvj5DWZJ93cwN0NX5PMsr1Pw==}
 
+  schema-dts@1.1.2:
+    resolution: {integrity: sha512-MpNwH0dZJHinVxk9bT8XUdjKTxMYrA5bLtrrGmFA6PTLwlOKnhi67XoRd6/ty+Djt6ZC0slR57qFhZDNMI6DhQ==}
+    peerDependencies:
+      typescript: '>=4.1.0'
+
   section-matter@1.0.0:
     resolution: {integrity: sha512-vfD3pmTzGpufjScBh50YHKzEu2lxBWhVEHsNGoEXmCmn2hKGfeNLYMzCJpe8cD7gqX7TJluOVpBkAequ6dgMmA==}
     engines: {node: '>=4'}
@@ -4155,6 +4172,11 @@ snapshots:
     transitivePeerDependencies:
       - debug
       - supports-color
+
+  astro-seo-schema@4.0.2(astro@4.15.9(@types/node@20.16.6)(lightningcss@1.27.0)(rollup@4.22.4)(typescript@5.6.2))(schema-dts@1.1.2(typescript@5.6.2)):
+    dependencies:
+      astro: 4.15.9(@types/node@20.16.6)(lightningcss@1.27.0)(rollup@4.22.4)(typescript@5.6.2)
+      schema-dts: 1.1.2(typescript@5.6.2)
 
   astro@4.15.9(@types/node@20.16.6)(lightningcss@1.27.0)(rollup@4.22.4)(typescript@5.6.2):
     dependencies:
@@ -6077,6 +6099,10 @@ snapshots:
   sass-formatter@0.7.9:
     dependencies:
       suf-log: 2.5.3
+
+  schema-dts@1.1.2(typescript@5.6.2):
+    dependencies:
+      typescript: 5.6.2
 
   section-matter@1.0.0:
     dependencies:

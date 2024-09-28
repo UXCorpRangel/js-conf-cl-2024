@@ -18,7 +18,9 @@
     "@fontsource/barlow": "^5.1.0",
     "astro": "^4.15.9",
     "astro-icon": "^1.1.1",
-    "sanitize.css": "^13.0.0"
+    "astro-seo-schema": "^4.0.2",
+    "sanitize.css": "^13.0.0",
+    "schema-dts": "^1.1.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",

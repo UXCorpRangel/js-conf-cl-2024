@@ -6,7 +6,10 @@ import Layout from '@layouts/Layout.astro';
 const sponsors = await Astro.glob('/src/data/sponsors/*.md');
 ---
 
-<Layout title="JSConf Chile 2024">
+<Layout
+  title="JSConf Chile 2024 | Sponsors"
+  description="Descubre los sponsors que hacen posible JSConf Chile 2024. Conoce a las empresas líderes que apoyan la conferencia de JavaScript más importante de Chile, del 5 al 7 de diciembre en Santiago."
+>
   <div>
     <HeroSection />
     {
