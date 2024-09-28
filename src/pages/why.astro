@@ -1,7 +1,41 @@
 ---
+import Bento from '@components/Bento.astro';
 import Layout from '@layouts/Layout.astro';
 ---
 
+<!-- La Imagen .png es para el ejemplo de este componente -->
 <Layout title="JSConf Chile 2024">
-  <p>Página de por que</p>
+  <Bento>
+    <p slot="bento-square">icon</p>
+    <h2 slot="bento-square">Share</h2>
+    <p slot="bento-square">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptas similique provident
+      dolore, officiis quae minus optio asperiores quos? Minus quibusdam nesciunt dolorum corporis
+      eos ad quis molestiae atque corrupti?
+    </p>
+
+    <img src="/public/imgs/JSConf-Chile-2023.png" slot="bento-image" />
+  </Bento>
+
+  <Bento reverse>
+    <p slot="bento-square">icon</p>
+    <h2 slot="bento-square">Share</h2>
+    <p slot="bento-square">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptas similique provident
+      dolore, officiis quae minus optio asperiores quos? Minus quibusdam nesciunt dolorum corporis
+      eos ad quis molestiae atque corrupti?
+    </p>
+    <img src="/public/imgs/JSConf-Chile-2023.png" slot="bento-image" />
+  </Bento>
+
+  <Bento>
+    <p slot="bento-square">icon</p>
+    <h2 slot="bento-square">Share</h2>
+    <p slot="bento-square">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptas similique provident
+      dolore, officiis quae minus optio asperiores quos? Minus quibusdam nesciunt dolorum corporis
+      eos ad quis molestiae atque corrupti?
+    </p>
+    <img src="/public/imgs/JSConf-Chile-2023.png" slot="bento-image" />
+  </Bento>
 </Layout>

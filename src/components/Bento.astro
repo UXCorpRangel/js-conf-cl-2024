@@ -1,0 +1,45 @@
+---
+interface Props {
+  reverse?: boolean;
+}
+
+const { reverse = false } = Astro.props;
+---
+
+<!--TODO: Refactorizar este componente -->
+<div class="bento-container">
+  <div class:list={['bento-item', reverse && 'reverse']}>
+    <div class="bento-square">
+      <slot name="bento-square" />
+      <!--Si necesitan colocar elementos en estos slots, deben añadir la palabra "slot" con el nombre del slot dentro de la etiqueta de apertura. Ej: <p slot="bento-square"></p> -->
+    </div>
+    <slot name="bento-image" />
+  </div>
+</div>
+<style>
+  .bento-container {
+    display: flex;
+    padding-block-end: 2.25rem;
+
+    & .bento-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.3rem;
+
+      @media (width >= 768px) {
+        flex-direction: row;
+        gap: 2.25rem;
+      }
+
+      &.reverse {
+        flex-direction: column;
+
+        @media (width >= 768px) {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+</style>
