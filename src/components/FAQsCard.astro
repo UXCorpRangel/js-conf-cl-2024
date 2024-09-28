@@ -1,0 +1,104 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const { question, answer } = Astro.props;
+---
+
+<details class="faq-item" name="faq-card">
+  <summary class="faq-summary">
+    {question}
+    <Icon name="chevron-down" />
+  </summary>
+
+  <div class="faq-answer">
+    {answer}
+  </div>
+</details>
+
+<style>
+  .faq-item {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    background: linear-gradient(0.07deg, rgba(80, 72, 29, 0.2) 0.03%, rgba(0, 0, 0, 0) 95.96%),
+      radial-gradient(
+        95.25% 166.54% at 98.39% 2.85%,
+        rgba(54, 53, 38, 0.62) 8%,
+        rgba(9, 9, 7, 0) 80%
+      );
+    transition:
+      padding 0.3s ease,
+      background 0.3s ease;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 1rem;
+      padding: 0.125rem;
+      background: var(--gradient-1);
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      mask-composite: exclude;
+      z-index: -1;
+    }
+
+    & summary {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      padding: 1rem;
+      transition: background 0.3s ease;
+
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+  }
+
+  svg {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 1rem;
+    transition:
+      max-height 0.3s ease,
+      padding 0.3s ease;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  details[open] .faq-answer {
+    max-height: 50rem;
+    padding: 1rem;
+  }
+
+  details[open] svg {
+    transform: rotate(180deg);
+  }
+
+  details[open] {
+    padding: 1rem 1.5rem;
+    background: rgba(80, 72, 29, 0.3);
+  }
+
+  details:not([open]) svg {
+    transform: rotate(0deg);
+  }
+</style>
