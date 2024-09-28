@@ -46,18 +46,17 @@ import DateInfoHome from '@components/DateInfoHome.astro';
     & .hero-date {
       width: 60%;
       height: 502px;
+      position: relative;
       background-image: url(/assets/torres-del-paine.avif);
       background-size: cover;
       background-repeat: no-repeat;
-      position: relative;
+      background-position: center;
 
       &::after {
         content: '';
         position: absolute;
-        top: 0;
-        background: radial-gradient(circle, transparent 25%, var(--bg-color) 65%);
-        width: 683px;
-        height: 502px;
+        inset: 0;
+        background-image: radial-gradient(circle, transparent 25%, var(--bg-color) 65%);
       }
     }
   }
