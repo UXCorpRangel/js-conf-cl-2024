@@ -37,6 +37,8 @@ const { title } = Astro.props;
 </html>
 
 <style is:global>
+  @custom-media --mobile (width >= 412px);
+
   :root {
     --yellow: #ede060;
     --yellow-100: #c8bc4f;
@@ -183,5 +185,9 @@ const { title } = Astro.props;
 
   :where(a) {
     color: var(--white);
+  }
+
+  @media (--mobile) {
+    /* Estilos a utilizar */
   }
 </style>
