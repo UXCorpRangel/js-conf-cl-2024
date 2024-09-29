@@ -1,9 +1,4 @@
 ---
-import ImgSun from '@public/assets/sun.webp';
-import Volunteers2 from '@public/assets/volunteers-2.webp';
-import Volunteers3 from '@public/assets/volunteers-3.webp';
-import Volunteers from '@public/assets/volunteers.webp';
-import { Image } from 'astro:assets';
 import Button from '@components/Button.astro';
 import Layout from '@layouts/Layout.astro';
 ---
@@ -14,7 +9,7 @@ import Layout from '@layouts/Layout.astro';
 >
   <section class="hero">
     <div class="hero--content">
-      <Image src={ImgSun} alt="sun icon" class="hero--decoration" />
+      <img src="/assets/sun.webp" alt="sun icon" class="hero--decoration" />
       <div class="hero--content--text">
         <h2>REGISTRO DE VOLUNTARIOS</h2>
         <p>
@@ -30,25 +25,25 @@ import Layout from '@layouts/Layout.astro';
       </div>
     </div>
     <div class="hero--asset">
-      <Image
-        src={Volunteers}
+      <img
+        src="/assets/volunteers.webp"
         alt="voluntarios 1"
         loading="lazy"
         decoding="async"
-        widths={[240, 540, 720, Volunteers.width]}
-        sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${Volunteers.width}px`}
+        width="720"
+        sizes="(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px"
       />
     </div>
   </section>
   <section class="volunteers-wrapper">
     <div class="volunteers">
-      <Image
-        src={Volunteers2}
+      <img
+        src="/assets/volunteers-2.webp"
         alt="voluntarios 2"
         loading="lazy"
         decoding="async"
-        widths={[240, 540, 720, Volunteers2.width]}
-        sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${Volunteers2.width}px`}
+        width="720"
+        sizes="(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px"
       />
       <div class="volunteers-info">
         <h2 class="info-title">¿Qué necesitamos de ti?</h2>
@@ -57,7 +52,7 @@ import Layout from '@layouts/Layout.astro';
           <li>Vamos a llegar un poco antes, e irnos un poco después los días del evento.</li>
           <li>Tenemos que coordinar el registro de los speakers/conferencistas y asistentes.</li>
           <li>Estaremos ayudando a los speakers/conferencistas durante la conferencia.</li>
-          <li>Buena Onda!</li>
+          <li>¡Buena Onda!</li>
         </ul>
       </div>
     </div>
@@ -69,16 +64,16 @@ import Layout from '@layouts/Layout.astro';
           <li>Vamos a llegar un poco antes, e irnos un poco después los días del evento.</li>
           <li>Tenemos que coordinar el registro de los speakers/conferencistas y asistentes.</li>
           <li>Estaremos ayudando a los speakers/conferencistas durante la conferencia.</li>
-          <li>Buena Onda!</li>
+          <li>¡Buena Onda!</li>
         </ul>
       </div>
-      <Image
-        src={Volunteers3}
+      <img
+        src="/assets/volunteers-3.webp"
         alt="voluntarios 3"
         loading="lazy"
         decoding="async"
-        widths={[240, 540, 720, Volunteers3.width]}
-        sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${Volunteers3.width}px`}
+        width="720"
+        sizes="(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px"
       />
     </div>
   </section>
