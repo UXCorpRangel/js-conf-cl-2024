@@ -6,5 +6,145 @@ import Layout from '@layouts/Layout.astro';
   title="JSConf Chile 2024 | Código de conducta"
   description="Conoce el Código de Conducta de JSConf Chile 2024. Fomentamos un ambiente inclusivo, respetuoso y seguro para todos los participantes. Aprende sobre nuestras políticas para una experiencia positiva del 5 al 7 de diciembre en Santiago."
 >
-  <p>Página de Código de conducto</p>
+  <section>
+    <h1 class="title-page">Código de conducta</h1>
+    <article class="disclaimer">
+      <h2>Disclaimer</h2>
+      <p>
+        Todos los asistentes, expositores, voluntarios y auspiciadores tanto de los eventos
+        realizados a traves de Javascript Chile (JSConf, TechSchool, Meetups, e-Meetups, Podcasts,
+        etc), asi como quienes participen e interactuen en cualquiera de las plataformas de redes
+        sociales (Facebook, Slack, Discord, Twitter, etc), se comprometen a seguir y respetar
+        nuestro código de conducta.
+      </p>
+      <p>
+        La organización siempre se encargará de velar por el cumplimiento y respeto de lo aquí
+        expuesto.
+      </p>
+      <p>No se harán excepciones de ningún tipo.</p>
+    </article>
+    <article class="coc">
+      <div>
+        <h3>La versión más corta de todas</h3>
+        <p>
+          ¿Has visto como luego de algunos eventos, todos terminan hablando de “aquella persona” que
+          causó un mal rato a uno o más asistentes?. Que no sea de ti de quien hablen :)
+        </p>
+      </div>
+      <div>
+        <h3>La versión no tan corta</h3>
+        <p>
+          En los eventos desarrollados por Javascript Chile (JSConf, TechSchool, Conferencias, etc),
+          asi como en cualquiera de las plataformas de redes sociales (Facebook, Slack, Discord,
+          Twitter, etc) buscamos crear un espacio, y una experiencia, libre de acoso.
+        </p>
+        <p>
+          Nuestro lema es que todos son bienvenidos, sin importar género, raza, orientación sexual,
+          capacidades, apariencia física y/o creencias.
+        </p>
+        <p>
+          <strong
+            ><em
+              >No toleramos el acoso bajo ningún tipo, forma ni contexto, directa o indirectamente.</em
+            ></strong
+          > Cualquier participante que viole estas reglas será sancionado y expulsado de este y futuros
+          eventos.
+        </p>
+      </div>
+      <div>
+        <h3>La versión más larga</h3>
+        <p><strong>¿Qué se entiende por acoso?</strong></p>
+        <p>
+          Abuso físico y/o verbal relacionados al género de una persona, orientación sexual,
+          capacidades, género, apariencia física, nivel de conocimiento, raza y/o creencias
+          religiosas. Adicionalmente, creación y/o reproducción de imágenes de contenido sexual en
+          espacios públicos, intimidación física y/o verbal, acecho, interrupciones groseras de
+          charlas y/o contacto físico inapropiado.
+        </p>
+        <p>
+          La organización se reserva el derecho de solicitar que cualquier comportamiento
+          relacionado a lo anterior que sea visto durante un evento, sea detenido inmediatamente por
+          quien(es) lo realizan. Adicionalmente, quienes atenten contra este código de conducta,
+          podrán ser expulsados de este y futuros eventos.
+        </p>
+        <p>
+          Si eres víctima o testigo de algún tipo de acoso, de cualquiera según lo detallado
+          anteriormente, por favor contacta a un miembro de la organización de forma inmediata. Los
+          encargados del evento se identificarán oportunamente al comienzo de cada instancia.
+        </p>
+        <p>
+          Si es necesario, la organización ayudará a contactar autoridades policiales y/o proveerá
+          cualquier tipo de asistencia necesaria para remediar la situación.
+        </p>
+      </div>
+    </article>
+    <hr />
+    <p>
+      <strong
+        ><em
+          >Somos una comunidad inclusiva que valora la diversidad. Si no estás de acuerdo con esto,
+          probablemente no debas estar en nuestros eventos ;)</em
+        ></strong
+      >
+    </p>
+  </section>
 </Layout>
+
+<style>
+  section {
+    max-width: 48rem;
+    margin: 0 auto 5rem;
+  }
+
+  .title-page {
+    text-align: center;
+    position: relative;
+    display: grid;
+    place-items: center;
+    text-transform: uppercase;
+
+    &::before {
+      --scaleX: 0.8;
+      --scaleY: 2;
+      --blur: 10px;
+      --bg-radial: 43.41%;
+    }
+
+    @media (width <= 768px) {
+      font-size: 2rem;
+      height: 10.625rem;
+      max-width: 30.625rem;
+      margin: 0 auto;
+      &::before {
+        --scaleX: 1;
+        --scaleY: 0.78;
+        --blur: 30px;
+        --bg-radial: 89.41%;
+      }
+    }
+
+    &::before {
+      content: '';
+      background: radial-gradient(
+        var(--bg-radial) var(--bg-radial) at 50% 50%,
+        rgba(92, 92, 92, 0.5) 0%,
+        rgba(63, 63, 59, 0) 100%
+      );
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      transform: scale(var(--scaleX), var(--scaleY));
+      filter: blur(var(--blur));
+    }
+  }
+
+  .disclaimer {
+    opacity: 50%;
+
+    @media (width <= 768px) {
+      text-align: center;
+    }
+  }
+</style>
