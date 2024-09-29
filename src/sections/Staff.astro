@@ -1,0 +1,132 @@
+---
+import StaffCard from '@components/StaffCard.astro';
+
+const staffData = [
+  {
+    imgSrc: '/staff/ricardo-castillo.avif',
+    staffName: 'Ricardo Castillo',
+    linkedinLink: 'https://www.linkedin.com/',
+    instagramLink: 'https://www.instagram.com/',
+    twitterLink: 'https://www.instagram.com/',
+    facebookLink: 'https://www.facebook.com/'
+  },
+  {
+    imgSrc: '/staff/ana-rangel.avif',
+    staffName: 'Ana Rangel',
+    linkedinLink: 'https://www.linkedin.com/in/otra-persona',
+    instagramLink: 'https://www.instagram.com/otra-persona',
+    twitterLink: '',
+    facebookLink: ''
+  },
+  {
+    imgSrc: '/staff/alfonsina-lizardo.avif',
+    staffName: 'Alfonsina Lizardo',
+    linkedinLink: 'https://www.linkedin.com/in/otra-persona',
+    instagramLink: 'https://www.instagram.com/otra-persona',
+    twitterLink: '',
+    facebookLink: ''
+  },
+  {
+    imgSrc: '/staff/cecilia-geraldo.avif',
+    staffName: 'Cecilia  Geraldo',
+    linkedinLink: 'https://www.linkedin.com/in/otra-persona',
+    instagramLink: 'https://www.instagram.com/otra-persona',
+    twitterLink: '',
+    facebookLink: ''
+  },
+  {
+    imgSrc: '/staff/fabian-arismendi.avif',
+    staffName: 'Fabián Arismendi',
+    linkedinLink: 'https://www.linkedin.com/in/otra-persona',
+    instagramLink: 'https://www.instagram.com/otra-persona',
+    twitterLink: '',
+    facebookLink: ''
+  },
+  {
+    imgSrc: '/staff/jose-lezama.avif',
+    staffName: 'José Lezama',
+    linkedinLink: 'https://www.linkedin.com/in/otra-persona',
+    instagramLink: 'https://www.instagram.com/otra-persona',
+    twitterLink: '',
+    facebookLink: ''
+  },
+  {
+    imgSrc: '/staff/leslie-herrera.avif',
+    staffName: 'Leslie Herrera',
+    linkedinLink: 'https://www.linkedin.com/in/otra-persona',
+    instagramLink: 'https://www.instagram.com/otra-persona',
+    twitterLink: '',
+    facebookLink: ''
+  },
+  {
+    imgSrc: '/staff/martin-calderon.avif',
+    staffName: 'Martín Calderón',
+    linkedinLink: 'https://www.linkedin.com/in/otra-persona',
+    instagramLink: 'https://www.instagram.com/otra-persona',
+    twitterLink: '',
+    facebookLink: ''
+  },
+  {
+    imgSrc: '/staff/rodrigo-vasquez.avif',
+    staffName: 'Rodrigo Vásquez',
+    linkedinLink: 'https://www.linkedin.com/in/otra-persona',
+    instagramLink: 'https://www.instagram.com/otra-persona',
+    twitterLink: '',
+    facebookLink: ''
+  }
+];
+---
+
+<section class="staff">
+  <div class="staff-info">
+    <h2>Staff</h2>
+    <p>Conoce al equipo que está preparando la JSConf Chile 2024</p>
+  </div>
+  <div class="staff-wrapper">
+    {
+      staffData.map(member => (
+        <StaffCard
+          imgSrc={member.imgSrc}
+          staffName={member.staffName}
+          linkedinLink={member.linkedinLink}
+          instagramLink={member.instagramLink}
+          twitterLink={member.twitterLink}
+          facebookLink={member.facebookLink}
+        />
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .staff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & .staff-info {
+      max-width: 560px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & h2 {
+        text-transform: uppercase;
+      }
+
+      & p {
+        text-align: center;
+      }
+    }
+
+    & .staff-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+</style>
