@@ -37,7 +37,7 @@ import RadiusGradientFrame from '@components/RadiusGradientFrame.astro';
     & .sponsors-info {
       display: flex;
       align-items: center;
-      width: 535px;
+      max-width: 535px;
       gap: 4rem;
       padding: 2rem 0;
 
@@ -52,17 +52,20 @@ import RadiusGradientFrame from '@components/RadiusGradientFrame.astro';
       --shadow: 0px 4px 85.3px rgba(85, 85, 46, 0.1);
       --radius: 20px;
 
-      @media (width <= 800px) {
+      @media (width <= 768px) {
         --shadow: 0px 4px 85.3px rgba(64, 64, 64, 0.1);
         --radius: 10px;
-        --border-color: linear-gradient(327.26deg, #ffffff 31.78%, #272727 63.2%, #656565 93.99%);
+        --border-color: linear-gradient(
+          90deg,
+          #090907 46.45%,
+          #1d1b0e 63.08%,
+          #413e21 78.39%,
+          #aaa255 86.07%
+        );
 
-        background: radial-gradient(
-            95.25% 166.54% at 98.39% 2.85%,
-            #272727 8%,
-            rgba(9, 9, 7, 0) 80%
-          ),
-          linear-gradient(0.07deg, rgba(64, 64, 64, 0.2) 0.03%, rgba(255, 255, 255, 0) 95.96%);
+        background:
+          linear-gradient(90deg, var(--bg-color), var(--bg-color)) padding-box,
+          var(--gradient-2) border-box;
       }
     }
 
@@ -93,6 +96,24 @@ import RadiusGradientFrame from '@components/RadiusGradientFrame.astro';
 
       & img {
         max-width: 260px;
+      }
+    }
+  }
+
+  @media (width <= 768px) {
+    .sponsors {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin: 3rem 0;
+
+      & .sponsors-info {
+        width: 100%;
+        gap: 1rem;
+      }
+
+      & .sponsors-principal {
+        width: 100%;
       }
     }
   }

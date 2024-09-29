@@ -62,4 +62,25 @@ const { left, right, filled = false, position } = Astro.props;
       inset-block-start: -3%;
     }
   }
+
+  @media (width <= 768px) {
+    .date-info {
+      &.first {
+        inset-inline-end: 25%;
+        inset-block-end: 70%;
+      }
+      &.second {
+        inset-inline-start: 25%;
+        inset-block-end: 50%;
+      }
+      &.third {
+        inset-inline-end: 30%;
+        inset-block-end: 30%;
+      }
+      &.fourth {
+        inset-inline-end: 1%;
+        inset-block-start: 95%;
+      }
+    }
+  }
 </style>

@@ -66,6 +66,22 @@ import RadiusGradientFrame from '@components/RadiusGradientFrame.astro';
       linear-gradient(0, var(--bg-color), var(--bg-color)) padding-box,
       var(--gradient-2) border-box;
 
+    @media (width <= 768px) {
+      --shadow: 0px 4px 85.3px rgba(64, 64, 64, 0.1);
+      --radius: 10px;
+      --border-color: linear-gradient(
+        90deg,
+        #090907 46.45%,
+        #1d1b0e 63.08%,
+        #413e21 78.39%,
+        #aaa255 86.07%
+      );
+
+      background:
+        linear-gradient(0, var(--bg-color), var(--bg-color)) padding-box,
+        var(--gradient-2) border-box;
+    }
+
     & .event-info {
       max-width: 500px;
 
@@ -102,6 +118,32 @@ import RadiusGradientFrame from '@components/RadiusGradientFrame.astro';
               text-decoration: underline;
             }
           }
+        }
+      }
+    }
+  }
+
+  @media (width <= 768px) {
+    .event {
+      flex-direction: column;
+      height: 44rem;
+      justify-content: space-between;
+
+      & .event-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        & h1 {
+          font-size: 1.25rem;
+        }
+      }
+
+      & .event-specs {
+        & ul {
+          margin-bottom: 0;
         }
       }
     }
