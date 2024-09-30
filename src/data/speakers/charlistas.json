@@ -21,7 +21,10 @@
         "eventTitle": "¡El JavaScript del futuro 🚀!",
         "eventDate": "00 Nov 2024",
         "eventHour": "00:00",
-        "eventEquipment": ["laptop", "book"],
+        "eventEquipment": [
+          "laptop",
+          "book"
+        ],
         "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
       },
       {
@@ -46,7 +49,28 @@
     "linkedin": "https://linkedin.com/in/",
     "instagram": "https://instagram.com/",
     "twitter": "https://twitter.com/",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra."
+    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "event": [
+      {
+        "eventType": "Workshop",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": [
+          "laptop",
+          "book"
+        ],
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      },
+      {
+        "eventType": "Charla",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": null,
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      }
+    ]
   },
   {
     "slug": "midudev",
@@ -60,7 +84,28 @@
     "linkedin": "https://linkedin.com/in/midudev",
     "instagram": "https://instagram.com/midudev",
     "twitter": "https://twitter.com/midudev",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra."
+    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "event": [
+      {
+        "eventType": "Workshop",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": [
+          "laptop",
+          "book"
+        ],
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      },
+      {
+        "eventType": "Charla",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": null,
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      }
+    ]
   },
   {
     "slug": "odracirdev",
@@ -74,7 +119,28 @@
     "linkedin": "https://linkedin.com/in/",
     "instagram": "https://instagram.com/",
     "twitter": "https://twitter.com/",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra."
+    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "event": [
+      {
+        "eventType": "Workshop",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": [
+          "laptop",
+          "book"
+        ],
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      },
+      {
+        "eventType": "Charla",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": null,
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      }
+    ]
   },
   {
     "slug": "midudev",
@@ -88,7 +154,28 @@
     "linkedin": "https://linkedin.com/in/midudev",
     "instagram": "https://instagram.com/midudev",
     "twitter": "https://twitter.com/midudev",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra."
+    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "event": [
+      {
+        "eventType": "Workshop",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": [
+          "laptop",
+          "book"
+        ],
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      },
+      {
+        "eventType": "Charla",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": null,
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      }
+    ]
   },
   {
     "slug": "odracirdev",
@@ -102,7 +189,28 @@
     "linkedin": "https://linkedin.com/in/",
     "instagram": "https://instagram.com/",
     "twitter": "https://twitter.com/",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra."
+    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "event": [
+      {
+        "eventType": "Workshop",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": [
+          "laptop",
+          "book"
+        ],
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      },
+      {
+        "eventType": "Charla",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": null,
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      }
+    ]
   },
   {
     "slug": "midudev",
@@ -116,7 +224,28 @@
     "linkedin": "https://linkedin.com/in/midudev",
     "instagram": "https://instagram.com/midudev",
     "twitter": "https://twitter.com/midudev",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra."
+    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "event": [
+      {
+        "eventType": "Workshop",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": [
+          "laptop",
+          "book"
+        ],
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      },
+      {
+        "eventType": "Charla",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": null,
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      }
+    ]
   },
   {
     "slug": "odracirdev",
@@ -130,7 +259,28 @@
     "linkedin": "https://linkedin.com/in/",
     "instagram": "https://instagram.com/",
     "twitter": "https://twitter.com/",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra."
+    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "event": [
+      {
+        "eventType": "Workshop",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": [
+          "laptop",
+          "book"
+        ],
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      },
+      {
+        "eventType": "Charla",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": null,
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      }
+    ]
   },
   {
     "slug": "midudev",
@@ -144,7 +294,28 @@
     "linkedin": "https://linkedin.com/in/midudev",
     "instagram": "https://instagram.com/midudev",
     "twitter": "https://twitter.com/midudev",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra."
+    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "event": [
+      {
+        "eventType": "Workshop",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": [
+          "laptop",
+          "book"
+        ],
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      },
+      {
+        "eventType": "Charla",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": null,
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      }
+    ]
   },
   {
     "slug": "odracirdev",
@@ -158,7 +329,28 @@
     "linkedin": "https://linkedin.com/in/",
     "instagram": "https://instagram.com/",
     "twitter": "https://twitter.com/",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra."
+    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "event": [
+      {
+        "eventType": "Workshop",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": [
+          "laptop",
+          "book"
+        ],
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      },
+      {
+        "eventType": "Charla",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": null,
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      }
+    ]
   },
   {
     "slug": "midudev",
@@ -172,7 +364,28 @@
     "linkedin": "https://linkedin.com/in/midudev",
     "instagram": "https://instagram.com/midudev",
     "twitter": "https://twitter.com/midudev",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra."
+    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "event": [
+      {
+        "eventType": "Workshop",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": [
+          "laptop",
+          "book"
+        ],
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      },
+      {
+        "eventType": "Charla",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": null,
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      }
+    ]
   },
   {
     "slug": "odracirdev",
@@ -186,7 +399,28 @@
     "linkedin": "https://linkedin.com/in/",
     "instagram": "https://instagram.com/",
     "twitter": "https://twitter.com/",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra."
+    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "event": [
+      {
+        "eventType": "Workshop",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": [
+          "laptop",
+          "book"
+        ],
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      },
+      {
+        "eventType": "Charla",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": null,
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      }
+    ]
   },
   {
     "slug": "midudev",
@@ -200,7 +434,28 @@
     "linkedin": "https://linkedin.com/in/midudev",
     "instagram": "https://instagram.com/midudev",
     "twitter": "https://twitter.com/midudev",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra."
+    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "event": [
+      {
+        "eventType": "Workshop",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": [
+          "laptop",
+          "book"
+        ],
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      },
+      {
+        "eventType": "Charla",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": null,
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      }
+    ]
   },
   {
     "slug": "odracirdev",
@@ -214,7 +469,28 @@
     "linkedin": "https://linkedin.com/in/",
     "instagram": "https://instagram.com/",
     "twitter": "https://twitter.com/",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra."
+    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "event": [
+      {
+        "eventType": "Workshop",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": [
+          "laptop",
+          "book"
+        ],
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      },
+      {
+        "eventType": "Charla",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": null,
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      }
+    ]
   },
   {
     "slug": "midudev",
@@ -228,7 +504,28 @@
     "linkedin": "https://linkedin.com/in/midudev",
     "instagram": "https://instagram.com/midudev",
     "twitter": "https://twitter.com/midudev",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra."
+    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "event": [
+      {
+        "eventType": "Workshop",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": [
+          "laptop",
+          "book"
+        ],
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      },
+      {
+        "eventType": "Charla",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": null,
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      }
+    ]
   },
   {
     "slug": "odracirdev",
@@ -242,7 +539,28 @@
     "linkedin": "https://linkedin.com/in/",
     "instagram": "https://instagram.com/",
     "twitter": "https://twitter.com/",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra."
+    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "event": [
+      {
+        "eventType": "Workshop",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": [
+          "laptop",
+          "book"
+        ],
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      },
+      {
+        "eventType": "Charla",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": null,
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      }
+    ]
   },
   {
     "slug": "midudev",
@@ -256,7 +574,28 @@
     "linkedin": "https://linkedin.com/in/midudev",
     "instagram": "https://instagram.com/midudev",
     "twitter": "https://twitter.com/midudev",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra."
+    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "event": [
+      {
+        "eventType": "Workshop",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": [
+          "laptop",
+          "book"
+        ],
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      },
+      {
+        "eventType": "Charla",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": null,
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      }
+    ]
   },
   {
     "slug": "odracirdev",
@@ -270,7 +609,28 @@
     "linkedin": "https://linkedin.com/in/",
     "instagram": "https://instagram.com/",
     "twitter": "https://twitter.com/",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra."
+    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "event": [
+      {
+        "eventType": "Workshop",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": [
+          "laptop",
+          "book"
+        ],
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      },
+      {
+        "eventType": "Charla",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": null,
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      }
+    ]
   },
   {
     "slug": "midudev",
@@ -284,7 +644,28 @@
     "linkedin": "https://linkedin.com/in/midudev",
     "instagram": "https://instagram.com/midudev",
     "twitter": "https://twitter.com/midudev",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra."
+    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "event": [
+      {
+        "eventType": "Workshop",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": [
+          "laptop",
+          "book"
+        ],
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      },
+      {
+        "eventType": "Charla",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": null,
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      }
+    ]
   },
   {
     "slug": "odracirdev",
@@ -298,6 +679,27 @@
     "linkedin": "https://linkedin.com/in/",
     "instagram": "https://instagram.com/",
     "twitter": "https://twitter.com/",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra."
+    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "event": [
+      {
+        "eventType": "Workshop",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": [
+          "laptop",
+          "book"
+        ],
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      },
+      {
+        "eventType": "Charla",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": null,
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      }
+    ]
   }
 ]
