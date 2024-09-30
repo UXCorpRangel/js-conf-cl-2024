@@ -20,7 +20,8 @@
     "astro-icon": "^1.1.1",
     "astro-seo-schema": "^4.0.2",
     "sanitize.css": "^13.0.0",
-    "schema-dts": "^1.1.2"
+    "schema-dts": "^1.1.2",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
