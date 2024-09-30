@@ -177,9 +177,9 @@ function Band({ maxSpeed = 50, minSpeed = 10, data }) {
             onPointerOut={() => hover(false)}
             onPointerUp={e => (e.target.releasePointerCapture(e.pointerId), drag(false))}
             onPointerDown={e => {
-              const isMobile = (): boolean => {
-                const ua = navigator.userAgent;
-                if (
+              const ua = navigator.userAgent;
+              if (
+                !(
                   ua.match(/Android/i) ||
                   ua.match(/webOS/i) ||
                   ua.match(/iPhone/i) ||
@@ -187,12 +187,8 @@ function Band({ maxSpeed = 50, minSpeed = 10, data }) {
                   ua.match(/iPod/i) ||
                   ua.match(/BlackBerry/i) ||
                   ua.match(/Windows Phone/i)
-                ) {
-                  return true;
-                }
-                return false;
-              };
-              if (!isMobile())
+                )
+              )
                 return (
                   e.target.setPointerCapture(e.pointerId),
                   drag(new THREE.Vector3().copy(e.point).sub(vec.copy(card.current.translation())))
