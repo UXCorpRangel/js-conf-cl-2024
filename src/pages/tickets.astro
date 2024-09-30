@@ -1,7 +1,19 @@
 ---
+import LoadTicket from '@components/LoadTicket';
 import Layout from '@layouts/Layout.astro';
 ---
 
 <Layout title="JSConf Chile 2024">
-  <p>Página de Ticketes</p>
+  <div class="ticket">
+    <LoadTicket client:load tag="ticket.glb" band="band.png" />
+  </div>
 </Layout>
+
+<style>
+  .ticket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89dvh;
+  }
+</style>
