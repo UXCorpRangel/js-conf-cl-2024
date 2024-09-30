@@ -12,7 +12,7 @@ import {
 } from '@react-three/rapier';
 import { MeshLineGeometry, MeshLineMaterial } from 'meshline';
 import { useEffect, useRef, useState } from 'react';
-import * as THREE from 'three';
+import { CatmullRomCurve3, RepeatWrapping, Vector3 } from 'three';
 
 extend({ MeshLineGeometry, MeshLineMaterial });
 
@@ -73,7 +73,7 @@ export default function LazyTicket(data: IdBadgeProps) {
 
 function Band({ maxSpeed = 50, minSpeed = 10, data }) {
   const band = useRef(), fixed = useRef(), j1 = useRef(), j2 = useRef(), j3 = useRef(), card = useRef() // prettier-ignore
-  const vec = new THREE.Vector3(), ang = new THREE.Vector3(), rot = new THREE.Vector3(), dir = new THREE.Vector3() // prettier-ignore
+  const vec = new Vector3(), ang = new Vector3(), rot = new Vector3(), dir = new Vector3() // prettier-ignore
   const segmentProps = {
     type: 'dynamic',
     canSleep: true,
@@ -85,13 +85,7 @@ function Band({ maxSpeed = 50, minSpeed = 10, data }) {
   const texture = useTexture(data.band);
   const { width, height } = useThree(state => state.size);
   const [curve] = useState(
-    () =>
-      new THREE.CatmullRomCurve3([
-        new THREE.Vector3(),
-        new THREE.Vector3(),
-        new THREE.Vector3(),
-        new THREE.Vector3()
-      ])
+    () => new CatmullRomCurve3([new Vector3(), new Vector3(), new Vector3(), new Vector3()])
   );
   const [dragged, drag] = useState(false);
   const [hovered, hover] = useState(false);
@@ -123,8 +117,7 @@ function Band({ maxSpeed = 50, minSpeed = 10, data }) {
     if (fixed.current) {
       // Fix most of the jitter when over pulling the card
       [j1, j2].forEach(ref => {
-        if (!ref.current.lerped)
-          ref.current.lerped = new THREE.Vector3().copy(ref.current.translation());
+        if (!ref.current.lerped) ref.current.lerped = new Vector3().copy(ref.current.translation());
         const clampedDistance = Math.max(
           0.1,
           Math.min(1, ref.current.lerped.distanceTo(ref.current.translation()))
@@ -148,7 +141,7 @@ function Band({ maxSpeed = 50, minSpeed = 10, data }) {
   });
 
   curve.curveType = 'chordal';
-  texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+  texture.wrapS = texture.wrapT = RepeatWrapping;
 
   return (
     <>
@@ -191,7 +184,7 @@ function Band({ maxSpeed = 50, minSpeed = 10, data }) {
               )
                 return (
                   e.target.setPointerCapture(e.pointerId),
-                  drag(new THREE.Vector3().copy(e.point).sub(vec.copy(card.current.translation())))
+                  drag(new Vector3().copy(e.point).sub(vec.copy(card.current.translation())))
                 );
             }}
           >
