@@ -126,7 +126,7 @@ import RadiusGradientFrame from '@components/RadiusGradientFrame.astro';
   @media (width <= 768px) {
     .event {
       flex-direction: column;
-      height: 44rem;
+      height: fit-content;
       justify-content: space-between;
 
       & .event-info {
@@ -142,6 +142,7 @@ import RadiusGradientFrame from '@components/RadiusGradientFrame.astro';
       }
 
       & .event-specs {
+        margin-top: 3rem;
         & ul {
           margin-bottom: 0;
         }

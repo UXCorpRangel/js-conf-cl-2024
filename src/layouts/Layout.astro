@@ -172,8 +172,12 @@ const { title, description } = Astro.props;
 
     & main.container {
       width: min(80rem, 100vw);
-      padding: 0 1.5rem;
+      padding: 0 1rem;
       margin: 0 auto;
+
+      @media (width <= 768) {
+        padding: 0 1.5rem;
+      }
     }
 
     &::-webkit-scrollbar {
