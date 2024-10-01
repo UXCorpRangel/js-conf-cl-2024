@@ -1,4 +1,5 @@
 ---
+import RadiusGradientFrame from '@components/RadiusGradientFrame.astro';
 import Layout from '@layouts/Layout.astro';
 ---
 
@@ -6,5 +7,137 @@ import Layout from '@layouts/Layout.astro';
   title="JSConf Chile 2024 | Ubicación"
   description="Descubre la ubicación de JSConf Chile 2024. El evento se llevará a cabo del 5 al 7 de diciembre en Santiago. Encuentra direcciones, transporte y recomendaciones para planificar tu visita a la conferencia de JavaScript."
 >
-  <p>Página de ubicación</p>
+  <section>
+    <RadiusGradientFrame>
+      <div class="l_lugar row">
+        <div class="column pd">
+          <h1 class="item">EL LUGAR</h1>
+          <p class="item">
+            Esta es la primera versión de la JSConf Chile y como tal, decidimos realizarla en un
+            lugar acorde a la altura de la situación. Por lo que esta versión JSConf Chile la
+            realizaremos en el centro cultural Matucana 100 (M100).
+          </p>
+        </div>
+        <img src="../../public/imgs/matucana.png" alt="" />
+      </div>
+    </RadiusGradientFrame>
+
+    <div class="row">
+      <RadiusGradientFrame>
+        <div class="l_lugar column pd">
+          <img src="../../public/imgs/auditorio.png" alt="" class="item" />
+        </div>
+      </RadiusGradientFrame>
+
+      <RadiusGradientFrame>
+        <div class="l_sala column pd">
+          <h1 class="item">SALA DE WORKSHOPS</h1>
+          <p class="item">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus libero, vestibulum
+            vitae ullamcorper in, scelerisque ac odio. Vivamus laoreet sit amet massa id tempor.
+            Phasellus vel aliquam neque, in sollicitudin lacus. Integer pharetra auctor ligula.
+            Quisque vestibulum blandit quam sed elementum. Mauris vitae ligula eu arcu pulvinar
+            fringilla. Aliquam finibus urna eu sapien mollis, pretium aliquam justo convallis. Ut
+            suscipit vel nibh sit amet venenatis.
+          </p>
+        </div>
+      </RadiusGradientFrame>
+    </div>
+    <div class="row">
+      <RadiusGradientFrame>
+        <div class="l_m column pd">
+          <h1 class="item">M100</h1>
+          <p class="item">
+            Es uno de los centros de arte más modernos de Santiago, con un hermoso aspecto
+            industrial y la conferencia se realizará en el Teatro Principal, donde se reunirán más
+            de 500 desarrolladores. Además, el espacio cuenta con una sala de Cine donde
+            realizaremos workshops y talleres, y una Explanada, donde podrás relajarte en los coffee
+            breaks y almuerzos, además de intercambiar ideas con otros desarrolladores.
+          </p>
+        </div>
+      </RadiusGradientFrame>
+      <RadiusGradientFrame>
+        <div class="l_ubica column pd">
+          <img src="../../public/imgs/vista_m100.png" alt="" />
+          <h1 class="item">Ubicación</h1>
+          <p class="item">
+            <span style="color: yellow;">CEINA</span> se encuentra a pasos de la estación Quinta Normal
+            (L5). <br /> Tambien es posible llegar a través de los Buses de Transantiago: <span
+              style="color: yellow;"
+            >
+              406, 422, 426, 507, 513, 109, 210, 110, 117, j10, j16</span
+            >
+          </p>
+        </div>
+      </RadiusGradientFrame>
+    </div>
+    <style>
+      .lugar {
+        display: flex;
+        align-items: left;
+        max-width: 71rem;
+        position: relative;
+        border-radius: 10px;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        border-radius: 10px;
+      }
+      .l_lugar,
+      .l_sala,
+      .l_m,
+      .l_ubica {
+        text-align: left;
+        border: 5px solid;
+        border-image: linear-gradient(45deg, rgba(255, 255, 0, 0.1), rgba(255, 255, 255, 0.1)) 1;
+        margin: 20px;
+      }
+      .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 10px;
+      }
+      .pd *:not(img) {
+        padding: 20px;
+      }
+      .item {
+        margin-bottom: 0px; /* Espacio entre los elementos */
+        padding: 0px;
+      }
+
+      img {
+        max-width: 400px;
+        max-height: 500px;
+        border-radius: 20px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .row {
+          flex-direction: column;
+        }
+        img {
+          width: 100%; /* Asegura que las imágenes ocupen el ancho completo */
+          height: auto; /* Mantiene la proporción de la imagen */
+          border-radius: 10px; /* Redondea las esquinas de la imagen */
+        }
+
+        .l_lugar,
+        .l_sala,
+        .l_m,
+        .l_ubica {
+          margin: 10px 0; /* Reduce el margen entre los divs */
+        }
+      }
+    </style>
+  </section>
 </Layout>
