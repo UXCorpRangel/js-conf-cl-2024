@@ -4,91 +4,111 @@ import Button from './Button.astro';
 const slideItem = [
   {
     title: 'Woman Tech Makers',
-    image: '/assets/wtm-chile.avif',
-    index: 0
+    image: '/assets/wtm-chile.avif'
   },
   {
     title: 'Community OS',
-    image: '/assets/community-os.avif',
-    index: 1
+    image: '/assets/community-os.avif'
   },
   {
     title: '9 punto 5',
-    image: '/assets/9p5.avif',
-    index: 2
+    image: '/assets/9p5.avif'
   }
 ];
 ---
 
-<div class="slide-component">
-  {
-    slideItem.map((slideItem: { image: string; title: string; index: number }) => (
-      <span class="slider" style={{ '--index': slideItem.index }}>
-        <img src={slideItem.image} alt={slideItem.title} />
-        <Button variant="ghost" link="#" icon="arrow-up-right">
-          Ver más
-        </Button>
-      </span>
-    ))
-  }
+<div class="slider-container">
+  <div class="slider-wrap">
+    <div class="slider">
+      {
+        slideItem.map((slideItem: { image: string; title: string }) => (
+          <div>
+            <img src={slideItem.image} alt={slideItem.title} />
+            <Button link="#" variant="ghost" icon="arrow-up-right">
+              Ver más
+            </Button>
+          </div>
+        ))
+      }
+    </div>
+    <div class="slider">
+      {
+        slideItem.map((slideItem: { image: string; title: string }) => (
+          <div>
+            <img src={slideItem.image} alt={slideItem.title} />
+            <Button link="#" variant="ghost" icon="arrow-up-right">
+              Ver más
+            </Button>
+          </div>
+        ))
+      }
+    </div>
+    <div class="slider">
+      {
+        slideItem.map((slideItem: { image: string; title: string }) => (
+          <div>
+            <img src={slideItem.image} alt={slideItem.title} />
+            <Button link="#" variant="ghost" icon="arrow-up-right">
+              Ver más
+            </Button>
+          </div>
+        ))
+      }
+    </div>
+  </div>
 </div>
 
-<style define:vars={{ total: slideItem.length }}>
-  .slide-component {
-    --width: 7.5rem;
-    --height: 13rem;
-
-    width: 29rem;
-    height: var(--height);
+<style>
+  .slider-container {
+    width: auto;
+    max-width: 1280px;
     overflow: hidden;
-    margin-inline: auto;
-    position: relative;
-    mask-image: linear-gradient(
-      to right,
-      rgb(0 0 0 / 0),
-      rgb(0 0 0 / 1) 20%,
-      rgb(0 0 0 / 1) 80%,
-      rgb(0 0 0 / 0)
-    );
+    margin: 3rem auto;
 
-    &:hover {
-      & .slider {
-        animation-play-state: paused;
-      }
+    @media (width <= 768px) {
+      max-width: 85dvw;
     }
 
-    & .slider {
-      --index: 0;
-      --duration: 15s;
+    & .slider-wrap {
+      display: flex;
 
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      position: absolute;
-      width: var(--width);
-      height: var(--height);
-      filter: drop-shadow(0 0 0.5rem var(--secondary-color));
-      inset-inline-start: max(calc(var(--width) * var(--total)), 100%);
-      inset-block-start: 0;
-
-      display: grid;
-      place-items: center;
-
-      animation-name: scroll-left;
-      animation-duration: var(--duration);
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-      animation-delay: calc(var(--duration) / var(--total) * (var(--total) - var(--index)) * -1);
-
-      & .skill-icon {
-        font-size: calc(var(--width) / 2);
+      &:hover {
+        .slider {
+          animation-play-state: paused;
+        }
       }
     }
   }
 
-  @keyframes scroll-left {
-    to {
-      inset-inline-start: calc((var(--width) + 3.125rem) * -1);
+  .slider {
+    display: flex;
+    flex-shrink: 0;
+    animation-name: swiperAnimation;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    & div {
+      margin-left: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .slider img {
+    width: 150px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  @keyframes swiperAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
     }
   }
 </style>
