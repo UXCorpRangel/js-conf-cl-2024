@@ -56,17 +56,21 @@ const list = [
 </Layout>
 
 <style>
-  .sec-1,
-  .sec-2 {
-    padding: 2rem 0;
+  .sec-1 {
     @media (min-width: 1080px) {
-      padding: 4rem 0;
+      height: 350px;
+    }
+  }
+  .sec-2 {
+    padding: 2.5rem 0;
+    @media (min-width: 1080px) {
+      padding: 5rem 0;
     }
   }
   .sec-1 {
     display: flex;
     place-content: center;
-    gap: 2rem;
+    gap: 4rem;
     align-items: center;
     .info {
       display: flex;
@@ -99,12 +103,12 @@ const list = [
     }
 
     .ticket-3d {
-      width: 100%;
-      border: 1px solid red;
-      height: 80dvh;
-      @media (min-width: 1080px) {
-        width: 50%;
-        height: 263px;
+      width: 50%;
+      height: 263px;
+      @media (max-width: 1080px) {
+        order: -1;
+        height: 80dvh;
+        width: 100%;
       }
     }
   }
