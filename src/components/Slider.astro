@@ -4,15 +4,28 @@ import Button from './Button.astro';
 const slideItem = [
   {
     title: 'Woman Tech Makers',
-    image: '/assets/wtm-chile.avif'
+    image: '/assets/wtm-chile.avif',
+    url: 'https://www.instagram.com/wtmchile/'
   },
   {
     title: 'Community OS',
-    image: '/assets/community-os.avif'
+    image: '/assets/community-os.avif',
+    url: 'https://communityos.io/'
   },
   {
     title: '9 punto 5',
-    image: '/assets/9p5.avif'
+    image: '/assets/9p5.avif',
+    url: 'https://9punto5.cl/'
+  },
+  {
+    title: 'JavaScript Chile',
+    image: '/assets/JSChile.avif',
+    url: 'https://jschile.org/'
+  },
+  {
+    title: '+ Mujeres UX',
+    image: '/assets/+mujeresux.avif',
+    url: 'https://www.instagram.com/masmujeresux.cl/'
   }
 ];
 ---
@@ -21,10 +34,10 @@ const slideItem = [
   <div class="slider-wrap">
     <div class="slider">
       {
-        slideItem.map((slideItem: { image: string; title: string }) => (
+        slideItem.map((slideItem: { image: string; title: string; url: string }) => (
           <div>
             <img src={slideItem.image} alt={slideItem.title} />
-            <Button link="#" variant="ghost" icon="arrow-up-right">
+            <Button link={slideItem.url} variant="ghost" icon="arrow-up-right">
               Ver más
             </Button>
           </div>
@@ -33,22 +46,10 @@ const slideItem = [
     </div>
     <div class="slider">
       {
-        slideItem.map((slideItem: { image: string; title: string }) => (
+        slideItem.map((slideItem: { image: string; title: string; url: string }) => (
           <div>
             <img src={slideItem.image} alt={slideItem.title} />
-            <Button link="#" variant="ghost" icon="arrow-up-right">
-              Ver más
-            </Button>
-          </div>
-        ))
-      }
-    </div>
-    <div class="slider">
-      {
-        slideItem.map((slideItem: { image: string; title: string }) => (
-          <div>
-            <img src={slideItem.image} alt={slideItem.title} />
-            <Button link="#" variant="ghost" icon="arrow-up-right">
+            <Button link={slideItem.url} variant="ghost" icon="arrow-up-right">
               Ver más
             </Button>
           </div>
