@@ -8,16 +8,6 @@ export const footerItems: LinkItem[] = [
     text: 'Código de conducta',
     url: '/codigo-de-conducta',
     label: 'código de conducta'
-  },
-  {
-    text: 'Términos y Condiciones',
-    url: '#',
-    label: 'términos y condiciones'
-  },
-  {
-    text: 'Política de privacidad',
-    url: '#',
-    label: 'política de privacidad'
   }
 ];
 
