@@ -1,52 +1,7 @@
 ---
-import type { LinkIconItem, LinkItem } from '@contracts';
 import { Icon } from 'astro-icon/components';
-import Button from './Button.astro';
-
-const footerItems: LinkItem[] = [
-  {
-    text: 'Código de conducta',
-    url: '/codigo-de-conducta',
-    label: 'código de conducta'
-  },
-  {
-    text: 'Términos y Condiciones',
-    url: '#',
-    label: 'términos y condiciones'
-  },
-  {
-    text: 'Política de privacidad',
-    url: '#',
-    label: 'política de privacidad'
-  }
-];
-
-const socialItems: LinkIconItem[] = [
-  {
-    text: 'Linkedin',
-    url: 'https://www.linkedin.com/company/jsconf-chile/',
-    icon: 'linkedin',
-    label: 'Linkedin'
-  },
-  {
-    text: 'Instagram',
-    url: 'https://www.instagram.com/jsconf.cl/',
-    icon: 'instagram',
-    label: 'Instagram'
-  },
-  {
-    text: 'Twitter',
-    url: 'https://x.com/jsconfcl',
-    icon: 'twitter',
-    label: 'Twitter'
-  },
-  {
-    text: 'Facebook',
-    url: 'https://www.facebook.com/jsconfcl',
-    icon: 'facebook',
-    label: 'Facebook'
-  }
-];
+import Button from '../Button.astro';
+import { footerItems, socialItems } from './data';
 ---
 
 <footer>
@@ -61,13 +16,15 @@ const socialItems: LinkIconItem[] = [
         <p>Síguenos</p>
         <ul>
           {
-            socialItems.map(({ text, url, icon, label }) => (
-              <li>
-                <a href={url} aria-label={label}>
-                  <Icon name={icon} title={text} size={32} />
-                </a>
-              </li>
-            ))
+            socialItems
+              .filter(({ hide }) => !hide)
+              .map(({ text, url, icon, label }) => (
+                <li>
+                  <a href={url} aria-label={label}>
+                    <Icon name={icon} title={text} size={32} />
+                  </a>
+                </li>
+              ))
           }
         </ul>
       </article>
@@ -76,13 +33,15 @@ const socialItems: LinkIconItem[] = [
       <ul class="list">
         <li class="list-item">Información</li>
         {
-          footerItems.map(({ text, url, label }) => (
-            <li class="list-item">
-              <a href={url} aria-label={label}>
-                {text}
-              </a>
-            </li>
-          ))
+          footerItems
+            .filter(({ hide }) => !hide)
+            .map(({ text, url, label }) => (
+              <li class="list-item">
+                <a href={url} aria-label={label}>
+                  {text}
+                </a>
+              </li>
+            ))
         }
       </ul>
     </section>
@@ -103,7 +62,10 @@ const socialItems: LinkIconItem[] = [
       playsinline
       autoplay
       muted
-      loop></video> por <a href="https://github.com/UXCorpRangel" target="_blank">UXCorpRangel</a>
+      loop></video> por
+    <a href="https://github.com/UXCorpRangel" target="_blank" rel="noopener noreferrer">
+      UXCorpRangel
+    </a>
   </p>
 </footer>
 
@@ -113,7 +75,7 @@ const socialItems: LinkIconItem[] = [
     width: 100%;
     background-image: var(--gradient-footer);
     backdrop-filter: blur(1rem);
-    padding-bottom: 1.5rem;
+    padding-block-end: 1.5rem;
 
     & .container {
       width: min(80rem, 100vw);
@@ -134,6 +96,7 @@ const socialItems: LinkIconItem[] = [
           display: flex;
           gap: 1rem;
           align-items: center;
+
           & .Js {
             font-size: 2.5rem;
             font-weight: 900;
@@ -162,10 +125,12 @@ const socialItems: LinkIconItem[] = [
               right: 59px;
             }
           }
+
           & img {
             width: 52px;
           }
         }
+
         & .social {
           display: flex;
           align-items: center;
@@ -235,26 +200,27 @@ const socialItems: LinkIconItem[] = [
       text-align: center;
 
       & a {
+        color: var(--yellow);
         position: relative;
         text-decoration: none;
-      }
 
-      & a::before {
-        position: absolute;
-        text-decoration: underline;
-        inline-size: 100%;
-        block-size: 2px;
-        inset-inline: 0;
-        bottom: 0;
-        content: '';
-        border-radius: 30%;
-        transform: scaleX(0);
-        background-color: var(--yellow);
-        transition: transform 0.3s ease-out;
-      }
+        &::before {
+          content: '';
+          position: absolute;
+          text-decoration: underline;
+          inline-size: 100%;
+          block-size: 2px;
+          inset-inline: 0;
+          inset-inline-end: 0;
+          border-radius: 30%;
+          transform: scaleX(0);
+          background-color: var(--yellow);
+          transition: transform 0.3s ease-out;
+        }
 
-      & a:hover::before {
-        transform: scaleX(1);
+        &:hover::before {
+          transform: scaleX(1);
+        }
       }
     }
   }
