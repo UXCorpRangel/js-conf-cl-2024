@@ -43,25 +43,32 @@ export default function LazyTicket(data: IdBadgeProps) {
           color="white"
           position={[0, -1, 5]}
           rotation={[0, 0, Math.PI / 3]}
-          scale={[100, 0.1, 1]}
+          scale={[300, 0.1, 1]}
         />
         <Lightformer
-          intensity={3}
+          intensity={2}
           color="white"
+          position={[0, 0, 9]}
+          rotation={[0, 0, Math.PI / 3]}
+          scale={[200, 0.1, 1]}
+        />
+        <Lightformer
+          intensity={4}
+          color="#ede060"
           position={[-1, -1, 1]}
           rotation={[0, 0, Math.PI / 3]}
           scale={[100, 0.1, 1]}
         />
         <Lightformer
-          intensity={3}
-          color="white"
+          intensity={4}
+          color="#ede060"
           position={[1, 1, 1]}
           rotation={[0, 0, Math.PI / 3]}
           scale={[100, 0.1, 1]}
         />
         <Lightformer
-          intensity={8}
-          color="white"
+          intensity={2}
+          color="#ede060"
           position={[-10, 0, -5]}
           rotation={[0, Math.PI / 2, Math.PI / 3]}
           scale={[50, 10, 1]}
@@ -157,7 +164,7 @@ function Band({ maxSpeed = 50, minSpeed = 10, data }) {
           <BallCollider args={[0.1]} />
         </RigidBody>
         <RigidBody
-          position={[2, 0, 0]}
+          position={[1, 0, 0]}
           ref={card}
           {...segmentProps}
           type={dragged ? 'kinematicPosition' : 'dynamic'}
@@ -165,7 +172,7 @@ function Band({ maxSpeed = 50, minSpeed = 10, data }) {
           <CuboidCollider args={[0.8, 1.125, 0.01]} />
           <group
             scale={2.25}
-            position={[0, -1.2, -0.05]}
+            position={[0, -1.2, -0.09]}
             onPointerOver={() => hover(true)}
             onPointerOut={() => hover(false)}
             onPointerUp={e => (e.target.releasePointerCapture(e.pointerId), drag(false))}
