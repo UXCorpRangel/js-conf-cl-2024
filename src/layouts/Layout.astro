@@ -15,9 +15,13 @@ import Navbar from '@components/Navbar/Navbar.astro';
 interface Props {
   title: string;
   description: string;
+  ogImg: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, ogImg } = Astro.props;
+
+const site = import.meta.env.SITE;
+const ogURL = `${site}/og/${ogImg}`;
 ---
 
 <!doctype html>
@@ -36,10 +40,9 @@ const { title, description } = Astro.props;
           '@context': 'https://schema.org',
           '@type': 'Organization',
           name: 'JSConf',
-          description:
-            'JSConf Chile, la conferencia de JavaScript más grande de Chile. Del 5 al 7 de diciembre en Santiago, descubre las últimas tendencias, tecnologías y redes con expertos en desarrollo web.',
-          image: 'https://jsconf.cl/og-image.jpg',
-          url: 'https://jsconf.cl'
+          description,
+          image: ogURL,
+          url: site
         }}
       />
     )
@@ -48,23 +51,17 @@ const { title, description } = Astro.props;
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="https://jsconf.cl/" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="JSConf Chile 2024" />
-  <meta
-    property="og:description"
-    content="JSConf Chile, la conferencia de JavaScript más grande de Chile. Del 5 al 7 de diciembre en Santiago, descubre las últimas tendencias, tecnologías y redes con expertos en desarrollo web."
-  />
-  <meta property="og:image" content="https://jsconf.cl/og-image.jpg" />
+  <meta property="og:title" content=`${title}` />
+  <meta property="og:description" content=`${description}` />
+  <meta property="og:image" content={ogURL} />
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta property="twitter:domain" content="jsconf.cl" />
-  <meta property="twitter:url" content="https://jsconf.cl/" />
-  <meta name="twitter:title" content="JSConf Chile 2024" />
-  <meta
-    name="twitter:description"
-    content="JSConf Chile, la conferencia de JavaScript más grande de Chile. Del 5 al 7 de diciembre en Santiago, descubre las últimas tendencias, tecnologías y redes con expertos en desarrollo web."
-  />
-  <meta name="twitter:image" content="https://jsconf.cl/og-image.jpg" />
+  <meta property="twitter:domain" content=`${site}` />
+  <meta property="twitter:url" content=`${site}` />
+  <meta name="twitter:title" content=`${title}` />
+  <meta name="twitter:description" content=`${description}` />
+  <meta name="twitter:image" content={ogURL} />
 
   <body>
     <Navbar />
