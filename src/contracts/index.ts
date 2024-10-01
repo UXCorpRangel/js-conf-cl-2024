@@ -1,2 +1,2 @@
-export * from './navbar.types';
+export * from './link.types';
 export * from './sponsor.types';

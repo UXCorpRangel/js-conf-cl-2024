@@ -1,4 +1,4 @@
-import type { SponsorMap } from '@contracts/sponsor.types';
+import type { SponsorMap } from '@contracts';
 
 export const sponsorStyles: SponsorMap = {
   gold: {

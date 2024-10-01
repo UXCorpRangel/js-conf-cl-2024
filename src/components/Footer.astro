@@ -1,47 +1,47 @@
 ---
-import type { NavbarIconItem, NavbarItem } from '@contracts/navbar.types';
+import type { LinkIconItem, LinkItem } from '@contracts';
 import { Icon } from 'astro-icon/components';
 import Button from './Button.astro';
 
-const footerItems: NavbarItem[] = [
+const footerItems: LinkItem[] = [
   {
-    title: 'Código de conducta',
+    text: 'Código de conducta',
     url: '/codigo-de-conducta',
     label: 'código de conducta'
   },
   {
-    title: 'Términos y Condiciones',
+    text: 'Términos y Condiciones',
     url: '#',
     label: 'términos y condiciones'
   },
   {
-    title: 'Política de privacidad',
+    text: 'Política de privacidad',
     url: '#',
     label: 'política de privacidad'
   }
 ];
 
-const socialItems: NavbarIconItem[] = [
+const socialItems: LinkIconItem[] = [
   {
-    title: 'Linkedin',
+    text: 'Linkedin',
     url: 'https://www.linkedin.com/company/jsconf-chile/',
     icon: 'linkedin',
     label: 'Linkedin'
   },
   {
-    title: 'Instagram',
+    text: 'Instagram',
     url: 'https://www.instagram.com/jsconf.cl/',
     icon: 'instagram',
     label: 'Instagram'
   },
   {
-    title: 'Twitter',
+    text: 'Twitter',
     url: 'https://x.com/jsconfcl',
     icon: 'twitter',
     label: 'Twitter'
   },
   {
-    title: 'Facebook',
+    text: 'Facebook',
     url: 'https://www.facebook.com/jsconfcl',
     icon: 'facebook',
     label: 'Facebook'
@@ -61,10 +61,10 @@ const socialItems: NavbarIconItem[] = [
         <p>Síguenos</p>
         <ul>
           {
-            socialItems.map(({ title, url, icon, label }) => (
+            socialItems.map(({ text, url, icon, label }) => (
               <li>
                 <a href={url} aria-label={label}>
-                  <Icon name={icon} title={title} size={32} />
+                  <Icon name={icon} title={text} size={32} />
                 </a>
               </li>
             ))
@@ -76,10 +76,10 @@ const socialItems: NavbarIconItem[] = [
       <ul class="list">
         <li class="list-item">Información</li>
         {
-          footerItems.map(({ title, url, label }) => (
+          footerItems.map(({ text, url, label }) => (
             <li class="list-item">
               <a href={url} aria-label={label}>
-                {title}
+                {text}
               </a>
             </li>
           ))

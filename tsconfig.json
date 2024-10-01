@@ -5,8 +5,9 @@
     "paths": {
       "@components/*": ["./src/components/*"],
       "@components": ["./src/components"],
-
+      
       "@contracts/*": ["./src/contracts/*"],
+      "@contracts": ["./src/contracts"],
       
       "@data/*": ["./src/data/*"],
 
