@@ -24,18 +24,14 @@
     "@types/react-dom": "^18.3.0",
     "astro": "^4.15.9",
     "astro-icon": "^1.1.1",
-<<<<<<< HEAD
     "meshline": "^3.3.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "sanitize.css": "^13.0.0",
-    "three": "^0.169.0"
-=======
+    "three": "^0.169.0",
     "astro-seo-schema": "^4.0.2",
     "sanitize.css": "^13.0.0",
     "schema-dts": "^1.1.2",
     "sharp": "^0.33.5"
->>>>>>> 58048a998b7dec3a4b03c390b94df2f69dbfbd44
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",

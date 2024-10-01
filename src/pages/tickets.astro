@@ -1,20 +1,155 @@
 ---
+import Button from '@components/Button.astro';
 import LoadTicket from '@components/LoadTicket';
 import Layout from '@layouts/Layout.astro';
+
+const list = [
+  'Day 1: World-class talks at the Miami Beach Convention Center',
+  'Day 2: Expert-led Mini Masterclasses and Unconference',
+  'Opening Party featuring React Miami talent show',
+  'Afterparty conference finale',
+  'Full access to 2-days at eMerge Americas',
+  'Choose Your Own Adventure Developer Health morning activity',
+  'Lunch, light breakfast, snack breaks, and all-day coffee',
+  'An unforgettable time with the React community in Miami'
+];
 ---
 
 <Layout
   title="JSConf Chile 2024 | Tickets"
   description="Compra tus tickets para JSConf Chile 2024. Asegura tu entrada a la conferencia de JavaScript del 5 al 7 de diciembre en Santiago. No te pierdas charlas, talleres y networking con expertos del sector."
 >
-  <p>Página de Ticketes</p>
+  <section class="sec-1">
+    <div class="info">
+      <div class="dec">
+        <img src="/assets/hero-tickets.png" alt="Tickets" />
+      </div>
+      <div class="content">
+        <h1>Tickets</h1>
+        <p>
+          Your React Miami ticket includes, full access to eMerge Americas, world-class speaker
+          sessions, expert-led mini masterclasses, an unconference, social activities, and more.
+        </p>
+        <Button variant="solid" color="yellow" size="large" link="#" icon="arrow-up-right"
+          >Ser sponsor</Button
+        >
+      </div>
+    </div>
+    <div class="ticket-3d">
+      <LoadTicket client:load tag="ticket.glb" band="band.png" />
+    </div>
+  </section>
+  <section class="sec-2">
+    <div class="dec">
+      <img src="/assets/craft-hyper-realistics.png" alt="Craft Hyper Realistics" />
+      <span class="caption">
+        <b>Capillas de mármol</b>, - Región de Aysén.
+      </span>
+    </div>
+    <div class="content">
+      <h2>What’s included</h2>
+      <ul>
+        {list.map(item => <li>{item}</li>)}
+      </ul>
+    </div>
+  </section>
 </Layout>
 
 <style>
-  .ticket {
+  .sec-1,
+  .sec-2 {
+    padding: 2rem 0;
+    @media (min-width: 1080px) {
+      padding: 4rem 0;
+    }
+  }
+  .sec-1 {
     display: flex;
-    justify-content: center;
+    place-content: center;
+    gap: 2rem;
     align-items: center;
-    height: 89dvh;
+    .info {
+      display: flex;
+      gap: 2rem;
+    }
+    @media (max-width: 1080px) {
+      flex-direction: column;
+    }
+
+    .info .dec {
+      width: 90px;
+    }
+
+    .content h1 {
+      font-family: Barlow;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 36px;
+      letter-spacing: -0.0075em;
+      text-align: left;
+    }
+
+    .content p {
+      margin-bottom: 2rem;
+      font-family: Barlow;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      max-width: 550px;
+    }
+
+    .ticket-3d {
+      width: 100%;
+      border: 1px solid red;
+      height: 80dvh;
+      @media (min-width: 1080px) {
+        width: 50%;
+        height: 263px;
+      }
+    }
+  }
+  .sec-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    @media (min-width: 1080px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    gap: 2rem;
+    align-items: center;
+
+    .dec {
+      text-align: center;
+      @media screen and (min-width: 1080px) {
+        max-width: 550px;
+        text-align: right;
+      }
+
+      .caption {
+        font-family: Inconsolata;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+
+        b {
+          color: var(--yellow);
+        }
+      }
+    }
+    .content {
+      h2 {
+        font-family: Barlow;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 61.5px;
+        letter-spacing: -0.012em;
+      }
+      li {
+        font-family: Barlow;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+      }
+    }
   }
 </style>

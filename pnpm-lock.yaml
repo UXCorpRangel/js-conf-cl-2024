@@ -38,7 +38,9 @@ importers:
       astro-icon:
         specifier: ^1.1.1
         version: 1.1.1
-<<<<<<< HEAD
+      astro-seo-schema:
+        specifier: ^4.0.2
+        version: 4.0.2(astro@4.15.9(@types/node@20.16.6)(lightningcss@1.27.0)(rollup@4.22.4)(typescript@5.6.2))(schema-dts@1.1.2(typescript@5.6.2))
       meshline:
         specifier: ^3.3.1
         version: 3.3.1(three@0.169.0)
@@ -51,23 +53,15 @@ importers:
       sanitize.css:
         specifier: ^13.0.0
         version: 13.0.0
-      three:
-        specifier: ^0.169.0
-        version: 0.169.0
-=======
-      astro-seo-schema:
-        specifier: ^4.0.2
-        version: 4.0.2(astro@4.15.9(@types/node@20.16.6)(lightningcss@1.27.0)(rollup@4.22.4)(typescript@5.6.2))(schema-dts@1.1.2(typescript@5.6.2))
-      sanitize.css:
-        specifier: ^13.0.0
-        version: 13.0.0
       schema-dts:
         specifier: ^1.1.2
         version: 1.1.2(typescript@5.6.2)
       sharp:
         specifier: ^0.33.5
         version: 0.33.5
->>>>>>> 58048a998b7dec3a4b03c390b94df2f69dbfbd44
+      three:
+        specifier: ^0.169.0
+        version: 0.169.0
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.3.0
@@ -2958,18 +2952,16 @@ packages:
   sass-formatter@0.7.9:
     resolution: {integrity: sha512-CWZ8XiSim+fJVG0cFLStwDvft1VI7uvXdCNJYXhDvowiv+DsbD1nXLiQ4zrE5UBvj5DWZJ93cwN0NX5PMsr1Pw==}
 
-<<<<<<< HEAD
   scheduler@0.21.0:
     resolution: {integrity: sha512-1r87x5fz9MXqswA2ERLo0EbOAU74DpIUO090gIasYTqlVoJeMcl+Z1Rg7WHz+qtPujhS/hGIt9kxZOYBV3faRQ==}
 
   scheduler@0.23.2:
     resolution: {integrity: sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==}
-=======
+
   schema-dts@1.1.2:
     resolution: {integrity: sha512-MpNwH0dZJHinVxk9bT8XUdjKTxMYrA5bLtrrGmFA6PTLwlOKnhi67XoRd6/ty+Djt6ZC0slR57qFhZDNMI6DhQ==}
     peerDependencies:
       typescript: '>=4.1.0'
->>>>>>> 58048a998b7dec3a4b03c390b94df2f69dbfbd44
 
   section-matter@1.0.0:
     resolution: {integrity: sha512-vfD3pmTzGpufjScBh50YHKzEu2lxBWhVEHsNGoEXmCmn2hKGfeNLYMzCJpe8cD7gqX7TJluOVpBkAequ6dgMmA==}
@@ -6904,7 +6896,6 @@ snapshots:
     dependencies:
       suf-log: 2.5.3
 
-<<<<<<< HEAD
   scheduler@0.21.0:
     dependencies:
       loose-envify: 1.4.0
@@ -6912,11 +6903,10 @@ snapshots:
   scheduler@0.23.2:
     dependencies:
       loose-envify: 1.4.0
-=======
+
   schema-dts@1.1.2(typescript@5.6.2):
     dependencies:
       typescript: 5.6.2
->>>>>>> 58048a998b7dec3a4b03c390b94df2f69dbfbd44
 
   section-matter@1.0.0:
     dependencies:
