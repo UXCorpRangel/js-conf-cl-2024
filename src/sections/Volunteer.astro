@@ -5,50 +5,56 @@ const staffData = [
   {
     imgSrc: '/volunteer/miguel-colmenarez.avif',
     staffName: 'Miguel Colmenarez',
-    linkedinLink: 'https://www.linkedin.com/',
-    instagramLink: 'https://www.instagram.com/',
-    twitterLink: 'https://www.instagram.com/',
-    facebookLink: 'https://www.facebook.com/'
+    linkedinLink: 'https://www.linkedin.com/in/colmedev/',
+    instagramLink: '',
+    twitterLink: '',
+    facebookLink: '',
+    githubLink: 'https://github.com/colmedev'
   },
   {
     imgSrc: '/volunteer/felix-icaza.avif',
     staffName: 'Félix Icaza',
-    linkedinLink: 'https://www.linkedin.com/in/otra-persona',
-    instagramLink: 'https://www.instagram.com/otra-persona',
+    linkedinLink: 'https://linkedin.com/in/felixicaza',
+    instagramLink: '',
     twitterLink: '',
-    facebookLink: ''
+    facebookLink: '',
+    githubLink: 'https://github.com/felixicaza'
   },
   {
     imgSrc: '/volunteer/facundo-dandrea.avif',
     staffName: 'Facundo D´Andrea',
-    linkedinLink: 'https://www.linkedin.com/in/otra-persona',
-    instagramLink: 'https://www.instagram.com/otra-persona',
+    linkedinLink: 'https://www.linkedin.com/in/facundo-d-andrea/',
+    instagramLink: '',
     twitterLink: '',
-    facebookLink: ''
+    facebookLink: '',
+    githubLink: 'https://github.com/Facundodandrea'
   },
   {
     imgSrc: '/volunteer/jaime-gutierrez.avif',
     staffName: 'Jaime Gutiérrez',
-    linkedinLink: 'https://www.linkedin.com/in/otra-persona',
-    instagramLink: 'https://www.instagram.com/otra-persona',
+    linkedinLink: 'https://linkedin.com/in/jagcruz',
+    instagramLink: '',
     twitterLink: '',
-    facebookLink: ''
+    facebookLink: '',
+    githubLink: 'https://github.com/jagcruz'
   },
   {
     imgSrc: '/volunteer/luis-tenorio.avif',
     staffName: 'Luis Tenorio',
-    linkedinLink: 'https://www.linkedin.com/in/otra-persona',
-    instagramLink: 'https://www.instagram.com/otra-persona',
+    linkedinLink: 'https://www.linkedin.com/in/luis-tenorio-code',
+    instagramLink: '',
     twitterLink: '',
-    facebookLink: ''
+    facebookLink: '',
+    githubLink: 'https://github.com/luis-codex'
   },
   {
     imgSrc: '/volunteer/ricardo-cuauro.avif',
     staffName: 'Ricardo Cuauro',
-    linkedinLink: 'https://www.linkedin.com/in/otra-persona',
-    instagramLink: 'https://www.instagram.com/otra-persona',
+    linkedinLink: 'https://www.linkedin.com/in/ricardocuauro/',
+    instagramLink: '',
     twitterLink: '',
-    facebookLink: ''
+    facebookLink: '',
+    githubLink: 'https://github.com/odracirdev'
   }
 ];
 ---
@@ -68,6 +74,7 @@ const staffData = [
           instagramLink={member.instagramLink}
           twitterLink={member.twitterLink}
           facebookLink={member.facebookLink}
+          githubLink={member.githubLink}
         />
       ))
     }
@@ -80,6 +87,7 @@ const staffData = [
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 8rem;
 
     & .staff-info {
       max-width: 560px;

@@ -11,9 +11,6 @@ import Layout from '@layouts/Layout.astro';
 >
   <div class="title-content">
     <h1 class="title">¿Por qué Atender al evento?</h1>
-    <p class="sub-title">
-      Lorem ipsum dolor sit amet consectetur. Eget eget eu imperdiet quis molestie nulla.
-    </p>
   </div>
   <Bento>
     <Icon name="share" slot="bento-square" width={72} height={72} />
@@ -49,5 +46,9 @@ import Layout from '@layouts/Layout.astro';
   .title-content {
     text-align: center;
     padding-block-end: 5rem;
+
+    & .title {
+      text-transform: uppercase;
+    }
   }
 </style>
