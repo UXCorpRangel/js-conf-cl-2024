@@ -16,6 +16,8 @@
       "@sections/*": ["./src/sections/*"],
       "@public/*": ["./public/*"],
       "@/*": ["./src/*"]
-    }
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   }
 }

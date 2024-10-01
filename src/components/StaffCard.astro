@@ -1,7 +1,8 @@
 ---
 import { Icon } from 'astro-icon/components';
 
-const { imgSrc, staffName, linkedinLink, instagramLink, twitterLink, facebookLink } = Astro.props;
+const { imgSrc, staffName, linkedinLink, instagramLink, twitterLink, facebookLink, githubLink } =
+  Astro.props;
 
 const defaultImgSrc = 'imgs/speaker-stock.png';
 const staffImage = imgSrc || defaultImgSrc;
@@ -44,11 +45,11 @@ const staffImage = imgSrc || defaultImgSrc;
         )
       }
       {
-        /* {githubLink && (
-        <a href={githubLink} class="social-link">
-          <Icon name="github" />
-        </a>
-      )} */
+        githubLink && (
+          <a href={githubLink} class="social-link">
+            <Icon name="github" />
+          </a>
+        )
       }
     </div>
   </div>
