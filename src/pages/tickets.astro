@@ -19,34 +19,37 @@ const list = [
   title="JSConf Chile 2024 | Tickets"
   description="Compra tus tickets para JSConf Chile 2024. Asegura tu entrada a la conferencia de JavaScript del 5 al 7 de diciembre en Santiago. No te pierdas charlas, talleres y networking con expertos del sector."
 >
-  <section class="sec-1">
-    <div class="info">
-      <div class="dec">
-        <img src="/assets/hero-tickets.png" alt="Tickets" />
+  <section class="ticket-section">
+    <div class="ticket-info">
+      <div class="ticket-image">
+        <img class="desktop" src="/assets/hero-tickets.png" alt="Tickets" />
+        <img class="movil" src="/assets/dec-hero-movil.png" alt="Tickets" />
       </div>
-      <div class="content">
+      <div class="ticket-content">
         <h1>Tickets</h1>
         <p>
           Your React Miami ticket includes, full access to eMerge Americas, world-class speaker
           sessions, expert-led mini masterclasses, an unconference, social activities, and more.
         </p>
+      </div>
+      <div>
         <Button variant="solid" color="yellow" size="large" link="#" icon="arrow-up-right"
           >Ser sponsor</Button
         >
       </div>
     </div>
-    <div class="ticket-3d">
+    <div class="ticket-3d-view">
       <LoadTicket client:load tag="ticket.glb" band="band.png" />
     </div>
   </section>
-  <section class="sec-2">
-    <div class="dec">
+  <section class="features-section">
+    <div class="feature-image">
       <img src="/assets/craft-hyper-realistics.png" alt="Craft Hyper Realistics" />
-      <span class="caption">
-        <b>Capillas de mármol</b>, - Región de Aysén.
+      <span class="image-caption">
+        <b>Capillas de mármol</b>, - Región de Aysén.
       </span>
     </div>
-    <div class="content">
+    <div class="feature-content">
       <h2>What’s included</h2>
       <ul>
         {list.map(item => <li>{item}</li>)}
@@ -56,52 +59,67 @@ const list = [
 </Layout>
 
 <style>
-  .sec-1 {
-    @media (min-width: 1080px) {
-      height: 350px;
-    }
-  }
-  .sec-2 {
-    margin: 5rem 0;
-  }
-  .sec-1 {
+  .ticket-section {
     display: flex;
-    place-content: center;
+    justify-content: center;
     gap: 4rem;
     align-items: center;
-    .info {
-      display: flex;
-      gap: 2rem;
-    }
+
     @media (max-width: 1080px) {
       flex-direction: column;
     }
 
-    .info .dec {
-      width: 90px;
+    .ticket-info {
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      column-gap: 1rem;
+      :nth-child(3) {
+        grid-column: 2;
+        @media (max-width: 1080px) {
+          display: flex;
+          justify-content: center;
+          grid-column: 1 / -1;
+          margin-top: 1rem;
+        }
+      }
+      .ticket-image {
+        width: 70px;
+        @media (max-width: 1080px) {
+          .desktop {
+            display: none;
+          }
+        }
+        @media (min-width: 1080px) {
+          .movil {
+            display: none;
+          }
+        }
+      }
+
+      .ticket-content {
+        h1 {
+          font-family: Barlow;
+          font-size: 40px;
+          font-weight: 600;
+          line-height: 36px;
+          letter-spacing: -0.0075em;
+          text-align: left;
+        }
+
+        p {
+          font-family: Barlow;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 28px;
+          max-width: 550px;
+        }
+      }
     }
 
-    .content h1 {
-      font-family: Barlow;
-      font-size: 40px;
-      font-weight: 600;
-      line-height: 36px;
-      letter-spacing: -0.0075em;
-      text-align: left;
-    }
-
-    .content p {
-      margin-bottom: 2rem;
-      font-family: Barlow;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 28px;
-      max-width: 550px;
-    }
-
-    .ticket-3d {
+    .ticket-3d-view {
       width: 50%;
       height: 263px;
+
       @media (max-width: 1080px) {
         order: -1;
         height: 80dvh;
@@ -109,23 +127,27 @@ const list = [
       }
     }
   }
-  .sec-2 {
+
+  .features-section {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin: 5rem 0;
+
     @media (min-width: 1080px) {
       grid-template-columns: 1fr 1fr;
     }
-    gap: 2rem;
-    align-items: center;
 
-    .dec {
+    .feature-image {
       text-align: center;
-      @media screen and (min-width: 1080px) {
+
+      @media (min-width: 1080px) {
         max-width: 550px;
         text-align: right;
       }
 
-      .caption {
+      .image-caption {
         font-family: Inconsolata;
         font-size: 12px;
         font-weight: 700;
@@ -137,7 +159,8 @@ const list = [
         }
       }
     }
-    .content {
+
+    .feature-content {
       h2 {
         font-family: Barlow;
         font-size: 40px;
@@ -145,6 +168,7 @@ const list = [
         line-height: 61.5px;
         letter-spacing: -0.012em;
       }
+
       li {
         font-family: Barlow;
         font-size: 16px;
