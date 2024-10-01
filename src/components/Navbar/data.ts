@@ -9,7 +9,7 @@ export const navItems: LinkItem[] = [
   { text: 'Charlistas', label: 'charlistas', url: '/charlistas', hide: true },
   { text: 'Sponsors', label: 'sponsors', url: '/sponsors' },
   { text: '¿Por qué?', label: 'por qué', url: '/por-que' },
-  { text: 'Ubicación', label: 'ubicación', url: '/ubicacion', hide: true },
+  { text: 'Ubicación', label: 'ubicación', url: '/ubicacion' },
   { text: 'Voluntarios', label: 'voluntarios', url: '/voluntarios' },
   { text: 'Código de Conducta', label: 'código de conducta', url: '/codigo-de-conducta' },
   { text: 'Preguntas', label: 'preguntas', url: '/faq' }
