@@ -20,7 +20,7 @@ import Logo from './Logo.astro';
                 <a
                   href={url}
                   aria-label={label}
-                  class:list={['menu-link', { 'is-active': Astro.url.pathname.endsWith(url) }]}
+                  class:list={['menu-link', { 'is-active': Astro.url.pathname === url }]}
                 >
                   {text}
                 </a>
