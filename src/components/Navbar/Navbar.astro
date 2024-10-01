@@ -1,6 +1,6 @@
 ---
 import Button from '../Button.astro';
-import { items } from './data';
+import { navItems } from './data';
 import Logo from './Logo.astro';
 ---
 
@@ -13,21 +13,25 @@ import Logo from './Logo.astro';
     <nav class="navbar">
       <ul class="menu" aria-hidden="true">
         {
-          items.map(({ label, title, url }) => (
-            <li class="menu-item">
-              <a
-                href={url}
-                aria-label={label}
-                class:list={['menu-link', { 'is-active': Astro.url.pathname.endsWith(url) }]}
-              >
-                {title}
-              </a>
-            </li>
-          ))
+          navItems
+            .filter(({ hide }) => !hide)
+            .map(({ label, text, url }) => (
+              <li class="menu-item">
+                <a
+                  href={url}
+                  aria-label={label}
+                  class:list={['menu-link', { 'is-active': Astro.url.pathname.endsWith(url) }]}
+                >
+                  {text}
+                </a>
+              </li>
+            ))
         }
       </ul>
 
-      <Button variant="stroke" size="fit" color="yellow" link="/tickets"> Comprar tickets </Button>
+      <Button variant="stroke" size="fit" color="yellow" link="/tickets" icon="ticket">
+        Comprar tickets
+      </Button>
 
       <label class="burger" role="button">
         <span class="bar"></span>

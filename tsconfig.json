@@ -3,30 +3,19 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@components/*": [
-        "./src/components/*"
-      ],
-      "@components": [
-        "./src/components"
-      ],
-      "@contracts/*": [
-        "./src/contracts/*"
-      ],
-      "@data/*": [
-        "./src/data/*"
-      ],
-      "@layouts/*": [
-        "./src/layouts/*"
-      ],
-      "@sections/*": [
-        "./src/sections/*"
-      ],
-      "@public/*": [
-        "./public/*"
-      ],
-      "@/*": [
-        "./src/*"
-      ]
+      "@components/*": ["./src/components/*"],
+      "@components": ["./src/components"],
+      
+      "@contracts/*": ["./src/contracts/*"],
+      "@contracts": ["./src/contracts"],
+      
+      "@data/*": ["./src/data/*"],
+
+      "@layouts/*": ["./src/layouts/*"],
+
+      "@sections/*": ["./src/sections/*"],
+      "@public/*": ["./public/*"],
+      "@/*": ["./src/*"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react"
