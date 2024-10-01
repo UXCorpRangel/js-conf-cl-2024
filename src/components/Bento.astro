@@ -71,9 +71,13 @@ const { reverse = false } = Astro.props;
         margin-inline: 3.1rem;
         margin: 2rem;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        padding: 3rem 1rem;
+        padding: 1rem;
         font-size: clamp(1rem, 4vw, 4rem);
         font-weight: 600;
+
+        @media (width >= 768px) {
+          padding: 3rem 1rem;
+        }
 
         background: linear-gradient(0.07deg, rgba(80, 72, 29, 0.2) 0.03%, rgba(0, 0, 0, 0) 95.96%),
           radial-gradient(
