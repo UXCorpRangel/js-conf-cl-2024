@@ -12,5 +12,5 @@ export const navItems: LinkItem[] = [
   { text: 'Ubicación', label: 'ubicación', url: '/ubicacion' },
   { text: 'Voluntarios', label: 'voluntarios', url: '/voluntarios', hide: true },
   { text: 'Código de Conducta', label: 'código de conducta', url: '/codigo-de-conducta' },
-  { text: 'Preguntas', label: 'preguntas', url: '/faq' }
+  { text: 'Preguntas', label: 'preguntas', url: '/faq', hide: true }
 ];
