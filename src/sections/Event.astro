@@ -1,0 +1,152 @@
+---
+import Button from '@components/Button.astro';
+import RadiusGradientFrame from '@components/RadiusGradientFrame.astro';
+---
+
+<section>
+  <RadiusGradientFrame class="event">
+    <div class="event-info">
+      <h1>¿QUE ESPERAR DEL EVENTO?</h1>
+      <p>
+        Tendremos preparadas muchas actividades programadas y un ambiente solo para tí, no
+        necesitarás saber inglés, contaremos con intérpretes para que no te pierdas ningún detalle
+        de tu expositor favorito
+      </p>
+      <Button link="/registro" icon="arrow-up-right">Registrarse</Button>
+    </div>
+    <div class="event-specs">
+      <img src="/assets/branch-event.avif" alt="Branch" />
+      <ul>
+        <li>Workshops dentro del mismo recinto</li>
+        <li>Áreas de descanso</li>
+        <li>
+          Swag bag con temática de la JSConf Chile 2023
+          <ul>
+            <li><span>Código de la conducta</span></li>
+            <li>
+              Consideraciones alimenticias (Dependiendo de tus preferencias al momento de comprar la
+              entrada)
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </RadiusGradientFrame>
+</section>
+
+<style>
+  .event {
+    --border-color: linear-gradient(90deg, #2a2401 0%, #9a8025 39.57%, #ede060 100%);
+    --border-width: 2px;
+    --shadow: 0px 4px 85.3px 0px #55552e1a;
+    --radius: 1rem;
+
+    @media (width <= 800px) {
+      --shadow: 0px 4px 85.3px rgba(64, 64, 64, 0.1);
+      --radius: 0.5rem;
+      --border-color: linear-gradient(327.26deg, #ffffff 31.78%, #272727 63.2%, #656565 93.99%);
+
+      background: radial-gradient(95.25% 166.54% at 98.39% 2.85%, #272727 8%, rgba(9, 9, 7, 0) 80%),
+        linear-gradient(0.07deg, rgba(64, 64, 64, 0.2) 0.03%, rgba(255, 255, 255, 0) 95.96%);
+    }
+  }
+
+  .event {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 28rem;
+    width: 100%;
+    max-width: 71rem;
+    margin: 2rem auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 2rem 1rem;
+    box-shadow: 0px 4px 85.3px 0px #55552e1a;
+    background:
+      linear-gradient(0, var(--bg-color), var(--bg-color)) padding-box,
+      var(--gradient-2) border-box;
+
+    @media (width <= 768px) {
+      --shadow: 0px 4px 85.3px rgba(64, 64, 64, 0.1);
+      --radius: 10px;
+      --border-color: linear-gradient(
+        90deg,
+        #090907 46.45%,
+        #1d1b0e 63.08%,
+        #413e21 78.39%,
+        #aaa255 86.07%
+      );
+
+      background:
+        linear-gradient(0, var(--bg-color), var(--bg-color)) padding-box,
+        var(--gradient-2) border-box;
+    }
+
+    & .event-info {
+      max-width: 500px;
+
+      & h1 {
+        text-wrap: balance;
+        line-height: 1.2;
+      }
+
+      & p {
+        margin-bottom: 2.5rem;
+      }
+    }
+
+    & .event-specs {
+      display: flex;
+      max-width: 440px;
+
+      & ul {
+        list-style: none;
+        padding-left: 0;
+        margin-top: 2.5rem;
+
+        & li {
+          padding-bottom: 1.8rem;
+
+          & ul {
+            padding-top: 2rem;
+            padding-left: 1.5rem;
+            margin-top: 0;
+
+            & span {
+              color: var(--yellow);
+              font-weight: 600;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (width <= 768px) {
+    .event {
+      flex-direction: column;
+      height: fit-content;
+      justify-content: space-between;
+
+      & .event-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        & h1 {
+          font-size: 1.25rem;
+        }
+      }
+
+      & .event-specs {
+        margin-top: 3rem;
+        & ul {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+</style>

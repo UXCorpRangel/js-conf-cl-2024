@@ -1,0 +1,96 @@
+---
+import RadiusGradientFrame from '@components/RadiusGradientFrame.astro';
+---
+
+<section class="views">
+  <RadiusGradientFrame class="view-mode">
+    <img src="/assets/online.avif" alt="JSConf Chile 2024 Online" />
+    <div class="view-info">
+      <h3>En línea</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur. Aliquam quis sagittis felis enim et aliquam
+        ultricies vestibulum. Magna in fusce enim ac etiam.
+      </p>
+    </div>
+  </RadiusGradientFrame>
+
+  <RadiusGradientFrame class="view-mode">
+    <img src="/assets/presencial.avif" alt="JSConf Chile 2024 Presencial" />
+    <div class="view-info">
+      <h3>Presencial</h3>
+      <p>
+        Conecta con exponentes y Devs estelares, obtén stickers, poleras y Swag oficial de la JSConf
+        y encuentra tu próxima empresa
+      </p>
+    </div>
+  </RadiusGradientFrame>
+</section>
+
+<style>
+  .view-mode {
+    --border-color: linear-gradient(90deg, #2a2401 0%, #9a8025 39.57%, #ede060 100%);
+    --border-width: 2px;
+    --shadow: 0px 4px 85.3px 0px #55552e1a;
+    --radius: 1rem;
+
+    @media (width <= 768px) {
+      --shadow: 0px 4px 85.3px rgba(64, 64, 64, 0.1);
+      --radius: 10px;
+      --border-color: linear-gradient(
+        90deg,
+        #090907 46.45%,
+        #1d1b0e 63.08%,
+        #413e21 78.39%,
+        #aaa255 86.07%
+      );
+    }
+  }
+
+  .views {
+    width: 100%;
+    max-width: 71rem;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .view-mode {
+      width: 556px;
+      height: 418px;
+      border-radius: 1rem;
+      border: 2px solid;
+      border-image-source: linear-gradient(258.25deg, #2d2d2d 7.65%, #1d1b0e 57.4%, #413e21 98.66%);
+
+      box-shadow: 0px 4px 85.3px 0px #55552e1a;
+
+      & .view-info {
+        padding: 0 4rem;
+      }
+    }
+  }
+
+  @media (width <= 768px) {
+    .views {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      & .view-mode {
+        width: 100%;
+        height: 23rem;
+
+        & .view-info {
+          padding: 0 2rem;
+          text-align: center;
+
+          & h3 {
+            font-size: 2rem;
+            margin: 1rem 0;
+          }
+        }
+      }
+    }
+  }
+</style>

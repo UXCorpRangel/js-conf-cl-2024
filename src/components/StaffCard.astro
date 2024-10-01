@@ -1,0 +1,127 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const { imgSrc, staffName, linkedinLink, instagramLink, twitterLink, facebookLink } = Astro.props;
+
+const defaultImgSrc = 'imgs/speaker-stock.png';
+const staffImage = imgSrc || defaultImgSrc;
+---
+
+<div class="card-body">
+  <div class="staff">
+    <picture>
+      <source srcset={staffImage} media="(min-width: 768px)" />
+      <img src={staffImage} alt={staffName} class="staff-avatar" />
+    </picture>
+    <h3 class="staff-name">{staffName}</h3>
+    <div class="social-links">
+      {
+        linkedinLink && (
+          <a href={linkedinLink} class="social-link">
+            <Icon name="linkedin" />
+          </a>
+        )
+      }
+      {
+        instagramLink && (
+          <a href={instagramLink} class="social-link">
+            <Icon name="instagram" />
+          </a>
+        )
+      }
+      {
+        twitterLink && (
+          <a href={twitterLink} class="social-link">
+            <Icon name="twitter" />
+          </a>
+        )
+      }
+      {
+        facebookLink && (
+          <a href={facebookLink} class="social-link">
+            <Icon name="facebook" />
+          </a>
+        )
+      }
+      {
+        /* {githubLink && (
+        <a href={githubLink} class="social-link">
+          <Icon name="github" />
+        </a>
+      )} */
+      }
+    </div>
+  </div>
+</div>
+
+<style>
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 25rem;
+    width: fit-content;
+    padding: 1.5rem;
+    transition: transform 0.3s;
+
+    .staff {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @media (width <= 768px) {
+        width: 13.75rem;
+      }
+    }
+  }
+
+  .staff-avatar {
+    width: 5.3rem;
+    aspect-ratio: 1;
+    border: 0.063rem solid var(--white);
+    border-radius: 100%;
+    filter: grayscale(1);
+    transition: filter 0.3s;
+    object-fit: cover;
+
+    .card-body:hover & {
+      filter: grayscale(0);
+    }
+  }
+
+  .social-links {
+    display: flex;
+    gap: 1rem;
+
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: var(--yellow);
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  .social-link {
+    display: inline-block;
+  }
+
+  .social-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .staff-brand {
+    filter: grayscale(1);
+    transition: filter 0.3s;
+
+    .card-body:hover & {
+      filter: grayscale(0);
+    }
+  }
+</style>

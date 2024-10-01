@@ -1,5 +1,4 @@
 ---
-import type { SponsorTier } from '@contracts/sponsor.types';
 import HeroSection from '@sections/sponsors/HeroSection.astro';
 import SponsorCard from '@components/SponsorCard.astro';
 import Layout from '@layouts/Layout.astro';
@@ -7,26 +6,23 @@ import Layout from '@layouts/Layout.astro';
 const sponsors = await Astro.glob('/src/data/sponsors/*.md');
 ---
 
-<Layout title="JSConf Chile 2024">
-  <HeroSection />
-
-  <section class="sponsors">
+<Layout
+  title="JSConf Chile 2024 | Sponsors"
+  description="Descubre los sponsors que hacen posible JSConf Chile 2024. Conoce a las empresas líderes que apoyan la conferencia de JavaScript más importante de Chile, del 5 al 7 de diciembre en Santiago."
+>
+  <div>
+    <HeroSection />
     {
       sponsors.map(({ file, Content }) => (
-        <SponsorCard
-          category={file.split('/').pop()!.replace('.md', '') as SponsorTier}
-          Content={Content}
-        />
+        <SponsorCard category={file.split('/').pop()!.replace('.md', '')} Content={Content} />
       ))
     }
-  </section>
+  </div>
 </Layout>
 
 <style>
-  .sponsors {
-    gap: 4rem;
-    display: flex;
-    padding-block: 4rem;
-    flex-direction: column;
+  div {
+    display: grid;
+    gap: clamp(2rem, 4vw, 4rem);
   }
 </style>

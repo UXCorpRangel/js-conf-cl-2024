@@ -1,53 +1,27 @@
 ---
-import Button from '@components/Button.astro';
-import CardSchelude from '@components/CardSchelude.astro';
-import SpeakerCard from '@components/SpeakerCard.astro';
+import Communities from '@sections/Communities.astro';
+import Conf from '@sections/Conf.astro';
+import Event from '@sections/Event.astro';
+import Hero from '@sections/Hero.astro';
+import Speakers from '@sections/Speakers.astro';
+import Sponsors from '@sections/Sponsors.astro';
+import Staff from '@sections/Staff.astro';
+import Views from '@sections/Views.astro';
+import Volunteer from '@sections/Volunteer.astro';
 import Layout from '@layouts/Layout.astro';
-
-const event = {
-  startTime: '2024-09-26T14:00:00',
-  endTime: '2024-09-26T16:00:00',
-  speakerName: 'MiduDev',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
-  isLive: true
-};
 ---
 
-<Layout title="JSConf Chile 2024">
-  <h1>Heading 1</h1>
-  <h2>Heading 2</h2>
-  <h3>Heading 3</h3>
-  <p>Paragraph</p>
-  <Button variant="solid" color="white" link="#" icon="star">Botoncito</Button>
-  <Button variant="solid" color="yellow" link="#" icon="star">Botoncito</Button>
-  <Button variant="stroke" color="white" link="#" icon="star">Botoncito</Button>
-  <Button variant="stroke" color="yellow" link="#" icon="star">Botoncito</Button>
-  <Button variant="ghost" color="white" link="#" icon="star">Botoncito</Button>
-  <Button variant="ghost" color="yellow" link="#" icon="star">Botoncito</Button>
-  <br />
-  <SpeakerCard
-    imgSrc="imgs/midudev.png"
-    speakerName='Miguel Ángel "Midudev" Durán'
-    speakerInfo="Ingeniero de Software y Divulgador de Programación"
-    speakerBrand="imgs/midulogo.png"
-    link="#"
-  />
-  <br />
-  <SpeakerCard
-    imgSrc=""
-    speakerName="Facundo D'Andrea"
-    speakerInfo="Metro sesenta de ternura"
-    speakerBrand=""
-    link="#"
-  />
-  <br />
-  <CardSchelude
-    startTime={event.startTime}
-    endTime={event.endTime}
-    speakerName={event.speakerName}
-    description={event.description}
-    isLive={event.isLive}
-  />
+<Layout
+  title="JSConf Chile 2024"
+  description="Únete a JSConf Chile 2024, la conferencia de JavaScript más grande de Chile. Del 5 al 7 de diciembre en Santiago, descubre las últimas tendencias, tecnologías y redes con expertos en desarrollo web. ¡Reserva tu entrada ahora!"
+>
+  <Hero />
+  <Conf />
+  <Event />
+  <Views />
+  <Sponsors />
+  <Communities />
+  <Speakers />
+  <Staff />
+  <Volunteer />
 </Layout>
-
-<style></style>

@@ -6,11 +6,11 @@ import { sponsorStyles } from '@data/sponsors/sponsorStyles';
 import Button from './Button.astro';
 
 type Props = {
-  category: SponsorTier;
+  category: SponsorTier | string;
   Content: AstroComponentFactory;
 };
 const { category = 'platinum', Content }: Props = Astro.props;
-const selectedCategory = sponsorStyles[category];
+const selectedCategory = sponsorStyles[category as SponsorTier];
 ---
 
 <section class="sponsor--card__container" style={selectedCategory.styles}>
@@ -71,15 +71,18 @@ const selectedCategory = sponsorStyles[category];
         }
       }
       ul {
-        display: grid;
-        gap: 1rem;
+        display: flex;
+        flex-direction: column;
 
         li {
           display: grid;
           align-items: center;
           grid-template-columns: 16px 1fr;
           gap: 1.5rem;
-
+          margin: -0.5rem 0;
+          p {
+            line-height: 28px !important;
+          }
           strong {
             font-weight: 600;
           }

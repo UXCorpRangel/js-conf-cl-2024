@@ -1,0 +1,108 @@
+---
+import StaffCard from '@components/StaffCard.astro';
+
+const staffData = [
+  {
+    imgSrc: '/volunteer/miguel-colmenarez.avif',
+    staffName: 'Miguel Colmenarez',
+    linkedinLink: 'https://www.linkedin.com/',
+    instagramLink: 'https://www.instagram.com/',
+    twitterLink: 'https://www.instagram.com/',
+    facebookLink: 'https://www.facebook.com/'
+  },
+  {
+    imgSrc: '/volunteer/felix-icaza.avif',
+    staffName: 'Félix Icaza',
+    linkedinLink: 'https://www.linkedin.com/in/otra-persona',
+    instagramLink: 'https://www.instagram.com/otra-persona',
+    twitterLink: '',
+    facebookLink: ''
+  },
+  {
+    imgSrc: '/volunteer/facundo-dandrea.avif',
+    staffName: 'Facundo D´Andrea',
+    linkedinLink: 'https://www.linkedin.com/in/otra-persona',
+    instagramLink: 'https://www.instagram.com/otra-persona',
+    twitterLink: '',
+    facebookLink: ''
+  },
+  {
+    imgSrc: '/volunteer/jaime-gutierrez.avif',
+    staffName: 'Jaime Gutiérrez',
+    linkedinLink: 'https://www.linkedin.com/in/otra-persona',
+    instagramLink: 'https://www.instagram.com/otra-persona',
+    twitterLink: '',
+    facebookLink: ''
+  },
+  {
+    imgSrc: '/volunteer/luis-tenorio.avif',
+    staffName: 'Luis Tenorio',
+    linkedinLink: 'https://www.linkedin.com/in/otra-persona',
+    instagramLink: 'https://www.instagram.com/otra-persona',
+    twitterLink: '',
+    facebookLink: ''
+  },
+  {
+    imgSrc: '/volunteer/ricardo-cuauro.avif',
+    staffName: 'Ricardo Cuauro',
+    linkedinLink: 'https://www.linkedin.com/in/otra-persona',
+    instagramLink: 'https://www.instagram.com/otra-persona',
+    twitterLink: '',
+    facebookLink: ''
+  }
+];
+---
+
+<section class="staff">
+  <div class="staff-info">
+    <h2>Voluntarios</h2>
+    <p>Conoce a los voluntarios que han aportado a la JSConf Chile 2024.</p>
+  </div>
+  <div class="staff-wrapper">
+    {
+      staffData.map(member => (
+        <StaffCard
+          imgSrc={member.imgSrc}
+          staffName={member.staffName}
+          linkedinLink={member.linkedinLink}
+          instagramLink={member.instagramLink}
+          twitterLink={member.twitterLink}
+          facebookLink={member.facebookLink}
+        />
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .staff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & .staff-info {
+      max-width: 560px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & h2 {
+        text-transform: uppercase;
+      }
+
+      & p {
+        text-align: center;
+      }
+    }
+
+    & .staff-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+</style>

@@ -8,33 +8,76 @@ import 'sanitize.css/forms.css';
 import 'sanitize.css/assets.css';
 import 'sanitize.css/typography.css';
 
+import { Schema } from 'astro-seo-schema';
+import Footer from '@components/Footer.astro';
 import Navbar from '@components/Navbar/Navbar.astro';
 
 interface Props {
   title: string;
+  description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>{title}</title>
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+  <title>{title}</title>
+
+  {description && <meta name="description" content={description} />}
+  {description && <link href={Astro.url.href} rel="canonical" />}
+  {
+    description && (
+      <Schema
+        item={{
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: 'JSConf',
+          description:
+            'JSConf Chile, la conferencia de JavaScript más grande de Chile. Del 5 al 7 de diciembre en Santiago, descubre las últimas tendencias, tecnologías y redes con expertos en desarrollo web.',
+          image: 'https://jsconf.cl/og-image.jpg',
+          url: 'https://jsconf.cl'
+        }}
+      />
+    )
+  }
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://jsconf.cl/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="JSConf Chile 2024" />
+  <meta
+    property="og:description"
+    content="JSConf Chile, la conferencia de JavaScript más grande de Chile. Del 5 al 7 de diciembre en Santiago, descubre las últimas tendencias, tecnologías y redes con expertos en desarrollo web."
+  />
+  <meta property="og:image" content="https://jsconf.cl/og-image.jpg" />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="jsconf.cl" />
+  <meta property="twitter:url" content="https://jsconf.cl/" />
+  <meta name="twitter:title" content="JSConf Chile 2024" />
+  <meta
+    name="twitter:description"
+    content="JSConf Chile, la conferencia de JavaScript más grande de Chile. Del 5 al 7 de diciembre en Santiago, descubre las últimas tendencias, tecnologías y redes con expertos en desarrollo web."
+  />
+  <meta name="twitter:image" content="https://jsconf.cl/og-image.jpg" />
+
   <body>
     <Navbar />
     <main class="container">
       <slot />
     </main>
+    <Footer />
   </body>
 </html>
 
 <style is:global>
+  @custom-media --mobile (width >= 412px);
+
   :root {
     --yellow: #ede060;
     --yellow-100: #c8bc4f;
@@ -104,11 +147,7 @@ const { title } = Astro.props;
       rgba(0, 0, 0, 0) 95.96%
     );
     --border-sponsor-bronze: linear-gradient(327deg, #2d2d2d 31.78%, #2a1701 63.2%, #60301f 93.99%);
-    --gradient-footer: radial-gradient(
-      291.81% 75.32% at 22.97% 22.4%,
-      rgba(42, 36, 1, 0.6) 0%,
-      rgba(9, 9, 7, 0.6) 100%
-    );
+    --gradient-footer: linear-gradient(to right, rgba(42, 36, 1, 0.9) 0%, rgba(9, 9, 7, 0.1) 100%);
     --gradient-card-agenda: linear-gradient(258deg, #121212 7.65%, #1d1b0e 57.4%, #413e21 98.66%);
   }
 
@@ -133,8 +172,12 @@ const { title } = Astro.props;
 
     & main.container {
       width: min(80rem, 100vw);
-      padding: 0 1rem;
+      padding: 0 1rem 5rem;
       margin: 0 auto;
+
+      @media (width <= 768) {
+        padding: 0 1.5rem;
+      }
     }
 
     &::-webkit-scrollbar {
@@ -185,5 +228,9 @@ const { title } = Astro.props;
 
   :where(a) {
     color: var(--white);
+  }
+
+  @media (--mobile) {
+    /* Estilos a utilizar */
   }
 </style>
