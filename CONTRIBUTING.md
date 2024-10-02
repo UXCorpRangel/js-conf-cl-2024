@@ -1,6 +1,6 @@
-# Contribuyendo a Portfolios Dev
+# Contribuyendo al repositorio del sitio web oficial de JSConf Chile 2024
 
-¡Gracias por tu interés en contribuir a Portfolios Dev! Para garantizar una colaboración fluida y eficiente, por favor sigue estas directrices.
+¡Gracias por tu interés en contribuir al repositorio del sitio web oficial de JSConf Chile! Para garantizar una colaboración fluida y eficiente, por favor sigue estas directrices.
 
 ## Tabla de contenidos
 
@@ -40,7 +40,7 @@ Para proponer una nueva característica:
 
 ## ¿Cómo hacer un fork?
 
-Para contribuir a Portfolios Dev, primero necesitas hacer un fork del repositorio:
+Para contribuir al repositorio del sitio web oficial de JSConf Chile 2024, primero necesitas hacer un fork del repositorio:
 
 1. **Ve al Repositorio en GitHub**: Accede a [JSConf 2024 en GitHub](https://github.com/UXCorpRangel/js-conf-cl-2024).
 2. **Haz un Fork**: En la esquina superior derecha de la página del repositorio, haz clic en el botón **Fork**. Esto creará una copia del repositorio en tu cuenta de GitHub.
@@ -75,8 +75,8 @@ Para asegurar que tu issue sea procesado de manera eficiente:
 
 ## Licencia
 
-Al contribuir a JSConf 2024, aceptas que tus contribuciones estén sujetas a la [Licencia del Proyecto](./LICENSE).
+Al contribuir al repositorio del sitio web oficial de JSConf Chile 2024, aceptas que tus contribuciones estén sujetas a la [Licencia del Proyecto](./LICENSE).
 
 ---
 
-Gracias por tu interés y tu contribución a Portfolios Dev. ¡Tu ayuda es muy valiosa!
+Gracias por tu interés y tu contribución al repositorio del sitio web oficial de JSConf Chile 2024. ¡Tu ayuda es muy valiosa!
