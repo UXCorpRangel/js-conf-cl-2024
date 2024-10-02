@@ -1,6 +1,6 @@
 ---
-import HeroSection from '@sections/sponsors/HeroSection.astro';
-import SponsorCard from '@components/SponsorCard.astro';
+import { SponsorCard } from '@components';
+import { SponsorsHeroSection as HeroSection } from '@sections';
 import Layout from '@layouts/Layout.astro';
 
 const sponsors = await Astro.glob('/src/data/sponsors/*.md');

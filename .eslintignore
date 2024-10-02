@@ -15,6 +15,7 @@ dist
 
 .vscode
 .astro
+**/env.d.ts
 
 .eslintcache
 
