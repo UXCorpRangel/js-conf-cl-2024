@@ -13,72 +13,11 @@ import {
 import { MeshLineGeometry, MeshLineMaterial } from 'meshline';
 import { useEffect, useRef, useState } from 'react';
 import { CatmullRomCurve3, RepeatWrapping, Vector3 } from 'three';
+import { MODEL, TEXTURE } from './constants';
 
 extend({ MeshLineGeometry, MeshLineMaterial });
 
-type IdBadgeProps = {
-  tag: string;
-  band: string;
-};
-
-export default function LazyTicket(data: IdBadgeProps) {
-  useGLTF.preload(data.tag);
-  useTexture.preload(data.band);
-  return (
-    <Canvas
-      camera={{ position: [0, 0, 10], fov: 25 }}
-      style={{
-        width: '100%',
-        height: '100%'
-      }}
-    >
-      <ambientLight intensity={Math.PI} />
-      <Physics interpolate gravity={[0, -40, 0]} timeStep={1 / 60}>
-        <Band data={data} />
-      </Physics>
-      <Environment blur={0.75}>
-        <color attach="background" args={['black']} />
-        <Lightformer
-          intensity={2}
-          color="white"
-          position={[0, -1, 5]}
-          rotation={[0, 0, Math.PI / 3]}
-          scale={[300, 0.1, 1]}
-        />
-        <Lightformer
-          intensity={2}
-          color="white"
-          position={[0, 0, 9]}
-          rotation={[0, 0, Math.PI / 3]}
-          scale={[200, 0.1, 1]}
-        />
-        <Lightformer
-          intensity={4}
-          color="#ede060"
-          position={[-1, -1, 1]}
-          rotation={[0, 0, Math.PI / 3]}
-          scale={[100, 0.1, 1]}
-        />
-        <Lightformer
-          intensity={4}
-          color="#ede060"
-          position={[1, 1, 1]}
-          rotation={[0, 0, Math.PI / 3]}
-          scale={[100, 0.1, 1]}
-        />
-        <Lightformer
-          intensity={2}
-          color="#ede060"
-          position={[-10, 0, -5]}
-          rotation={[0, Math.PI / 2, Math.PI / 3]}
-          scale={[50, 10, 1]}
-        />
-      </Environment>
-    </Canvas>
-  );
-}
-
-function Band({ maxSpeed = 50, minSpeed = 10, data }) {
+function Band({ maxSpeed = 50, minSpeed = 10 }) {
   const band = useRef(), fixed = useRef(), j1 = useRef(), j2 = useRef(), j3 = useRef(), card = useRef() // prettier-ignore
   const vec = new Vector3(), ang = new Vector3(), rot = new Vector3(), dir = new Vector3() // prettier-ignore
   const segmentProps = {
@@ -88,8 +27,8 @@ function Band({ maxSpeed = 50, minSpeed = 10, data }) {
     angularDamping: 2,
     linearDamping: 2
   };
-  const { nodes, materials } = useGLTF(data.tag);
-  const texture = useTexture(data.band);
+  const { nodes, materials } = useGLTF(MODEL);
+  const texture = useTexture(TEXTURE);
   const { width, height } = useThree(state => state.size);
   const [curve] = useState(
     () => new CatmullRomCurve3([new Vector3(), new Vector3(), new Vector3(), new Vector3()])
@@ -227,5 +166,62 @@ function Band({ maxSpeed = 50, minSpeed = 10, data }) {
         />
       </mesh>
     </>
+  );
+}
+
+export default function LazyTicket() {
+  useGLTF.preload(MODEL);
+  useTexture.preload(TEXTURE);
+  return (
+    <Canvas
+      camera={{ position: [0, 0, 10], fov: 25 }}
+      style={{
+        width: '100%',
+        height: '100%'
+      }}
+    >
+      <ambientLight intensity={Math.PI} />
+      <Physics interpolate gravity={[0, -40, 0]} timeStep={1 / 60}>
+        <Band />
+      </Physics>
+      <Environment blur={0.75}>
+        <color attach="background" args={['black']} />
+        <Lightformer
+          intensity={2}
+          color="white"
+          position={[0, -1, 5]}
+          rotation={[0, 0, Math.PI / 3]}
+          scale={[300, 0.1, 1]}
+        />
+        <Lightformer
+          intensity={2}
+          color="white"
+          position={[0, 0, 9]}
+          rotation={[0, 0, Math.PI / 3]}
+          scale={[200, 0.1, 1]}
+        />
+        <Lightformer
+          intensity={4}
+          color="#ede060"
+          position={[-1, -1, 1]}
+          rotation={[0, 0, Math.PI / 3]}
+          scale={[100, 0.1, 1]}
+        />
+        <Lightformer
+          intensity={4}
+          color="#ede060"
+          position={[1, 1, 1]}
+          rotation={[0, 0, Math.PI / 3]}
+          scale={[100, 0.1, 1]}
+        />
+        <Lightformer
+          intensity={2}
+          color="#ede060"
+          position={[-10, 0, -5]}
+          rotation={[0, Math.PI / 2, Math.PI / 3]}
+          scale={[50, 10, 1]}
+        />
+      </Environment>
+    </Canvas>
   );
 }
