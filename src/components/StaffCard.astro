@@ -1,5 +1,8 @@
 ---
+import type { StaffData } from '@contracts';
 import { Icon } from 'astro-icon/components';
+
+type Props = StaffData;
 
 const { imgSrc, staffName, linkedinLink, instagramLink, twitterLink, facebookLink, githubLink } =
   Astro.props;
@@ -14,39 +17,71 @@ const staffImage = imgSrc || defaultImgSrc;
       <source srcset={staffImage} media="(min-width: 768px)" />
       <img src={staffImage} alt={staffName} class="staff-avatar" />
     </picture>
+
     <h3 class="staff-name">{staffName}</h3>
+
     <div class="social-links">
       {
         linkedinLink && (
-          <a href={linkedinLink} class="social-link" target="_blank" rel="noopener noreferrer">
+          <a
+            href={linkedinLink}
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
             <Icon name="linkedin" />
           </a>
         )
       }
       {
         instagramLink && (
-          <a href={instagramLink} class="social-link">
+          <a
+            href={instagramLink}
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+          >
             <Icon name="instagram" />
           </a>
         )
       }
       {
         twitterLink && (
-          <a href={twitterLink} class="social-link">
+          <a
+            href={twitterLink}
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="twitter"
+          >
             <Icon name="twitter" />
           </a>
         )
       }
       {
         facebookLink && (
-          <a href={facebookLink} class="social-link">
+          <a
+            href={facebookLink}
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="facebook"
+          >
             <Icon name="facebook" />
           </a>
         )
       }
       {
         githubLink && (
-          <a href={githubLink} class="social-link">
+          <a
+            href={githubLink}
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
             <Icon name="github" />
           </a>
         )
