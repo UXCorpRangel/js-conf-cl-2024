@@ -1,5 +1,6 @@
 ---
 import { Icon } from 'astro-icon/components';
+import LogoJSConf from '@components/Footer/LogoJSConf.astro';
 import { footerItems, socialItems } from './data';
 ---
 
@@ -7,9 +8,10 @@ import { footerItems, socialItems } from './data';
   <div class="container">
     <section class="follow">
       <article class="conf-title">
-        <img src="/svg/logo-js-conf.svg" alt="logo" />
+        <LogoJSConf size={52} />
         <Icon name="JsConfCl" size={88} />
       </article>
+
       <article class="social">
         <p>Síguenos</p>
         <ul>
@@ -47,7 +49,7 @@ import { footerItems, socialItems } from './data';
   <p class="made-by">
     Hecho con <video
       width="24"
-      src="/media/heart.webm"
+      src="/assets/video/heart.webm"
       preload="metadata"
       playsinline
       autoplay

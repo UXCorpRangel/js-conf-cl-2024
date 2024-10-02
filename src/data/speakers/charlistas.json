@@ -4,13 +4,13 @@
     "fullName": "Miguel Ángel Durán",
     "nickName": "MiduDev",
     "speakerName": "Miguel Ángel \"midudev\" Durán",
-    "imgSrc": "imgs/midudev.png",
-    "imgSrc2": "imgs/midudev-2.png",
-    "imgSrc3": "imgs/midudev-3.png",
-    "imgSrc4": "imgs/midudev-4.png",
+    "imgSrc": "assets/img/speakers/midudev.png",
+    "imgSrc2": "assets/img/speakers/midudev-2.png",
+    "imgSrc3": "assets/img/speakers/midudev-3.png",
+    "imgSrc4": "assets/img/speakers/midudev-4.png",
     "tagLine": "JavaScript and Web Development expert",
     "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "imgs/midulogo.png",
+    "speakerBrand": "assets/img/speakers/midulogo.png",
     "linkedin": "https://linkedin.com/in/midudev",
     "instagram": "https://instagram.com/midudev",
     "twitter": "https://twitter.com/midudev",
@@ -21,10 +21,7 @@
         "eventTitle": "¡El JavaScript del futuro 🚀!",
         "eventDate": "00 Nov 2024",
         "eventHour": "00:00",
-        "eventEquipment": [
-          "laptop",
-          "book"
-        ],
+        "eventEquipment": ["laptop", "book"],
         "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
       },
       {
@@ -56,10 +53,7 @@
         "eventTitle": "¡El JavaScript del futuro 🚀!",
         "eventDate": "00 Nov 2024",
         "eventHour": "00:00",
-        "eventEquipment": [
-          "laptop",
-          "book"
-        ],
+        "eventEquipment": ["laptop", "book"],
         "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
       },
       {
@@ -77,10 +71,10 @@
     "fullName": "Miguel Ángel Durán",
     "nickName": "midudev",
     "speakerName": "Miguel Ángel \"midudev\" Durán",
-    "imgSrc": "imgs/midudev.png",
+    "imgSrc": "assets/img/speakers/midudev.png",
     "tagLine": "JavaScript and Web Development expert",
     "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "imgs/midulogo.png",
+    "speakerBrand": "assets/img/speakers/midulogo.png",
     "linkedin": "https://linkedin.com/in/midudev",
     "instagram": "https://instagram.com/midudev",
     "twitter": "https://twitter.com/midudev",
@@ -91,10 +85,7 @@
         "eventTitle": "¡El JavaScript del futuro 🚀!",
         "eventDate": "00 Nov 2024",
         "eventHour": "00:00",
-        "eventEquipment": [
-          "laptop",
-          "book"
-        ],
+        "eventEquipment": ["laptop", "book"],
         "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
       },
       {
@@ -126,10 +117,7 @@
         "eventTitle": "¡El JavaScript del futuro 🚀!",
         "eventDate": "00 Nov 2024",
         "eventHour": "00:00",
-        "eventEquipment": [
-          "laptop",
-          "book"
-        ],
+        "eventEquipment": ["laptop", "book"],
         "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
       },
       {
@@ -147,10 +135,10 @@
     "fullName": "Miguel Ángel Durán",
     "nickName": "midudev",
     "speakerName": "Miguel Ángel \"midudev\" Durán",
-    "imgSrc": "imgs/midudev.png",
+    "imgSrc": "assets/img/speakers/midudev.png",
     "tagLine": "JavaScript and Web Development expert",
     "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "imgs/midulogo.png",
+    "speakerBrand": "assets/img/speakers/midulogo.png",
     "linkedin": "https://linkedin.com/in/midudev",
     "instagram": "https://instagram.com/midudev",
     "twitter": "https://twitter.com/midudev",
@@ -161,10 +149,7 @@
         "eventTitle": "¡El JavaScript del futuro 🚀!",
         "eventDate": "00 Nov 2024",
         "eventHour": "00:00",
-        "eventEquipment": [
-          "laptop",
-          "book"
-        ],
+        "eventEquipment": ["laptop", "book"],
         "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
       },
       {
@@ -196,10 +181,7 @@
         "eventTitle": "¡El JavaScript del futuro 🚀!",
         "eventDate": "00 Nov 2024",
         "eventHour": "00:00",
-        "eventEquipment": [
-          "laptop",
-          "book"
-        ],
+        "eventEquipment": ["laptop", "book"],
         "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
       },
       {
@@ -217,10 +199,10 @@
     "fullName": "Miguel Ángel Durán",
     "nickName": "midudev",
     "speakerName": "Miguel Ángel \"midudev\" Durán",
-    "imgSrc": "imgs/midudev.png",
+    "imgSrc": "assets/img/speakers/midudev.png",
     "tagLine": "JavaScript and Web Development expert",
     "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "imgs/midulogo.png",
+    "speakerBrand": "assets/img/speakers/midulogo.png",
     "linkedin": "https://linkedin.com/in/midudev",
     "instagram": "https://instagram.com/midudev",
     "twitter": "https://twitter.com/midudev",
@@ -231,10 +213,7 @@
         "eventTitle": "¡El JavaScript del futuro 🚀!",
         "eventDate": "00 Nov 2024",
         "eventHour": "00:00",
-        "eventEquipment": [
-          "laptop",
-          "book"
-        ],
+        "eventEquipment": ["laptop", "book"],
         "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
       },
       {
@@ -266,10 +245,7 @@
         "eventTitle": "¡El JavaScript del futuro 🚀!",
         "eventDate": "00 Nov 2024",
         "eventHour": "00:00",
-        "eventEquipment": [
-          "laptop",
-          "book"
-        ],
+        "eventEquipment": ["laptop", "book"],
         "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
       },
       {
@@ -287,10 +263,10 @@
     "fullName": "Miguel Ángel Durán",
     "nickName": "midudev",
     "speakerName": "Miguel Ángel \"midudev\" Durán",
-    "imgSrc": "imgs/midudev.png",
+    "imgSrc": "assets/img/speakers/midudev.png",
     "tagLine": "JavaScript and Web Development expert",
     "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "imgs/midulogo.png",
+    "speakerBrand": "assets/img/speakers/midulogo.png",
     "linkedin": "https://linkedin.com/in/midudev",
     "instagram": "https://instagram.com/midudev",
     "twitter": "https://twitter.com/midudev",
@@ -301,10 +277,7 @@
         "eventTitle": "¡El JavaScript del futuro 🚀!",
         "eventDate": "00 Nov 2024",
         "eventHour": "00:00",
-        "eventEquipment": [
-          "laptop",
-          "book"
-        ],
+        "eventEquipment": ["laptop", "book"],
         "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
       },
       {
@@ -336,10 +309,7 @@
         "eventTitle": "¡El JavaScript del futuro 🚀!",
         "eventDate": "00 Nov 2024",
         "eventHour": "00:00",
-        "eventEquipment": [
-          "laptop",
-          "book"
-        ],
+        "eventEquipment": ["laptop", "book"],
         "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
       },
       {
@@ -357,10 +327,10 @@
     "fullName": "Miguel Ángel Durán",
     "nickName": "midudev",
     "speakerName": "Miguel Ángel \"midudev\" Durán",
-    "imgSrc": "imgs/midudev.png",
+    "imgSrc": "assets/img/speakers/midudev.png",
     "tagLine": "JavaScript and Web Development expert",
     "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "imgs/midulogo.png",
+    "speakerBrand": "assets/img/speakers/midulogo.png",
     "linkedin": "https://linkedin.com/in/midudev",
     "instagram": "https://instagram.com/midudev",
     "twitter": "https://twitter.com/midudev",
@@ -371,10 +341,7 @@
         "eventTitle": "¡El JavaScript del futuro 🚀!",
         "eventDate": "00 Nov 2024",
         "eventHour": "00:00",
-        "eventEquipment": [
-          "laptop",
-          "book"
-        ],
+        "eventEquipment": ["laptop", "book"],
         "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
       },
       {
@@ -406,10 +373,7 @@
         "eventTitle": "¡El JavaScript del futuro 🚀!",
         "eventDate": "00 Nov 2024",
         "eventHour": "00:00",
-        "eventEquipment": [
-          "laptop",
-          "book"
-        ],
+        "eventEquipment": ["laptop", "book"],
         "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
       },
       {
@@ -427,10 +391,10 @@
     "fullName": "Miguel Ángel Durán",
     "nickName": "midudev",
     "speakerName": "Miguel Ángel \"midudev\" Durán",
-    "imgSrc": "imgs/midudev.png",
+    "imgSrc": "assets/img/speakers/midudev.png",
     "tagLine": "JavaScript and Web Development expert",
     "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "imgs/midulogo.png",
+    "speakerBrand": "assets/img/speakers/midulogo.png",
     "linkedin": "https://linkedin.com/in/midudev",
     "instagram": "https://instagram.com/midudev",
     "twitter": "https://twitter.com/midudev",
@@ -441,10 +405,7 @@
         "eventTitle": "¡El JavaScript del futuro 🚀!",
         "eventDate": "00 Nov 2024",
         "eventHour": "00:00",
-        "eventEquipment": [
-          "laptop",
-          "book"
-        ],
+        "eventEquipment": ["laptop", "book"],
         "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
       },
       {
@@ -476,10 +437,7 @@
         "eventTitle": "¡El JavaScript del futuro 🚀!",
         "eventDate": "00 Nov 2024",
         "eventHour": "00:00",
-        "eventEquipment": [
-          "laptop",
-          "book"
-        ],
+        "eventEquipment": ["laptop", "book"],
         "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
       },
       {
@@ -497,10 +455,10 @@
     "fullName": "Miguel Ángel Durán",
     "nickName": "midudev",
     "speakerName": "Miguel Ángel \"midudev\" Durán",
-    "imgSrc": "imgs/midudev.png",
+    "imgSrc": "assets/img/speakers/midudev.png",
     "tagLine": "JavaScript and Web Development expert",
     "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "imgs/midulogo.png",
+    "speakerBrand": "assets/img/speakers/midulogo.png",
     "linkedin": "https://linkedin.com/in/midudev",
     "instagram": "https://instagram.com/midudev",
     "twitter": "https://twitter.com/midudev",
@@ -511,10 +469,7 @@
         "eventTitle": "¡El JavaScript del futuro 🚀!",
         "eventDate": "00 Nov 2024",
         "eventHour": "00:00",
-        "eventEquipment": [
-          "laptop",
-          "book"
-        ],
+        "eventEquipment": ["laptop", "book"],
         "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
       },
       {
@@ -546,10 +501,7 @@
         "eventTitle": "¡El JavaScript del futuro 🚀!",
         "eventDate": "00 Nov 2024",
         "eventHour": "00:00",
-        "eventEquipment": [
-          "laptop",
-          "book"
-        ],
+        "eventEquipment": ["laptop", "book"],
         "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
       },
       {
@@ -567,10 +519,10 @@
     "fullName": "Miguel Ángel Durán",
     "nickName": "midudev",
     "speakerName": "Miguel Ángel \"midudev\" Durán",
-    "imgSrc": "imgs/midudev.png",
+    "imgSrc": "assets/img/speakers/midudev.png",
     "tagLine": "JavaScript and Web Development expert",
     "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "imgs/midulogo.png",
+    "speakerBrand": "assets/img/speakers/midulogo.png",
     "linkedin": "https://linkedin.com/in/midudev",
     "instagram": "https://instagram.com/midudev",
     "twitter": "https://twitter.com/midudev",
@@ -581,10 +533,7 @@
         "eventTitle": "¡El JavaScript del futuro 🚀!",
         "eventDate": "00 Nov 2024",
         "eventHour": "00:00",
-        "eventEquipment": [
-          "laptop",
-          "book"
-        ],
+        "eventEquipment": ["laptop", "book"],
         "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
       },
       {
@@ -616,10 +565,7 @@
         "eventTitle": "¡El JavaScript del futuro 🚀!",
         "eventDate": "00 Nov 2024",
         "eventHour": "00:00",
-        "eventEquipment": [
-          "laptop",
-          "book"
-        ],
+        "eventEquipment": ["laptop", "book"],
         "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
       },
       {
@@ -637,10 +583,10 @@
     "fullName": "Miguel Ángel Durán",
     "nickName": "midudev",
     "speakerName": "Miguel Ángel \"midudev\" Durán",
-    "imgSrc": "imgs/midudev.png",
+    "imgSrc": "assets/img/speakers/midudev.png",
     "tagLine": "JavaScript and Web Development expert",
     "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "imgs/midulogo.png",
+    "speakerBrand": "assets/img/speakers/midulogo.png",
     "linkedin": "https://linkedin.com/in/midudev",
     "instagram": "https://instagram.com/midudev",
     "twitter": "https://twitter.com/midudev",
@@ -651,10 +597,7 @@
         "eventTitle": "¡El JavaScript del futuro 🚀!",
         "eventDate": "00 Nov 2024",
         "eventHour": "00:00",
-        "eventEquipment": [
-          "laptop",
-          "book"
-        ],
+        "eventEquipment": ["laptop", "book"],
         "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
       },
       {
@@ -686,10 +629,7 @@
         "eventTitle": "¡El JavaScript del futuro 🚀!",
         "eventDate": "00 Nov 2024",
         "eventHour": "00:00",
-        "eventEquipment": [
-          "laptop",
-          "book"
-        ],
+        "eventEquipment": ["laptop", "book"],
         "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
       },
       {
