@@ -1,5 +1,6 @@
 ---
 import { Icon } from 'astro-icon/components';
+import LogoJSConf from '@components/LogoJSConf.astro';
 import { footerItems, socialItems } from './data';
 ---
 
@@ -7,9 +8,10 @@ import { footerItems, socialItems } from './data';
   <div class="container">
     <section class="follow">
       <article class="conf-title">
-        <img src="/svg/logo-js-conf.svg" alt="logo" />
+        <LogoJSConf size={52} />
         <Icon name="JsConfCl" size={88} />
       </article>
+
       <article class="social">
         <p>Síguenos</p>
         <ul>
