@@ -3,7 +3,7 @@ import { EventCard } from '@components';
 import type { GetStaticPaths } from 'astro';
 import { Icon } from 'astro-icon/components';
 import Layout from '@layouts/Layout.astro';
-import charlistasData from '../../data/speakers/charlistas.json';
+import charlistasData from '@data/speakers/charlistas.json';
 
 export const getStaticPaths = (() => {
   const paths = charlistasData.map(charlista => ({
