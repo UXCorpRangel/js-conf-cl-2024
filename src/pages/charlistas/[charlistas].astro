@@ -1,7 +1,7 @@
 ---
+import { EventCard } from '@components';
 import type { GetStaticPaths } from 'astro';
 import { Icon } from 'astro-icon/components';
-import EventContent from '@components/EventCard.astro';
 import Layout from '@layouts/Layout.astro';
 import charlistasData from '../../data/speakers/charlistas.json';
 
@@ -59,7 +59,7 @@ const charlistaDetails = charlistasData.find(charlista => charlista.slug === cha
       <div class="event-speaker">
         {
           charlistaDetails?.event.map(event => (
-            <EventContent
+            <EventCard
               eventType={event.eventType}
               eventTitle={event.eventTitle}
               eventDate={event.eventDate}
