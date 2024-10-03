@@ -45,5 +45,10 @@ export const sliderItems: CommunityItem[] = [
     title: 'AWS Cloud Club in Chile',
     image: '/assets/img/communities/cloudclubchile.avif',
     url: 'https://www.instagram.com/cloudclubchile/'
+  },
+  {
+    title: 'Mermelada Tech',
+    image: '/assets/img/communities/mermelada-tech.avif',
+    url: 'https://linktr.ee/mermeladatech'
   }
 ];
