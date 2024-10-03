@@ -3,48 +3,72 @@ import { Button, SpeakerCard } from '@components';
 
 const speakers = [
   {
-    imgSrc: 'imgs/midudev.png',
-    speakerName: 'Miguel Ángel "Midudev" Durán',
-    speakerInfo: 'Ingeniero de Software y Divulgador de Programación',
-    speakerBrand: 'imgs/midulogo.png',
-    link: '#'
+    imgSrc: 'assets/speakers/sofia.avif',
+    speakerName: 'Sofia Grijalva (condorcoders)"',
+    speakerInfo: 'Introducción a Gemini con NodeJS',
+    speakerBrand: 'assets/speakers/jobs/condorcoders.avif',
+    link: ''
   },
   {
-    imgSrc: 'imgs/midudev.png',
-    speakerName: 'Miguel Ángel "Midudev" Durán',
-    speakerInfo: 'Ingeniero de Software y Divulgador de Programación',
-    speakerBrand: 'imgs/midulogo.png',
-    link: '#'
+    imgSrc: 'assets/speakers/sergio.avif',
+    speakerName: 'Sergio Azocar',
+    speakerInfo: 'Vue la navaja suiza del front end',
+    speakerBrand: 'assets/speakers/jobs/talana.avif',
+    link: ''
   },
   {
-    imgSrc: 'imgs/midudev.png',
-    speakerName: 'Miguel Ángel "Midudev" Durán',
-    speakerInfo: 'Ingeniero de Software y Divulgador de Programación',
-    speakerBrand: 'imgs/midulogo.png',
-    link: '#'
+    imgSrc: 'assets/speakers/dariana.avif',
+    speakerName: 'Dariana Gómez',
+    speakerInfo: 'De No Sé Nada a Lo Entiendo: Redes Neuronales y Machine Learning con Brain.js',
+    speakerBrand: 'assets/speakers/jobs/banco-falabella.avif',
+    link: ''
   },
   {
-    imgSrc: 'imgs/midudev.png',
-    speakerName: 'Miguel Ángel "Midudev" Durán',
-    speakerInfo: 'Ingeniero de Software y Divulgador de Programación',
-    speakerBrand: 'imgs/midulogo.png',
-    link: '#'
+    imgSrc: 'assets/speakers/richard-rodrigo.avif',
+    speakerName: 'Richard Baker & Rodrigo Pizarro',
+    speakerInfo: 'Nuestro viaje de aplicaciones nativas a PWA',
+    speakerBrand: 'assets/speakers/jobs/audienceview.avif',
+    link: ''
   },
   {
-    imgSrc: 'imgs/midudev.png',
-    speakerName: 'Miguel Ángel "Midudev" Durán',
-    speakerInfo: 'Ingeniero de Software y Divulgador de Programación',
-    speakerBrand: 'imgs/midulogo.png',
-    link: '#'
+    imgSrc: 'assets/speakers/goncy.avif',
+    speakerName: 'Gonzalo (Goncy) Pozzo',
+    speakerInfo: 'Q&A',
+    speakerBrand: 'assets/speakers/jobs/vercel.avif',
+    link: ''
   },
   {
-    imgSrc: 'imgs/midudev.png',
-    speakerName: 'Miguel Ángel "Midudev" Durán',
-    speakerInfo: 'Ingeniero de Software y Divulgador de Programación',
-    speakerBrand: 'imgs/midulogo.png',
-    link: '#'
+    imgSrc: 'assets/speakers/franco.avif',
+    speakerName: 'Franco Balich',
+    speakerInfo: 'Usando JavaScript para Robótica e Internet de las cosas',
+    speakerBrand: 'assets/speakers/jobs/itecnis.avif',
+    link: ''
+  },
+  {
+    imgSrc: 'assets/speakers/gricel.avif',
+    speakerName: 'Gricel Sepúlveda',
+    speakerInfo: 'Clean arquitecture en el frontend',
+    speakerBrand: 'assets/speakers/jobs/mercadolibre.avif',
+    link: ''
+  },
+  {
+    imgSrc: 'assets/speakers/piero.avif',
+    speakerName: 'Piero Divasto',
+    speakerInfo: 'IA en Javascript',
+    speakerBrand: 'assets/speakers/jobs/mercadolibre.avif',
+    link: ''
+  },
+  {
+    imgSrc: 'assets/speakers/malva.avif',
+    speakerName: 'Martin Manriquez (Hola Soy Malva)',
+    speakerInfo: 'Creative code con js ',
+    speakerBrand: 'assets/speakers/jobs/blackline.avif',
+    link: ''
   }
 ];
+
+const initialSpeakers = speakers.slice(0, 6);
+const hiddenSpeakers = speakers.slice(6);
 ---
 
 <section class="speakers">
@@ -58,7 +82,7 @@ const speakers = [
 
   <div class="speakers-wrapper">
     {
-      speakers.map(speaker => (
+      initialSpeakers.map(speaker => (
         <SpeakerCard
           imgSrc={speaker.imgSrc}
           speakerName={speaker.speakerName}
@@ -68,9 +92,25 @@ const speakers = [
         />
       ))
     }
+
+    <div class="hidden show-flex hidden-speakers">
+      {
+        hiddenSpeakers.map(speaker => (
+          <SpeakerCard
+            imgSrc={speaker.imgSrc}
+            speakerName={speaker.speakerName}
+            speakerInfo={speaker.speakerInfo}
+            speakerBrand={speaker.speakerBrand}
+            link={speaker.link}
+          />
+        ))
+      }
+    </div>
   </div>
 
-  <Button icon="arrow-up-right" link="/speakers">Ver más</Button>
+  <div class="view-more-btn">
+    <Button icon="chevron-down" variant="ghost" color="black"> Ver más </Button>
+  </div>
 </section>
 
 <style>
@@ -101,5 +141,22 @@ const speakers = [
       justify-content: center;
       gap: 24px;
     }
+
+    & .show-flex {
+      display: contents;
+    }
+
+    & .hidden {
+      display: none;
+    }
   }
 </style>
+
+<script>
+  const button = document.querySelector('.view-more-btn');
+
+  button?.addEventListener('click', () => {
+    document.querySelector('.hidden-speakers')?.classList.remove('hidden');
+    document.querySelector('.view-more-btn')?.classList.add('hidden');
+  });
+</script>
