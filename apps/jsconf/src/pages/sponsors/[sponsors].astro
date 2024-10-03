@@ -1,0 +1,275 @@
+---
+import { Button, EventCard } from '@components';
+import type { GetStaticPaths } from 'astro';
+import { Icon } from 'astro-icon/components';
+import Layout from '@layouts/Layout.astro';
+import sponsorsData from '@data/sponsors/sponsors.json';
+
+export const getStaticPaths = (() => {
+  const paths = sponsorsData.map(sponsor => ({
+    params: { sponsors: sponsor.slug }
+  }));
+  return paths;
+}) satisfies GetStaticPaths;
+
+const { sponsors } = Astro.params;
+
+const sponsorDetails = sponsorsData.find(sponsor => sponsor.slug === sponsors);
+
+const isValidSponsorType = (type: string): type is 'bronze' | 'silver' | 'gold' | 'platinum' => {
+  return ['bronze', 'silver', 'gold', 'platinum'].includes(type);
+};
+
+const sponsorType = sponsorDetails?.sponsorType;
+
+const getSponsorIcon = (sponsorType: 'bronze' | 'silver' | 'gold' | 'platinum') => {
+  switch (sponsorType) {
+    case 'bronze':
+      return '/assets/img/misc/bronze-sponsor.avif';
+    case 'silver':
+      return '/assets/img/misc/silver-sponsor.webp';
+    case 'gold':
+      return '/assets/img/misc/gold-sponsor.avif';
+    case 'platinum':
+      return '/assets/img/misc/platinum-sponsor.webp';
+    default:
+      return null;
+  }
+};
+---
+
+<Layout
+  title={`JSConf Chile 2024 | ${sponsorDetails?.name || 'sponsor'}`}
+  description="Conoce a los sponsors de JSConf Chile 2024. Descubre a los expertos en JavaScript y desarrollo web que estarán compartiendo sus conocimientos del 5 al 7 de diciembre en Santiago. ¡Explora sus perfiles y temas!"
+  ogImg="home.png"
+>
+  <div class="sponsor-wrapper">
+    <div class="sponsor">
+      <div class="cover-section">
+        <img
+          src={`../${sponsorDetails?.sponsorBrand}`}
+          alt={sponsorDetails?.name}
+          class="cover-square"
+        />
+      </div>
+      <div class="sponsor-links">
+        <span>
+          <img
+            src={isValidSponsorType(sponsorType)
+              ? getSponsorIcon(sponsorType)
+              : getSponsorIcon('bronze')}
+            alt={`${sponsorType || 'bronze'} sponsor`}
+          />
+
+          Sponsor {sponsorDetails?.sponsorType}
+        </span>
+        <div class="sponsor-info">
+          <Button variant="solid" color="yellow" size="large" link="#">Ir a su página</Button>
+          <div class="social-links">
+            <a href={sponsorDetails?.linkedin}><Icon name="linkedin" /></a>
+            <a href={sponsorDetails?.instagram}><Icon name="instagram" /></a>
+            <a href={sponsorDetails?.twitter}><Icon name="twitter" /></a>
+          </div>
+        </div>
+        <p>{sponsorDetails?.bio || 'Biografía no disponible'}</p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="event-sponsor">
+        <img src={`../${sponsorDetails?.imgSrc}`} alt={sponsorDetails?.name} />
+        {
+          sponsorDetails?.event.map(event => (
+            <EventCard
+              eventType={event.eventType}
+              eventTitle={event.eventTitle}
+              eventDate={event.eventDate}
+              eventHour={event.eventHour}
+              eventEquipment={event.eventEquipment}
+              eventBrief={event.eventBrief}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .sponsor-wrapper {
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .sponsor {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    p {
+      width: 100%;
+    }
+  }
+
+  .cover-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 500px;
+  }
+
+  .sponsor-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    img {
+      width: 2rem;
+    }
+  }
+
+  .cover-square {
+    border-radius: 1rem;
+  }
+
+  .cover-center {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+    }
+  }
+
+  .sponsor-name {
+    text-align: left;
+  }
+
+  .sponsor-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.125rem;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    a {
+      color: var(--yellow);
+    }
+
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    p {
+      width: 100%;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+
+  .event-sponsor {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    min-width: 561px;
+    width: 100%;
+    border-radius: 1rem;
+  }
+
+  .card-event {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(0.07deg, rgba(80, 72, 29, 0.2) 0.03%, rgba(0, 0, 0, 0) 95.96%),
+      radial-gradient(
+        95.25% 166.54% at 98.39% 2.85%,
+        rgba(54, 53, 38, 0.62) 8%,
+        rgba(9, 9, 7, 0) 80%
+      );
+  }
+
+  @media (max-width: 1200px) {
+    .sponsor-wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .sponsor-wrapper {
+      width: 100%;
+    }
+
+    .cover-square {
+      width: 100%;
+    }
+
+    .sponsor {
+      flex-direction: column;
+    }
+
+    .cover-section {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .sponsor-name {
+      text-align: center;
+    }
+
+    .sponsor-info {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .social-links {
+      justify-content: center;
+    }
+
+    .content {
+      flex-direction: column;
+
+      p {
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+
+    .event-sponsor {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      min-width: auto;
+      width: 100%;
+    }
+
+    .card-event {
+      width: 100%;
+      padding: 0.5rem 1rem;
+    }
+  }
+</style>
