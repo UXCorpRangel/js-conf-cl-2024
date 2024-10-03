@@ -10,7 +10,7 @@ import { sliderItems } from './data';
         sliderItems.map(({ image, title, url }) => (
           <div>
             <img src={image} alt={title} />
-            <Button link={url} variant="ghost" icon="arrow-up-right">
+            <Button link={url} color="black" variant="ghost" icon="arrow-up-right">
               Ver más
             </Button>
           </div>
@@ -22,7 +22,7 @@ import { sliderItems } from './data';
         sliderItems.map(({ image, title, url }) => (
           <div>
             <img src={image} alt={title} />
-            <Button link={url} variant="ghost" icon="arrow-up-right">
+            <Button link={url} color="black" variant="ghost" icon="arrow-up-right">
               Ver más
             </Button>
           </div>
@@ -75,6 +75,7 @@ import { sliderItems } from './data';
     width: 150px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
+    filter: invert(100%);
   }
 
   @keyframes swiperAnimation {
