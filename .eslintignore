@@ -22,3 +22,5 @@ dist
 .lintstagedrc.json
 
 .github
+
+pnpm-lock.yaml

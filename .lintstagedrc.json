@@ -1,0 +1,6 @@
+{
+  "./**/*.{astro,css,js,json,ts,jsx,tsx,mjs,yaml,yml}": [
+    "prettier --cache --write",
+    "eslint --fix"
+  ]
+}
