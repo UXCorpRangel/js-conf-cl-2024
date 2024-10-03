@@ -25,5 +25,25 @@ export const sliderItems: CommunityItem[] = [
     title: '+ Mujeres UX',
     image: '/assets/img/communities/+mujeresux.avif',
     url: 'https://www.instagram.com/masmujeresux.cl'
+  },
+  {
+    title: 'Python Chile',
+    image: '/assets/img/communities/python.avif',
+    url: 'https://pythonchile.cl/'
+  },
+  {
+    title: 'DevsChile',
+    image: '/assets/img/communities/DevsChile.avif',
+    url: 'https://devschile.cl/'
+  },
+  {
+    title: 'Angular Perú',
+    image: '/assets/img/communities/AngularPeru.avif',
+    url: 'https://www.instagram.com/angularperu/'
+  },
+  {
+    title: 'AWS Cloud Club in Chile',
+    image: '/assets/img/communities/cloudclubchile.avif',
+    url: 'https://www.instagram.com/cloudclubchile/'
   }
 ];
