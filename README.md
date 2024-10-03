@@ -1,4 +1,4 @@
-![Portada](./public/og/home.png)
+![Portada](./apps/jsconfig/public/og/home.png)
 
 # ⭐ JSConf Chile 2024
 
