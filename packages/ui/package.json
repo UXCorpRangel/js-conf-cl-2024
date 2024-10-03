@@ -1,0 +1,26 @@
+{
+  "name": "@uxcorp/ui",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "clean": "git clean -xdf .dist .turbo node_modules"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.3",
+    "@astrojs/react": "^3.6.2",
+    "@fontsource/barlow": "^5.1.0",
+    "astro": "^4.15.9",
+    "astro-seo-schema": "^4.0.2",
+    "astro-icon": "^1.1.1",
+    "sanitize.css": "^13.0.0",
+    "schema-dts": "^1.1.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.2"
+  },
+  "engines": {
+    "node": ">=20.14.0",
+    "pnpm": "^9.10.0"
+  }
+}

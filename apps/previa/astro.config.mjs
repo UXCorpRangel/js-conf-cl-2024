@@ -10,6 +10,7 @@ import react from '@astrojs/react';
 export default defineConfig({
   site: 'https://jsconf.cl',
   trailingSlash: 'never',
+  server: { port: 4322 },
   vite: {
     css: {
       transformer: 'lightningcss',

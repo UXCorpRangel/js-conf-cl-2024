@@ -1,0 +1,150 @@
+---
+import { Button } from '@components';
+import ImgVolcanOsorno from '@public/assets/img/volcan-osorno-regin-de-los-lagos.webp';
+import { Image } from 'astro:assets';
+---
+
+<section class="hero">
+  <div class="hero--content">
+    <img
+      src="/assets/img/misc/bell.webp"
+      alt="bell icon"
+      class="hero--decoration"
+      loading="eager"
+    />
+
+    <div class="hero--content--text">
+      <h1>OPORTUNIDADES DE SPONSOR</h1>
+
+      <p>
+        La JSConf Chile reunirá al mejor talento de ingeniería y del desarrollo de JS y el mundo en
+        una conferencia de 2 días de conferencia en un solo gran escenario y 1 día de workshops,
+        para hablar sobre el futuro de JavaScript y la Web! ¡Con más de 800 desarrolladores de todo
+        el mundo en vivo, y cientos más siguiendo la conferencia desde casa, patrocinar JSConf Chile
+        es la mejor manera de conectarse con el mejor talento de JavaScript!
+        <span class="hero--content__actions">
+          ¿Interesado en patrocinar? Contáctenos para más detalles <a
+            href="mailto:@sponsors@jsconf.cl">@sponsors@jsconf.cl</a
+          >
+        </span>
+      </p>
+
+      <div class="hero--actions">
+        <Button
+          variant="solid"
+          color="yellow"
+          size="large"
+          link="https://tally.so/r/mO5j9A"
+          icon="arrow-up-right">Ser sponsor</Button
+        >
+      </div>
+    </div>
+  </div>
+
+  <div class="hero--asset">
+    <Image
+      src={ImgVolcanOsorno}
+      alt="Volcán Osorno, Región de los Lagos"
+      loading="eager"
+      decoding="async"
+      widths={[240, 540, 720, ImgVolcanOsorno.width]}
+      sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${ImgVolcanOsorno.width}px`}
+    />
+
+    <div class="hero--asset--caption">
+      <span>volcán Osorno - </span>Región de Los Lagos.
+    </div>
+  </div>
+</section>
+
+<style>
+  li,
+  .hero {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 406px;
+  }
+  .hero--content {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1.2rem;
+    h1 {
+      font-family: Barlow;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 36px;
+      letter-spacing: -0.0075em;
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-family: Barlow;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      text-align: left;
+      max-width: 560px;
+    }
+    .hero--decoration {
+      transform: translateY(-20px);
+    }
+    .hero--content__actions {
+      display: none;
+    }
+  }
+  .hero--asset {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .hero--asset--caption {
+      font-family: monospace;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 24px;
+      text-align: right;
+      color: var(--white);
+      & span {
+        color: var(--yellow);
+      }
+    }
+  }
+  .hero--actions {
+    margin-top: 2rem;
+  }
+  @media (max-width: 1280px) {
+    .hero {
+      grid-template-columns: 1fr;
+    }
+    .hero--content {
+      place-content: center;
+      order: 2;
+      .hero--content__actions {
+        display: block;
+        margin-top: 1rem;
+        a {
+          color: var(--yellow);
+          text-decoration: underline;
+        }
+      }
+    }
+    .hero--asset {
+      order: 1;
+    }
+    h1,
+    .hero--actions {
+      display: none;
+    }
+    .hero--asset--caption {
+      text-align: center;
+    }
+  }
+</style>

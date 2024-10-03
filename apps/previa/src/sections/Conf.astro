@@ -1,0 +1,58 @@
+---
+
+---
+
+<section class="conf">
+  <div class="about">
+    <img src="/assets/img/misc/moai-about-conf.avif" alt="Moai" />
+    <div class="about-conf">
+      <h2>
+        La JSConf es una <span>conferencia técnica única a nivel mundial</span> con una visión de mejorar
+        la comunidad tecnológica, haciéndola más diversa y humana.
+      </h2>
+      <p>
+        Amplía conocimientos, conecta, mantente informado, participa en debates y actualízate con
+        las tendencias de JavaScript en nuestra conferencia única. ¡Optimiza ingresos y sé parte de
+        algo grande!
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .conf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & .about {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      padding: 2rem 4.5rem;
+
+      & .about-conf {
+        max-width: 44rem;
+
+        & span {
+          color: var(--yellow);
+        }
+      }
+    }
+  }
+
+  @media (width <= 768px) {
+    .conf {
+      & .about {
+        padding: 0;
+        gap: 1rem;
+
+        & .about-conf {
+          & h2 {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+</style>

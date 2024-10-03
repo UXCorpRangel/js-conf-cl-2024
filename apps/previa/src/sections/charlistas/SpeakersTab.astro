@@ -1,0 +1,28 @@
+---
+import { SpeakerCard } from '@components';
+import speakers from '../../data/speakers/charlistas.json';
+---
+
+<div class="speakers-wrapper">
+  {
+    speakers.map(speaker => (
+      <SpeakerCard
+        imgSrc={speaker.imgSrc}
+        speakerName={speaker.speakerName}
+        speakerInfo={speaker.speakerInfo}
+        speakerBrand={speaker.speakerBrand}
+        link={'/charlistas/' + speaker.slug}
+      />
+    ))
+  }
+</div>
+
+<style>
+  .speakers-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+</style>

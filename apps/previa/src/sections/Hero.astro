@@ -1,0 +1,162 @@
+---
+import { Button, DateInfoHome, RadiusGradientFrame } from '@components';
+---
+
+<section class="hero">
+  <div class="hero-info">
+    <img src="/assets/JSCONF.svg" alt="JSConf Chile" />
+    <p>
+      Acompáñanos, en la segunda edición Chilena, de la más prestigiosa conferencia de JavaScript. 1
+      día de talleres, 2 días de Charlistas internacionales, comunidad, aprendizaje y conexiones,
+      este 5, 6 y 7 de diciembre, 2024
+    </p>
+    <div class="info-buttons">
+      <Button color="white" link="/sponsors" icon="star"> Sponsor </Button>
+      <Button variant="stroke" color="white" link="/tickets" icon="ticket"> Tickets </Button>
+    </div>
+  </div>
+  <div class="hero-date-desktop">
+    <DateInfoHome left="Place" right={'(“Santiago”);'} filled position="first" />
+    <DateInfoHome left="Date" right={'(“Dec 05, 06 y 07  2024”);'} filled position="second" />
+    <DateInfoHome left="Time" right={'(“09:00”);'} filled position="third" />
+    <DateInfoHome left="Torres del Paine -" right="Región del Magallanes" position="fourth" />
+  </div>
+  <div class="hero-date-mobile">
+    <RadiusGradientFrame class="date-info">
+      <span>Place</span> (“Santiago”);
+    </RadiusGradientFrame>
+    <RadiusGradientFrame class="date-info">
+      <span>Date</span> (“Dec 05, 06 y 07 2024”);
+    </RadiusGradientFrame>
+    <RadiusGradientFrame class="date-info">
+      <span>Time</span> (“09:00”);
+    </RadiusGradientFrame>
+    <p><span>Torres del Paine -</span> Región del Magallanes</p>
+  </div>
+</section>
+<style>
+  .hero {
+    display: flex;
+    align-items: center;
+    padding: 4.5rem 3.45rem 0;
+
+    & .hero-info {
+      width: 40%;
+
+      & p {
+        max-width: 27.5rem;
+      }
+
+      & .info-buttons {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 2rem 0;
+
+        & .mobile-buttons {
+          display: none;
+        }
+      }
+    }
+
+    & .hero-date-desktop {
+      width: 60%;
+      height: 502px;
+      position: relative;
+      background-image: url(/assets/img/torres-del-paine.avif);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(circle, transparent 25%, var(--bg-color) 65%);
+      }
+    }
+
+    .hero-date-mobile {
+      display: none;
+    }
+  }
+
+  @media (width <= 768px) {
+    .hero {
+      flex-direction: column-reverse;
+      padding: 4rem 0;
+      gap: 4rem;
+
+      & .hero-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        & img {
+          max-width: 15rem;
+        }
+
+        & p {
+          max-width: 20.5rem;
+          text-align: center;
+        }
+      }
+
+      & .hero-date-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        position: relative;
+        width: 100dvw;
+        height: 30rem;
+        background-image: url(/assets/img/torres-del-paine.avif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        & .date-info {
+          width: fit-content;
+          padding: 0.5rem 1rem;
+          font-family: monospace;
+          font-size: 1.2rem;
+
+          --shadow: 0px 4px 85.3px rgba(64, 64, 64, 0.1);
+          --radius: 10px;
+          --border-width: 2px;
+          --border-color: linear-gradient(
+            90deg,
+            #090907 46.45%,
+            #1d1b0e 63.08%,
+            #413e21 78.39%,
+            #aaa255 86.07%
+          );
+          background:
+            linear-gradient(0, var(--bg-color), var(--bg-color)) padding-box,
+            var(--gradient-2) border-box;
+
+          & span {
+            color: var(--yellow);
+          }
+        }
+
+        & p {
+          font-family: monospace;
+          position: absolute;
+          bottom: 0;
+
+          & span {
+            color: var(--yellow);
+          }
+        }
+      }
+
+      & .hero-date-desktop {
+        display: none;
+      }
+    }
+  }
+</style>
