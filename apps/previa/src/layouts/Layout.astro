@@ -164,7 +164,7 @@ const ogURL = `${site}/og/${ogImg}`;
 
     font-family: 'Barlow', sans-serif;
     background: var(--bg-color);
-    color: var(--white);
+    color: var(--black);
 
     & main.container {
       width: min(80rem, 100vw);
@@ -187,14 +187,14 @@ const ogURL = `${site}/og/${ogImg}`;
     }
 
     &::-webkit-scrollbar-thumb {
-      background: var(--yellow);
+      background: var(--black);
       border-radius: 0.2rem;
     }
   }
 
   @supports not selector(::-webkit-scrollbar) {
     body {
-      scrollbar-color: var(--yellow) var(--bg-color);
+      scrollbar-color: var(--black) var(--bg-color);
     }
   }
 
@@ -223,7 +223,7 @@ const ogURL = `${site}/og/${ogImg}`;
   }
 
   :where(a) {
-    color: var(--white);
+    color: var(--black);
   }
 
   @media (--mobile) {
