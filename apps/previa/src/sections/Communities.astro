@@ -3,7 +3,7 @@ import { Slider } from '@components';
 ---
 
 <section class="communities">
-  <h2 class="communities-title">COMUNIDADES AMIGAS</h2>
+  <h2>COMUNIDADES AMIGAS</h2>
   <Slider />
 </section>
 
@@ -13,44 +13,5 @@ import { Slider } from '@components';
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    & .communities-title {
-      position: relative;
-      display: grid;
-      place-items: center;
-
-      &::before {
-        --scaleX: 0.8;
-        --scaleY: 2;
-        --blur: 10px;
-        --bg-radial: 43.41%;
-      }
-      @media (width <= 720px) {
-        height: 170px;
-        max-width: 490px;
-        margin: 0 auto;
-        &::before {
-          --scaleX: 1;
-          --scaleY: 0.78;
-          --blur: 30px;
-          --bg-radial: 89.41%;
-        }
-      }
-      &::before {
-        content: '';
-        background: radial-gradient(
-          var(--bg-radial) var(--bg-radial) at 50% 50%,
-          rgba(92, 92, 92, 0.5) 0%,
-          rgba(63, 63, 59, 0) 100%
-        );
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        inset: 0;
-        z-index: -1;
-        transform: scale(var(--scaleX), var(--scaleY));
-        filter: blur(var(--blur));
-      }
-    }
   }
 </style>
