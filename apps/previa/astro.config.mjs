@@ -1,6 +1,5 @@
 // @ts-check
 // eslint-disable-next-line prettier/prettier
-import react from '@astrojs/react';
 import icon from 'astro-icon';
 // eslint-disable-next-line prettier/prettier
 import { defineConfig } from 'astro/config';
@@ -24,5 +23,5 @@ export default defineConfig({
     }
   },
 
-  integrations: [icon(), react()]
+  integrations: [icon()]
 });

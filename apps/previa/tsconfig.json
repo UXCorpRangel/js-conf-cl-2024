@@ -18,8 +18,6 @@
 
       "@public/*": ["./public/*"],
       "@/*": ["./src/*"]
-    },
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    }
   }
 }
