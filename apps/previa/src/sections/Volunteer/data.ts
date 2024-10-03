@@ -36,5 +36,11 @@ export const volunteerData: StaffData[] = [
     staffName: 'Ricardo Cuauro',
     linkedinLink: 'https://www.linkedin.com/in/ricardocuauro/',
     githubLink: 'https://github.com/odracirdev'
+  },
+  {
+    imgSrc: '/assets/img/volunteer/samuel-llibre-pillco.avif',
+    staffName: 'Samuel Llibre-Pillco',
+    linkedinLink: 'https://www.linkedin.com/in/zyruks/',
+    githubLink: 'https://github.com/Zyruks'
   }
 ];

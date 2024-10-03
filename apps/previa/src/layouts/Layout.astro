@@ -72,8 +72,6 @@ const ogURL = `${site}/og/${ogImg}`;
 </html>
 
 <style is:global>
-  @custom-media --mobile (width >= 412px);
-
   :root {
     --yellow: #ede060;
     --yellow-100: #c8bc4f;
@@ -93,7 +91,7 @@ const ogURL = `${site}/og/${ogImg}`;
     --black: #000000;
     --black-opacity: rgba(0, 0, 0, 0.7);
 
-    --bg-color: #090907;
+    --bg-color: #fff;
 
     --gradient-1: linear-gradient(180deg, #2a2401 0%, #9a8025 39.57%, #ede060 100%);
     --gradient-2: linear-gradient(
@@ -143,7 +141,8 @@ const ogURL = `${site}/og/${ogImg}`;
       rgba(0, 0, 0, 0) 95.96%
     );
     --border-sponsor-bronze: linear-gradient(327deg, #2d2d2d 31.78%, #2a1701 63.2%, #60301f 93.99%);
-    --gradient-footer: linear-gradient(to right, rgba(42, 36, 1, 0.9) 0%, rgba(9, 9, 7, 0.1) 100%);
+    --gradient-footer: radial-gradient(48.28% 291.7% at 22.97% 22.4%, #2a2401 0%, #090907 100%);
+
     --gradient-card-agenda: linear-gradient(258deg, #121212 7.65%, #1d1b0e 57.4%, #413e21 98.66%);
   }
 
@@ -164,7 +163,7 @@ const ogURL = `${site}/og/${ogImg}`;
 
     font-family: 'Barlow', sans-serif;
     background: var(--bg-color);
-    color: var(--white);
+    color: var(--black);
 
     & main.container {
       width: min(80rem, 100vw);
@@ -187,14 +186,14 @@ const ogURL = `${site}/og/${ogImg}`;
     }
 
     &::-webkit-scrollbar-thumb {
-      background: var(--yellow);
+      background: var(--black);
       border-radius: 0.2rem;
     }
   }
 
   @supports not selector(::-webkit-scrollbar) {
     body {
-      scrollbar-color: var(--yellow) var(--bg-color);
+      scrollbar-color: var(--black) var(--bg-color);
     }
   }
 
@@ -224,9 +223,5 @@ const ogURL = `${site}/og/${ogImg}`;
 
   :where(a) {
     color: var(--white);
-  }
-
-  @media (--mobile) {
-    /* Estilos a utilizar */
   }
 </style>

@@ -3,7 +3,7 @@ import { Icon } from 'astro-icon/components';
 
 type ButtonVariant = 'solid' | 'stroke' | 'ghost';
 
-type ButtonColor = 'white' | 'yellow';
+type ButtonColor = 'white' | 'black' | 'yellow';
 
 type ButtonSize = 'fit' | 'large' | 'full';
 
@@ -74,11 +74,16 @@ const { variant = 'solid', color = 'yellow', link, icon = 'none', size = 'fit' }
       --button-color-hover-2: var(--yellow-400);
     }
 
+    &.black {
+      --button-color: var(--black);
+      --button-color-hover: var(--gray-3);
+    }
+
     /* VARIANT */
 
     &.solid {
       background: var(--button-color);
-      color: var(--black);
+      color: var(--white);
 
       &:hover {
         background: var(--button-color-hover);
@@ -87,7 +92,7 @@ const { variant = 'solid', color = 'yellow', link, icon = 'none', size = 'fit' }
     &.stroke {
       background: none;
       border: 1px solid var(--button-color);
-      color: var(--white);
+      color: var(--black);
 
       &:hover {
         color: var(--black);

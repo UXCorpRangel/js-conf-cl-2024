@@ -8,7 +8,7 @@ const speakerImage = imgSrc || defaultImgSrc;
 const brandImage = speakerBrand || defaultBrandSrc;
 ---
 
-<a href={link} class="card-body">
+<a href={link ? link : 'javascript:void(0);'} class="card-body">
   <div class="speaker">
     <picture>
       <source srcset={speakerImage} media="(min-width: 768px)" />
@@ -30,12 +30,13 @@ const brandImage = speakerBrand || defaultBrandSrc;
     justify-content: center;
     align-items: center;
     max-width: 400px;
-    width: fit-content;
+    min-width: 390px;
     gap: 16px;
     padding: 24px;
     border-radius: 16px;
     text-decoration: none;
-    background-color: var(--bg-color);
+    background-color: var(--gray-50);
+    color: var(--black);
     position: relative;
     transition: transform 0.3s;
 
@@ -84,5 +85,6 @@ const brandImage = speakerBrand || defaultBrandSrc;
 
   .card-info {
     text-align: center;
+    font-weight: 600;
   }
 </style>
