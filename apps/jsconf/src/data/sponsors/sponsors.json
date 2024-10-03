@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "audienceview",
+    "name": "AudienceView",
+    "sponsorType": "gold",
+    "sponsorBrand": "/assets/img/sponsors/AudienceView-Logo.avif",
+    "imgSrc": "/assets/img/sponsors/sponsor-detail-placeholder.avif",
+    "linkedin": "#",
+    "instagram": "#",
+    "twitter": "#",
+    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "event": [
+      {
+        "eventType": "Workshop",
+        "eventTitle": "¡El JavaScript del futuro 🚀!",
+        "eventDate": "00 Nov 2024",
+        "eventHour": "00:00",
+        "eventEquipment": ["laptop", "book"],
+        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+      }
+    ]
+  }
+]
