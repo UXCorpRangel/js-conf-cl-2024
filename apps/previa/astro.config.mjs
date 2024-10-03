@@ -1,14 +1,13 @@
 // @ts-check
 // eslint-disable-next-line prettier/prettier
+import react from '@astrojs/react';
 import icon from 'astro-icon';
 // eslint-disable-next-line prettier/prettier
 import { defineConfig } from 'astro/config';
 
-import react from '@astrojs/react';
-
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://jsconf.cl',
+  site: 'https://laprevia.jsconf.cl',
   trailingSlash: 'never',
   server: { port: 4322 },
   vite: {
