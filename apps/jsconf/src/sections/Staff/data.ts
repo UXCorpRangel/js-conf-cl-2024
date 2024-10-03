@@ -39,12 +39,15 @@ export const staffData: StaffData[] = [
     imgSrc: '/assets/img/staff/jose-lezama.avif',
     staffName: 'José Lezama',
     linkedinLink: 'https://www.linkedin.com/in/joseglego/',
-    instagramLink: 'https://www.instagram.com/joseg_lego/'
+    instagramLink: 'https://www.instagram.com/joseg_lego/',
+    githubLink: 'https://github.com/joseglego'
   },
   {
     imgSrc: '/assets/img/staff/leslie-herrera.avif',
     staffName: 'Leslie Herrera',
-    linkedinLink: 'https://www.linkedin.com/in/dereemii/'
+    linkedinLink: 'https://www.linkedin.com/in/dereemii/',
+    instagramLink: 'https://www.instagram.com/dereemii/',
+    githubLink: 'https://github.com/Dereemii'
   },
   {
     imgSrc: '/assets/img/staff/martin-calderon.avif',
