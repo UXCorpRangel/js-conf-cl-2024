@@ -1,0 +1,220 @@
+---
+import { Icon } from 'astro-icon/components';
+import { footerItems, socialItems } from './data';
+import JSConf2024 from './JSConf2024.astro';
+import LogoJSConf from './LogoJSConf.astro';
+---
+
+<footer>
+  <div class="container">
+    <section class="follow">
+      <article class="conf-title">
+        <LogoJSConf size={52} />
+        <JSConf2024 />
+      </article>
+
+      <article class="social">
+        <p>Síguenos</p>
+        <ul>
+          {
+            socialItems
+              .filter(({ hide }) => !hide)
+              .map(({ text, url, icon, label }) => (
+                <li>
+                  <a href={url} aria-label={label}>
+                    <Icon name={icon} title={text} size={32} />
+                  </a>
+                </li>
+              ))
+          }
+        </ul>
+      </article>
+    </section>
+    <section class="information">
+      <ul class="list">
+        <li class="list-item">Información</li>
+        {
+          footerItems
+            .filter(({ hide }) => !hide)
+            .map(({ text, url, label }) => (
+              <li class="list-item">
+                <a href={url} aria-label={label}>
+                  {text}
+                </a>
+              </li>
+            ))
+        }
+      </ul>
+    </section>
+  </div>
+  <p class="made-by">
+    Hecho con <video
+      width="24"
+      src="/assets/video/heart.webm"
+      preload="metadata"
+      playsinline
+      autoplay
+      muted
+      loop></video> por
+    <a href="https://github.com/UXCorpRangel" target="_blank" rel="noopener noreferrer">
+      UXCorpRangel
+    </a>
+  </p>
+</footer>
+
+<style>
+  footer {
+    margin-block-start: 1rem;
+    width: 100%;
+    background-image: var(--gradient-footer);
+    backdrop-filter: blur(1rem);
+    padding-block-end: 1.5rem;
+
+    & .container {
+      width: min(80rem, 100vw);
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding-block-start: 1rem;
+
+      @media (width >= 768px) {
+        flex-direction: row;
+        padding: 2rem 0;
+      }
+
+      & .follow {
+        & .conf-title {
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+
+          & .Js {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-block-end: 2rem;
+            position: relative;
+
+            &::after {
+              content: '2024';
+              color: var(--yellow);
+              font-size: 0.8rem;
+              position: absolute;
+              inset-inline-end: 0.2rem;
+            }
+          }
+
+          & .conf-cl {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-block-end: 2.5rem;
+            margin-inline-start: -10px;
+
+            &::after {
+              content: 'CHILE';
+              position: relative;
+              top: 20px;
+              right: 59px;
+            }
+          }
+
+          & img {
+            width: 52px;
+          }
+        }
+
+        & .social {
+          display: flex;
+          align-items: center;
+
+          & ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+            padding-inline-start: 1rem;
+          }
+
+          & a,
+          p {
+            color: var(--yellow);
+          }
+        }
+      }
+
+      & .information {
+        & .list {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          list-style: none;
+
+          & .list-item {
+            color: var(--white);
+
+            &:first-child {
+              color: var(--gray-1);
+            }
+
+            & a {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      & .mail {
+        & form {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          & input {
+            border: 1px solid var(--gray-1);
+            background-color: var(--bg-color);
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+          }
+        }
+
+        & p {
+          text-align: end;
+          color: var(--gray-1);
+          font-weight: 500;
+          font-size: 0.8rem;
+          line-height: 0.8rem;
+        }
+      }
+    }
+
+    & .made-by {
+      margin: 0;
+      font-weight: 500;
+      text-align: center;
+
+      & a {
+        color: var(--yellow);
+        position: relative;
+        text-decoration: none;
+
+        &::before {
+          content: '';
+          position: absolute;
+          text-decoration: underline;
+          inline-size: 100%;
+          block-size: 2px;
+          inset-inline: 0;
+          inset-inline-end: 0;
+          border-radius: 30%;
+          transform: scaleX(0);
+          background-color: var(--yellow);
+          transition: transform 0.3s ease-out;
+        }
+
+        &:hover::before {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+</style>

@@ -1,0 +1,10 @@
+{
+  "files.eol": "\n",
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    ".eslintrc.cjs": ".eslintrc.*.cjs,.eslintignore",
+    ".gitignore": ".gitkeep,.gitattributes",
+    ".prettierrc.mjs": ".prettierrc.*.json,.prettierignore"
+  }
+}

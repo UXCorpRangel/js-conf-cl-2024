@@ -1,0 +1,37 @@
+{
+  "name": "@uxcorp/previa",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "clean": "rimraf .astro node_modules .turbo dist",
+    "astro": "astro",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --check \"**/*.{js,cjs,mjs,ts,tsx,md,json,astro}\"",
+    "format:fix": "prettier --write \"**/*.{js,cjs,mjs,ts,tsx,md,mdx,json,astro}\""
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.3",
+    "@fontsource/barlow": "^5.1.0",
+    "astro": "^4.15.9",
+    "astro-seo-schema": "^4.0.2",
+    "astro-icon": "^1.1.1",
+    "sanitize.css": "^13.0.0",
+    "schema-dts": "^1.1.2"
+  },
+  "devDependencies": {
+    "@csstools/postcss-global-data": "^3.0.0",
+    "@types/node": "^20.14.10",
+    "lightningcss": "^1.25.1",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.6.2"
+  },
+  "engines": {
+    "node": ">=20.14.0",
+    "pnpm": "^9.10.0"
+  }
+}

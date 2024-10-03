@@ -1,0 +1,69 @@
+---
+import { StaffCard } from '@components';
+import { staffData } from './data';
+---
+
+<section class="staff">
+  <div class="staff-info">
+    <h2>Staff</h2>
+    <p>Conoce al equipo que está preparando la JSConf Chile 2024</p>
+  </div>
+  <div class="staff-wrapper">
+    {
+      staffData.map(
+        ({
+          imgSrc,
+          staffName,
+          facebookLink,
+          githubLink,
+          instagramLink,
+          linkedinLink,
+          twitterLink
+        }) => (
+          <StaffCard
+            imgSrc={imgSrc}
+            staffName={staffName}
+            linkedinLink={linkedinLink}
+            instagramLink={instagramLink}
+            twitterLink={twitterLink}
+            facebookLink={facebookLink}
+            githubLink={githubLink}
+          />
+        )
+      )
+    }
+  </div>
+</section>
+
+<style>
+  .staff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & .staff-info {
+      max-width: 560px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & h2 {
+        text-transform: uppercase;
+      }
+
+      & p {
+        text-align: center;
+      }
+    }
+
+    & .staff-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+</style>

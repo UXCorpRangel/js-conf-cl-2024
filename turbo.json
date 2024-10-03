@@ -1,0 +1,14 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": { "outputs": ["apps/jsconf/dist/**", "!apps/jsconf/dist/cache/**","apps/previa/dist/**", "!apps/previa/dist/cache/**"] },
+    "build:jsconf": { "outputs": ["apps/jsconf/dist/**", "!apps/jsconf/dist/cache/**"] },
+    "build:previa": { "outputs": ["apps/previa/dist/**", "!apps/previa/dist/cache/**"] },
+    "build:apps": { "dependsOn": ["build:jsconf", "build:previa"] },
+    "dev": { "cache": false, "persistent": true },
+    "dev:jsconf": { "cache": false, "persistent": true },
+    "dev:previa": { "cache": false, "persistent": true },
+    "clean": { "cache": false },
+    "//#clean": { "cache": false }
+  }
+}

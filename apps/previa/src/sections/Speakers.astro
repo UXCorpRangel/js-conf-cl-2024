@@ -1,0 +1,105 @@
+---
+import { Button, SpeakerCard } from '@components';
+
+const speakers = [
+  {
+    imgSrc: 'imgs/midudev.png',
+    speakerName: 'Miguel Ángel "Midudev" Durán',
+    speakerInfo: 'Ingeniero de Software y Divulgador de Programación',
+    speakerBrand: 'imgs/midulogo.png',
+    link: '#'
+  },
+  {
+    imgSrc: 'imgs/midudev.png',
+    speakerName: 'Miguel Ángel "Midudev" Durán',
+    speakerInfo: 'Ingeniero de Software y Divulgador de Programación',
+    speakerBrand: 'imgs/midulogo.png',
+    link: '#'
+  },
+  {
+    imgSrc: 'imgs/midudev.png',
+    speakerName: 'Miguel Ángel "Midudev" Durán',
+    speakerInfo: 'Ingeniero de Software y Divulgador de Programación',
+    speakerBrand: 'imgs/midulogo.png',
+    link: '#'
+  },
+  {
+    imgSrc: 'imgs/midudev.png',
+    speakerName: 'Miguel Ángel "Midudev" Durán',
+    speakerInfo: 'Ingeniero de Software y Divulgador de Programación',
+    speakerBrand: 'imgs/midulogo.png',
+    link: '#'
+  },
+  {
+    imgSrc: 'imgs/midudev.png',
+    speakerName: 'Miguel Ángel "Midudev" Durán',
+    speakerInfo: 'Ingeniero de Software y Divulgador de Programación',
+    speakerBrand: 'imgs/midulogo.png',
+    link: '#'
+  },
+  {
+    imgSrc: 'imgs/midudev.png',
+    speakerName: 'Miguel Ángel "Midudev" Durán',
+    speakerInfo: 'Ingeniero de Software y Divulgador de Programación',
+    speakerBrand: 'imgs/midulogo.png',
+    link: '#'
+  }
+];
+---
+
+<section class="speakers">
+  <div class="speakers-info">
+    <h2>NUESTROS CHARLISTAS</h2>
+    <p>
+      Unete a la primera edición de las más prestigiosa conferencia de Javascript con exponentes
+      nacionales e internacionales
+    </p>
+  </div>
+
+  <div class="speakers-wrapper">
+    {
+      speakers.map(speaker => (
+        <SpeakerCard
+          imgSrc={speaker.imgSrc}
+          speakerName={speaker.speakerName}
+          speakerInfo={speaker.speakerInfo}
+          speakerBrand={speaker.speakerBrand}
+          link={speaker.link}
+        />
+      ))
+    }
+  </div>
+
+  <Button icon="arrow-up-right" link="/speakers">Ver más</Button>
+</section>
+
+<style>
+  .speakers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin: 8rem 0;
+
+    & .speakers-info {
+      max-width: 560px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & p {
+        text-align: center;
+      }
+    }
+
+    & .speakers-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+    }
+  }
+</style>
