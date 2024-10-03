@@ -1,1 +1,5 @@
+#!/bin/sh
+
+node .husky/pre-commit.js
+
 npx lint-staged
