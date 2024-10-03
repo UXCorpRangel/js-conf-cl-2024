@@ -1,6 +1,6 @@
 ---
 interface Props {
-  left: string;
+  left?: string;
   right: string;
   filled?: boolean;
   position: 'first' | 'second' | 'third' | 'fourth';
@@ -34,7 +34,7 @@ const { left, right, filled = false, position } = Astro.props;
       border: 0.125rem solid transparent;
       border-radius: 0.5rem;
       background:
-        linear-gradient(0, var(--bg-color), var(--bg-color)) padding-box,
+        linear-gradient(0, var(--black), var(--black)) padding-box,
         var(--gradient-2) border-box;
       backdrop-filter: blur(0.75rem);
       opacity: 70%;
@@ -60,6 +60,10 @@ const { left, right, filled = false, position } = Astro.props;
     &.fourth {
       inset-inline-end: -8%;
       inset-block-start: -3%;
+
+      & p {
+        color: var(--black);
+      }
     }
   }
 

@@ -1,37 +1,29 @@
 ---
-import { Button, DateInfoHome, RadiusGradientFrame } from '@components';
+import { DateInfoHome, RadiusGradientFrame } from '@components';
 ---
 
 <section class="hero">
   <div class="hero-info">
-    <img src="/assets/JSCONF.svg" alt="JSConf Chile" />
-    <p>
-      Acompáñanos, en la segunda edición Chilena, de la más prestigiosa conferencia de JavaScript. 1
-      día de talleres, 2 días de Charlistas internacionales, comunidad, aprendizaje y conexiones,
-      este 5, 6 y 7 de diciembre, 2024
-    </p>
-    <div class="info-buttons">
-      <Button color="white" link="/sponsors" icon="star"> Sponsor </Button>
-      <Button variant="stroke" color="white" link="/tickets" icon="ticket"> Tickets </Button>
-    </div>
+    <h1>Previa 2024</h1>
+    <img src="/assets/JSCONF-black.svg" alt="La Previa - JSConf Chile" />
   </div>
   <div class="hero-date-desktop">
-    <DateInfoHome left="Place" right={'(“Santiago”);'} filled position="first" />
-    <DateInfoHome left="Date" right={'(“Dec 05, 06 y 07  2024”);'} filled position="second" />
-    <DateInfoHome left="Time" right={'(“09:00”);'} filled position="third" />
-    <DateInfoHome left="Torres del Paine -" right="Región del Magallanes" position="fourth" />
+    <DateInfoHome left="Fecha" right={'Octubre 12, 2024'} filled position="first" />
+    <DateInfoHome left="Más de" right={'10 charlistas'} filled position="second" />
+    <DateInfoHome left="Hora" right={'Desde las 09:00hrs Chile'} filled position="third" />
+    <DateInfoHome right="Torres del Paine - Región del Magallanes" position="fourth" />
   </div>
   <div class="hero-date-mobile">
     <RadiusGradientFrame class="date-info">
-      <span>Place</span> (“Santiago”);
+      <span>Más de</span> 10 charlistas
     </RadiusGradientFrame>
     <RadiusGradientFrame class="date-info">
-      <span>Date</span> (“Dec 05, 06 y 07 2024”);
+      <span>Fecha</span> Octubre 12, 2024
     </RadiusGradientFrame>
     <RadiusGradientFrame class="date-info">
-      <span>Time</span> (“09:00”);
+      <span>Hora</span> Desde las 09:00hrs Chile
     </RadiusGradientFrame>
-    <p><span>Torres del Paine -</span> Región del Magallanes</p>
+    <p>Torres del Paine - Región del Magallanes</p>
   </div>
 </section>
 <style>
@@ -43,25 +35,20 @@ import { Button, DateInfoHome, RadiusGradientFrame } from '@components';
     & .hero-info {
       width: 40%;
 
-      & p {
-        max-width: 27.5rem;
-      }
-
-      & .info-buttons {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        padding: 2rem 0;
-
-        & .mobile-buttons {
-          display: none;
-        }
+      & h1 {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: var(--yellow);
+        background-color: var(--black);
+        width: fit-content;
+        padding: 1rem 1.5rem;
+        border-radius: 0.5rem;
       }
     }
 
     & .hero-date-desktop {
       width: 60%;
-      height: 502px;
+      height: 554px;
       position: relative;
       background-image: url(/assets/img/torres-del-paine.avif);
       background-size: cover;
@@ -72,7 +59,7 @@ import { Button, DateInfoHome, RadiusGradientFrame } from '@components';
         content: '';
         position: absolute;
         inset: 0;
-        background-image: radial-gradient(circle, transparent 25%, var(--bg-color) 65%);
+        background-image: radial-gradient(circle, transparent 25%, var(--bg-color) 68%);
       }
     }
 
@@ -135,7 +122,7 @@ import { Button, DateInfoHome, RadiusGradientFrame } from '@components';
             #aaa255 86.07%
           );
           background:
-            linear-gradient(0, var(--bg-color), var(--bg-color)) padding-box,
+            linear-gradient(0, var(--black), var(--black)) padding-box,
             var(--gradient-2) border-box;
 
           & span {
@@ -147,10 +134,7 @@ import { Button, DateInfoHome, RadiusGradientFrame } from '@components';
           font-family: monospace;
           position: absolute;
           bottom: 0;
-
-          & span {
-            color: var(--yellow);
-          }
+          color: var(--black);
         }
       }
 
