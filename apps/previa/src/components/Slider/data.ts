@@ -47,8 +47,8 @@ export const sliderItems: CommunityItem[] = [
     url: 'https://www.instagram.com/cloudclubchile/'
   },
   {
-    title: 'Mermelada Tech',
-    image: '/assets/img/communities/mermelada-tech.avif',
-    url: 'https://linktr.ee/mermeladatech'
+    title: 'UX Friends',
+    image: '/assets/img/communities/ux-friends.avif',
+    url: 'https://www.instagram.com/uxfriends_podcast/'
   }
 ];
