@@ -16,8 +16,12 @@ const { sponsors } = Astro.params;
 
 const sponsorDetails = sponsorsData.find(sponsor => sponsor.slug === sponsors);
 
-const isValidSponsorType = (type: string): type is 'bronze' | 'silver' | 'gold' | 'platinum' => {
-  return ['bronze', 'silver', 'gold', 'platinum'].includes(type);
+const isValidSponsorType = (t?: string): t is 'bronze' | 'silver' | 'gold' | 'platinum' => {
+  if (typeof t !== 'string') {
+    return false;
+  }
+
+  return ['bronze', 'silver', 'gold', 'platinum'].includes(t);
 };
 
 const sponsorType = sponsorDetails?.sponsorType;
