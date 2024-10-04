@@ -1,7 +1,7 @@
 ---
 const { imgSrc, speakerName, speakerInfo, speakerBrand, link } = Astro.props;
 
-const defaultImgSrc = 'assets/img/misc/speaker-stock.png';
+const defaultImgSrc = 'assets/img/misc/speaker-stock.webp';
 const defaultBrandSrc = 'assets/img/misc/small-logo.png';
 
 const speakerImage = imgSrc || defaultImgSrc;
@@ -90,7 +90,7 @@ const brandImage = speakerBrand || defaultBrandSrc;
 
   @media (width <= 768px) {
     .card-body {
-      min-width: auto;
+      min-width: 100%;
     }
   }
 </style>
