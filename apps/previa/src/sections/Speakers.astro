@@ -71,7 +71,7 @@ const initialSpeakers = speakers.slice(0, 6);
 const hiddenSpeakers = speakers.slice(6);
 ---
 
-<section class="speakers">
+<section class="speakers" id="charlistas-section">
   <div class="speakers-info">
     <h2>NUESTROS CHARLISTAS</h2>
     <p>Únete a la previa de manera online o presencial y disfruta de estas maravillosas charlas.</p>
@@ -106,7 +106,9 @@ const hiddenSpeakers = speakers.slice(6);
   </div>
 
   <div class="view-more-btn">
-    <Button icon="chevron-down" variant="ghost" color="black"> Ver más </Button>
+    <Button icon="chevron-down" variant="ghost" color="black" link="#charlistas-section">
+      Ver más
+    </Button>
   </div>
 </section>
 
