@@ -90,6 +90,10 @@ import LogoJSConf from './LogoJSConf.astro';
           gap: 1rem;
           align-items: center;
 
+          @media (width <= 768px) {
+            justify-content: center;
+          }
+
           & .Js {
             font-size: 2.5rem;
             font-weight: 900;
@@ -128,6 +132,11 @@ import LogoJSConf from './LogoJSConf.astro';
           display: flex;
           align-items: center;
 
+          @media (width <= 768px) {
+            align-items: center;
+            margin-block: 1.5rem;
+          }
+
           & ul {
             display: flex;
             list-style: none;
@@ -148,6 +157,12 @@ import LogoJSConf from './LogoJSConf.astro';
           flex-direction: column;
           gap: 0.5rem;
           list-style: none;
+          padding: 0;
+
+          @media (width <= 768px) {
+            align-items: center;
+            margin-block: 1.5rem;
+          }
 
           & .list-item {
             color: var(--white);
