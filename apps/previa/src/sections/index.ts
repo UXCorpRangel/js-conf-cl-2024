@@ -7,9 +7,5 @@ export { default as Sponsors } from './Sponsors.astro';
 export { default as Views } from './Views.astro';
 
 // Folders
-export * from './agenda';
-export * from './charlistas';
-export * from './FAQs';
-export * from './sponsors';
 export * from './Staff';
 export * from './Volunteer';
