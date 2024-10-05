@@ -60,6 +60,16 @@ import { RadiusGradientFrame } from '@components';
 
       box-shadow: 0px 4px 85.3px 0px #55552e1a;
 
+      & img {
+        object-fit: cover;
+        mask: linear-gradient(180deg, #2a2401 20%, transparent 100%);
+      }
+
+      &:before {
+        z-index: 1;
+        pointer-events: none;
+      }
+
       & .view-info {
         padding: 0 4rem;
 
