@@ -3,11 +3,11 @@ import Communities from '@sections/Communities.astro';
 import Conf from '@sections/Conf.astro';
 import Event from '@sections/Event.astro';
 import Hero from '@sections/Hero.astro';
-import LiveStream from '@sections/LiveStream.astro';
 import Sponsors from '@sections/Sponsors.astro';
 import Staff from '@sections/Staff/Staff.astro';
 import Views from '@sections/Views.astro';
 import Volunteer from '@sections/Volunteer/Volunteer.astro';
+import LiveStream from '@components/LiveStreamWidget/StreamWidget.tsx';
 import Layout from '@layouts/Layout.astro';
 ---
 
@@ -17,7 +17,10 @@ import Layout from '@layouts/Layout.astro';
   ogImg="home.png"
 >
   <Hero />
-  <LiveStream />
+  <LiveStream
+    urlStream="https://www.youtube.com/live/1g4vzsvtsq4?si=YETqjlVTeglK9jnH"
+    client:load
+  />
   <Conf />
   <Event />
   <Views />
