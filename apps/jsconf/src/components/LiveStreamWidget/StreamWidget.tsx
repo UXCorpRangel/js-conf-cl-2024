@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
-import LiveStreamWidget from './LiveStreamWidget';
+import { lazy, Suspense, useEffect, useState } from 'react';
+
+const LazLiveStreamWidget = lazy(() => import('./LiveStreamWidget'));
 
 export type StreamWidgetProps = {
   urlStream: string;
@@ -41,7 +42,9 @@ export default function StreamWidget(props: StreamWidgetProps) {
   return (
     <>
       {isLive && 'is live'}
-      <LiveStreamWidget {...props} />
+      <Suspense>
+        <LazLiveStreamWidget {...props} />
+      </Suspense>
     </>
   );
 }
