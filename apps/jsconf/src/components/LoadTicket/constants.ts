@@ -1,4 +1,2 @@
-const baseUrl = import.meta.env.PROD ? `${import.meta.env.SITE}/` : '';
-
-export const TEXTURE = `${baseUrl}/assets/misc/band.png`.replaceAll('//', '/');
-export const MODEL = `${baseUrl}/assets/misc/ticket.glb`.replaceAll('//', '/');
+export const TEXTURE = `/assets/misc/band.png`;
+export const MODEL = `/assets/misc/ticket.glb`;
