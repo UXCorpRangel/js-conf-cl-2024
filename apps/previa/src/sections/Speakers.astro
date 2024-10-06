@@ -1,27 +1,20 @@
 ---
-import { Button, SpeakerCard } from '@components';
+import { SpeakerCard } from '@components';
 
 const speakers = [
   {
+    imgSrc: 'assets/speakers/goncy.webp',
+    speakerName: 'Gonzalo (Goncy) Pozzo',
+    speakerInfo: 'Panel de Preguntas y Respuestas',
+    speakerBrand: 'assets/speakers/jobs/vercel.webp',
+    link: '/charlistas/goncy'
+  },
+  {
     imgSrc: 'assets/speakers/sofia.webp',
-    speakerName: 'Sofia Grijalva (condorcoders)',
+    speakerName: 'Sofia Grijalva',
     speakerInfo: 'Introducción a Gemini con NodeJS',
     speakerBrand: 'assets/speakers/jobs/condorcoders.webp',
     link: '/charlistas/sofía-grijalva'
-  },
-  {
-    imgSrc: 'assets/speakers/sergio.webp',
-    speakerName: 'Sergio Azocar',
-    speakerInfo: 'Vue la navaja suiza del front end',
-    speakerBrand: 'assets/speakers/jobs/talana.webp',
-    link: '/charlistas/sergio-azocar'
-  },
-  {
-    imgSrc: 'assets/speakers/dariana.webp',
-    speakerName: 'Dariana Gómez',
-    speakerInfo: 'De No Sé Nada a Lo Entiendo: Redes Neuronales y Machine Learning con Brain.js',
-    speakerBrand: 'assets/speakers/jobs/banco-falabella.webp',
-    link: '/charlistas/dariana-Gomez-reyes'
   },
   {
     imgSrc: 'assets/speakers/richard-rodrigo.webp',
@@ -31,11 +24,11 @@ const speakers = [
     link: '/charlistas/rodrigo-ricardo'
   },
   {
-    imgSrc: 'assets/speakers/goncy.webp',
-    speakerName: 'Gonzalo (Goncy) Pozzo',
-    speakerInfo: 'Q&A',
-    speakerBrand: 'assets/speakers/jobs/vercel.webp',
-    link: '/charlistas/goncy'
+    imgSrc: 'assets/speakers/dariana.webp',
+    speakerName: 'Dariana Gómez',
+    speakerInfo: 'De No Sé Nada a Lo Entiendo: Redes Neuronales y Machine Learning con Brain.js',
+    speakerBrand: 'assets/speakers/jobs/banco-falabella.webp',
+    link: '/charlistas/dariana-Gomez-reyes'
   },
   {
     imgSrc: 'assets/speakers/franco.webp',
@@ -45,11 +38,18 @@ const speakers = [
     link: '/charlistas/franco-balich'
   },
   {
-    imgSrc: 'assets/speakers/gricel.webp',
-    speakerName: 'Gricel Sepúlveda',
-    speakerInfo: 'Clean arquitecture en el frontend',
-    speakerBrand: 'assets/speakers/jobs/mercadolibre.webp',
-    link: '/charlistas/#'
+    imgSrc: 'assets/speakers/francisco.webp',
+    speakerName: 'Francisco Mardones',
+    speakerInfo: 'Construyendo Aplicaciones Colaborativas con CRDTs en JavaScript',
+    speakerBrand: 'assets/speakers/jobs/front.webp',
+    link: '/charlistas/francisco-mardones'
+  },
+  {
+    imgSrc: 'assets/speakers/sergio.webp',
+    speakerName: 'Sergio Azocar',
+    speakerInfo: 'Vue la navaja suiza del front end',
+    speakerBrand: 'assets/speakers/jobs/talana.webp',
+    link: '/charlistas/sergio-azocar'
   },
   {
     imgSrc: 'assets/speakers/piero.webp',
@@ -64,11 +64,15 @@ const speakers = [
     speakerInfo: 'Creative code con js ',
     speakerBrand: 'assets/speakers/jobs/blackline.webp',
     link: '/charlistas/holasoymalva'
+  },
+  {
+    imgSrc: 'assets/speakers/gricel.webp',
+    speakerName: 'Gricel Sepúlveda',
+    speakerInfo: 'Clean arquitecture en el frontend',
+    speakerBrand: 'assets/speakers/jobs/mercadolibre.webp',
+    link: '/charlistas/#'
   }
 ];
-
-const initialSpeakers = speakers.slice(0, 6);
-const hiddenSpeakers = speakers.slice(6);
 ---
 
 <section class="speakers" id="charlistas-section">
@@ -79,7 +83,7 @@ const hiddenSpeakers = speakers.slice(6);
 
   <div class="speakers-wrapper">
     {
-      initialSpeakers.map(speaker => (
+      speakers.map(speaker => (
         <SpeakerCard
           imgSrc={speaker.imgSrc}
           speakerName={speaker.speakerName}
@@ -89,26 +93,6 @@ const hiddenSpeakers = speakers.slice(6);
         />
       ))
     }
-
-    <div class="hidden show-flex hidden-speakers">
-      {
-        hiddenSpeakers.map(speaker => (
-          <SpeakerCard
-            imgSrc={speaker.imgSrc}
-            speakerName={speaker.speakerName}
-            speakerInfo={speaker.speakerInfo}
-            speakerBrand={speaker.speakerBrand}
-            link={speaker.link}
-          />
-        ))
-      }
-    </div>
-  </div>
-
-  <div class="view-more-btn">
-    <Button icon="chevron-down" variant="ghost" color="black" link="#charlistas-section">
-      Ver más
-    </Button>
   </div>
 </section>
 
@@ -140,14 +124,6 @@ const hiddenSpeakers = speakers.slice(6);
       flex-wrap: wrap;
       justify-content: center;
       gap: 24px;
-    }
-
-    & .show-flex {
-      display: contents;
-    }
-
-    & .hidden {
-      display: none;
     }
   }
 </style>
