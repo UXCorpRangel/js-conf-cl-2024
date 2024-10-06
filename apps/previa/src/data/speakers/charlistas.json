@@ -1,644 +1,238 @@
 [
   {
-    "slug": "midudev",
-    "fullName": "Miguel Ángel Durán",
-    "nickName": "MiduDev",
-    "speakerName": "Miguel Ángel \"midudev\" Durán",
-    "imgSrc": "assets/img/speakers/midudev.webp",
-    "imgSrc2": "assets/img/speakers/midudev-2.webp",
-    "imgSrc3": "assets/img/speakers/midudev-3.webp",
-    "imgSrc4": "assets/img/speakers/midudev-4.webp",
-    "tagLine": "JavaScript and Web Development expert",
-    "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "assets/img/speakers/midulogo.webp",
-    "linkedin": "https://linkedin.com/in/midudev",
-    "instagram": "https://instagram.com/midudev",
-    "twitter": "https://twitter.com/midudev",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "slug": "dariana-Gomez-reyes",
+    "fullName": "Dariana Gómez Reyes",
+    "company": "Banco Falabella",
+    "speakerPosition": "",
+    "imgSrc": "assets/speakers/dariana.webp",
+    "imgSrc2": "assets/speakers/dariana-2.webp",
+    "imgSrc3": "assets/speakers/dariana-4.webp",
+    "imgSrc4": "assets/speakers/dariana-3.webp",
+    "linkedin": "https://www.linkedin.com/in/dariana-g%C3%B3mez/",
+    "instagram": "https://www.instagram.com/darigo30/?hl=es",
+    "twitter": "",
+    "twitch": "",
+    "youtube": "",
+    "web": "",
+    "bio": "Soy ingeniera de sistemas y actualmente me desempeño como backend software engineer en banco Falabella. Además de mi trabajo, soy voluntaria en Women Techmakers Chile y Technovation Girl Chile, donde tengo el privilegio de inspirar y apoyar a jóvenes y mujeres en el mundo del STEM. Soy una persona curiosa por naturaleza, siempre en busca de nuevas tecnologías y métodos para mejorar en mi trabajo. Me encanta dar charlas y talleres, porque creo firmemente que compartir lo que sé es una de las mejores formas de seguir aprendiendo y conectar con otros. Cuando no estoy en la compu, me encontrarás en el gimnasio o practicando algún deporte. Mantenerme activa siempre ha sido esencial para mí, ya que me ayuda a encontrar un equilibrio saludable entre el trabajo y mi salud mental. ❤️",
     "event": [
       {
-        "eventType": "Workshop",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": ["laptop", "book"],
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      },
-      {
         "eventType": "Charla",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": null,
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+        "eventTitle": "De No Sé Nada a Lo Entiendo: Redes Neuronales y Machine Learning con Brain.js",
+        "eventDate": "12 Oct 2024",
+        "eventHour": "12:00",
+        "eventBrief": "Esta charla está dirigida a aquellos que sienten curiosidad por las redes neuronales y el machine learning, pero no saben por dónde empezar. En esta presentación, hablaré de los conceptos clave de manera sencilla. Usaré Brain.js para mostrar ejemplos prácticos de cómo puedes aplicar estas tecnologías en el trabajo o para iniciar algún proyecto de forma curiosa. Mi objetivo es que se vayan con una comprensión clara y práctica de cómo funcionan las redes neuronales y cómo se puede empezar a integrarlas en sus propios proyectos."
       }
     ]
   },
   {
-    "slug": "odracirdev",
-    "fullName": "Ricardo Arévalo",
-    "nickName": "odracirdev",
-    "speakerName": "Ricardo Arévalo",
+    "slug": "sofía-grijalva",
+    "fullName": "Sofía Grijalva",
+    "company": "CondorCoders",
+    "speakerPosition": "",
+    "imgSrc": "assets/speakers/sofia.webp",
+    "imgSrc2": "assets/speakers/sofia-2.webp",
+    "imgSrc3": "assets/speakers/sofia-4.webp",
+    "imgSrc4": "assets/speakers/sofia-3.webp",
+    "linkedin": "",
+    "instagram": "https://www.instagram.com/condorcoders",
+    "twitter": "",
+    "twitch": "https://www.twitch.tv/condorcoders",
+    "youtube": "https://youtube.com/@condorcoders",
+    "web": "",
+    "bio": "Licenciada en tecnologías de la información con mención en UX/UI de la Universidad de Queensland, Australia. Ha participado en proyectos de investigación donde se utiliza la tecnología para desarrollar areas o ciudades inteligentes. Trabajó como ayudante de cátedra por 2 años en la universidad de Queensland supervisando la creación de proyectos opensource de los estudiantes. Fué voluntaria de la fundación RoboGirls donde dirigió talleres de robótica para niñas. Ha trabajado como programadora frontend en startups, y como programadora full stack en la empresa de seguros australiana NTI y actualmente se desempeña como programadora front end en la ABC, cadena de televisión australiana donde programa la página y app de noticias ABC News.",
+    "event": [
+      {
+        "eventType": "Charla",
+        "eventTitle": "Introducción a Gemini con NodeJS",
+        "eventDate": "12 Oct 2024",
+        "eventHour": "10:30",
+        "eventBrief": "En esta charla, aprenderemos a crear una API para generar planes de nutrición personalizada utilizando Node.js, Express y la IA de Google (Gemini). Durante el ejercicio, construiremos y probaremos tres endpoints: uno para generar planes de comidas, otro para analizar imágenes de alimentos y obtener su valor nutricional, y un chatbot interactivo para consultas nutricionales."
+      }
+    ]
+  },
+  {
+    "slug": "sergio-azocar",
+    "fullName": "Sergio Azócar",
+    "company": "Talana",
+    "speakerPosition": "",
+    "imgSrc": "assets/speakers/sergio.webp",
+    "imgSrc2": "assets/speakers/sergio-2.webp",
+    "imgSrc3": "assets/speakers/sergio-3.webp",
+    "imgSrc4": "assets/speakers/sergio-4.webp",
+    "linkedin": "https://www.linkedin.com/in/sergio-azocar/",
+    "instagram": "https://www.instagram.com/sergioazoc/",
+    "twitter": "https://twitter.com/sergioazoc/",
+    "twitch": "",
+    "youtube": "",
+    "web": "https://www.sergioazocar.com",
+    "bio": "Soy un Maker de corazón, apasionado por la tecnología y entender cómo funcionan las cosas, actualmente trabajo como Tech Lead de Frontend en Talana desarrollando en el día a día con Vue y JavaScript",
+    "event": [
+      {
+        "eventType": "Charla",
+        "eventTitle": "Vue, la navaja suiza del Frontend",
+        "eventDate": "12 Oct 2024",
+        "eventHour": "11:30",
+        "eventBrief": "En esta charla ilustraremos cómo Vue.js ofrece soluciones innovadoras sin sacrificar su simplicidad. Desde la creación de aplicaciones simples hasta la gestión de proyectos complejos y escalables, demostrando que es una herramienta versátil y multifuncional, capaz de adaptarse a una amplia variedad de proyectos y desafíos de desarrollo."
+      }
+    ]
+  },
+  {
+    "slug": "rodrigo-ricardo",
+    "fullName": "Rodrigo Pizarro y Richard Baker",
+    "company": "AudienceView",
+    "speakerPosition": "",
+    "imgSrc": "assets/speakers/rodrigo-1.webp",
+    "imgSrc2": "",
+    "imgSrc3": "/assets/img/sponsors/audienceview.webp",
+    "imgSrc4": "assets/speakers/richard-1.webp",
+    "linkedin": "",
+    "instagram": "",
+    "twitter": "",
+    "twitch": "",
+    "youtube": "",
+    "web": "",
+    "bio": "Rodrigo es un solucionador de problemas a quien le encanta la ingeniería, y toda la tecnología tras ella. Con más de 15 años de experiencia en la industria, él ha contribuido en compañías como Equifax y Walmart, construyendo equipos y soluciones de alto rendimiento. Actualmente, esta colaborando en AudienceView como Engineering Manager en el área de aplicaciones móviles para la industria de eventos en vivo. Cuando no está trabajando, lo encontrarás con una cámara fotográfica en sus manos disfrutando de la fotografía.",
+    "event": [
+      {
+        "eventType": "Charla",
+        "eventTitle": "Nuestro viaje desde apps nativas a PWA",
+        "eventDate": "12 Oct 2024",
+        "eventHour": "11:00",
+        "eventBrief": "En esta charla, te queremos contar del camino que hemos recorrido en AudienceView, que nos ha llevado desde el desarrollo de apps nativas en iOS y Android a estar trabajando en PWA. Te adelantamos que vamos a contarte de razones de escalabilidad, de experiencia de usuario, y cómo visualizamos el futuro de este viaje, todo esto mezclado con una mirada tecnológica."
+      }
+    ]
+  },
+  {
+    "slug": "franco-balich",
+    "fullName": "Franco Balich",
+    "company": "Itecnis",
+    "speakerPosition": "",
+    "imgSrc": "assets/speakers/franco.webp",
+    "imgSrc2": "assets/speakers/franco-4.webp",
+    "imgSrc3": "assets/speakers/franco-3.webp",
+    "imgSrc4": "assets/speakers/franco-2.webp",
+    "linkedin": "",
+    "instagram": "https://www.instagram.com/francobalich/",
+    "twitter": "",
+    "twitch": "https://www.twitch.tv/francolabs",
+    "youtube": "https://www.youtube.com/c/FrancoBalich",
+    "web": "",
+    "bio": "Soy de Buenos Aires, Argentina y me encanta enseñar sobre tecnología, por eso además de ser desarrollador fullstack soy docente universitario, investigador en robótica educativa e inteligencia artificial y director del laboratorio creativo 3D.",
+    "event": [
+      {
+        "eventType": "Charla",
+        "eventTitle": "JavaScript para Robótica e Internet de las cosas",
+        "eventDate": "12 Oct 2024",
+        "eventHour": "14:30",
+        "eventBrief": "¿Alguna vez te preguntaste cómo usar JavaScript para crear proyectos de robótica o de Internet de las cosas? Veremos se puede usar un framework de JavaScript para programar robots con Arduino de una forma muy sencilla. También exploraremos cómo usar protocolos de comunicación para IoT para manejar robots o cualquier dispositivo que nos gustaría crear de forma remota. Aprenderás cómo empezar en el mundo de la robótica y el IoT usando herramientas sencillas, sin necesidad de ser un experto."
+      }
+    ]
+  },
+  {
+    "slug": "piero-divasto",
+    "fullName": "Piero Divasto",
+    "company": "Mercadolibre",
+    "speakerPosition": "",
+    "imgSrc": "assets/speakers/piero.webp",
+    "imgSrc2": "assets/speakers/piero-2.webp",
+    "imgSrc3": "assets/speakers/piero-3.webp",
+    "imgSrc4": "assets/speakers/piero-4.webp",
+    "linkedin": "https://www.linkedin.com/in/pierodivasto/",
+    "instagram": "https://www.instagram.com/pdivasto/",
+    "twitter": "",
+    "twitch": "",
+    "youtube": "",
+    "web": "",
+    "bio": "Informático amante de las tecnologías. Disfruto de viajar, practicar deportes, especialmente el fútbol, y conectarme con la naturaleza en la playa y al aire libre.",
+    "event": [
+      {
+        "eventType": "Charla",
+        "eventTitle": "IA en Javascript",
+        "eventDate": "12 Oct 2024",
+        "eventHour": "15:30",
+        "eventBrief": "Exploraremos cómo implementar inteligencia artificial utilizando este lenguaje de programación. Se abordarán conceptos fundamentales de IA y las herramientas disponibles en el ecosistema de JavaScript para entrenar y ejecutar modelos de machine learning."
+      }
+    ]
+  },
+  {
+    "slug": "dariana-Gomez-reyes",
+    "fullName": "Dariana Gómez Reyes",
+    "company": "Banco Falabella",
+    "speakerPosition": "",
     "imgSrc": "",
-    "tagLine": "Fullstack Developer and speaker",
-    "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "",
-    "linkedin": "https://linkedin.com/in/",
-    "instagram": "https://instagram.com/",
-    "twitter": "https://twitter.com/",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "imgSrc2": "",
+    "imgSrc3": "",
+    "imgSrc4": "",
+    "linkedin": "https://www.linkedin.com/in/dariana-g%C3%B3mez/",
+    "instagram": "https://www.instagram.com/darigo30/?hl=es",
+    "twitter": "",
+    "twitch": "",
+    "youtube": "",
+    "web": "",
+    "bio": "Soy ingeniera de sistemas y actualmente me desempeño como backend software engineer en banco Falabella. Además de mi trabajo, soy voluntaria en Women Techmakers Chile y Technovation Girl Chile, donde tengo el privilegio de inspirar y apoyar a jóvenes y mujeres en el mundo del STEM. Soy una persona curiosa por naturaleza, siempre en busca de nuevas tecnologías y métodos para mejorar en mi trabajo. Me encanta dar charlas y talleres, porque creo firmemente que compartir lo que sé es una de las mejores formas de seguir aprendiendo y conectar con otros. Cuando no estoy en la compu, me encontrarás en el gimnasio o practicando algún deporte. Mantenerme activa siempre ha sido esencial para mí, ya que me ayuda a encontrar un equilibrio saludable entre el trabajo y mi salud mental. ♥",
     "event": [
       {
-        "eventType": "Workshop",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": ["laptop", "book"],
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      },
-      {
         "eventType": "Charla",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": null,
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+        "eventTitle": "De No Sé Nada a Lo Entiendo: Redes Neuronales y Machine Learning con Brain.js",
+        "eventDate": "12 Oct 2024",
+        "eventHour": "12:00",
+        "eventBrief": "Esta charla está dirigida a aquellos que sienten curiosidad por las redes neuronales y el machine learning, pero no saben por dónde empezar. En esta presentación, hablaré de los conceptos clave de manera sencilla. Usaré Brain.js para mostrar ejemplos prácticos de cómo puedes aplicar estas tecnologías en el trabajo o para iniciar algún proyecto de forma curiosa. Mi objetivo es que se vayan con una comprensión clara y práctica de cómo funcionan las redes neuronales y cómo se puede empezar a integrarlas en sus propios proyectos."
       }
     ]
   },
   {
-    "slug": "midudev",
-    "fullName": "Miguel Ángel Durán",
-    "nickName": "midudev",
-    "speakerName": "Miguel Ángel \"midudev\" Durán",
-    "imgSrc": "assets/img/speakers/midudev.webp",
-    "tagLine": "JavaScript and Web Development expert",
-    "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "assets/img/speakers/midulogo.webp",
-    "linkedin": "https://linkedin.com/in/midudev",
-    "instagram": "https://instagram.com/midudev",
-    "twitter": "https://twitter.com/midudev",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "slug": "holasoymalva",
+    "fullName": "Martin Manriquez Leon (holasoymalva)",
+    "company": "Blackline",
+    "speakerPosition": "",
+    "imgSrc": "assets/speakers/malva.webp",
+    "imgSrc2": "assets/speakers/malva-2.webp",
+    "imgSrc3": "assets/speakers/malva-4.webp",
+    "imgSrc4": "assets/speakers/malva-3.webp",
+    "linkedin": "",
+    "instagram": "https://www.instagram.com/holasoymalva/",
+    "twitter": "",
+    "twitch": "https://www.twitch.tv/holasoymalva",
+    "youtube": "https://www.youtube.com/@holasoymalva",
+    "web": "",
+    "tiktok": "https://www.tiktok.com/@holasoymalva",
+    "bio": "Hola 👋, soy Martin, un ingeniero de software 🧑🏽‍💻 con una sólida experiencia en empresas como Facebook, Amazon y Disney, así como en varios proyectos de código abierto. Mi pasión radica en utilizar mis habilidades para crear aplicaciones innovadoras y fáciles de usar que tengan un impacto positivo en la vida de las personas.",
     "event": [
       {
-        "eventType": "Workshop",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": ["laptop", "book"],
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      },
-      {
         "eventType": "Charla",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": null,
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+        "eventTitle": "Creative Code",
+        "eventDate": "12 Oct 2024",
+        "eventHour": "16:00",
+        "eventBrief": "Durante esta charla experimentaremos con el lado mas artistico de la programacion creando experiencias interactivas a partir del uso de Javascript."
       }
     ]
   },
   {
-    "slug": "odracirdev",
-    "fullName": "Ricardo Arévalo",
-    "nickName": "odracirdev",
-    "speakerName": "Ricardo Arévalo",
-    "imgSrc": "",
-    "tagLine": "Fullstack Developer and speaker",
-    "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "",
-    "linkedin": "https://linkedin.com/in/",
-    "instagram": "https://instagram.com/",
-    "twitter": "https://twitter.com/",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
+    "slug": "goncy",
+    "fullName": "Gonzalo (Goncy) Pozzo",
+    "company": "Vercel",
+    "speakerPosition": "",
+    "imgSrc": "assets/speakers/goncy.webp",
+    "imgSrc2": "assets/speakers/goncy-2.webp",
+    "imgSrc3": "assets/speakers/goncy-4.webp",
+    "imgSrc4": "assets/speakers/goncy-3.webp",
+    "linkedin": "https://www.linkedin.com/in/gonzalopozzo/",
+    "instagram": "https://www.instagram.com/goncy.js",
+    "twitter": "",
+    "twitch": "https://www.twitch.tv/goncypozzo",
+    "youtube": "https://www.youtube.com/channel/UCCvaRcYdZCZBrBQVnsUBg5Q",
+    "web": "",
+    "discord": "https://discord.com/invite/rAmPWU6eHg",
+    "github": "https://github.com/goncy",
+    "bio": "I'm a frontend developer mainly working with the React stack, passionate about Next.js and its ecosystem. I'm a Cypress.io ambassador and Twitch partner, In 2020 I founded Pency, a free-plan-focused ecommerce startup helping +30k stores making it through the COVID pandemic. I'm also a content creator focused on helping people landing their first job in IT.",
     "event": [
       {
-        "eventType": "Workshop",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": ["laptop", "book"],
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      },
-      {
         "eventType": "Charla",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": null,
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      }
-    ]
-  },
-  {
-    "slug": "midudev",
-    "fullName": "Miguel Ángel Durán",
-    "nickName": "midudev",
-    "speakerName": "Miguel Ángel \"midudev\" Durán",
-    "imgSrc": "assets/img/speakers/midudev.webp",
-    "tagLine": "JavaScript and Web Development expert",
-    "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "assets/img/speakers/midulogo.webp",
-    "linkedin": "https://linkedin.com/in/midudev",
-    "instagram": "https://instagram.com/midudev",
-    "twitter": "https://twitter.com/midudev",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
-    "event": [
-      {
-        "eventType": "Workshop",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": ["laptop", "book"],
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      },
-      {
-        "eventType": "Charla",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": null,
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      }
-    ]
-  },
-  {
-    "slug": "odracirdev",
-    "fullName": "Ricardo Arévalo",
-    "nickName": "odracirdev",
-    "speakerName": "Ricardo Arévalo",
-    "imgSrc": "",
-    "tagLine": "Fullstack Developer and speaker",
-    "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "",
-    "linkedin": "https://linkedin.com/in/",
-    "instagram": "https://instagram.com/",
-    "twitter": "https://twitter.com/",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
-    "event": [
-      {
-        "eventType": "Workshop",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": ["laptop", "book"],
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      },
-      {
-        "eventType": "Charla",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": null,
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      }
-    ]
-  },
-  {
-    "slug": "midudev",
-    "fullName": "Miguel Ángel Durán",
-    "nickName": "midudev",
-    "speakerName": "Miguel Ángel \"midudev\" Durán",
-    "imgSrc": "assets/img/speakers/midudev.webp",
-    "tagLine": "JavaScript and Web Development expert",
-    "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "assets/img/speakers/midulogo.webp",
-    "linkedin": "https://linkedin.com/in/midudev",
-    "instagram": "https://instagram.com/midudev",
-    "twitter": "https://twitter.com/midudev",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
-    "event": [
-      {
-        "eventType": "Workshop",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": ["laptop", "book"],
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      },
-      {
-        "eventType": "Charla",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": null,
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      }
-    ]
-  },
-  {
-    "slug": "odracirdev",
-    "fullName": "Ricardo Arévalo",
-    "nickName": "odracirdev",
-    "speakerName": "Ricardo Arévalo",
-    "imgSrc": "",
-    "tagLine": "Fullstack Developer and speaker",
-    "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "",
-    "linkedin": "https://linkedin.com/in/",
-    "instagram": "https://instagram.com/",
-    "twitter": "https://twitter.com/",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
-    "event": [
-      {
-        "eventType": "Workshop",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": ["laptop", "book"],
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      },
-      {
-        "eventType": "Charla",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": null,
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      }
-    ]
-  },
-  {
-    "slug": "midudev",
-    "fullName": "Miguel Ángel Durán",
-    "nickName": "midudev",
-    "speakerName": "Miguel Ángel \"midudev\" Durán",
-    "imgSrc": "assets/img/speakers/midudev.webp",
-    "tagLine": "JavaScript and Web Development expert",
-    "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "assets/img/speakers/midulogo.webp",
-    "linkedin": "https://linkedin.com/in/midudev",
-    "instagram": "https://instagram.com/midudev",
-    "twitter": "https://twitter.com/midudev",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
-    "event": [
-      {
-        "eventType": "Workshop",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": ["laptop", "book"],
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      },
-      {
-        "eventType": "Charla",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": null,
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      }
-    ]
-  },
-  {
-    "slug": "odracirdev",
-    "fullName": "Ricardo Arévalo",
-    "nickName": "odracirdev",
-    "speakerName": "Ricardo Arévalo",
-    "imgSrc": "",
-    "tagLine": "Fullstack Developer and speaker",
-    "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "",
-    "linkedin": "https://linkedin.com/in/",
-    "instagram": "https://instagram.com/",
-    "twitter": "https://twitter.com/",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
-    "event": [
-      {
-        "eventType": "Workshop",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": ["laptop", "book"],
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      },
-      {
-        "eventType": "Charla",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": null,
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      }
-    ]
-  },
-  {
-    "slug": "midudev",
-    "fullName": "Miguel Ángel Durán",
-    "nickName": "midudev",
-    "speakerName": "Miguel Ángel \"midudev\" Durán",
-    "imgSrc": "assets/img/speakers/midudev.webp",
-    "tagLine": "JavaScript and Web Development expert",
-    "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "assets/img/speakers/midulogo.webp",
-    "linkedin": "https://linkedin.com/in/midudev",
-    "instagram": "https://instagram.com/midudev",
-    "twitter": "https://twitter.com/midudev",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
-    "event": [
-      {
-        "eventType": "Workshop",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": ["laptop", "book"],
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      },
-      {
-        "eventType": "Charla",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": null,
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      }
-    ]
-  },
-  {
-    "slug": "odracirdev",
-    "fullName": "Ricardo Arévalo",
-    "nickName": "odracirdev",
-    "speakerName": "Ricardo Arévalo",
-    "imgSrc": "",
-    "tagLine": "Fullstack Developer and speaker",
-    "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "",
-    "linkedin": "https://linkedin.com/in/",
-    "instagram": "https://instagram.com/",
-    "twitter": "https://twitter.com/",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
-    "event": [
-      {
-        "eventType": "Workshop",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": ["laptop", "book"],
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      },
-      {
-        "eventType": "Charla",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": null,
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      }
-    ]
-  },
-  {
-    "slug": "midudev",
-    "fullName": "Miguel Ángel Durán",
-    "nickName": "midudev",
-    "speakerName": "Miguel Ángel \"midudev\" Durán",
-    "imgSrc": "assets/img/speakers/midudev.webp",
-    "tagLine": "JavaScript and Web Development expert",
-    "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "assets/img/speakers/midulogo.webp",
-    "linkedin": "https://linkedin.com/in/midudev",
-    "instagram": "https://instagram.com/midudev",
-    "twitter": "https://twitter.com/midudev",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
-    "event": [
-      {
-        "eventType": "Workshop",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": ["laptop", "book"],
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      },
-      {
-        "eventType": "Charla",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": null,
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      }
-    ]
-  },
-  {
-    "slug": "odracirdev",
-    "fullName": "Ricardo Arévalo",
-    "nickName": "odracirdev",
-    "speakerName": "Ricardo Arévalo",
-    "imgSrc": "",
-    "tagLine": "Fullstack Developer and speaker",
-    "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "",
-    "linkedin": "https://linkedin.com/in/",
-    "instagram": "https://instagram.com/",
-    "twitter": "https://twitter.com/",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
-    "event": [
-      {
-        "eventType": "Workshop",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": ["laptop", "book"],
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      },
-      {
-        "eventType": "Charla",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": null,
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      }
-    ]
-  },
-  {
-    "slug": "midudev",
-    "fullName": "Miguel Ángel Durán",
-    "nickName": "midudev",
-    "speakerName": "Miguel Ángel \"midudev\" Durán",
-    "imgSrc": "assets/img/speakers/midudev.webp",
-    "tagLine": "JavaScript and Web Development expert",
-    "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "assets/img/speakers/midulogo.webp",
-    "linkedin": "https://linkedin.com/in/midudev",
-    "instagram": "https://instagram.com/midudev",
-    "twitter": "https://twitter.com/midudev",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
-    "event": [
-      {
-        "eventType": "Workshop",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": ["laptop", "book"],
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      },
-      {
-        "eventType": "Charla",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": null,
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      }
-    ]
-  },
-  {
-    "slug": "odracirdev",
-    "fullName": "Ricardo Arévalo",
-    "nickName": "odracirdev",
-    "speakerName": "Ricardo Arévalo",
-    "imgSrc": "",
-    "tagLine": "Fullstack Developer and speaker",
-    "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "",
-    "linkedin": "https://linkedin.com/in/",
-    "instagram": "https://instagram.com/",
-    "twitter": "https://twitter.com/",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
-    "event": [
-      {
-        "eventType": "Workshop",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": ["laptop", "book"],
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      },
-      {
-        "eventType": "Charla",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": null,
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      }
-    ]
-  },
-  {
-    "slug": "midudev",
-    "fullName": "Miguel Ángel Durán",
-    "nickName": "midudev",
-    "speakerName": "Miguel Ángel \"midudev\" Durán",
-    "imgSrc": "assets/img/speakers/midudev.webp",
-    "tagLine": "JavaScript and Web Development expert",
-    "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "assets/img/speakers/midulogo.webp",
-    "linkedin": "https://linkedin.com/in/midudev",
-    "instagram": "https://instagram.com/midudev",
-    "twitter": "https://twitter.com/midudev",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
-    "event": [
-      {
-        "eventType": "Workshop",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": ["laptop", "book"],
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      },
-      {
-        "eventType": "Charla",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": null,
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      }
-    ]
-  },
-  {
-    "slug": "odracirdev",
-    "fullName": "Ricardo Arévalo",
-    "nickName": "odracirdev",
-    "speakerName": "Ricardo Arévalo",
-    "imgSrc": "",
-    "tagLine": "Fullstack Developer and speaker",
-    "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "",
-    "linkedin": "https://linkedin.com/in/",
-    "instagram": "https://instagram.com/",
-    "twitter": "https://twitter.com/",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
-    "event": [
-      {
-        "eventType": "Workshop",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": ["laptop", "book"],
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      },
-      {
-        "eventType": "Charla",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": null,
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      }
-    ]
-  },
-  {
-    "slug": "midudev",
-    "fullName": "Miguel Ángel Durán",
-    "nickName": "midudev",
-    "speakerName": "Miguel Ángel \"midudev\" Durán",
-    "imgSrc": "assets/img/speakers/midudev.webp",
-    "tagLine": "JavaScript and Web Development expert",
-    "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "assets/img/speakers/midulogo.webp",
-    "linkedin": "https://linkedin.com/in/midudev",
-    "instagram": "https://instagram.com/midudev",
-    "twitter": "https://twitter.com/midudev",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
-    "event": [
-      {
-        "eventType": "Workshop",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": ["laptop", "book"],
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      },
-      {
-        "eventType": "Charla",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": null,
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      }
-    ]
-  },
-  {
-    "slug": "odracirdev",
-    "fullName": "Ricardo Arévalo",
-    "nickName": "odracirdev",
-    "speakerName": "Ricardo Arévalo",
-    "imgSrc": "",
-    "tagLine": "Fullstack Developer and speaker",
-    "speakerInfo": "Ingeniero de Software y Divulgador de Programación",
-    "speakerBrand": "",
-    "linkedin": "https://linkedin.com/in/",
-    "instagram": "https://instagram.com/",
-    "twitter": "https://twitter.com/",
-    "bio": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. Bibendum a faucibus eu eget. Faucibus consectetur vel felis lobortis vestibulum vel scelerisque etiam. Nulla porta sit et mattis ipsum nulla. Et arcu vitae sollicitudin diam vel nibh. Semper aliquam purus pretium est ut sit vitae eget. Tristique ipsum est vitae montes malesuada arcu felis sit vestibulum. Amet lacus nisl elementum scelerisque sit viverra.",
-    "event": [
-      {
-        "eventType": "Workshop",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": ["laptop", "book"],
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
-      },
-      {
-        "eventType": "Charla",
-        "eventTitle": "¡El JavaScript del futuro 🚀!",
-        "eventDate": "00 Nov 2024",
-        "eventHour": "00:00",
-        "eventEquipment": null,
-        "eventBrief": "Lorem ipsum dolor sit amet consectetur. Ut eget ut ultrices vitae in. Viverra vitae nulla elit convallis vestibulum. Dictum sed venenatis et condimentum ridiculus neque. Consequat gravida sed cras ut ante nec at id. Enim gravida velit urna eu integer nunc sed ullamcorper pretium. Etiam enim mauris mauris a. "
+        "eventTitle": "Panel de preguntas y respuestas",
+        "eventDate": "12 Oct 2024",
+        "eventHour": "14:00",
+        "eventBrief": "Nos acompañará en la previa de la JSConf un reconocido frontend developer argentino, apasionado por el stack de React y embajador de Cypress.io. Es fundador de Pency, una startup de ecommerce que ayudó a más de 30,000 tiendas durante la pandemia. Además, es Twitch partner y creador de contenido enfocado en ayudar a las personas a conseguir su primer empleo en el mundo IT. ¡No te pierdas esta sesión de preguntas y respuestas con uno de los referentes más influyentes del ecosistema de JavaScript y Next.js!"
       }
     ]
   }

@@ -1,0 +1,92 @@
+---
+const { eventType, eventTitle, eventDate, eventHour, eventBrief } = Astro.props;
+---
+
+<div class="card-event">
+  <h2 class="event-type">{eventType}</h2>
+  <div class="event-info">
+    <p class="event-title">{eventTitle}</p>
+    <div class="event-place">
+      <p class="date">{eventDate}</p>
+      <p class="hour">{eventHour}</p>
+    </div>
+  </div>
+  <p class="event-brief">{eventBrief}</p>
+</div>
+
+<style>
+  .card-event {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    background: var(--gray-50);
+    padding: 2rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 1rem;
+      padding: 2px;
+      background: linear-gradient(258deg, #121212 7.65%, #1d1b0e 57.4%, #413e21 98.66%);
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      mask-composite: exclude;
+      z-index: -1;
+    }
+
+    .event-info {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      flex-direction: row;
+      flex-grow: 1;
+
+      .event-title {
+        width: 60%;
+        font-weight: bold;
+        font-size: 1.3rem;
+      }
+    }
+
+    .event-place {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+
+      .hour {
+        font-weight: bold;
+      }
+    }
+  }
+
+  @media (max-width: 375px) {
+    .card-event {
+      width: 100%;
+      padding: 1rem;
+      align-items: center;
+
+      .event-info {
+        flex-direction: column;
+        align-items: center;
+      }
+      .event-place {
+        justify-content: space-between;
+      }
+    }
+  }
+</style>
