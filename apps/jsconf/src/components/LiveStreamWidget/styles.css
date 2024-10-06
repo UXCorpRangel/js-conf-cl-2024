@@ -46,8 +46,7 @@
   }
 
   .divider {
-    background-color: #ccc;
-    width: 5px;
+    width: var(--border-width);
     cursor: col-resize;
     position: relative;
 
@@ -93,5 +92,68 @@
 
     flex-direction: column;
     height: auto;
+  }
+}
+
+.container-resizable-panels {
+  --radius: 15px;
+  --shadow: 0px 4px 85.3px rgba(85, 85, 46, 0.1);
+  --border-width: 3px;
+  --border-color: linear-gradient(50deg, #2a2401 0%, #9a8025 39.57%, #ede060 100%);
+
+  border-radius: var(--radius);
+  filter: drop-shadow(var(--shadow));
+  box-shadow: var(--shadow);
+  background: var(--border-color);
+  padding: var(--border-width);
+
+  --rounder-inner: calc(var(--radius) - var(--border-width));
+
+  .left-panel {
+    border-radius: var(--rounder-inner) 0 0 var(--rounder-inner);
+    background: var(--bg-color);
+  }
+  .right-panel {
+    border-radius: 0 var(--rounder-inner) var(--rounder-inner) 0;
+    background: var(--bg-color);
+  }
+  .left-panel[data-status='closed'] {
+    border-radius: var(--rounder-inner);
+  }
+
+  @media (max-width: 1080px) {
+    .left-panel {
+      border-radius: var(--rounder-inner) var(--rounder-inner) 0 0;
+    }
+    .right-panel {
+      border-radius: 0 0 var(--rounder-inner) var(--rounder-inner);
+    }
+  }
+}
+
+.jello-horizontal {
+  animation: jello-horizontal 0.9s both;
+}
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
   }
 }

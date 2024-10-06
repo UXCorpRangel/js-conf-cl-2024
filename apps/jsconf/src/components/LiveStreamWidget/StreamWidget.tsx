@@ -38,7 +38,6 @@ const useLiveStream = (startDate: string, endDate: string, timeZone: string) => 
 
 export default function StreamWidget(props: StreamWidgetProps) {
   const isLive = useLiveStream(startStream, endStream, timeZone);
-
   return (
     <>
       {isLive && 'is live'}
