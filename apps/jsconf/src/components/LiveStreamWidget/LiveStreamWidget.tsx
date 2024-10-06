@@ -138,20 +138,3 @@ export default function LiveStreamWidget({ urlStream }: StreamWidgetProps) {
     </div>
   );
 }
-
-// const timeZone = 'America/Santiago'; // Zona horaria.
-
-// const TestingAreaTimeZone = () => {
-//   const [time, setTime] = useState(new Date().toLocaleTimeString('en-US', { timeZone }));
-//   useEffect(() => {
-//     const intervalId = setInterval(() => {
-//       setTime(new Date().toLocaleTimeString('en-US', { timeZone }));
-//     }, 1000);
-//     return () => clearInterval(intervalId);
-//   }, []);
-//   return (
-//     <p>
-//       <em>{timeZone}</em> {time}
-//     </p>
-//   );
-// };
