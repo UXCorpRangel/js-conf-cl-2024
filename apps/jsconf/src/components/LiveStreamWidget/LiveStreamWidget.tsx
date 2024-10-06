@@ -139,7 +139,7 @@ export default function LiveStreamWidget({ urlStream }: StreamWidgetProps) {
   );
 }
 
-// const timeZone = 'America/Santiago'; // Zona horaria de Chile
+// const timeZone = 'America/Santiago'; // Zona horaria.
 
 // const TestingAreaTimeZone = () => {
 //   const [time, setTime] = useState(new Date().toLocaleTimeString('en-US', { timeZone }));
