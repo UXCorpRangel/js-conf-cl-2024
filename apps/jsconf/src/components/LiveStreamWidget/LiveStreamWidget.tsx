@@ -60,8 +60,8 @@ const VideoPanel = ({
     height="315"
     src={
       panelType === 'left'
-        ? `https://www.youtube--.com/embed/${videoId}?si=${siValue}`
-        : `https://www.youtube--.com/live_chat?v=${videoId}&embed_domain=${'localhost'}`
+        ? `https://www.youtube.com/embed/${videoId}?si=${siValue}`
+        : `https://www.youtube.com/live_chat?v=${videoId}&embed_domain=${'localhost'}`
     }
     title="YouTube video player"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
