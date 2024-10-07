@@ -75,7 +75,7 @@ export default function LiveStreamWidget({ urlStream }: { urlStream: string }) {
   const videoId = newUrl.pathname.split('/').pop() || '';
   const siValue = newUrl.searchParams.get('si') || '';
   return (
-    <div style={{ display: 'grid', placeItems: 'center' }}>
+    <div style={{ display: 'grid', placeItems: 'center', marginTop: '1rem' }}>
       <div className="container-resizable-panels">
         <VideoPanel videoId={videoId} panelType="left" siValue={siValue} />
         <VideoPanel videoId={videoId} panelType="right" />
