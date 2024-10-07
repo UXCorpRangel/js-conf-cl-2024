@@ -46,53 +46,53 @@ const BtnToggleChat = () => {
   );
 };
 
-const handleDivideMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
-  const parentElement = e.currentTarget.parentElement?.parentElement;
-  const panelRight = parentElement?.querySelector<HTMLDivElement>('.right-panel');
-  const panelLeft = parentElement?.querySelector<HTMLDivElement>('.left-panel');
+// const handleDivideMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
+//   const parentElement = e.currentTarget.parentElement?.parentElement;
+//   const panelRight = parentElement?.querySelector<HTMLDivElement>('.right-panel');
+//   const panelLeft = parentElement?.querySelector<HTMLDivElement>('.left-panel');
 
-  if (panelRight && panelLeft) {
-    panelRight.style.pointerEvents = 'none';
-    panelLeft.style.pointerEvents = 'none';
-    document.body.style.cursor = 'col-resize';
+//   if (panelRight && panelLeft) {
+//     panelRight.style.pointerEvents = 'none';
+//     panelLeft.style.pointerEvents = 'none';
+//     document.body.style.cursor = 'col-resize';
 
-    const handleMouseMove = (moveEvent: MouseEvent) => {
-      const newFlexRight = Math.max(100, Math.min(window.innerWidth - moveEvent.clientX, 800));
-      panelRight.style.flex = `0 0 ${newFlexRight}px`;
-    };
+//     const handleMouseMove = (moveEvent: MouseEvent) => {
+//       const newFlexRight = Math.max(100, Math.min(window.innerWidth - moveEvent.clientX, 800));
+//       panelRight.style.flex = `0 0 ${newFlexRight}px`;
+//     };
 
-    const handleMouseUp = () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-      document.removeEventListener('mouseup', handleMouseUp);
-      document.body.style.cursor = 'auto';
-      panelRight.style.pointerEvents = 'auto';
-      panelLeft.style.pointerEvents = 'auto';
-    };
+//     const handleMouseUp = () => {
+//       document.removeEventListener('mousemove', handleMouseMove);
+//       document.removeEventListener('mouseup', handleMouseUp);
+//       document.body.style.cursor = 'auto';
+//       panelRight.style.pointerEvents = 'auto';
+//       panelLeft.style.pointerEvents = 'auto';
+//     };
 
-    document.addEventListener('mousemove', handleMouseMove);
-    document.addEventListener('mouseup', handleMouseUp);
-  } else {
-    console.log('No se encontraron los paneles');
-  }
-};
+//     document.addEventListener('mousemove', handleMouseMove);
+//     document.addEventListener('mouseup', handleMouseUp);
+//   } else {
+//     console.log('No se encontraron los paneles');
+//   }
+// };
 
-const Divide = () => {
-  return (
-    <div className="divider" onMouseDown={handleDivideMouseDown}>
-      <svg
-        width="24"
-        height="30"
-        fill="none"
-        stroke="currentColor"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        {[9, 15].map(cx =>
-          [5, 12, 19].map(cy => <circle key={`${cx}-${cy}`} cx={cx} cy={cy} r="1" />)
-        )}
-      </svg>
-    </div>
-  );
-};
+// const Divide = () => {
+//   return (
+//     <div className="divider" onMouseDown={handleDivideMouseDown}>
+//       <svg
+//         width="24"
+//         height="30"
+//         fill="none"
+//         stroke="currentColor"
+//         xmlns="http://www.w3.org/2000/svg"
+//       >
+//         {[9, 15].map(cx =>
+//           [5, 12, 19].map(cy => <circle key={`${cx}-${cy}`} cx={cx} cy={cy} r="1" />)
+//         )}
+//       </svg>
+//     </div>
+//   );
+// };
 
 const VideoPanel = ({
   videoId,
@@ -119,7 +119,7 @@ const VideoPanel = ({
     allowFullScreen
   />
 );
-
+// 9:30 7:00pm
 export default function LiveStreamWidget({ urlStream }: StreamWidgetProps) {
   const newUrl = new URL(urlStream);
   const videoId = newUrl.pathname.split('/').pop() || '';
@@ -128,7 +128,6 @@ export default function LiveStreamWidget({ urlStream }: StreamWidgetProps) {
     <div style={{ display: 'grid', placeItems: 'center' }}>
       <div className="container-resizable-panels">
         <VideoPanel videoId={videoId} panelType="left" siValue={siValue} />
-        <Divide />
         <VideoPanel videoId={videoId} panelType="right" />
       </div>
       <div className="widget-controls">
