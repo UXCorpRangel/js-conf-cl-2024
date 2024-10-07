@@ -1,6 +1,6 @@
 import './styles.css';
 
-import { hostame, URL_STREAM } from './config';
+import { hostname, URL_STREAM } from './config';
 
 const newUrl = new URL(URL_STREAM);
 const videoId = newUrl.pathname.split('/').pop() || '';
@@ -59,7 +59,7 @@ const VideoPanel = ({ panelType }: { panelType: 'left' | 'right' }) => (
     src={
       panelType === 'left'
         ? `https://www.youtube.com/embed/${videoId}?si=${siValue}`
-        : `https://www.youtube.com/live_chat?v=${videoId}&embed_domain=${hostame}`
+        : `https://www.youtube.com/live_chat?v=${videoId}&embed_domain=${hostname}`
     }
     title="YouTube video player"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
