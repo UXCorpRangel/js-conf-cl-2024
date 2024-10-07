@@ -27,6 +27,11 @@ export const sliderItems: CommunityItem[] = [
     url: 'https://www.instagram.com/masmujeresux.cl'
   },
   {
+    title: 'UX Corp Rangel',
+    image: '/assets/img/communities/uxcorprangel.webp',
+    url: 'https://www.linkedin.com/company/uxcorprangel/'
+  },
+  {
     title: 'Python Chile',
     image: '/assets/img/communities/python.webp',
     url: 'https://pythonchile.cl/'
