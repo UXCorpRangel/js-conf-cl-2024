@@ -138,6 +138,9 @@ importers:
       '@astrojs/check':
         specifier: ^0.9.3
         version: 0.9.3(prettier-plugin-astro@0.14.1)(prettier@3.3.3)(typescript@5.6.2)
+      '@astrojs/react':
+        specifier: ^3.6.2
+        version: 3.6.2(@types/react-dom@18.3.0)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.4.8(@types/node@20.16.10)(lightningcss@1.27.0))
       '@fontsource/barlow':
         specifier: ^5.1.0
         version: 5.1.0
@@ -150,6 +153,12 @@ importers:
       astro-seo-schema:
         specifier: ^4.0.2
         version: 4.0.2(astro@4.15.10(@types/node@20.16.10)(lightningcss@1.27.0)(rollup@4.24.0)(typescript@5.6.2))(schema-dts@1.1.2(typescript@5.6.2))
+      react:
+        specifier: ^18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.3.1
+        version: 18.3.1(react@18.3.1)
       sanitize.css:
         specifier: ^13.0.0
         version: 13.0.0
@@ -1763,6 +1772,7 @@ packages:
   eslint@8.57.1:
     resolution: {integrity: sha512-ypowyDxpVSYpkXr9WPv2PAZCtNip1Mv5KTW0SCurXv/9iOpcrH9PaqUElksqEB6pChqHGDRCFTyrZlGhnLNGiA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@10.2.0:
