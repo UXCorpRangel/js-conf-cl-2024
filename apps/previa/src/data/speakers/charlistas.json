@@ -235,5 +235,33 @@
         "eventBrief": "Nos acompañará en la previa de la JSConf un reconocido frontend developer argentino, apasionado por el stack de React y embajador de Cypress.io. Es fundador de Pency, una startup de ecommerce que ayudó a más de 30,000 tiendas durante la pandemia. Además, es Twitch partner y creador de contenido enfocado en ayudar a las personas a conseguir su primer empleo en el mundo IT. ¡No te pierdas esta sesión de preguntas y respuestas con uno de los referentes más influyentes del ecosistema de JavaScript y Next.js!"
       }
     ]
+  },
+  {
+    "slug": "francisco-mardones",
+    "fullName": "Francisco Mardones",
+    "company": "Front",
+    "speakerPosition": "Managing Director",
+    "imgSrc": "assets/speakers/francisco.webp",
+    "imgSrc2": "",
+    "imgSrc3": "",
+    "imgSrc4": "assets/speakers/francisco-2.webp",
+    "linkedin": "",
+    "instagram": "",
+    "twitter": "https://twitter.com/mardonet",
+    "twitch": "",
+    "youtube": "",
+    "web": "https://front.com/",
+    "discord": "",
+    "github": "",
+    "bio": "Francisco Mardones es un profesional con amplia experiencia en la dirección de operaciones de software a nivel internacional. Ha liderado equipos en Chile para empresas como Evernote y Siemens, con el objetivo de atraer empresas con desafíos tecnológicos interesantes y abordarlos con talento local. Actualmente, asesora a Front en la creación de un centro de desarrollo tecnológico en Chile. Es ingeniero electrónico de la Universidad de Concepción.",
+    "event": [
+      {
+        "eventType": "Charla",
+        "eventTitle": "Construyendo Aplicaciones Colaborativas con CRDTs en JavaScript",
+        "eventDate": "12 Oct 2024",
+        "eventHour": "12:30",
+        "eventBrief": "Las aplicaciones colaborativas se han convertido en una parte integral de nuestras vidas, permitiendo que múltiples usuarios interactúen con datos compartidos en tiempo real. Ejemplos incluyen herramientas de edición de documentos como Google Docs, editores de código en tiempo real y plataformas de diseño colaborativo. Construir tales aplicaciones implica desafíos complejos como la consistencia de datos, la resolución de conflictos y la sincronización fluida entre usuarios."
+      }
+    ]
   }
 ]

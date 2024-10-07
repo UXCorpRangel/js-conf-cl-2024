@@ -27,6 +27,11 @@ export const sliderItems: CommunityItem[] = [
     url: 'https://www.instagram.com/masmujeresux.cl'
   },
   {
+    title: 'UX Corp Rangel',
+    image: '/assets/img/communities/uxcorprangel.webp',
+    url: 'https://www.linkedin.com/company/uxcorprangel/'
+  },
+  {
     title: 'Python Chile',
     image: '/assets/img/communities/python.webp',
     url: 'https://pythonchile.cl/'
@@ -45,11 +50,6 @@ export const sliderItems: CommunityItem[] = [
     title: 'AWS Cloud Club in Chile',
     image: '/assets/img/communities/cloudclubchile.webp',
     url: 'https://www.instagram.com/cloudclubchile/'
-  },
-  {
-    title: 'Mermelada Tech',
-    image: '/assets/img/communities/mermelada-tech.webp',
-    url: 'https://linktr.ee/mermeladatech'
   },
   {
     title: 'UX Friends',

@@ -10,52 +10,31 @@ const brandImage = speakerBrand || defaultBrandSrc;
 
 <a href={link ? link : 'javascript:void(0);'} class="card-body">
   <div class="speaker">
-    <picture>
-      <source srcset={speakerImage} media="(min-width: 768px)" />
-      <img src={speakerImage} alt={speakerName} class="speaker-avatar" />
-    </picture>
+    <img src={speakerImage} alt={speakerName} class="speaker-avatar" />
     <h3 class="speaker-name">{speakerName}</h3>
   </div>
   <p class="card-info">{speakerInfo}</p>
-  <picture>
-    <source srcset={brandImage} media="(min-width: 768px)" />
-    <img src={brandImage} alt="speaker-brand" class="speaker-brand" />
-  </picture>
+  <img src={brandImage} alt="speaker-brand" class="speaker-brand" />
 </a>
 
 <style>
   .card-body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     max-width: 400px;
     min-width: 390px;
-    gap: 16px;
+    gap: 1rem;
     padding: 24px;
     border-radius: 16px;
+    border: 2px solid var(--black);
     text-decoration: none;
     background-color: var(--gray-50);
     color: var(--black);
-    position: relative;
     transition: transform 0.3s;
-
-    &::after {
-      content: '';
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      background-image: linear-gradient(258deg, #121212 7.65%, #1d1b0e 57.4%, #413e21 98.66%);
-      border-radius: 16px;
-      z-index: -1;
-      padding: 3px;
-      scale: 1.015;
-    }
 
     .speaker {
       display: flex;
-      flex-direction: row;
-      justify-content: center;
       align-items: center;
       gap: 24px;
     }
@@ -77,6 +56,9 @@ const brandImage = speakerBrand || defaultBrandSrc;
   .speaker-brand {
     filter: grayscale(1);
     transition: filter 0.3s;
+    object-fit: cover;
+    max-width: 200px;
+    margin: 0 auto;
 
     .card-body:hover & {
       filter: grayscale(0);
@@ -84,8 +66,13 @@ const brandImage = speakerBrand || defaultBrandSrc;
   }
 
   .card-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-weight: 600;
+    font-size: 1.1rem;
+    text-wrap: pretty;
   }
 
   @media (width <= 768px) {
