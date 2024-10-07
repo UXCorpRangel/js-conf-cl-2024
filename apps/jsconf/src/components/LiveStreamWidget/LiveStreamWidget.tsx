@@ -1,5 +1,11 @@
 import './styles.css';
 
+import { hostame, URL_STREAM } from './config';
+
+const newUrl = new URL(URL_STREAM);
+const videoId = newUrl.pathname.split('/').pop() || '';
+const siValue = newUrl.searchParams.get('si') || '';
+
 const handleToggleChat = (e: React.MouseEvent<HTMLButtonElement>) => {
   const target = e.currentTarget as HTMLButtonElement;
   const parentElement = target.parentElement?.parentElement;
@@ -44,15 +50,7 @@ const BtnToggleChat = () => {
   );
 };
 
-const VideoPanel = ({
-  videoId,
-  panelType,
-  siValue
-}: {
-  videoId: string;
-  panelType: 'left' | 'right';
-  siValue?: string;
-}) => (
+const VideoPanel = ({ panelType }: { panelType: 'left' | 'right' }) => (
   <iframe
     className={`panel ${panelType}-panel`}
     data-status={'closed'}
@@ -61,7 +59,7 @@ const VideoPanel = ({
     src={
       panelType === 'left'
         ? `https://www.youtube.com/embed/${videoId}?si=${siValue}`
-        : `https://www.youtube.com/live_chat?v=${videoId}&embed_domain=${'localhost'}`
+        : `https://www.youtube.com/live_chat?v=${videoId}&embed_domain=${hostame}`
     }
     title="YouTube video player"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -69,16 +67,13 @@ const VideoPanel = ({
     allowFullScreen
   />
 );
-// 9:30 7:00pm
-export default function LiveStreamWidget({ urlStream }: { urlStream: string }) {
-  const newUrl = new URL(urlStream);
-  const videoId = newUrl.pathname.split('/').pop() || '';
-  const siValue = newUrl.searchParams.get('si') || '';
+
+export default function LiveStreamWidget() {
   return (
     <div style={{ display: 'grid', placeItems: 'center', marginTop: '1rem' }}>
       <div className="container-resizable-panels">
-        <VideoPanel videoId={videoId} panelType="left" siValue={siValue} />
-        <VideoPanel videoId={videoId} panelType="right" />
+        <VideoPanel panelType="left" />
+        <VideoPanel panelType="right" />
       </div>
       <div className="widget-controls">
         <BtnToggleChat />
