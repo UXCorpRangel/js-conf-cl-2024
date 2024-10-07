@@ -8,6 +8,7 @@ import Sponsors from '@sections/Sponsors.astro';
 import Staff from '@sections/Staff/Staff.astro';
 import Views from '@sections/Views.astro';
 import Volunteer from '@sections/Volunteer/Volunteer.astro';
+import StreamWidget from '@components/LiveStreamWidget/StreamWidget';
 import Layout from '@layouts/Layout.astro';
 ---
 
@@ -16,6 +17,7 @@ import Layout from '@layouts/Layout.astro';
   description="Únete a la previa de la JSConf Chile 2024, la conferencia de JavaScript más grande de Chile. Este 12 de octubre en Santiago, descubre las últimas tendencias, tecnologías y redes con expertos en desarrollo web."
   ogImg="previa.png"
 >
+  <StreamWidget client:load />
   <Hero />
   <Conf />
   <Event />
