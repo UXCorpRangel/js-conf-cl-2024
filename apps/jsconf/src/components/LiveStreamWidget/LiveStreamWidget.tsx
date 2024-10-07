@@ -1,18 +1,16 @@
 import './styles.css';
 
-import type { StreamWidgetProps } from './StreamWidget';
-
 const handleToggleChat = (e: React.MouseEvent<HTMLButtonElement>) => {
   const target = e.currentTarget as HTMLButtonElement;
   const parentElement = target.parentElement?.parentElement;
-
-  const panels = ['right-panel', 'left-panel', 'divider'].map(className =>
+  const panels = ['right-panel', 'left-panel'].map(className =>
     parentElement?.querySelector(`.container-resizable-panels .${className}`)
   );
   const [panelRChat] = panels;
   const newStatus = panelRChat?.getAttribute('data-status') === 'open' ? 'closed' : 'open';
 
   panels.forEach(panel => panel?.setAttribute('data-status', newStatus));
+
   target.classList.add('jello-horizontal');
   target.addEventListener('animationend', () => target.classList.remove('jello-horizontal'), {
     once: true
@@ -46,54 +44,6 @@ const BtnToggleChat = () => {
   );
 };
 
-// const handleDivideMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
-//   const parentElement = e.currentTarget.parentElement?.parentElement;
-//   const panelRight = parentElement?.querySelector<HTMLDivElement>('.right-panel');
-//   const panelLeft = parentElement?.querySelector<HTMLDivElement>('.left-panel');
-
-//   if (panelRight && panelLeft) {
-//     panelRight.style.pointerEvents = 'none';
-//     panelLeft.style.pointerEvents = 'none';
-//     document.body.style.cursor = 'col-resize';
-
-//     const handleMouseMove = (moveEvent: MouseEvent) => {
-//       const newFlexRight = Math.max(100, Math.min(window.innerWidth - moveEvent.clientX, 800));
-//       panelRight.style.flex = `0 0 ${newFlexRight}px`;
-//     };
-
-//     const handleMouseUp = () => {
-//       document.removeEventListener('mousemove', handleMouseMove);
-//       document.removeEventListener('mouseup', handleMouseUp);
-//       document.body.style.cursor = 'auto';
-//       panelRight.style.pointerEvents = 'auto';
-//       panelLeft.style.pointerEvents = 'auto';
-//     };
-
-//     document.addEventListener('mousemove', handleMouseMove);
-//     document.addEventListener('mouseup', handleMouseUp);
-//   } else {
-//     console.log('No se encontraron los paneles');
-//   }
-// };
-
-// const Divide = () => {
-//   return (
-//     <div className="divider" onMouseDown={handleDivideMouseDown}>
-//       <svg
-//         width="24"
-//         height="30"
-//         fill="none"
-//         stroke="currentColor"
-//         xmlns="http://www.w3.org/2000/svg"
-//       >
-//         {[9, 15].map(cx =>
-//           [5, 12, 19].map(cy => <circle key={`${cx}-${cy}`} cx={cx} cy={cy} r="1" />)
-//         )}
-//       </svg>
-//     </div>
-//   );
-// };
-
 const VideoPanel = ({
   videoId,
   panelType,
@@ -105,13 +55,13 @@ const VideoPanel = ({
 }) => (
   <iframe
     className={`panel ${panelType}-panel`}
-    data-status="open"
+    data-status={'closed'}
     width={panelType === 'left' ? 560 : 520}
     height="315"
     src={
       panelType === 'left'
-        ? `https://www.youtube.com/embed/${videoId}?si=${siValue}`
-        : `https://www.youtube.com/live_chat?v=${videoId}&embed_domain=${'localhost'}`
+        ? `https://www.youtube--.com/embed/${videoId}?si=${siValue}`
+        : `https://www.youtube--.com/live_chat?v=${videoId}&embed_domain=${'localhost'}`
     }
     title="YouTube video player"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -120,7 +70,7 @@ const VideoPanel = ({
   />
 );
 // 9:30 7:00pm
-export default function LiveStreamWidget({ urlStream }: StreamWidgetProps) {
+export default function LiveStreamWidget({ urlStream }: { urlStream: string }) {
   const newUrl = new URL(urlStream);
   const videoId = newUrl.pathname.split('/').pop() || '';
   const siValue = newUrl.searchParams.get('si') || '';

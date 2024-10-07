@@ -1,0 +1,116 @@
+.widget-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: var(--gray-3);
+  width: fit-content;
+  margin: 1rem auto;
+  border-radius: 9999px;
+  gap: 1rem;
+}
+
+.widget-controls__toggle-chat {
+  border: none;
+  outline: none;
+  background: var(--yellow);
+  color: var(--bg-color);
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.container-resizable-panels {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  --padding: 5px;
+  --radius: 20px;
+  --shadow: 0px 4px 85.3px rgba(85, 85, 46, 0.1);
+  padding: var(--padding);
+  border-radius: var(--radius);
+  background: linear-gradient(30deg, #2a2401 0%, #9a8025 39.57%, #ede060 100%);
+  box-shadow: var(--shadow);
+  filter: drop-shadow(var(--shadow));
+
+  --rounded-inner: calc(var(--radius) - var(--padding));
+
+  .left-panel,
+  .right-panel {
+    background: var(--bg-color);
+  }
+
+  .left-panel {
+    flex: 2.6;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--rounded-inner) 0 0 var(--rounded-inner);
+
+    &[data-status='closed'] {
+      border-radius: var(--rounded-inner);
+    }
+
+    @media (max-width: 1080px) {
+      border-radius: var(--rounded-inner) var(--rounded-inner) 0 0;
+      aspect-ratio: 16 / 9;
+    }
+  }
+
+  .right-panel {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 var(--rounded-inner) var(--rounded-inner) 0;
+
+    &[data-status='closed'] {
+      display: none;
+    }
+
+    @media (max-width: 1080px) {
+      height: 500px;
+      border-radius: 0 0 var(--rounded-inner) var(--rounded-inner);
+    }
+  }
+
+  @media (min-width: 1080px) {
+    max-height: 80dvh;
+    aspect-ratio: 16 / 9;
+  }
+
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    height: auto;
+
+    .left-panel,
+    .right-panel {
+      flex: inherit !important;
+    }
+  }
+}
+
+.jello-horizontal {
+  animation: jello-horizontal 0.9s both;
+}
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
