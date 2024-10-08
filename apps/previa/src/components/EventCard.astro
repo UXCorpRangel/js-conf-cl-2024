@@ -56,7 +56,7 @@ const { eventType, eventTitle, eventDate, eventHour, eventBrief } = Astro.props;
       flex-grow: 1;
 
       .event-title {
-        width: 60%;
+        width: fit-content;
         font-weight: bold;
         font-size: 1.3rem;
       }
@@ -74,7 +74,7 @@ const { eventType, eventTitle, eventDate, eventHour, eventBrief } = Astro.props;
     }
   }
 
-  @media (max-width: 375px) {
+  @media (width < 945px) {
     .card-event {
       width: 100%;
       padding: 1rem;
@@ -83,6 +83,7 @@ const { eventType, eventTitle, eventDate, eventHour, eventBrief } = Astro.props;
       .event-info {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
       }
       .event-place {
         justify-content: space-between;
