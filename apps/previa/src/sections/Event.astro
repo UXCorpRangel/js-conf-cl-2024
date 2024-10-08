@@ -40,6 +40,7 @@ import { Button, RadiusGradientFrame } from '@components';
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 2rem;
     height: 28rem;
     width: 100%;
     max-width: 71rem;
@@ -76,6 +77,16 @@ import { Button, RadiusGradientFrame } from '@components';
       flex-direction: column-reverse;
       height: fit-content;
       justify-content: space-between;
+      gap: 3rem;
+
+      & .event-specs {
+        width: 100%;
+
+        & img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
 
       & .event-info {
         display: flex;
