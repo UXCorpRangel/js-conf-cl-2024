@@ -25,43 +25,44 @@ const ogURL = `${site}/og/${ogImg}`;
 
 <!doctype html>
 <html lang="es">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-  <title>{title}</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <title>{title}</title>
 
-  {description && <meta name="description" content={description} />}
-  {description && <link href={Astro.url.href} rel="canonical" />}
-  {
-    description && (
-      <Schema
-        item={{
-          '@context': 'https://schema.org',
-          '@type': 'Organization',
-          name: 'JSConf',
-          description,
-          image: ogURL,
-          url: site
-        }}
-      />
-    )
-  }
+    {description && <meta name="description" content={description} />}
+    {description && <link href={Astro.url.href} rel="canonical" />}
+    {
+      description && (
+        <Schema
+          item={{
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'JSConf',
+            description,
+            image: ogURL,
+            url: site
+          }}
+        />
+      )
+    }
 
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://jsconf.cl/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content=`${title}` />
-  <meta property="og:description" content=`${description}` />
-  <meta property="og:image" content={ogURL} />
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://jsconf.cl/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content=`${title}` />
+    <meta property="og:description" content=`${description}` />
+    <meta property="og:image" content={ogURL} />
 
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta property="twitter:domain" content=`${site}` />
-  <meta property="twitter:url" content=`${site}` />
-  <meta name="twitter:title" content=`${title}` />
-  <meta name="twitter:description" content=`${description}` />
-  <meta name="twitter:image" content={ogURL} />
-
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content=`${site}` />
+    <meta property="twitter:url" content=`${site}` />
+    <meta name="twitter:title" content=`${title}` />
+    <meta name="twitter:description" content=`${description}` />
+    <meta name="twitter:image" content={ogURL} />
+  </head>
   <body>
     <Navbar />
     <main class="container">
