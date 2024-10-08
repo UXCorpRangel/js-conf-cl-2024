@@ -20,37 +20,37 @@ const charlistaDetails = charlistasData.find(charlista => charlista.slug === cha
 <Layout
   title={`JSConf Chile 2024 | ${charlistaDetails?.fullName || 'Charlista'}`}
   description="Conoce a los charlistas de JSConf Chile 2024. Descubre a los expertos en JavaScript y desarrollo web que estarán compartiendo sus conocimientos del 5 al 7 de diciembre en Santiago. ¡Explora sus perfiles y temas!"
-  ogImg="home.png"
+  ogImg="previa.png"
 >
   <div class="speaker-wrapper">
     <div class="speaker">
       <div class="cover-section">
         <img
           src={charlistaDetails?.imgSrc
-            ? `../${charlistaDetails.imgSrc}`
-            : '../assets/img/staff/ana-rangel.webp'}
+            ? `/${charlistaDetails.imgSrc}`
+            : '/assets/img/staff/ana-rangel.webp'}
           alt={charlistaDetails?.fullName}
           class="cover-square"
         />
         <div class="cover-center">
           <img
             src={charlistaDetails?.imgSrc2
-              ? `../${charlistaDetails.imgSrc2}`
-              : '../assets/img/JSConf-2.webp'}
+              ? `/${charlistaDetails.imgSrc2}`
+              : '/assets/img/JSConf-2.webp'}
             alt={charlistaDetails?.fullName}
           />
 
           <img
             src={charlistaDetails?.imgSrc3
-              ? `../${charlistaDetails.imgSrc3}`
-              : '../assets/img/JSConf-3.webp'}
+              ? `/${charlistaDetails.imgSrc3}`
+              : '/assets/img/JSConf-3.webp'}
             alt={charlistaDetails?.fullName}
           />
         </div>
         <img
           src={charlistaDetails?.imgSrc4
-            ? `../${charlistaDetails.imgSrc4}`
-            : '../assets/img/JSConf-1.webp'}
+            ? `/${charlistaDetails.imgSrc4}`
+            : '/assets/img/JSConf-1.webp'}
           alt={charlistaDetails?.fullName}
           class="cover-square"
         />
