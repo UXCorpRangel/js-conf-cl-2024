@@ -8,8 +8,8 @@ import speakers from '../../data/speakers/charlistas.json';
     speakers.map(speaker => (
       <SpeakerCard
         imgSrc={speaker.imgSrc}
-        speakerName={speaker.speakerName}
-        speakerInfo={speaker.speakerInfo}
+        speakerName={speaker.fullName}
+        speakerInfo={speaker.event[0].eventTitle}
         speakerBrand={speaker.speakerBrand}
         link={'/charlistas/' + speaker.slug}
       />
