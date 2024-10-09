@@ -3,45 +3,45 @@ import { Button, SpeakerCard } from '@components';
 
 const speakers = [
   {
-    imgSrc: 'imgs/midudev.webp',
-    speakerName: 'Miguel Ángel "Midudev" Durán',
+    imgSrc: '',
+    speakerName: 'Estefany Aguilar',
     speakerInfo: 'Ingeniero de Software y Divulgador de Programación',
-    speakerBrand: 'imgs/midulogo.webp',
+    speakerBrand: '',
     link: '#'
   },
   {
-    imgSrc: 'imgs/midudev.webp',
-    speakerName: 'Miguel Ángel "Midudev" Durán',
-    speakerInfo: 'Ingeniero de Software y Divulgador de Programación',
-    speakerBrand: 'imgs/midulogo.webp',
+    imgSrc: 'assets/img/speakers/midudev/midudev.webp',
+    speakerName: 'Miguel Ángel Durán',
+    speakerInfo: '¡El Futuro de la Web! Lo nuevo de JavaScript, HTML y CSS',
+    speakerBrand: 'assets/img/speakers/midudev/midulogo.webp',
     link: '#'
   },
   {
-    imgSrc: 'imgs/midudev.webp',
-    speakerName: 'Miguel Ángel "Midudev" Durán',
-    speakerInfo: 'Ingeniero de Software y Divulgador de Programación',
-    speakerBrand: 'imgs/midulogo.webp',
+    imgSrc: 'assets/img/speakers/lewis-liu/lewis-liu-1.webp',
+    speakerName: 'Lewis Liu',
+    speakerInfo: 'Building the world´s fastest JavaScript bundler... with JavaScript!?',
+    speakerBrand: '',
     link: '#'
   },
   {
-    imgSrc: 'imgs/midudev.webp',
-    speakerName: 'Miguel Ángel "Midudev" Durán',
-    speakerInfo: 'Ingeniero de Software y Divulgador de Programación',
-    speakerBrand: 'imgs/midulogo.webp',
+    imgSrc: '',
+    speakerName: 'Rita Kozlov',
+    speakerInfo: 'Building a platform for 2 Million Developers',
+    speakerBrand: '',
     link: '#'
   },
   {
-    imgSrc: 'imgs/midudev.webp',
-    speakerName: 'Miguel Ángel "Midudev" Durán',
-    speakerInfo: 'Ingeniero de Software y Divulgador de Programación',
-    speakerBrand: 'imgs/midulogo.webp',
+    imgSrc: 'assets/img/speakers/maja-wichrowska/maja-wichrowska-1.webp',
+    speakerName: 'Maja Wichrowska',
+    speakerInfo: 'Codemods in the Era of AI',
+    speakerBrand: '',
     link: '#'
   },
   {
-    imgSrc: 'imgs/midudev.webp',
-    speakerName: 'Miguel Ángel "Midudev" Durán',
-    speakerInfo: 'Ingeniero de Software y Divulgador de Programación',
-    speakerBrand: 'imgs/midulogo.webp',
+    imgSrc: 'assets/img/speakers/juan-pablo-ortiz/juan-pablo-ortiz-1.webp',
+    speakerName: 'Juan Pablo Ortiz',
+    speakerInfo: 'Multithread in Javascript with web workers',
+    speakerBrand: '',
     link: '#'
   }
 ];
@@ -70,7 +70,7 @@ const speakers = [
     }
   </div>
 
-  <Button icon="arrow-up-right" link="/speakers">Ver más</Button>
+  <Button icon="arrow-up-right" link="/charlistas">Ver más</Button>
 </section>
 
 <style>
@@ -80,7 +80,7 @@ const speakers = [
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    margin: 8rem 0;
+    margin: 8rem auto;
 
     & .speakers-info {
       max-width: 560px;
@@ -95,11 +95,19 @@ const speakers = [
     }
 
     & .speakers-wrapper {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 24px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+  }
+
+  @media (width <= 768px) {
+    .speakers {
+      & .speakers-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
     }
   }
 </style>

@@ -2,25 +2,17 @@
 const { imgSrc, speakerName, speakerInfo, speakerBrand, link } = Astro.props;
 
 const defaultImgSrc = 'assets/img/misc/speaker-stock.webp';
-const defaultBrandSrc = 'assets/img/misc/small-logo.png';
 
 const speakerImage = imgSrc || defaultImgSrc;
-const brandImage = speakerBrand || defaultBrandSrc;
 ---
 
 <a href={link} class="card-body">
   <div class="speaker">
-    <picture>
-      <source srcset={speakerImage} media="(min-width: 768px)" />
-      <img src={speakerImage} alt={speakerName} class="speaker-avatar" />
-    </picture>
+    <img src={speakerImage} alt={speakerName} class="speaker-avatar" />
     <h3 class="speaker-name">{speakerName}</h3>
   </div>
   <p class="card-info">{speakerInfo}</p>
-  <picture>
-    <source srcset={brandImage} media="(min-width: 768px)" />
-    <img src={brandImage} alt="speaker-brand" class="speaker-brand" />
-  </picture>
+  <img src={speakerBrand} alt="speaker-brand" class="speaker-brand" />
 </a>
 
 <style>
@@ -30,7 +22,7 @@ const brandImage = speakerBrand || defaultBrandSrc;
     justify-content: center;
     align-items: center;
     max-width: 400px;
-    width: fit-content;
+    width: 100%;
     gap: 16px;
     padding: 24px;
     border-radius: 16px;
@@ -53,8 +45,6 @@ const brandImage = speakerBrand || defaultBrandSrc;
 
     .speaker {
       display: flex;
-      flex-direction: row;
-      justify-content: center;
       align-items: center;
       gap: 24px;
     }
@@ -76,6 +66,9 @@ const brandImage = speakerBrand || defaultBrandSrc;
   .speaker-brand {
     filter: grayscale(1);
     transition: filter 0.3s;
+    object-fit: cover;
+    max-width: 200px;
+    margin: 0 auto;
 
     .card-body:hover & {
       filter: grayscale(0);
@@ -83,6 +76,18 @@ const brandImage = speakerBrand || defaultBrandSrc;
   }
 
   .card-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-wrap: pretty;
+  }
+
+  @media (width <= 768px) {
+    .card-body {
+      max-width: 100%;
+    }
   }
 </style>
