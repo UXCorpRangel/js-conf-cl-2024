@@ -26,30 +26,99 @@ const charlistaDetails = charlistasData.find(charlista => charlista.slug === cha
     <div class="speaker">
       <div class="cover-section">
         <img
-          src=`../${charlistaDetails?.imgSrc}`
-          alt={charlistaDetails?.nickName}
-          class="cover-square"
+          src={charlistaDetails?.imgSrc
+            ? `/${charlistaDetails.imgSrc}`
+            : '/assets/img/staff/ana-rangel.webp'}
+          alt={charlistaDetails?.fullName}
+          class="photo square-1"
         />
-        <div class="cover-center">
-          <img src=`../${charlistaDetails?.imgSrc2}` alt={charlistaDetails?.nickName} />
-          <img src=`../${charlistaDetails?.imgSrc3}` alt={charlistaDetails?.nickName} />
-        </div>
         <img
-          src=`../${charlistaDetails?.imgSrc4}`
-          alt={charlistaDetails?.nickName}
-          class="cover-square"
+          src={charlistaDetails?.imgSrc2
+            ? `/${charlistaDetails.imgSrc2}`
+            : '/assets/img/JSConf-2.webp'}
+          alt={charlistaDetails?.fullName}
+          class="photo landscape-1"
+        />
+
+        <img
+          src={charlistaDetails?.imgSrc3
+            ? `/${charlistaDetails.imgSrc3}`
+            : '/assets/img/JSConf-3.webp'}
+          alt={charlistaDetails?.fullName}
+          class="photo landscape-2"
+        />
+        <img
+          src={charlistaDetails?.imgSrc4
+            ? `/${charlistaDetails.imgSrc4}`
+            : '/assets/img/JSConf-1.webp'}
+          alt={charlistaDetails?.fullName}
+          class="photo square-2"
         />
       </div>
-      <div>
+
+      <div class="general-info">
         <h1 class="speaker-name">{charlistaDetails?.fullName || 'Nombre no encontrado'}</h1>
         <div class="speaker-info">
-          <span>{charlistaDetails?.nickName}</span>
+          <span>{charlistaDetails?.company}</span>
           <p>{charlistaDetails?.speakerInfo}</p>
         </div>
         <div class="social-links">
-          <a href={charlistaDetails?.linkedin}><Icon name="linkedin" /></a>
-          <a href={charlistaDetails?.instagram}><Icon name="instagram" /></a>
-          <a href={charlistaDetails?.twitter}><Icon name="twitter" /></a>
+          {
+            charlistaDetails?.linkedin && (
+              <a href={charlistaDetails?.linkedin}>
+                <Icon name="linkedin" />
+              </a>
+            )
+          }
+          {
+            charlistaDetails?.instagram && (
+              <a href={charlistaDetails?.instagram}>
+                <Icon name="instagram" />
+              </a>
+            )
+          }
+          {
+            charlistaDetails?.twitter && (
+              <a href={charlistaDetails?.twitter}>
+                <Icon name="twitter" />
+              </a>
+            )
+          }
+          {
+            charlistaDetails?.twitch && (
+              <a href={charlistaDetails?.twitch}>
+                <Icon name="twitch" />
+              </a>
+            )
+          }
+          {
+            charlistaDetails?.youtube && (
+              <a href={charlistaDetails?.youtube}>
+                <Icon name="youtube" />
+              </a>
+            )
+          }
+          {
+            charlistaDetails?.web && (
+              <a href={charlistaDetails?.web}>
+                <Icon name="globe" />
+              </a>
+            )
+          }
+          {
+            charlistaDetails?.discord && (
+              <a href={charlistaDetails?.discord}>
+                <Icon name="discord" />
+              </a>
+            )
+          }
+          {
+            charlistaDetails?.github && (
+              <a href={charlistaDetails?.github}>
+                <Icon name="github" />
+              </a>
+            )
+          }
         </div>
       </div>
     </div>
@@ -76,36 +145,69 @@ const charlistaDetails = charlistasData.find(charlista => charlista.slug === cha
 
 <style>
   .speaker-wrapper {
-    width: 90%;
+    width: 100%;
     margin: 2rem auto;
-  }
 
-  .speaker {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
+    & .speaker {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
 
-  .cover-section {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-  }
+      & .cover-section {
+        max-height: 380px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 186px);
+        gap: 1rem;
 
-  .cover-square {
-    border-radius: 1rem;
-  }
+        & .photo {
+          object-fit: cover;
+          border-radius: 1rem;
+        }
 
-  .cover-center {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+        & .square-1 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 1;
+          grid-row-end: 3;
+          height: 100%;
+          width: 100%;
+        }
 
-    img {
-      width: 100%;
-      height: 100%;
-      border-radius: 1rem;
+        & .landscape-1 {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 2;
+          height: 100%;
+          width: 100%;
+        }
+
+        & .landscape-2 {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 2;
+          grid-row-end: 3;
+          height: 100%;
+          width: 100%;
+        }
+
+        & .square-2 {
+          grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 1;
+          grid-row-end: 3;
+          height: 100%;
+          width: 100%;
+        }
+      }
     }
+  }
+
+  .general-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   .speaker-name {
@@ -120,6 +222,7 @@ const charlistaDetails = charlistasData.find(charlista => charlista.slug === cha
     font-size: 1.125rem;
 
     span {
+      font-size: 1.5rem;
       font-weight: 700;
     }
   }
@@ -141,7 +244,6 @@ const charlistaDetails = charlistasData.find(charlista => charlista.slug === cha
 
   .content {
     display: flex;
-    flex-direction: row;
     gap: 1rem;
 
     p {
@@ -171,29 +273,53 @@ const charlistaDetails = charlistasData.find(charlista => charlista.slug === cha
       );
   }
 
-  @media (max-width: 1200px) {
-    .cover-square {
-      width: 35%;
-    }
-  }
-
   @media (max-width: 768px) {
     .speaker-wrapper {
       width: 100%;
-    }
 
-    .cover-square {
-      width: 100%;
-    }
+      & .speaker {
+        flex-direction: column-reverse;
 
-    .speaker {
-      flex-direction: column-reverse;
-    }
+        & .cover-section {
+          max-height: calc(338px + 166px + 166px + 338px);
+          grid-template-columns: 1fr;
+          grid-template-rows: 338px 166px 166px 338px;
+          margin-bottom: 4rem;
 
-    .cover-section {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
+          & .photo {
+            object-fit: cover;
+            border-radius: 1rem;
+          }
+
+          & .square-1 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+          }
+
+          & .landscape-1 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+          }
+
+          & .landscape-2 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+          }
+
+          & .square-2 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 4;
+            grid-row-end: 5;
+          }
+        }
+      }
     }
 
     .speaker-name {
