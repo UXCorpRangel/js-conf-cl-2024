@@ -1,8 +1,3 @@
----
-import Desierto from '@public/assets/img/desierto-floreado-atacama.webp';
-import { Image } from 'astro:assets';
----
-
 <section class="hero">
   <div class="hero--content">
     <img src="/assets/img/misc/glass.webp" alt="bell icon" class="hero--decoration" />
@@ -16,97 +11,58 @@ import { Image } from 'astro:assets';
     </div>
   </div>
   <div class="hero--asset">
-    <Image
-      src={Desierto}
-      alt="Desierto floreado Atacama"
-      loading="lazy"
-      decoding="async"
-      widths={[240, 540, 720, Desierto.width]}
-      sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${Desierto.width}px`}
-    />
-    <div class="hero--asset--caption">
+    <img src="assets/img/desierto-floreado-atacama.webp" alt="Desierto florido de atacama" />
+    <p class="hero--asset--caption">
       <span>Desierto florido de atacama - </span>Región de Atacama.
-    </div>
+    </p>
   </div>
 </section>
 
 <style>
   .hero {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 2rem;
-    align-items: center;
-  }
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    max-width: 406px;
-  }
-  .hero--content {
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    gap: 1.2rem;
-    h1 {
-      font-family: Barlow;
-      font-size: 30px;
-      font-weight: 600;
-      line-height: 36px;
-      letter-spacing: -0.0075em;
-      text-align: left;
-      margin-bottom: 2rem;
-    }
-    p {
-      font-family: Barlow;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 28px;
-      text-align: left;
-      max-width: 560px;
-    }
-    .hero--decoration {
-      transform: translateY(-20px);
-    }
-  }
-  .hero--asset {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    .hero--asset--caption {
-      font-weight: 700;
-      font-size: 12px;
-      line-height: 24px;
-      text-align: right;
-      color: var(--white);
-      & span {
-        color: var(--yellow);
+    gap: 2rem;
+    margin-bottom: 8rem;
+
+    & .hero--content {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      max-width: 560px;
+
+      & .hero--content--text {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
       }
     }
-  }
-  @media (max-width: 1280px) {
-    .hero {
-      grid-template-columns: 1fr;
-    }
-    .hero--content {
-      place-content: center;
-      order: 2;
-      .hero--content__actions {
-        display: block;
-        margin-top: 1rem;
-        a {
+
+    & .hero--asset {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+
+      & .hero--asset--caption {
+        font-family: monospace;
+        font-size: 0.75rem;
+
+        & span {
           color: var(--yellow);
-          text-decoration: underline;
         }
       }
     }
-    .hero--asset {
-      order: 1;
-    }
-    h1,
-    .hero--actions {
-      display: none;
+  }
+
+  @media (width < 768px) {
+    .hero {
+      flex-direction: column;
+
+      & .hero--asset {
+        align-items: center;
+      }
     }
   }
 </style>
