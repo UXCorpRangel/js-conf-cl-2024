@@ -49,7 +49,7 @@ import { RadiusGradientFrame } from '@components';
   .event {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 28rem;
     width: 100%;
     max-width: 71rem;
@@ -79,6 +79,9 @@ import { RadiusGradientFrame } from '@components';
 
     & .event-info {
       max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
 
       & h1 {
         text-wrap: balance;
