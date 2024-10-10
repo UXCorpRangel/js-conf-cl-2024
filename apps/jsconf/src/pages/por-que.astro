@@ -52,4 +52,18 @@ import Layout from '@layouts/Layout.astro';
       text-transform: uppercase;
     }
   }
+
+  img {
+    border-radius: 1.5rem;
+    width: 100%;
+    max-width: 735px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  @media (width <= 768px) {
+    img {
+      max-width: 100%;
+    }
+  }
 </style>
