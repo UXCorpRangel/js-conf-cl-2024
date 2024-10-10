@@ -124,7 +124,13 @@ const charlistaDetails = charlistasData.find(charlista => charlista.slug === cha
     </div>
     <div class="content">
       <div class="speaker-bio">
-        {charlistaDetails?.bio.split('\n').map(paragraph => <p>{paragraph}</p>)}
+        {
+          charlistaDetails?.bio ? (
+            charlistaDetails.bio.split('<br>').map(paragraph => <p>{paragraph}</p>)
+          ) : (
+            <p>Biografía no disponible</p>
+          )
+        }
       </div>
 
       <div class="event-speaker">
