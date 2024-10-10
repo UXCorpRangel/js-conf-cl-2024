@@ -26,24 +26,11 @@ const { reverse = false } = Astro.props;
 
     & .bento-item {
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       gap: 2.3rem;
       text-align: center;
-
-      @media (width >= 768px) {
-        flex-direction: row;
-        gap: 2.25rem;
-      }
-
-      &.reverse {
-        flex-direction: column;
-
-        @media (width >= 768px) {
-          flex-direction: row-reverse;
-        }
-      }
+      height: auto;
 
       & .card-demo {
         --border-color: linear-gradient(180deg, #2a2401 0%, #9a8025 39.57%, #ede060 100%);
@@ -65,19 +52,16 @@ const { reverse = false } = Astro.props;
         }
       }
 
-      .card-demo {
-        width: 100%;
-        max-width: 700px;
-        margin-inline: 3.1rem;
-        margin: 2rem;
+      & .card-demo {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         padding: 1rem;
         font-size: clamp(1rem, 4vw, 4rem);
         font-weight: 600;
-
-        @media (width >= 768px) {
-          padding: 3rem 1rem;
-        }
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
 
         background: linear-gradient(0.07deg, rgba(80, 72, 29, 0.2) 0.03%, rgba(0, 0, 0, 0) 95.96%),
           radial-gradient(
@@ -85,6 +69,42 @@ const { reverse = false } = Astro.props;
             rgba(54, 53, 38, 0.62) 8%,
             rgba(9, 9, 7, 0) 80%
           );
+
+        & .bento-square {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          height: 100%;
+          text-wrap: pretty;
+          padding: 1rem;
+        }
+      }
+    }
+
+    & .reverse {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+
+  @media (width <= 768px) {
+    .bento-container {
+      & .bento-item {
+        flex-direction: column;
+
+        & .card-demo {
+          max-width: 100%;
+        }
+
+        & .bento-square {
+          gap: 2rem;
+        }
+      }
+
+      & .reverse {
+        flex-direction: column;
+        gap: 2rem;
       }
     }
   }
