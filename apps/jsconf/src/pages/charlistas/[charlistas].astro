@@ -39,7 +39,6 @@ const charlistaDetails = charlistasData.find(charlista => charlista.slug === cha
           alt={charlistaDetails?.fullName}
           class="photo landscape-1"
         />
-
         <img
           src={charlistaDetails?.imgSrc3
             ? `/${charlistaDetails.imgSrc3}`
@@ -57,87 +56,88 @@ const charlistaDetails = charlistasData.find(charlista => charlista.slug === cha
       </div>
 
       <div class="general-info">
-        <h1 class="speaker-name">{charlistaDetails?.fullName || 'Nombre no encontrado'}</h1>
-        <div class="speaker-info">
-          <span>{charlistaDetails?.company}</span>
-          <p>{charlistaDetails?.speakerInfo}</p>
+        <article class="general-aifon">
+          <h1 class="speaker-name">{charlistaDetails?.fullName || 'Nombre no encontrado'}</h1>
+          <div class="speaker-info">
+            <span>{charlistaDetails?.company}</span>
+            <p>{charlistaDetails?.speakerInfo}</p>
+          </div>
+          <div class="social-links">
+            {
+              charlistaDetails?.linkedin && (
+                <a href={charlistaDetails?.linkedin}>
+                  <Icon name="linkedin" />
+                </a>
+              )
+            }
+            {
+              charlistaDetails?.instagram && (
+                <a href={charlistaDetails?.instagram}>
+                  <Icon name="instagram" />
+                </a>
+              )
+            }
+            {
+              charlistaDetails?.twitter && (
+                <a href={charlistaDetails?.twitter}>
+                  <Icon name="twitter" />
+                </a>
+              )
+            }
+            {
+              charlistaDetails?.twitch && (
+                <a href={charlistaDetails?.twitch}>
+                  <Icon name="twitch" />
+                </a>
+              )
+            }
+            {
+              charlistaDetails?.youtube && (
+                <a href={charlistaDetails?.youtube}>
+                  <Icon name="youtube" />
+                </a>
+              )
+            }
+            {
+              charlistaDetails?.web && (
+                <a href={charlistaDetails?.web}>
+                  <Icon name="globe" />
+                </a>
+              )
+            }
+            {
+              charlistaDetails?.discord && (
+                <a href={charlistaDetails?.discord}>
+                  <Icon name="discord" />
+                </a>
+              )
+            }
+            {
+              charlistaDetails?.github && (
+                <a href={charlistaDetails?.github}>
+                  <Icon name="github" />
+                </a>
+              )
+            }
+          </div>
+          <div class="content">
+            <p>{charlistaDetails?.bio || 'Biografía no disponible'}</p>
+          </div>
+        </article>
+        <div class="event-speaker">
+          {
+            charlistaDetails?.event.map(event => (
+              <EventCard
+                eventType={event.eventType}
+                eventTitle={event.eventTitle}
+                eventDate={event.eventDate}
+                eventHour={event.eventHour}
+                eventEquipment={event.eventEquipment}
+                eventBrief={event.eventBrief}
+              />
+            ))
+          }
         </div>
-        <div class="social-links">
-          {
-            charlistaDetails?.linkedin && (
-              <a href={charlistaDetails?.linkedin}>
-                <Icon name="linkedin" />
-              </a>
-            )
-          }
-          {
-            charlistaDetails?.instagram && (
-              <a href={charlistaDetails?.instagram}>
-                <Icon name="instagram" />
-              </a>
-            )
-          }
-          {
-            charlistaDetails?.twitter && (
-              <a href={charlistaDetails?.twitter}>
-                <Icon name="twitter" />
-              </a>
-            )
-          }
-          {
-            charlistaDetails?.twitch && (
-              <a href={charlistaDetails?.twitch}>
-                <Icon name="twitch" />
-              </a>
-            )
-          }
-          {
-            charlistaDetails?.youtube && (
-              <a href={charlistaDetails?.youtube}>
-                <Icon name="youtube" />
-              </a>
-            )
-          }
-          {
-            charlistaDetails?.web && (
-              <a href={charlistaDetails?.web}>
-                <Icon name="globe" />
-              </a>
-            )
-          }
-          {
-            charlistaDetails?.discord && (
-              <a href={charlistaDetails?.discord}>
-                <Icon name="discord" />
-              </a>
-            )
-          }
-          {
-            charlistaDetails?.github && (
-              <a href={charlistaDetails?.github}>
-                <Icon name="github" />
-              </a>
-            )
-          }
-        </div>
-      </div>
-    </div>
-    <div class="content">
-      <p>{charlistaDetails?.bio || 'Biografía no disponible'}</p>
-
-      <div class="event-speaker">
-        {
-          charlistaDetails?.event.map(event => (
-            <EventCard
-              eventType={event.eventType}
-              eventTitle={event.eventTitle}
-              eventDate={event.eventDate}
-              eventHour={event.eventHour}
-              eventEquipment={event.eventEquipment}
-              eventBrief={event.eventBrief}
-            />
-          ))
-        }
       </div>
     </div>
   </div>
@@ -206,20 +206,21 @@ const charlistaDetails = charlistasData.find(charlista => charlista.slug === cha
 
   .general-info {
     display: flex;
-    flex-direction: column;
     gap: 1rem;
+    margin-top: 2rem;
   }
 
-  .speaker-name {
-    text-align: left;
+  .general-aifon {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 
   .speaker-info {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     gap: 1.5rem;
-    font-size: 1.125rem;
 
     span {
       font-size: 1.5rem;
@@ -229,7 +230,6 @@ const charlistaDetails = charlistasData.find(charlista => charlista.slug === cha
 
   .social-links {
     display: flex;
-    flex-direction: row;
     gap: 1rem;
 
     a {
@@ -243,13 +243,8 @@ const charlistaDetails = charlistasData.find(charlista => charlista.slug === cha
   }
 
   .content {
-    display: flex;
-    gap: 1rem;
-
     p {
       width: 100%;
-      font-size: 1rem;
-      font-weight: 400;
     }
   }
 
@@ -258,22 +253,10 @@ const charlistaDetails = charlistasData.find(charlista => charlista.slug === cha
     flex-direction: column;
     gap: 1rem;
     width: 100%;
+    max-width: 560px;
   }
 
-  .card-event {
-    width: 100%;
-    max-width: 100%;
-    padding: 1rem;
-    border-radius: 1rem;
-    background: linear-gradient(0.07deg, rgba(80, 72, 29, 0.2) 0.03%, rgba(0, 0, 0, 0) 95.96%),
-      radial-gradient(
-        95.25% 166.54% at 98.39% 2.85%,
-        rgba(54, 53, 38, 0.62) 8%,
-        rgba(9, 9, 7, 0) 80%
-      );
-  }
-
-  @media (max-width: 768px) {
+  @media (width <= 768px) {
     .speaker-wrapper {
       width: 100%;
 
@@ -322,39 +305,21 @@ const charlistaDetails = charlistasData.find(charlista => charlista.slug === cha
       }
     }
 
-    .speaker-name {
-      text-align: center;
-    }
-
-    .speaker-info {
-      display: flex;
+    .general-info {
       flex-direction: column;
+      gap: 6rem;
+      margin-bottom: 6rem;
+    }
+
+    .general-aifon {
+      align-items: center;
       text-align: center;
-    }
-
-    .social-links {
-      justify-content: center;
-    }
-
-    .content {
-      flex-direction: column;
-
-      p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
+      text-wrap: pretty;
     }
 
     .event-speaker {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      width: 100%;
-    }
-
-    .card-event {
-      width: 100%;
-      padding: 0.5rem 1rem;
+      padding: 0;
+      max-width: 100%;
     }
   }
 </style>
