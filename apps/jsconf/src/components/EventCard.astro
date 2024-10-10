@@ -43,7 +43,7 @@ const getEquipmentIcon = (item: string) => {
     align-items: flex-start;
     gap: 1.5rem;
     text-decoration: none;
-    padding: 0.5rem 1.5rem;
+    padding: 2rem;
     border-radius: 1rem;
     background: linear-gradient(0.07deg, rgba(80, 72, 29, 0.2) 0.03%, rgba(0, 0, 0, 0) 95.96%),
       radial-gradient(
@@ -80,6 +80,12 @@ const getEquipmentIcon = (item: string) => {
       flex-grow: 1;
     }
 
+    .event-title {
+      width: 60%;
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+
     .event-place {
       display: flex;
       flex-direction: row;
@@ -88,18 +94,31 @@ const getEquipmentIcon = (item: string) => {
     }
   }
 
-  @media (max-width: 375px) {
+  @media (width <= 768px) {
     .card-event {
       width: 100%;
-      padding: 1rem;
       align-items: center;
+      padding: 2rem;
 
       .event-info {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
+      }
+
+      .event-title {
+        width: 100%;
+        text-align: center;
+        text-wrap: balance;
+        font-size: 1.25rem;
       }
       .event-place {
         justify-content: space-between;
+      }
+
+      .event-brief {
+        text-align: center;
+        text-wrap: pretty;
       }
     }
   }
