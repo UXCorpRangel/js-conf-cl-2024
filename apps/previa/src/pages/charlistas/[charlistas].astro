@@ -123,7 +123,9 @@ const charlistaDetails = charlistasData.find(charlista => charlista.slug === cha
       </div>
     </div>
     <div class="content">
-      <p>{charlistaDetails?.bio || 'Biografía no disponible'}</p>
+      <div class="speaker-bio">
+        {charlistaDetails?.bio.split('\n').map(paragraph => <p>{paragraph}</p>)}
+      </div>
 
       <div class="event-speaker">
         {
@@ -244,6 +246,9 @@ const charlistaDetails = charlistasData.find(charlista => charlista.slug === cha
   .content {
     display: flex;
     gap: 1rem;
+    & .speaker-bio {
+      max-width: 50%;
+    }
 
     p {
       width: 100%;
@@ -337,6 +342,10 @@ const charlistaDetails = charlistasData.find(charlista => charlista.slug === cha
 
     .content {
       flex-direction: column;
+
+      & .speaker-bio {
+        max-width: 100%;
+      }
 
       p {
         font-size: 1rem;
