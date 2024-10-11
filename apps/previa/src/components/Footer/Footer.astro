@@ -62,13 +62,12 @@ import JSConf2024 from './JSConf2024.astro';
 
 <style>
   footer {
-    background-color: var(--black);
     margin-block-start: 1rem;
     width: 100%;
     background-image: var(--gradient-footer);
     backdrop-filter: blur(1rem);
     padding-block-end: 1.5rem;
-    color: var(--white);
+    color: var(--dark);
 
     & .container {
       width: min(80rem, 100vw);
@@ -106,7 +105,7 @@ import JSConf2024 from './JSConf2024.astro';
 
             &::after {
               content: '2024';
-              color: var(--yellow);
+              color: var(--yellow-400);
               font-size: 0.8rem;
               position: absolute;
               inset-inline-end: 0.2rem;
@@ -150,7 +149,7 @@ import JSConf2024 from './JSConf2024.astro';
 
           & a,
           p {
-            color: var(--yellow);
+            color: var(--yellow-400);
           }
         }
       }
@@ -172,7 +171,7 @@ import JSConf2024 from './JSConf2024.astro';
           }
 
           & .list-item {
-            color: var(--white);
+            color: var(--dark);
 
             &:first-child {
               color: var(--gray-1);
@@ -192,7 +191,7 @@ import JSConf2024 from './JSConf2024.astro';
       text-align: center;
 
       & a {
-        color: var(--yellow);
+        color: var(--yellow-700);
         position: relative;
         text-decoration: none;
 
@@ -206,7 +205,7 @@ import JSConf2024 from './JSConf2024.astro';
           inset-inline-end: 0;
           border-radius: 30%;
           transform: scaleX(0);
-          background-color: var(--yellow);
+          background-color: var(--yellow-400);
           transition: transform 0.3s ease-out;
         }
 
