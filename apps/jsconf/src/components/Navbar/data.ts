@@ -6,7 +6,7 @@ import type { LinkItem } from '@contracts/link.types';
 export const navItems: LinkItem[] = [
   { text: 'Inicio', label: 'inicio', url: '/' },
   { text: 'Agenda', label: 'agenda', url: '/agenda', hide: true },
-  { text: 'Charlistas', label: 'charlistas', url: '/charlistas' },
+  { text: 'Charlistas', label: 'charlistas', url: '/charlistas', hide: true },
   { text: 'Sponsors', label: 'sponsors', url: '/sponsors' },
   { text: '¿Por qué?', label: 'por qué', url: '/por-que' },
   { text: 'Ubicación', label: 'ubicación', url: '/ubicacion' },
