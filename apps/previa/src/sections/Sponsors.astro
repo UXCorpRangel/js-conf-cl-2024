@@ -33,7 +33,7 @@ import { Button, RadiusGradientFrame } from '@components';
       <img src="/assets/img/misc/bronze-sponsor.webp" alt="Gold Sponsor" />
       <h2>Bronze Sponsor</h2>
     </div>
-    <img src="/assets/img/sponsors/BCI-Logo.webp" alt="BCI" />
+    <img src="/assets/img/sponsors/BCI-Logo-Dark.webp" alt="BCI" />
   </RadiusGradientFrame>
 </section>
 
@@ -112,7 +112,7 @@ import { Button, RadiusGradientFrame } from '@components';
     }
 
     & .sponsors-bronze {
-      --border-color: linear-gradient(327.26deg, #2d2d2d 31.78%, #2a1701 63.2%, #60301f 93.99%);
+      --border-color: linear-gradient(327.26deg, #d4d3d3 31.78%, #e2b98a 63.2%, #f1d0c5 93.99%);
       --border-width: 2px;
       --shadow: 0px 4px 85.3px 0px #55552e1a;
       --radius: 20px;
@@ -135,7 +135,7 @@ import { Button, RadiusGradientFrame } from '@components';
       width: 100%;
       box-shadow: 0px 4px 85.3px 0px #55552e1a;
 
-      background: radial-gradient(95.71% 801.37% at 97.45% -3.61%, #1f120e 0%, #000000 100%);
+      background: radial-gradient(95.71% 801.37% at 97.45% -3.61%, #f1e3df 0%, #ececec 100%);
 
       & .principal-title {
         display: flex;
@@ -143,12 +143,14 @@ import { Button, RadiusGradientFrame } from '@components';
 
         & img {
           width: 64px;
+          opacity: 0.6;
+          filter: grayscale(1);
         }
       }
 
       & h2 {
         margin: 0;
-        color: var(--white);
+        color: var(--black);
       }
 
       & img {
