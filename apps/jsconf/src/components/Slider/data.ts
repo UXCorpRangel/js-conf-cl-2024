@@ -2,6 +2,11 @@ import type { CommunityItem } from '@contracts';
 
 export const sliderItems: CommunityItem[] = [
   {
+    title: 'Mermelada Tech',
+    image: '/assets/img/communities/mermelada-tech.webp',
+    url: 'https://linktr.ee/mermeladatech'
+  },
+  {
     title: 'Woman Tech Makers',
     image: '/assets/img/communities/wtm-chile.webp',
     url: 'https://www.instagram.com/wtmchile'
