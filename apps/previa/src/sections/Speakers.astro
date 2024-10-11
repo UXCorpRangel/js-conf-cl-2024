@@ -120,19 +120,9 @@ const speakers = [
 
     & .speakers-wrapper {
       display: flex;
-      flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
       gap: 24px;
     }
   }
 </style>
-
-<script>
-  const button = document.querySelector('.view-more-btn');
-
-  button?.addEventListener('click', () => {
-    document.querySelector('.hidden-speakers')?.classList.remove('hidden');
-    document.querySelector('.view-more-btn')?.classList.add('hidden');
-  });
-</script>
