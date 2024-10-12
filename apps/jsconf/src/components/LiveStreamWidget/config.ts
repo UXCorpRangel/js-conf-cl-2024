@@ -1,6 +1,6 @@
 export const URL_STREAM = 'https://www.youtube.com/live/YYkHGTVKZaA';
 
-export const hostname = process.env.NODE_ENV === 'development' ? 'localhost' : 'https://jsconf.cl';
+export const hostname = process.env.NODE_ENV === 'development' ? 'localhost' : 'jsconf.cl';
 
 // sabado 12 october 9:30 hasta 7:00pm (PREVIA) hora chile.
 export const dataLiveStreamWidget = {
