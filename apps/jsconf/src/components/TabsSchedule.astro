@@ -1,11 +1,10 @@
 ---
-import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
+import { ContentTab } from '@sections';
 
 type Props = {
   data: {
     triggerTitle: string;
     status: string;
-    Content: AstroComponentFactory;
   }[];
 };
 const context = crypto.randomUUID();
@@ -25,9 +24,9 @@ const { data } = Astro.props;
   </div>
   <div class="tabs-contents">
     {
-      data.map(({ Content, status }, index) => (
+      data.map(({ status }, index) => (
         <div class="tab-content" data-tab={index} data-context={context} data-status={status}>
-          <Content />
+          <ContentTab />
         </div>
       ))
     }
