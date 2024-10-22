@@ -1,95 +1,125 @@
 ---
-const { imgSrc, speakerName, speakerInfo, speakerBrand, link } = Astro.props;
+const { imgSrc, speakerName, speakerInfo, speakerBrand, company, link } = Astro.props;
 
 const defaultImgSrc = 'assets/img/misc/speaker-stock.webp';
 
 const speakerImage = imgSrc || defaultImgSrc;
 ---
 
-<a href={link} class="card-body">
-  <div class="speaker">
-    <img src={speakerImage} alt={speakerName} class="speaker-avatar" />
-    <h3 class="speaker-name">{speakerName}</h3>
+<a class="card-body" href={link} target="_self" rel="noopener noreferrer">
+  <div class="speaker-img">
+    <img src={speakerImage} alt={speakerName} />
   </div>
-  <p class="card-info">{speakerInfo}</p>
-  <img src={speakerBrand} alt="speaker-brand" class="speaker-brand" />
+  <div class="speaker-info">
+    <h3>{speakerName}</h3>
+    <p>{speakerInfo}</p>
+    <img class="speaker-company" src={speakerBrand} alt={company} />
+  </div>
 </a>
 
 <style>
+  @property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
   .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 400px;
-    width: 100%;
-    gap: 16px;
-    padding: 24px;
-    border-radius: 16px;
-    text-decoration: none;
+    --border-colors: var(--yellow), var(--yellow-200), var(--yellow-100), var(--yellow-500),
+      var(--yellow-400), var(--yellow-600), var(--yellow);
+
+    --radius: 1rem;
+
+    border: 2px solid var(--yellow);
+    border-radius: var(--radius);
     background-color: var(--bg-color);
     position: relative;
-    transition: transform 0.3s;
+    transition: border-color 0.3s ease-in-out;
+    text-decoration: none;
+    max-width: 300px;
 
+    & > * + * {
+      margin-top: 0.5rem;
+    }
+
+    & .speaker-img {
+      & img {
+        width: 100%;
+        aspect-ratio: 1;
+        background-color: var(--light);
+        border: inherit;
+        border-radius: 1rem 1rem 0 0;
+        object-fit: cover;
+      }
+    }
+
+    & .speaker-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0 0.75rem 0.75rem;
+      & h3 {
+        margin-bottom: 0;
+      }
+
+      & p {
+        margin-bottom: 0;
+      }
+    }
+
+    &::before,
     &::after {
       content: '';
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      background-image: linear-gradient(258deg, #121212 7.65%, #1d1b0e 57.4%, #413e21 98.66%);
-      border-radius: 16px;
+
       z-index: -1;
-      padding: 3px;
-      scale: 1.015;
+      width: 100%;
+      height: 100%;
+
+      position: absolute;
+      translate: -50% -50%;
+      inset-block-start: 50%;
+      inset-inline-start: 50%;
+
+      padding: 0.25rem;
+      border-radius: var(--radius);
+      background-image: conic-gradient(from var(--angle), var(--border-colors));
+      animation: spin 3s linear infinite;
+      animation-play-state: paused;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
     }
 
-    .speaker {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 24px;
+    &::before {
+      filter: blur(1.5rem);
+    }
+
+    &:hover {
+      & .project-img {
+        padding: 0;
+        & img {
+          border-radius: 1rem 1rem 0 0;
+        }
+      }
+      &::after,
+      &::before {
+        animation-play-state: running;
+      }
+
+      &::before {
+        opacity: 0.5;
+      }
+      &::after {
+        opacity: 1;
+      }
     }
   }
 
-  .speaker-avatar {
-    width: 85px;
-    aspect-ratio: 1;
-    border: 1px solid var(--white);
-    border-radius: 100%;
-    filter: grayscale(1);
-    transition: filter 0.3s;
-    object-fit: cover;
-
-    .card-body:hover & {
-      filter: grayscale(0);
+  @keyframes spin {
+    from {
+      --angle: 0deg;
     }
-  }
-
-  .speaker-brand {
-    filter: grayscale(1);
-    transition: filter 0.3s;
-    object-fit: cover;
-    max-width: 200px;
-    margin: 0 auto;
-
-    .card-body:hover & {
-      filter: grayscale(0);
-    }
-  }
-
-  .card-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-weight: 600;
-    font-size: 1.1rem;
-    text-wrap: pretty;
-  }
-
-  @media (width <= 768px) {
-    .card-body {
-      max-width: 100%;
+    to {
+      --angle: 360deg;
     }
   }
 </style>
