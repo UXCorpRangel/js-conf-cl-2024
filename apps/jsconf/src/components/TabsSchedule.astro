@@ -1,14 +1,15 @@
 ---
-import { ContentTab } from '@sections';
+import { ContentTab, type agendaData } from '@sections';
 
 type Props = {
   data: {
     triggerTitle: string;
     status: string;
   }[];
+  agendaData: agendaData[];
 };
 const context = crypto.randomUUID();
-const { data } = Astro.props;
+const { data, agendaData } = Astro.props;
 ---
 
 <div class="tabs" data-context={context}>
@@ -26,7 +27,7 @@ const { data } = Astro.props;
     {
       data.map(({ status }, index) => (
         <div class="tab-content" data-tab={index} data-context={context} data-status={status}>
-          <ContentTab />
+          <ContentTab agendaData={agendaData} />
         </div>
       ))
     }
