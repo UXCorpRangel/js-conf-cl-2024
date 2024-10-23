@@ -1,6 +1,7 @@
 ---
 import { TabsSchedule } from '@components';
 import Layout from '@layouts/Layout.astro';
+import agenda from '@data/agenda/agenda.json';
 ---
 
 <Layout
@@ -27,6 +28,7 @@ import Layout from '@layouts/Layout.astro';
         triggerTitle: 'Domingo 00 Nov'
       }
     ]}
+    agendaData={agenda}
   />
 </Layout>
 
