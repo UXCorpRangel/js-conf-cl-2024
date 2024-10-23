@@ -53,11 +53,10 @@ const { data, agendaData } = Astro.props;
   .tabs-contents .tab-content[data-status='closed'] {
     display: none;
   }
+
   .tab-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: start;
-    gap: 3.6875rem;
+    display: flex;
+    flex-direction: column;
     position: relative;
 
     &::before {
