@@ -36,26 +36,6 @@ const { data, agendaData } = Astro.props;
 
 <style>
   .tabs-actions {
-    /* implementacion de figma */
-    /* --py: 5px;
-    --px: 5px;
-    --px-action: 24px;
-    --py-action: 12px;
-    --radius: 6px;
-    --font-size: 24px;
-    --line-height: 30px;
-
-    @media (width <= 1280px) {
-      --py: 2.52px;
-      --px: 2.52px;
-      --px-action: 12.1px;
-      --py-action: 6.05px;
-      --radius: 3.02px;
-      --font-size: 12.1px;
-      --line-height: 10.08px;
-    } */
-
-    /* Mi implementacion responsive */
     --py: clamp(2px, 0.9vw, 5px);
     --px: clamp(2px, 20vw, 5px);
     --px-action: clamp(10px, 2vw, 24px);
@@ -68,12 +48,30 @@ const { data, agendaData } = Astro.props;
   .tabs-contents {
     text-align: center;
     --pt-content: clamp(1rem, 4vw, 4rem);
+    padding-top: var(--pt-content);
   }
   .tabs-contents .tab-content[data-status='closed'] {
     display: none;
   }
   .tab-content {
-    padding-top: var(--pt-content);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: start;
+    gap: 3.6875rem;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      width: 2px;
+      height: 100%;
+      left: 50%;
+      translate: -50%;
+      background: linear-gradient(180deg, #2a2401 0%, #9a8025 39.57%, #ede060 100%);
+      border-radius: var(--radius);
+      z-index: -1;
+    }
   }
 
   .tabs-actions {
