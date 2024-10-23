@@ -46,6 +46,15 @@ const convertTimestamp = (time: string) => {
     --negative-offset: calc(var(--offset) * -1);
 
     position: relative;
+    max-width: fit-content;
+
+    &:nth-child(odd) {
+      align-self: end;
+    }
+
+    &:nth-child(even) {
+      align-self: start;
+    }
 
     &::after {
       --size: 1.5rem;
@@ -79,7 +88,7 @@ const convertTimestamp = (time: string) => {
       flex-direction: column;
       gap: 0.35rem;
       width: 100%;
-      max-width: 700px;
+      max-width: 596px;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       padding: 1rem var(--card-demo-px);
       font-family: Barlow;
