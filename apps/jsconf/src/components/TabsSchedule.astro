@@ -119,9 +119,15 @@ const { data, agendaData } = Astro.props;
       text-align: center;
       color: var(--gray-2);
       transition: color 0.3s;
+      cursor: pointer;
     }
     .tab-action[data-status='open'] {
       color: var(--black);
+      cursor: default;
+    }
+
+    .tab-action[data-status='closed']:hover {
+      color: var(--yellow);
     }
   }
 </style>
