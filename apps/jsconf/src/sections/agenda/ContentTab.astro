@@ -1,10 +1,43 @@
 ---
 import { RadiusGradientFrame } from '@components';
+import { type agendaData } from '@sections';
+
+type Props = {
+  agendaData: agendaData[];
+};
+
+const { agendaData } = Astro.props;
+
+const convertTimestamp = (time: string) => {
+  return new Intl.DateTimeFormat('es-CL', {
+    hour: 'numeric',
+    minute: 'numeric',
+    hour12: false
+  }).format(new Date(time));
+};
 ---
 
-<div>
-  <RadiusGradientFrame class="card-demo">Hola mundo</RadiusGradientFrame>
-</div>
+{
+  agendaData.map(
+    ({ time_start: timeStart, time_end: timeEnd, speaker_name: speakerName, description }) => (
+      <section>
+        <RadiusGradientFrame class="card-demo">
+          <div class="time-info">
+            <time>
+              {convertTimestamp(timeStart)} - {convertTimestamp(timeEnd)}
+            </time>
+            <span>EN VIVO</span>
+          </div>
+          <div>
+            <p class="speaker">Speaker</p>
+            <h3>{speakerName}</h3>
+          </div>
+          <p>{description}</p>
+        </RadiusGradientFrame>
+      </section>
+    )
+  )
+}
 
 <style>
   .card-demo {
@@ -13,14 +46,16 @@ import { RadiusGradientFrame } from '@components';
     --shadow: 0px 4px 85.3px rgba(85, 85, 46, 0.1);
     --radius: 20px;
 
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
     width: 100%;
     max-width: 700px;
     margin: 2rem auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 2rem 1rem;
-    font-size: clamp(1rem, 4vw, 4rem);
-    font-weight: 600;
+    padding: 1rem 1.5rem;
+    font-family: Barlow;
+    text-align: left;
 
     background: linear-gradient(0.07deg, rgba(80, 72, 29, 0.2) 0.03%, rgba(0, 0, 0, 0) 95.96%),
       radial-gradient(
@@ -36,6 +71,37 @@ import { RadiusGradientFrame } from '@components';
 
       background: radial-gradient(95.25% 166.54% at 98.39% 2.85%, #272727 8%, rgba(9, 9, 7, 0) 80%),
         linear-gradient(0.07deg, rgba(64, 64, 64, 0.2) 0.03%, rgba(255, 255, 255, 0) 95.96%);
+    }
+
+    .time-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      time {
+        font-size: 0.875rem;
+        font-weight: 600;
+      }
+
+      span {
+        background: var(--yellow);
+        color: var(--black);
+        font-size: 0.875rem;
+        font-weight: 600;
+        padding: 2px 6px;
+        border-radius: 1000px;
+      }
+    }
+
+    .speaker {
+      color: var(--yellow);
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    h3 {
+      font-size: 1.125rem;
+      font-weight: 700;
     }
   }
 </style>
