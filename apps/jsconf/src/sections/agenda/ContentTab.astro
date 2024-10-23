@@ -1,0 +1,149 @@
+---
+import { RadiusGradientFrame } from '@components';
+import { type agendaData } from '@sections';
+
+type Props = {
+  agendaData: agendaData[];
+};
+
+const { agendaData } = Astro.props;
+
+const convertTimestamp = (time: string) => {
+  return new Intl.DateTimeFormat('es-CL', {
+    hour: 'numeric',
+    minute: 'numeric',
+    hour12: false
+  }).format(new Date(time));
+};
+---
+
+{
+  agendaData.map(
+    ({ time_start: timeStart, time_end: timeEnd, speaker_name: speakerName, description }) => (
+      <section>
+        <RadiusGradientFrame class="card-demo">
+          <div class="time-info">
+            <time>
+              {convertTimestamp(timeStart)} - {convertTimestamp(timeEnd)}
+            </time>
+            <span>EN VIVO</span>
+          </div>
+          <div>
+            <p class="speaker">Speaker</p>
+            <h3>{speakerName}</h3>
+          </div>
+          <p>{description}</p>
+        </RadiusGradientFrame>
+      </section>
+    )
+  )
+}
+
+<style>
+  section {
+    --card-demo-px: 1.5rem;
+    --offset: 1.66;
+    --negative-offset: calc(var(--offset) * -1);
+
+    position: relative;
+    max-width: fit-content;
+
+    &:nth-child(odd) {
+      align-self: end;
+    }
+
+    &:nth-child(even) {
+      align-self: start;
+    }
+
+    &::after {
+      --size: 1.5rem;
+
+      content: '';
+      position: absolute;
+      width: var(--size);
+      height: var(--size);
+      background: var(--yellow);
+      border-radius: 50%;
+      top: 50%;
+    }
+
+    &:nth-child(odd)::after {
+      left: 0;
+      translate: calc(var(--card-demo-px) * var(--negative-offset)) -50%;
+    }
+
+    &:nth-child(even)::after {
+      right: 0;
+      translate: calc(var(--card-demo-px) * var(--offset)) -50%;
+    }
+
+    .card-demo {
+      --border-color: linear-gradient(180deg, #2a2401 0%, #9a8025 39.57%, #ede060 100%);
+      --border-width: 2px;
+      --shadow: 0px 4px 85.3px rgba(85, 85, 46, 0.1);
+      --radius: 20px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      width: 100%;
+      max-width: 596px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      padding: 1rem var(--card-demo-px);
+      font-family: Barlow;
+      text-align: left;
+
+      background: linear-gradient(0.07deg, rgba(80, 72, 29, 0.2) 0.03%, rgba(0, 0, 0, 0) 95.96%),
+        radial-gradient(
+          95.25% 166.54% at 98.39% 2.85%,
+          rgba(54, 53, 38, 0.62) 8%,
+          rgba(9, 9, 7, 0) 80%
+        );
+
+      @media (width <= 800px) {
+        --shadow: 0px 4px 85.3px rgba(64, 64, 64, 0.1);
+        --radius: 10px;
+        --border-color: linear-gradient(327.26deg, #ffffff 31.78%, #272727 63.2%, #656565 93.99%);
+
+        background: radial-gradient(
+            95.25% 166.54% at 98.39% 2.85%,
+            #272727 8%,
+            rgba(9, 9, 7, 0) 80%
+          ),
+          linear-gradient(0.07deg, rgba(64, 64, 64, 0.2) 0.03%, rgba(255, 255, 255, 0) 95.96%);
+      }
+
+      .time-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        time {
+          font-size: 0.875rem;
+          font-weight: 600;
+        }
+
+        span {
+          background: var(--yellow);
+          color: var(--black);
+          font-size: 0.875rem;
+          font-weight: 600;
+          padding: 2px 6px;
+          border-radius: 1000px;
+        }
+      }
+
+      .speaker {
+        color: var(--yellow);
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+
+      h3 {
+        font-size: 1.125rem;
+        font-weight: 700;
+      }
+    }
+  }
+</style>
