@@ -49,7 +49,13 @@ const { data, agendaData } = Astro.props;
     text-align: center;
     --pt-content: clamp(1rem, 4vw, 4rem);
     padding-top: var(--pt-content);
+
+    @media (768px <= width <= 1199.98px) {
+      max-width: 78%;
+      margin-inline: auto;
+    }
   }
+
   .tabs-contents .tab-content[data-status='closed'] {
     display: none;
   }
@@ -58,6 +64,11 @@ const { data, agendaData } = Astro.props;
     display: flex;
     flex-direction: column;
     position: relative;
+    gap: 3rem;
+
+    @media (width >= 1200px) {
+      gap: 0;
+    }
 
     &::before {
       content: '';
@@ -69,7 +80,7 @@ const { data, agendaData } = Astro.props;
       border-radius: var(--radius);
       z-index: -1;
 
-      @media (width >= 992px) {
+      @media (width >= 1200px) {
         left: 50%;
         translate: -50%;
       }
