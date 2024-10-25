@@ -56,9 +56,29 @@ const { data } = Astro.props;
   }
 
   .tabs-contents {
-    text-align: center;
     --pt-content: clamp(1rem, 4vw, 4rem);
+
+    text-align: center;
     padding-top: var(--pt-content);
+
+    & .tab-content {
+      display: flex;
+      opacity: 1;
+      transition:
+        opacity 1000ms,
+        display 100ms;
+    }
+
+    @starting-style {
+      & .tab-content {
+        opacity: 0;
+      }
+    }
+
+    & .tab-content[data-status='closed'] {
+      display: none;
+      opacity: 0;
+    }
 
     @media (768px <= width <= 1199.98px) {
       max-width: 78%;
@@ -66,12 +86,7 @@ const { data } = Astro.props;
     }
   }
 
-  .tabs-contents .tab-content[data-status='closed'] {
-    display: none;
-  }
-
   .tab-content {
-    display: flex;
     flex-direction: column;
     position: relative;
     gap: 3rem;
