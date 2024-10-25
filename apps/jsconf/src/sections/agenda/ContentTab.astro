@@ -1,20 +1,16 @@
 ---
 import { RadiusGradientFrame } from '@components';
 import { type agendaData } from '@sections';
+import dayjs from 'dayjs';
+import utc from 'dayjs/plugin/utc';
+
+dayjs.extend(utc);
 
 type Props = {
   agendaData: agendaData[];
 };
 
 const { agendaData } = Astro.props;
-
-const convertTimestamp = (time: string) => {
-  return new Intl.DateTimeFormat('es-CL', {
-    hour: 'numeric',
-    minute: 'numeric',
-    hour12: false
-  }).format(new Date(time));
-};
 ---
 
 {
@@ -24,7 +20,7 @@ const convertTimestamp = (time: string) => {
         <RadiusGradientFrame class="card-demo">
           <div class="time-info">
             <time>
-              {convertTimestamp(timeStart)} - {convertTimestamp(timeEnd)}
+              {dayjs.utc(timeStart).format('HH:mm')} - {dayjs.utc(timeEnd).format('HH:mm')}
             </time>
             <span>EN VIVO</span>
           </div>
@@ -71,11 +67,15 @@ const convertTimestamp = (time: string) => {
       position: absolute;
       width: var(--size);
       height: var(--size);
-      background: var(--yellow);
+      background: var(--gray-2);
       border-radius: 50%;
       left: 0;
       top: 0;
       translate: calc(var(--card-demo-px) * var(--negative-offset)) 0;
+    }
+
+    &:has(.is-online)::after {
+      background: var(--yellow);
     }
 
     @media (width >= 1200px) {
@@ -106,6 +106,8 @@ const convertTimestamp = (time: string) => {
       padding: 1rem var(--card-demo-px);
       font-family: Barlow;
       text-align: left;
+      filter: grayscale(1);
+      opacity: 0.5;
 
       background: linear-gradient(0.07deg, rgba(80, 72, 29, 0.2) 0.03%, rgba(0, 0, 0, 0) 95.96%),
         radial-gradient(
@@ -113,6 +115,17 @@ const convertTimestamp = (time: string) => {
           rgba(54, 53, 38, 0.62) 8%,
           rgba(9, 9, 7, 0) 80%
         );
+
+      &.is-online {
+        filter: grayscale(0);
+        opacity: 1;
+
+        .time-info {
+          span {
+            opacity: 1;
+          }
+        }
+      }
 
       @media (width <= 800px) {
         --shadow: 0px 4px 85.3px rgba(64, 64, 64, 0.1);
@@ -138,6 +151,7 @@ const convertTimestamp = (time: string) => {
         }
 
         span {
+          opacity: 0;
           background: var(--yellow);
           color: var(--black);
           font-size: 0.875rem;
@@ -160,3 +174,56 @@ const convertTimestamp = (time: string) => {
     }
   }
 </style>
+
+<script>
+  import dayjs from 'dayjs';
+  import timezone from 'dayjs/plugin/timezone';
+  import utc from 'dayjs/plugin/utc';
+  import agenda from '@data/agenda/agenda';
+
+  dayjs.extend(utc);
+  dayjs.extend(timezone);
+
+  // Configurar la zona horaria por defecto a 'America/Santiago'
+  const setTimezone = 'America/Santiago';
+
+  dayjs.tz.setDefault(setTimezone);
+
+  // El elemento al que le añadimos o quitamos la clase
+  const cardsDemos = document.querySelectorAll('.card-demo');
+
+  // Función para verificar cuándo iniciar y cuándo finalizar
+  function checkTime() {
+    const currentTime = dayjs.utc(); // Obtener el tiempo actual en UTC
+    const currentMoment = currentTime.tz(setTimezone).format('HH:mm:ss'); // Convertir a hora local de Chile
+
+    agenda.forEach((event, index) => {
+      const { time_start: timeStart, time_end: timeEnd } = event;
+
+      // Crear fechas con Day.js en UTC y luego convertir a la zona horaria de Chile
+      const startTimestamp = dayjs.utc(timeStart).tz(setTimezone);
+      const endTimestamp = dayjs.utc(timeEnd).tz(setTimezone);
+
+      // Extraer la hora, el minuto y el segundo de la fecha
+      const startMoment = startTimestamp.format('HH:mm:ss');
+      const endMoment = endTimestamp.format('HH:mm:ss');
+
+      // Verifica si estamos en el rango de tiempo del estado 'online'
+      if (currentMoment >= startMoment && currentMoment <= endMoment) {
+        // Añade la clase 'is-online' al card correspondiente (index) si está en rango
+        if (cardsDemos[index] && !cardsDemos[index].classList.contains('is-online')) {
+          cardsDemos[index].classList.add('is-online');
+        }
+      } else if (currentMoment > endMoment) {
+        // Quita la clase 'is-online' si el tiempo del evento ya pasó
+        if (cardsDemos[index] && cardsDemos[index].classList.contains('is-online')) {
+          cardsDemos[index].classList.remove('is-online');
+        }
+      }
+    });
+  }
+
+  // Verificación cada 30 segundos
+  const interval = 30 * 1000;
+  setInterval(checkTime, interval);
+</script>
