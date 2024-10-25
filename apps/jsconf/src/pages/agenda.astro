@@ -1,7 +1,10 @@
 ---
 import { TabsSchedule } from '@components';
+import { ContentTab } from '@sections/agenda';
 import Layout from '@layouts/Layout.astro';
 import agenda from '@data/agenda/agenda';
+
+const { friday, saturday, sunday } = agenda;
 ---
 
 <Layout
@@ -17,18 +20,26 @@ import agenda from '@data/agenda/agenda';
     data={[
       {
         status: 'open',
+        ContentTab: ContentTab,
+        agendaDay: friday,
+        day: 'friday',
         triggerTitle: 'Viernes 00 Nov'
       },
       {
         status: 'closed',
+        ContentTab: ContentTab,
+        agendaDay: saturday,
+        day: 'saturday',
         triggerTitle: 'Sábado 00 Nov'
       },
       {
         status: 'closed',
+        ContentTab: ContentTab,
+        agendaDay: sunday,
+        day: 'sunday',
         triggerTitle: 'Domingo 00 Nov'
       }
     ]}
-    agendaData={agenda}
   />
 </Layout>
 
