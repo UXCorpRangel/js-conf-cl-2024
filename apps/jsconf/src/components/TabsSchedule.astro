@@ -1,15 +1,25 @@
 ---
-import { ContentTab, type agendaData } from '@sections';
+import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
+
+interface agendaDay {
+  time_start: string;
+  time_end: string;
+  speaker_name: string;
+  description: string;
+}
 
 type Props = {
   data: {
     triggerTitle: string;
     status: string;
+    ContentTab: AstroComponentFactory;
+    agendaDay: agendaDay[];
+    day: string;
   }[];
-  agendaData: agendaData[];
 };
+
 const context = crypto.randomUUID();
-const { data, agendaData } = Astro.props;
+const { data } = Astro.props;
 ---
 
 <div class="tabs" data-context={context}>
@@ -25,9 +35,9 @@ const { data, agendaData } = Astro.props;
   </div>
   <div class="tabs-contents">
     {
-      data.map(({ status }, index) => (
+      data.map(({ ContentTab, status, agendaDay, day }, index) => (
         <div class="tab-content" data-tab={index} data-context={context} data-status={status}>
-          <ContentTab agendaData={agendaData} />
+          <ContentTab agendaDay={agendaDay} day={day} />
         </div>
       ))
     }
