@@ -265,8 +265,6 @@ const { agendaDay, day } = Astro.props;
       events.forEach((event, index) => {
         const { start, end } = event;
 
-        console.log(currentTime.isAfter(start) && currentTime.isBefore(end));
-
         // Verificar si el evento está dentro del tiempo actual
         if (currentTime.isAfter(start) && currentTime.isBefore(end)) {
           // Añadir la clase 'is-online' si está en el rango de tiempo
