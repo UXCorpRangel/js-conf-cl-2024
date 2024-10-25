@@ -1,23 +1,30 @@
 ---
 import { RadiusGradientFrame } from '@components';
-import { type agendaData } from '@sections';
 import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc';
 
 dayjs.extend(utc);
 
-type Props = {
-  agendaData: agendaData[];
-};
+interface agendaDay {
+  time_start: string;
+  time_end: string;
+  speaker_name: string;
+  description: string;
+}
 
-const { agendaData } = Astro.props;
+interface Props {
+  agendaDay: agendaDay[];
+  day: string;
+}
+
+const { agendaDay, day } = Astro.props;
 ---
 
 {
-  agendaData.map(
+  agendaDay.map(
     ({ time_start: timeStart, time_end: timeEnd, speaker_name: speakerName, description }) => (
       <section>
-        <RadiusGradientFrame class="card-demo">
+        <RadiusGradientFrame class:list={['card-demo', day]}>
           <div class="time-info">
             <time>
               {dayjs.utc(timeStart).format('HH:mm')} - {dayjs.utc(timeEnd).format('HH:mm')}
@@ -176,7 +183,7 @@ const { agendaData } = Astro.props;
 </style>
 
 <script>
-  import dayjs from 'dayjs';
+  import dayjs, { Dayjs } from 'dayjs';
   import timezone from 'dayjs/plugin/timezone';
   import utc from 'dayjs/plugin/utc';
   import agenda from '@data/agenda/agenda';
@@ -184,46 +191,92 @@ const { agendaData } = Astro.props;
   dayjs.extend(utc);
   dayjs.extend(timezone);
 
-  // Configurar la zona horaria por defecto a 'America/Santiago'
-  const setTimezone = 'America/Santiago';
+  // Tipos para los eventos de la agenda
+  interface Event {
+    time_start: string;
+    time_end: string;
+    speaker_name: string;
+    description: string;
+  }
 
+  interface ProcessedEvent {
+    start: Dayjs;
+    end: Dayjs;
+  }
+
+  interface AgendaEvents {
+    events: ProcessedEvent[];
+    cards: NodeListOf<Element>;
+  }
+
+  // Configuración de zona horaria
+  const setTimezone = 'America/Santiago';
   dayjs.tz.setDefault(setTimezone);
 
-  // El elemento al que le añadimos o quitamos la clase
-  const cardsDemos = document.querySelectorAll('.card-demo');
+  // Obtener los días de la agenda
+  const { friday, saturday, sunday }: { friday: Event[]; saturday: Event[]; sunday: Event[] } =
+    agenda;
 
-  // Función para verificar cuándo iniciar y cuándo finalizar
-  function checkTime() {
-    const currentTime = dayjs.utc(); // Obtener el tiempo actual en UTC
-    const currentMoment = currentTime.tz(setTimezone).format('HH:mm:ss'); // Convertir a hora local de Chile
+  // Guardar las tarjetas correspondientes para cada día
+  const cardsDemosFriday: NodeListOf<Element> = document.querySelectorAll('.card-demo.friday');
+  const cardsDemosSaturday: NodeListOf<Element> = document.querySelectorAll('.card-demo.saturday');
+  const cardsDemosSunday: NodeListOf<Element> = document.querySelectorAll('.card-demo.sunday');
 
-    agenda.forEach((event, index) => {
-      const { time_start: timeStart, time_end: timeEnd } = event;
-
-      // Crear fechas con Day.js en UTC y luego convertir a la zona horaria de Chile
-      const startTimestamp = dayjs.utc(timeStart).tz(setTimezone);
-      const endTimestamp = dayjs.utc(timeEnd).tz(setTimezone);
-
-      // Extraer la hora, el minuto y el segundo de la fecha
-      const startMoment = startTimestamp.format('HH:mm:ss');
-      const endMoment = endTimestamp.format('HH:mm:ss');
-
-      // Verifica si estamos en el rango de tiempo del estado 'online'
-      if (currentMoment >= startMoment && currentMoment <= endMoment) {
-        // Añade la clase 'is-online' al card correspondiente (index) si está en rango
-        if (cardsDemos[index] && !cardsDemos[index].classList.contains('is-online')) {
-          cardsDemos[index].classList.add('is-online');
-        }
-      } else if (currentMoment > endMoment) {
-        // Quita la clase 'is-online' si el tiempo del evento ya pasó
-        if (cardsDemos[index] && cardsDemos[index].classList.contains('is-online')) {
-          cardsDemos[index].classList.remove('is-online');
-        }
-      }
+  // Función para convertir los eventos de un día a objetos Dayjs y evitar repetir conversiones
+  function processEvents(events: Event[]): ProcessedEvent[] {
+    return events.map(event => {
+      return {
+        start: dayjs.utc(event.time_start).tz(setTimezone),
+        end: dayjs.utc(event.time_end).tz(setTimezone)
+      };
     });
   }
 
-  // Verificación cada 30 segundos
-  const interval = 30 * 1000;
-  setInterval(checkTime, interval);
+  // Preprocesar los eventos de los tres días y asignar tarjetas correspondientes
+  const agendaEvents: Record<string, AgendaEvents> = {
+    friday: {
+      events: processEvents(friday),
+      cards: cardsDemosFriday
+    },
+    saturday: {
+      events: processEvents(saturday),
+      cards: cardsDemosSaturday
+    },
+    sunday: {
+      events: processEvents(sunday),
+      cards: cardsDemosSunday
+    }
+  };
+
+  // Función para verificar el estado de los eventos
+  function checkTime(): void {
+    const currentTime: Dayjs = dayjs().tz(setTimezone); // Hora actual en zona horaria local
+
+    // Recorrer cada día (friday, saturday, sunday)
+    Object.keys(agendaEvents).forEach(day => {
+      const { events, cards } = agendaEvents[day];
+
+      events.forEach((event, index) => {
+        const { start, end } = event;
+
+        console.log(currentTime.isAfter(start) && currentTime.isBefore(end));
+
+        // Verificar si el evento está dentro del tiempo actual
+        if (currentTime.isAfter(start) && currentTime.isBefore(end)) {
+          // Añadir la clase 'is-online' si está en el rango de tiempo
+          if (!cards[index].classList.contains('is-online')) {
+            cards[index].classList.add('is-online');
+          }
+        } else {
+          // Quitar la clase 'is-online' si ya pasó o aún no ha empezado
+          if (cards[index].classList.contains('is-online')) {
+            cards[index].classList.remove('is-online');
+          }
+        }
+      });
+    });
+  }
+
+  // Verificación cada segundo
+  setInterval(checkTime, 1000);
 </script>
