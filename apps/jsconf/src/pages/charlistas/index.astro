@@ -1,6 +1,7 @@
 ---
 import { TabsSchedule } from '@components';
-import { HeroSpeakers, SpeakersTab, WorkshopsTab } from '@sections';
+// WorkshopsTab
+import { HeroSpeakers, SpeakersTab } from '@sections';
 import Layout from '@layouts/Layout.astro';
 ---
 
@@ -16,12 +17,12 @@ import Layout from '@layouts/Layout.astro';
         status: 'open',
         Content: SpeakersTab,
         triggerTitle: 'Charlistas'
-      },
-      {
-        status: 'closed',
-        Content: WorkshopsTab,
-        triggerTitle: 'Workshops'
       }
+      // {
+      //   status: 'closed',
+      //   Content: WorkshopsTab,
+      //   triggerTitle: 'Workshops'
+      // }
     ]}
   />
 </Layout>

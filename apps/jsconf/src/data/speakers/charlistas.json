@@ -18,12 +18,13 @@
     "github": "https://github.com/abulnes16",
     "discord": "",
     "bio": "Soy ingeniero de software con 5 años de experiencia desarrollando aplicaciones móviles, soy organizador de la comunidad de GDG Tegucigalpa en Honduras y también embajador de WTM Honduras. Me encanta poder compartir el conocimiento con la comunidad y ayudar a otros desarrolladores a potenciar sus carreras.",
+    "role": "Senior Mobile Engineer",
     "event": [
       {
         "eventType": "Charla",
         "eventTitle": "Sharing Business Logic with JS and React across multiple apps",
-        "eventDate": "00 Dec 2024",
-        "eventHour": "00:00",
+        "eventDate": "05 Dec 2024",
+        "eventHour": "15:30",
         "eventEquipment": null,
         "eventBrief": "En esta charla aprenderemos a como compartir nuestra lógica de negocio a través de múltiples aplicaciones que usan React mediante Nx monorepo, aprendiendo a crear módulos compartidos que pueden ser utilizados en aplicaciones de React o React Native. En este ejemplo usaremos Redux como gestor de estado."
       }
@@ -32,13 +33,13 @@
   {
     "slug": "boris-belmar",
     "fullName": "Boris Belmar",
-    "company": "Mediastream",
+    "company": "",
     "imgSrc": "assets/img/speakers/boris-belmar/boris-belmar-1.webp",
     "imgSrc2": "assets/img/speakers/boris-belmar/boris-belmar-2.webp",
     "imgSrc3": "assets/img/speakers/boris-belmar/boris-belmar-3.webp",
     "imgSrc4": "assets/img/speakers/boris-belmar/boris-belmar-4.webp",
     "speakerInfo": "ReactJS, Server Driven UI, Javascript, OTT, Streaming, Smart TV, Open Source",
-    "speakerBrand": "assets/img/speakers/boris-belmar/boris-belmar-5.webp",
+    "speakerBrand": "",
     "linkedin": "https://www.linkedin.com/in/borisbelmar",
     "instagram": "https://www.instagram.com/borisbelmar",
     "twitter": "",
@@ -47,44 +48,15 @@
     "web": "http://dobleb.cl",
     "discord": "",
     "bio": "Ingeniero Informático y Publicista con más de 8 años de trayectoria en la industria tecnológica en diferentes cargos, entre ellos, desarrollo de software, diseño de producto y marketing. Ingresé al mundo del desarrollo web de manera autodidacta a los 16 años, teniendo siempre el objetivo de crear experiencias memorables para cada usuario y resultados excelentes para el cliente. Me mueve aprender cosas nuevas, experimentar, descubrir y poder compartir mi conocimiento con otros. Actualmente me desempeño como Ingeniero Fullstack MERN en Mediastream, donde he podido participar en productos que hoy utilizan grandes empresas como TVN, Mega Media, RDF, Win Sports Online, Walmart, Netflix, Caracol, America TV, entre otros en un portafolio inmenso de marcas. Pero también en mis tiempos libres me gusta jugar con todo lo que tenga que ver con JavaScript y desarrollo web en general, construyendo librerías y proyectos en busca de mejorar la experiencia de desarrollo para la comunidad.",
+    "role": "Fullstack Developer",
     "event": [
       {
         "eventType": "Charla",
         "eventTitle": "El desconocido y hostil mundo de los Smart TV",
-        "eventDate": "00 Dec 2024",
-        "eventHour": "00:00",
+        "eventDate": "05 Dec 2024",
+        "eventHour": "12:00",
         "eventEquipment": null,
         "eventBrief": "Los desarrolladores a menudo nos enfocamos en crear aplicaciones para dispositivos como smartphones y computadoras, pero tendemos a olvidar otros como las SmartTV. Desarrollar para un nuevo dispositivo implica explorar un terreno desconocido y hay veces que puede llegar a ser pantanoso y accidentado. De eso se trata esta historia, llena de dudas y aprendizajes."
-      }
-    ]
-  },
-  {
-    "slug": "devlin-duldulao",
-    "fullName": "Devlin Duldulao",
-    "company": "inmeta",
-    "imgSrc": "assets/img/speakers/devlin-duldulao/devlin-duldulao-1.webp",
-    "imgSrc2": "assets/img/speakers/devlin-duldulao/devlin-duldulao-2.webp",
-    "imgSrc3": "assets/img/speakers/devlin-duldulao/devlin-duldulao-3.webp",
-    "imgSrc4": "assets/img/speakers/devlin-duldulao/devlin-duldulao-4.webp",
-    "speakerInfo": "js runtimes, bundlers, test runners, package managers",
-    "speakerBrand": "assets/img/speakers/devlin-duldulao/midulogo.webp",
-    "linkedin": "https://www.linkedin.com/in/devlinduldulao",
-    "instagram": "https://www.instagram.com/devlinduldulao",
-    "twitter": "https://x.com/DevlinDuldulao",
-    "twitch": "",
-    "youtube": "",
-    "web": "https://inmeta.no",
-    "github": "https://github.com/webmasterdevlin",
-    "discord": "",
-    "bio": "Co-authored the Packt book Practical Enterprise React; Devlin has been using JavaScript and TypeScript to build web apps and mobile apps for their customers for years. He has been a Microsoft MVP and an on-site React trainer for 7 years.",
-    "event": [
-      {
-        "eventType": "Charla",
-        "eventTitle": "Bun.js Under the Hood: Exploring the Core Technologies and Performance Innovations",
-        "eventDate": "00 Dec 2024",
-        "eventHour": "00:00",
-        "eventEquipment": null,
-        "eventBrief": "The JavaScript ecosystem has evolved significantly, with Bun.js marking a notable milestone. Built from the ground up in Zig, Bun.js is an all-in-one JavaScript runtime featuring an integrated package manager, bundler, test runner, and Nodejs-compatible environment designed for the growing demands of edge computing and server-side applications. My presentation will explore Bun.js's foundational principles, highlighting its performance benchmarks against traditional runtimes like Node.js, seamless TypeScript support, zero-configuration framework, and innovative features such as built-in hot reloading and efficient file operations."
       }
     ]
   },
@@ -93,10 +65,10 @@
     "fullName": "Estefany Aguilar",
     "company": "Platzi",
     "imgSrc": "assets/img/speakers/estefany-aguilar-restrepo/estefany-aguilar-restrepo-1.webp",
-    "imgSrc2": "",
-    "imgSrc3": "",
-    "imgSrc4": "",
-    "speakerInfo": "Lorem ipsum",
+    "imgSrc2": "assets/img/speakers/estefany-aguilar-restrepo/estefany-aguilar-restrepo-2.webp",
+    "imgSrc3": "assets/img/speakers/estefany-aguilar-restrepo/estefany-aguilar-restrepo-3.webp",
+    "imgSrc4": "assets/img/speakers/estefany-aguilar-restrepo/estefany-aguilar-restrepo-4.webp",
+    "speakerInfo": "Sorting algorithms, Complexity, Big O Notation",
     "speakerBrand": "assets/img/speakers/estefany-aguilar-restrepo/estefany-aguilar-restrepo-5.webp",
     "linkedin": "https://www.linkedin.com/in/",
     "instagram": "https://www.instagram.com/",
@@ -106,15 +78,16 @@
     "web": "https://platzi.com",
     "github": "https://github.com/",
     "discord": "",
-    "bio": "Lorem ipsum",
+    "bio": "I am a Senior Frontend Developer with over 7 years of experience in building web applications using HTML, CSS, JavaScript, TypeScript, and modern frameworks such as React and Vue. My passion lies in creating efficient, scalable, and user-friendly web solutions. In addition to my technical expertise, I have over 5 years of experience teaching programming at Platzi, where I have recorded 18 courses and reached over 50,000 students. I thrive on making complex topics accessible through engaging, hands-on learning. Additionally, I possess a Google UX Design certificate and utilize tools like Figma for design, enabling me to create exceptional user experiences. As a speaker, I have had the privilege of presenting at various international and local conferences such as JSConf CO, CSS Conf EU, and Platzi Conf. I was also a co-founder of the Medellín CSS community and CSS Conf Colombia, where I helped grow and support the developer ecosystem in my region.",
+    "role": "Senior Frontend Developer",
     "event": [
       {
         "eventType": "Charla",
-        "eventTitle": "Lorem ipsum",
-        "eventDate": "00 Dec 2024",
-        "eventHour": "00:00",
+        "eventTitle": "Sorting Algorithms Illustrated: A Step-by-Step Guide to Mastering Complexity",
+        "eventDate": "05 Dec 2024",
+        "eventHour": "09:30",
         "eventEquipment": null,
-        "eventBrief": "Lorem ipsum"
+        "eventBrief": "Sorting algorithms are essential tools in any developer's toolkit, but they can be tough to grasp. In this session, we'll make them approachable and engaging with clear, step-by-step illustrations. You'll see how popular algorithms like BubbleSort, InsertionSort and MergeSort work and learn the basics of algorithmic complexity, all in a visual, easy-to-understand format. Whether you're just starting out or looking to deepen your knowledge, this talk will help you confidently tackle sorting in your projects."
       }
     ]
   },
@@ -137,12 +110,13 @@
     "github": "https://github.com/frani-be",
     "discord": "",
     "bio": "Especializada en diseño gráfico, UX/UI y desarrollo web, con experiencia tanto en el ámbito corporativo como educativo. Voluntaria en JSConf Chile, Fundación Antonia, Technovation Girls y Women Who Code. Destacada por tener habilidades de comunicación, liderazgo y compromiso con la inclusión en STEAM. Busca participar en comunidades y liderar proyectos en el área tecnológica.",
+    "role": "Líder de un equipo de Front-End",
     "event": [
       {
         "eventType": "Charla",
         "eventTitle": "Patrones infinitos en el lienzo digital: Desatando la creatividad con P5.js en el arte algorítmico",
-        "eventDate": "00 Dec 2024",
-        "eventHour": "00:00",
+        "eventDate": "05 Dec 2024",
+        "eventHour": "11:30",
         "eventEquipment": null,
         "eventBrief": "El núcleo de la presentación gira en torno al concepto de arte algorítmico como medio de expresión creativa, donde arte y tecnología se cruzan. Pretendo demostrar cómo la librería p5.js basada en JavaScript, ofrece oportunidades únicas para que artistas y programadores exploren nuevas formas de arte digital."
       }
@@ -167,12 +141,13 @@
     "github": "https://github.com/ianaya89",
     "discord": "",
     "bio": "I am an experienced Full Stack Developer, Tech Trainer, and Speaker with a strong background in various industries, primarily focusing on product development. I am proficient in the JavaScript stack and have extensive experience with technologies like Go, AWS, IaC, Bash, DB's, and E2E. Passionate about coding, teaching, and field hockey, I enjoy contributing to diverse communities, working with open-source projects and participating in conferences as Speaker.",
+    "role": "Cloud Engineer",
     "event": [
       {
         "eventType": "Charla",
         "eventTitle": "Collect, Ingest, Observe: A New Era for (free) JS Monitoring!",
-        "eventDate": "00 Dec 2024",
-        "eventHour": "00:00",
+        "eventDate": "05 Dec 2024",
+        "eventHour": "15:00",
         "eventEquipment": null,
         "eventBrief": "Monitorear aplicaciones en JavaScript puede parecer un desafío complejo, pero es hora de cambiar esa perspectiva. Esta charla está diseñada para desmitificar las complejidades de la observabilidad, trazando un camino simple y efectivo a través de OpenTelemetry (OTel) y una selección de potentes herramientas OSS. Navegaremos por las intrincadas aguas de la observabilidad, enfocándonos en lo esencial de la recolección de telemetría y cómo (y porque) generar visibilidad sobre el rendimiento y la salud de tu plataforma."
       }
@@ -197,12 +172,13 @@
     "github": "https://github.com/thisisjofrank",
     "discord": "",
     "bio": "Jo is a DevRel Engineer at Deno. She is passionate about improving developer experience, teaching good use of the web and building sparkly, wearable, internet connected tech. She mentors junior developers, talks a lot about mental health and is devoted to improving the diversity and inclusivity of the tech industry.",
+    "role": "Developer Advocate",
     "event": [
       {
         "eventType": "Charla",
         "eventTitle": "Building a Browser Based Code Editor",
-        "eventDate": "00 Dec 2024",
-        "eventHour": "00:00",
+        "eventDate": "06 Dec 2024",
+        "eventHour": "10:00",
         "eventEquipment": null,
         "eventBrief": "Monitorear aplicaciones en JavaScript puede parecer un desafío complejo, pero es hora de cambiar esa perspectiva. Esta charla está diseñada para desmitificar las complejidades de la observabilidad, trazando un camino simple y efectivo a través de OpenTelemetry (OTel) y una selección de potentes herramientas OSS. Navegaremos por las intrincadas aguas de la observabilidad, enfocándonos en lo esencial de la recolección de telemetría y cómo (y porque) generar visibilidad sobre el rendimiento y la salud de tu plataforma."
       }
@@ -227,12 +203,13 @@
     "github": "https://github.com/dezkareid",
     "discord": "",
     "bio": "Frontend Developer en Platzi, FullStack JS Developer, GDE en Web Technologies y Google Maps Platform. Maestro Pokemon, fan de los tacos y los corgis.",
+    "role": "Frontend Developer",
     "event": [
       {
         "eventType": "Charla",
         "eventTitle": "Plugin architecture, Abstract Syntax Trees y Visitor Pattern",
-        "eventDate": "00 Dec 2024",
-        "eventHour": "00:00",
+        "eventDate": "06 Dec 2024",
+        "eventHour": "15:00",
         "eventEquipment": null,
         "eventBrief": "¿Sabes lo que ESLint, babel y prettier tienen en común? Todos usan Plugin architecture, Abstract Syntax Trees y Visitor Pattern para analizar código. Vamos a explorar a detalle como estos 3 temas nos ayudan a crear nuestro propio plugin de ESLint"
       }
@@ -247,7 +224,7 @@
     "imgSrc3": "assets/img/speakers/juan-pablo-ortiz/juan-pablo-ortiz-3.webp",
     "imgSrc4": "assets/img/speakers/juan-pablo-ortiz/juan-pablo-ortiz-4.webp",
     "speakerInfo": "Concurrency, Multithreading, Runtime, Event Loop",
-    "speakerBrand": "assets/img/speakers/joel-humberto-gomez-paredes/midulogo.webp",
+    "speakerBrand": "",
     "linkedin": "https://www.linkedin.com/in/juan-pablo-ortiz/",
     "instagram": "https://www.instagram.com/wildpasco/",
     "twitter": "",
@@ -257,12 +234,13 @@
     "github": "https://github.com/misterpoloy",
     "discord": "",
     "bio": "I'm from Guatemala, I have been living in Mexico city for 5 years. Currently working in Audible. I'm self-motivated and lifelong learner. Involved in all project sizes from startups to big companies. I have Experienced in DevOps (CI/CD), cloud architecture, cost-optimization, and high-scale performance systems. I code since 16 and over 7 years of industry experience. In my free time I like to travel, I know several countries. I also have a dog with whom I enjoy hiking. I really liked a good conversation, I like to talk about entrepreneurship, startups, technology. I constantly stay up to date on current affairs, world and innovation.",
+    "role": "Software Engineer",
     "event": [
       {
         "eventType": "Charla",
         "eventTitle": "Multithread in Javascript with web workers",
-        "eventDate": "00 Dec 2024",
-        "eventHour": "00:00",
+        "eventDate": "06 Dec 2024",
+        "eventHour": "12:30",
         "eventEquipment": null,
         "eventBrief": "Discover how to harness JavaScript’s multithreading capabilities using web workers in the browser, breaking the single-threaded misconception. Learn to utilize concurrency and parallelism to optimizing CPU-intensive tasks. This will be also a refresher on the Javascript Runtime."
       }
@@ -277,7 +255,7 @@
     "imgSrc3": "assets/img/speakers/kevin-uehara/kevin-uehara-3.webp",
     "imgSrc4": "assets/img/speakers/kevin-uehara/kevin-uehara-4.webp",
     "speakerInfo": "Javascript, WebXR, Virtual Reality, Web",
-    "speakerBrand": "assets/img/speakers/joel-humberto-gomez-paredes/midulogo.webp",
+    "speakerBrand": "",
     "linkedin": "https://www.linkedin.com/in/kevin-uehara/",
     "instagram": "https://www.instagram.com/uehara_kevin/",
     "twitter": "https://x.com/ueharaDev",
@@ -287,12 +265,13 @@
     "github": "https://github.com/kevinuehara",
     "discord": "",
     "bio": "Staff Frontend Engineer at IFood, NodeBR Collaborator, GDG Campinas (Google Developer Groups), FrontIn Campinas Organizer, Speaker and Content Tech Creator.",
+    "role": "Staff Frontend Engineer",
     "event": [
       {
         "eventType": "Charla",
         "eventTitle": "Integrating AI and Browser API Voice Recognition on Web Application",
-        "eventDate": "00 Dec 2024",
-        "eventHour": "00:00",
+        "eventDate": "05 Dec 2024",
+        "eventHour": "10:00",
         "eventEquipment": null,
         "eventBrief": "In this talk we will understand the WebXR and Virtual Reality universe, where the border between the real and the virtual disappears before our eyes."
       }
@@ -307,7 +286,7 @@
     "imgSrc3": "",
     "imgSrc4": "",
     "speakerInfo": "Server Actions, React 19, Next JS, Server Components",
-    "speakerBrand": "assets/img/speakers/joel-humberto-gomez-paredes/midulogo.webp",
+    "speakerBrand": "",
     "linkedin": "",
     "instagram": "",
     "twitter": "",
@@ -317,12 +296,13 @@
     "github": "https://github.com/negreirosleo",
     "discord": "",
     "bio": "Staff Frontend Engineer at IFood, NodeBR Collaborator, GDG Campinas (Google Developer Groups), FrontIn Campinas Organizer, Speaker and Content Tech Creator.",
+    "role": "Senior Frontend Engineer",
     "event": [
       {
         "eventType": "Charla",
         "eventTitle": "Unleash the Power of Server Actions",
-        "eventDate": "00 Dec 2024",
-        "eventHour": "00:00",
+        "eventDate": "06 Dec 2024",
+        "eventHour": "11:30",
         "eventEquipment": null,
         "eventBrief": "React 19 and Server Components are already on our doorstep. In this talk, we will cover the usage of Server Actions, how we should use them, why they exist, and why we should care about them. We will also walk through the new hooks: useFormStatus, useActionState, useOptimistic, and the new action prop for the form tag, as well as how we can use them for mutations and data management. React Server Component will soon be available, and if you don't want to fall behind, stay tuned for the latest React features."
       }
@@ -337,7 +317,7 @@
     "imgSrc3": "",
     "imgSrc4": "",
     "speakerInfo": "bundler, performance, devtools",
-    "speakerBrand": "assets/img/speakers/joel-humberto-gomez-paredes/midulogo.webp",
+    "speakerBrand": "",
     "linkedin": "https://www.linkedin.com/in/lewisl9029",
     "instagram": "",
     "twitter": "https://x.com/lewisl9029",
@@ -347,12 +327,13 @@
     "github": "https://github.com/lewisl9029",
     "discord": "",
     "bio": "Working on Reflame, a platform to deploy and test React apps 100x faster. Formerly 2nd frontend engineer at Brex.",
+    "role": "Founder",
     "event": [
       {
         "eventType": "Charla",
         "eventTitle": "Building the world's fastest JavaScript bundler... with JavaScript!?",
-        "eventDate": "00 Dec 2024",
-        "eventHour": "00:00",
+        "eventDate": "05 Dec 2024",
+        "eventHour": "11:00",
         "eventEquipment": null,
         "eventBrief": "All the crazy fast new bundlers that have come out recently are written in compiled languages like Rust, Zig, and Go. In this talk, we'll see how we can build a bundler in JS that can go toe-to-toe with the fastest bundlers out there, by challenging the very notion of what a bundler is."
       }
@@ -367,7 +348,7 @@
     "imgSrc3": "assets/img/speakers/maja-wichrowska/maja-wichrowska-3.webp",
     "imgSrc4": "assets/img/speakers/maja-wichrowska/maja-wichrowska-4.webp",
     "speakerInfo": "React, codemods, meta-programming, jscodeshift",
-    "speakerBrand": "assets/img/speakers/joel-humberto-gomez-paredes/midulogo.webp",
+    "speakerBrand": "",
     "linkedin": "https://www.linkedin.com/in/majapw/",
     "instagram": "",
     "twitter": "https://twitter.com/majapw",
@@ -377,12 +358,13 @@
     "github": "https://github.com/majapw",
     "discord": "",
     "bio": "Maja Wichrowska is a software engineer on the web infrastructure team at Notion, where she thinks about web performance and client frameworks. Prior to Notion, she championed the formation of a web infrastructure team at Airtable, and spent many years working as the tech lead of Airbnb’s Design Language System on the web. In her spare time, she loves traveling, playing rugby, and going on long walks with her Australian Shepherd.",
+    "role": "Software Engineer",
     "event": [
       {
         "eventType": "Charla",
         "eventTitle": "Codemods in the Era of AI",
-        "eventDate": "00 Dec 2024",
-        "eventHour": "00:00",
+        "eventDate": "06 Dec 2024",
+        "eventHour": "16:30",
         "eventEquipment": null,
         "eventBrief": "It’s 2024, your startup is growing, and you’re still using Javascript patterns from six (8? 12?) years ago. What do you do? You could do nothing—engineers are already leveraging modern best practices in new code and eventually, the legacy code will disappear on its own. You could shut down feature development—if the entire engineering organization is working together, maybe you could complete the code migration in just a few weeks. You could also leverage any number of AI tools that have cropped up to rewrite your code en masse—perhaps these tools could empower a single engineer to do the entire migration. These were the options we were weighing when faced with the task of converting hundreds of React class components to functional components at the end of last year. It was urgent enough to prioritize now, not quite urgent enough to stop other feature development, and too custom and potentially risky for an out-of-the-box AI tool. With two engineers, we converted nearly 70% of our components and dramatically simplified the remaining components with a more primitive tool—the humble codemod. This talk explores the role of codemods, AI, and manual intervention in code migrations in 2024."
       }
@@ -397,7 +379,7 @@
     "imgSrc3": "assets/img/speakers/midudev/midudev-3.webp",
     "imgSrc4": "assets/img/speakers/midudev/midudev-4.webp",
     "speakerInfo": "JavaScript, HTML, CSS, desarrollo web, innovaciones web, nuevas características, optimización, aplicaciones web modernas, tecnologías web.",
-    "speakerBrand": "assets/img/speakers/midudev/midulogo.webp",
+    "speakerBrand": "",
     "linkedin": "https://www.linkedin.com/in/midudev/",
     "instagram": "https://instagram.com/midu.dev",
     "twitter": "https://x.com/midudev",
@@ -407,12 +389,13 @@
     "github": "https://github.com/midudev",
     "discord": "",
     "bio": "Maja Wichrowska is a software engineer on the web infrastructure team at Notion, where she thinks about web performance and client frameworks. Prior to Notion, she championed the formation of a web infrastructure team at Airtable, and spent many years working as the tech lead of Airbnb’s Design Language System on the web. In her spare time, she loves traveling, playing rugby, and going on long walks with her Australian Shepherd.",
+    "role": "Ingeniero de Software",
     "event": [
       {
         "eventType": "Charla",
         "eventTitle": "¡El Futuro de la Web! Lo nuevo de JavaScript, HTML y CSS",
-        "eventDate": "00 Dec 2024",
-        "eventHour": "00:00",
+        "eventDate": "06 Dec 2024",
+        "eventHour": "09:30",
         "eventEquipment": null,
         "eventBrief": "¡Descubre las últimas innovaciones que están transformando el desarrollo web! Conoce las nuevas características y mejoras en JavaScript, HTML y CSS que están redefiniendo las aplicaciones web. No te quedes atrás y lleva tus proyectos al siguiente nivel."
       }
@@ -427,7 +410,7 @@
     "imgSrc3": "assets/img/speakers/nico-avila/nico-avila-3.webp",
     "imgSrc4": "assets/img/speakers/nico-avila/nico-avila-4.webp",
     "speakerInfo": "audio, synth, midi, tonejs, vuejs",
-    "speakerBrand": "assets/img/speakers/nico-avila/midulogo.webp",
+    "speakerBrand": "",
     "linkedin": "https://www.linkedin.com/in/nicolas-avila-araya/",
     "instagram": "https://www.instagram.com/nicoavila_a/",
     "twitter": "https://x.com/nicoavila_a",
@@ -437,12 +420,13 @@
     "github": "https://github.com/nicoavila",
     "discord": "",
     "bio": "Principal Software Engineer @ HICAPPS. Fonoaudiólogo de formación pero desarrollador de corazón. Me apasiona la tecnología y la informática en salud. En mis tiempos libros disfruto de buena música, el pixel art y los juegos en Steam.",
+    "role": "Principal Software Engineer",
     "event": [
       {
         "eventType": "Charla",
         "eventTitle": "Y si Daft Punk hiciera JavaScript?: Síntesis de audio con Tone.js y VueJS",
-        "eventDate": "00 Dec 2024",
-        "eventHour": "00:00",
+        "eventDate": "05 Dec 2024",
+        "eventHour": "16:30",
         "eventEquipment": null,
         "eventBrief": "Te imaginas que Thomas Bangalter y Guy-Manuel de Homem-Christo hubiesen producido todos sus grandes hits solo con JavaScript? No es algo tan descabellado actualmente."
       }
@@ -456,8 +440,8 @@
     "imgSrc2": "",
     "imgSrc3": "",
     "imgSrc4": "",
-    "speakerInfo": "audio, synth, midi, tonejs, vuejs",
-    "speakerBrand": "assets/img/speakers/rita-kozlov/midulogo.webp",
+    "speakerInfo": "developer experience",
+    "speakerBrand": "",
     "linkedin": "",
     "instagram": "",
     "twitter": "",
@@ -467,14 +451,15 @@
     "github": "",
     "discord": "",
     "bio": "Rita Kozlov is the VP of product for Cloudflare's developer and AI platform — Workers. Rita started her career as a software engineer prior to moving to product to help build experiences for developers.",
+    "role": "VP off product",
     "event": [
       {
         "eventType": "Charla",
         "eventTitle": "Building a platform for 2 Million Developers",
-        "eventDate": "00 Dec 2024",
-        "eventHour": "00:00",
+        "eventDate": "06 Dec 2024",
+        "eventHour": "11:00",
         "eventEquipment": null,
-        "eventBrief": "Lorem ipsum"
+        "eventBrief": ""
       }
     ]
   },
@@ -487,7 +472,7 @@
     "imgSrc3": "assets/img/speakers/vanessa-aristizabal/vanessa-aristizabal-3.webp",
     "imgSrc4": "assets/img/speakers/vanessa-aristizabal/vanessa-aristizabal-4.webp",
     "speakerInfo": "web, accesibilidad, javascript, inclusión",
-    "speakerBrand": "assets/img/speakers/vanessa-aristizabal/midulogo.webp",
+    "speakerBrand": "",
     "linkedin": "https://www.linkedin.com/in/vanessa-marely-aristizabal-angel/",
     "instagram": "https://www.instagram.com/vanessamarelycode",
     "twitter": "https://twitter.com/vanessamarely",
@@ -497,14 +482,170 @@
     "github": "https://github.com/vanessamarely",
     "discord": "",
     "bio": "Vanessa Aristizabal, Ingeniera de Sistemas con experiencia como Web developer. Google Developer Expert en Angular y tecnologias Web. Github Star. Embajadora de Women Techmaker. Creadora de contenido. Apasionada por la tecnología, los Libros, el código (especialmente JS), el diseño, los Videojuegos y la ilustración.",
+    "role": "Senior Web developer",
     "event": [
       {
         "eventType": "Charla",
         "eventTitle": "JavaScript para una Web Accesible: Receta de Inclusión",
+        "eventDate": "06 Dec 2024",
+        "eventHour": "15:30",
+        "eventEquipment": null,
+        "eventBrief": "Explora cómo crear experiencias web accesibles y enriquecedoras usando JavaScript. En esta charla, descubrirás métodos efectivos y técnicas prácticas para desarrollar sitios web inclusivos e intuitivos. Nos centraremos en el uso estratégico de JavaScript y HTML semántico para garantizar que los usuarios disfruten de una experiencia web óptima."
+      }
+    ]
+  },
+  {
+    "slug": "erick-wendel",
+    "fullName": "Erick Wendel",
+    "company": "EW Academy",
+    "imgSrc": "assets/img/speakers/erick-wendel/erick-wendel-1.webp",
+    "imgSrc2": "assets/img/speakers/erick-wendel/erick-wendel-2.webp",
+    "imgSrc3": "assets/img/speakers/erick-wendel/erick-wendel-3.webp",
+    "imgSrc4": "assets/img/speakers/erick-wendel/erick-wendel-4.webp",
+    "speakerInfo": "nodejs, javascript, test runner, tooling",
+    "speakerBrand": "",
+    "linkedin": "https://linkedin.com/in/erickwendel",
+    "instagram": "https://www.instagram.com/erickwendel_/",
+    "twitter": "https://x.com/erickwendel_",
+    "twitch": "",
+    "youtube": "",
+    "web": "https://ew.academy/",
+    "github": "https://github.com/erickwendel",
+    "discord": "",
+    "bio": "Erick Wendel is a Node.js Core Team Developer, Keynote Speaker, and professional educator. He's delivered over 100 tech talks in 10+ countries and has been recognized as a Node.js Specialist with awards from Google, Microsoft, and GitHub. With his company https://erickwendel.com, Erick has trained over 100K people worldwide.",
+    "role": "Professional JavaScript Educator",
+    "event": [
+      {
+        "eventType": "Charla",
+        "eventTitle": "Recreemos el test runner de Node.js desde cero",
+        "eventDate": "06 Dec 2024",
+        "eventHour": "12:00",
+        "eventEquipment": null,
+        "eventBrief": "En esta sesión, desglosaremos las capas y desentrañaremos la magia de los test runners detrás de escena. Acompáñame mientras recreamos el test runner de Node.js desde cero, brindando una visión de cómo Node.js utiliza asyncHooks, una de las APIs más potentes, para rastrear contextos asíncronos y reportar errores. Prepárate para una exploración práctica que desmitificará las funcionalidades centrales de los test runners."
+      }
+    ]
+  },
+  {
+    "slug": "marian-villa",
+    "fullName": "Marian Villa",
+    "company": "PionerasDev",
+    "imgSrc": "assets/img/speakers/marian-villa/marian-villa-1.webp",
+    "imgSrc2": "assets/img/speakers/marian-villa/marian-villa-2.webp",
+    "imgSrc3": "assets/img/speakers/marian-villa/marian-villa-3.webp",
+    "imgSrc4": "assets/img/speakers/marian-villa/marian-villa-4.webp",
+    "speakerInfo": "Web Workers, Script Evaluation, User Experience, Front-End Development, Responsive Design, Performance Metrics",
+    "speakerBrand": "",
+    "linkedin": "https://www.linkedin.com/in/marianvilla/",
+    "instagram": "https://instagram.com/marianvilla",
+    "twitter": "https://x.com/marianvilla",
+    "twitch": "",
+    "youtube": "",
+    "web": "https://pionerasdev.org/",
+    "github": "https://github.com/marianvilla",
+    "discord": "",
+    "bio": "Co-fundadora de PionerasDev, con +12 años de experiencia como Líder técnica, Diseñadora Fullstack de Productos Digitales y con experticia en Creación de Comunidades. Le gusta crear Contenido Técnico y Diseño de Productos, especialmente en tecnologías Open Source. Es Google Developer Expert en Tecnologías Web (HTML-CSS-Javascript), Embajadora WTM , y Mentora en Google for startups. Es Fellow de la Real Academia de Ingeniería de Londres.",
+    "role": "Cofounder & Director",
+    "event": [
+      {
+        "eventType": "Charla",
+        "eventTitle": "Optimiza tu Web: Minimiza retrasos y acelera la ejecución de JavaScript.",
+        "eventDate": "06 Dec 2024",
+        "eventHour": "17:00",
+        "eventEquipment": null,
+        "eventBrief": "Explorar estrategias para reducir tiempos y capacidad de respuesta en aplicaciones web. Optimiza la ejecución de JavaScript, la gestión de tareas en scripts largos y la minimización del impacto de scripts de terceros; con esto, los desarrolladores pueden garantizar una experiencia de usuario más fluida. Aprenda a mantener aplicaciones web ágiles y con capacidad de respuesta."
+      }
+    ]
+  },
+  {
+    "slug": "proximamente",
+    "fullName": "???",
+    "company": "Próximamente",
+    "imgSrc": "",
+    "imgSrc2": "",
+    "imgSrc3": "",
+    "imgSrc4": "",
+    "speakerInfo": "",
+    "speakerBrand": "",
+    "linkedin": "",
+    "instagram": "",
+    "twitter": "",
+    "twitch": "",
+    "youtube": "",
+    "web": "",
+    "github": "",
+    "discord": "",
+    "bio": "",
+    "role": "??????",
+    "event": [
+      {
+        "eventType": "Charla",
+        "eventTitle": "Próximamen",
         "eventDate": "00 Dec 2024",
         "eventHour": "00:00",
         "eventEquipment": null,
-        "eventBrief": "Explora cómo crear experiencias web accesibles y enriquecedoras usando JavaScript. En esta charla, descubrirás métodos efectivos y técnicas prácticas para desarrollar sitios web inclusivos e intuitivos. Nos centraremos en el uso estratégico de JavaScript y HTML semántico para garantizar que los usuarios disfruten de una experiencia web óptima."
+        "eventBrief": "..."
+      }
+    ]
+  },
+  {
+    "slug": "proximamente",
+    "fullName": "???",
+    "company": "Próximamente",
+    "imgSrc": "",
+    "imgSrc2": "",
+    "imgSrc3": "",
+    "imgSrc4": "",
+    "speakerInfo": "",
+    "speakerBrand": "",
+    "linkedin": "",
+    "instagram": "",
+    "twitter": "",
+    "twitch": "",
+    "youtube": "",
+    "web": "",
+    "github": "",
+    "discord": "",
+    "bio": "",
+    "role": "??????",
+    "event": [
+      {
+        "eventType": "Charla",
+        "eventTitle": "Próximamen",
+        "eventDate": "00 Dec 2024",
+        "eventHour": "00:00",
+        "eventEquipment": null,
+        "eventBrief": "..."
+      }
+    ]
+  },
+  {
+    "slug": "proximamente",
+    "fullName": "???",
+    "company": "Próximamente",
+    "imgSrc": "",
+    "imgSrc2": "",
+    "imgSrc3": "",
+    "imgSrc4": "",
+    "speakerInfo": "",
+    "speakerBrand": "",
+    "linkedin": "",
+    "instagram": "",
+    "twitter": "",
+    "twitch": "",
+    "youtube": "",
+    "web": "",
+    "github": "",
+    "discord": "",
+    "bio": "",
+    "role": "??????",
+    "event": [
+      {
+        "eventType": "Charla",
+        "eventTitle": "Próximamen",
+        "eventDate": "00 Dec 2024",
+        "eventHour": "00:00",
+        "eventEquipment": null,
+        "eventBrief": "..."
       }
     ]
   }

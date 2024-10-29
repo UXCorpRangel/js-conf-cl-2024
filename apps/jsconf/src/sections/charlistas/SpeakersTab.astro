@@ -9,8 +9,8 @@ import speakers from '../../data/speakers/charlistas.json';
       <SpeakerCard
         imgSrc={speaker.imgSrc}
         speakerName={speaker.fullName}
-        speakerInfo={speaker.event[0].eventTitle}
-        speakerBrand={speaker.speakerBrand}
+        company={speaker.company}
+        role={speaker.role}
         link={'/charlistas/' + speaker.slug}
       />
     ))
