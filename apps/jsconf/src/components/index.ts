@@ -9,6 +9,7 @@ export { default as SpeakerCard } from './SpeakerCard.astro';
 export { default as SponsorCard } from './SponsorCard.astro';
 export { default as StaffCard } from './StaffCard.astro';
 export { default as TabsSchedule } from './TabsSchedule.astro';
+export { default as TabsScheduleCharlistas } from './TabsScheduleCharlistas.astro';
 export { default as WorkshopCard } from './WorkshopCard.astro';
 export { default as Slider } from './Slider/Slider.astro';
 

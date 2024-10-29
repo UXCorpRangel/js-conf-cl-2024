@@ -1,23 +1,13 @@
 ---
 import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
 
-interface agendaDay {
-  time_start: string;
-  time_end: string;
-  speaker_name: string;
-  description: string;
-}
-
 type Props = {
   data: {
     triggerTitle: string;
     status: string;
-    ContentTab: AstroComponentFactory;
-    agendaDay: agendaDay[];
-    day: string;
+    Content: AstroComponentFactory;
   }[];
 };
-
 const context = crypto.randomUUID();
 const { data } = Astro.props;
 ---
@@ -35,9 +25,9 @@ const { data } = Astro.props;
   </div>
   <div class="tabs-contents">
     {
-      data.map(({ ContentTab, status, agendaDay, day }, index) => (
+      data.map(({ Content, status }, index) => (
         <div class="tab-content" data-tab={index} data-context={context} data-status={status}>
-          <ContentTab agendaDay={agendaDay} day={day} />
+          <Content />
         </div>
       ))
     }
@@ -46,6 +36,26 @@ const { data } = Astro.props;
 
 <style>
   .tabs-actions {
+    /* implementacion de figma */
+    /* --py: 5px;
+    --px: 5px;
+    --px-action: 24px;
+    --py-action: 12px;
+    --radius: 6px;
+    --font-size: 24px;
+    --line-height: 30px;
+
+    @media (width <= 1280px) {
+      --py: 2.52px;
+      --px: 2.52px;
+      --px-action: 12.1px;
+      --py-action: 6.05px;
+      --radius: 3.02px;
+      --font-size: 12.1px;
+      --line-height: 10.08px;
+    } */
+
+    /* Mi implementacion responsive */
     --py: clamp(2px, 0.9vw, 5px);
     --px: clamp(2px, 20vw, 5px);
     --px-action: clamp(10px, 2vw, 24px);
@@ -56,60 +66,14 @@ const { data } = Astro.props;
   }
 
   .tabs-contents {
-    --pt-content: clamp(1rem, 4vw, 4rem);
-
     text-align: center;
-    padding-top: var(--pt-content);
-
-    & .tab-content {
-      display: flex;
-      opacity: 1;
-      transition:
-        opacity 1000ms,
-        display 100ms;
-    }
-
-    @starting-style {
-      & .tab-content {
-        opacity: 0;
-      }
-    }
-
-    & .tab-content[data-status='closed'] {
-      display: none;
-      opacity: 0;
-    }
-
-    @media (768px <= width <= 1199.98px) {
-      max-width: 78%;
-      margin-inline: auto;
-    }
+    --pt-content: clamp(1rem, 4vw, 4rem);
   }
-
+  .tabs-contents .tab-content[data-status='closed'] {
+    display: none;
+  }
   .tab-content {
-    flex-direction: column;
-    position: relative;
-    gap: 3rem;
-
-    @media (width >= 1200px) {
-      gap: 0;
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      width: 2px;
-      height: 100%;
-      background: linear-gradient(180deg, #2a2401 0%, #9a8025 39.57%, #ede060 100%);
-      border-radius: var(--radius);
-      z-index: -1;
-
-      @media (width >= 1200px) {
-        left: 50%;
-        translate: -50%;
-      }
-    }
+    padding-top: var(--pt-content);
   }
 
   .tabs-actions {
@@ -155,15 +119,9 @@ const { data } = Astro.props;
       text-align: center;
       color: var(--gray-2);
       transition: color 0.3s;
-      cursor: pointer;
     }
     .tab-action[data-status='open'] {
       color: var(--black);
-      cursor: default;
-    }
-
-    .tab-action[data-status='closed']:hover {
-      color: var(--yellow);
     }
   }
 </style>
