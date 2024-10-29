@@ -32,7 +32,6 @@ const { agendaDay, day } = Astro.props;
             <span>EN VIVO</span>
           </div>
           <div>
-            <p class="speaker">Speaker</p>
             <h3>{speakerName}</h3>
           </div>
           <p>{description}</p>
@@ -48,6 +47,7 @@ const { agendaDay, day } = Astro.props;
     --offset: 1.45;
     --negative-offset: calc(var(--offset) * -1);
 
+    width: 100%;
     position: relative;
     max-width: calc(100% - var(--card-demo-px));
     margin-left: auto;
@@ -173,17 +173,6 @@ const { agendaDay, day } = Astro.props;
           transition: opacity 0.3s ease-in-out;
         }
       }
-
-      .speaker {
-        color: var(--yellow);
-        font-size: 1.5rem;
-        font-weight: 700;
-      }
-
-      h3 {
-        font-size: 1.125rem;
-        font-weight: 700;
-      }
     }
   }
 </style>
@@ -220,13 +209,11 @@ const { agendaDay, day } = Astro.props;
   dayjs.tz.setDefault(setTimezone);
 
   // Obtener los días de la agenda
-  const { friday, saturday, sunday }: { friday: Event[]; saturday: Event[]; sunday: Event[] } =
-    agenda;
+  const { friday, saturday }: { friday: Event[]; saturday: Event[] } = agenda;
 
   // Guardar las tarjetas correspondientes para cada día
   const cardsDemosFriday: NodeListOf<Element> = document.querySelectorAll('.card-demo.friday');
   const cardsDemosSaturday: NodeListOf<Element> = document.querySelectorAll('.card-demo.saturday');
-  const cardsDemosSunday: NodeListOf<Element> = document.querySelectorAll('.card-demo.sunday');
 
   // Función para convertir los eventos de un día a objetos Dayjs y evitar repetir conversiones
   function processEvents(events: Event[]): ProcessedEvent[] {
@@ -247,10 +234,6 @@ const { agendaDay, day } = Astro.props;
     saturday: {
       events: processEvents(saturday),
       cards: cardsDemosSaturday
-    },
-    sunday: {
-      events: processEvents(sunday),
-      cards: cardsDemosSunday
     }
   };
 
