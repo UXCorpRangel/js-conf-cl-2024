@@ -1,7 +1,7 @@
 const agenda = {
   friday: [
     {
-      time_start: '2024-10-06T09:30:00.000Z',
+      time_start: '2024-12-06T09:30:00.000Z',
       time_end: '2024-12-06T10:00:00.000Z',
       speaker_name: 'Estefany Aguilar',
       description: 'Sorting Algorithms Illustrated: A Step-by-Step Guide to Mastering Complexity'

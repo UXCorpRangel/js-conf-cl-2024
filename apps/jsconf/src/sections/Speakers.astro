@@ -3,46 +3,40 @@ import { Button, SpeakerCard } from '@components';
 
 const speakers = [
   {
-    imgSrc: '',
+    imgSrc: 'assets/img/speakers/estefany-aguilar-restrepo/estefany-aguilar-restrepo-1.webp',
     speakerName: 'Estefany Aguilar',
-    speakerInfo: 'Ingeniero de Software y Divulgador de Programación',
-    speakerBrand: '',
-    link: '#'
+    company: 'Platzi',
+    link: '/charlistas/estefany-aguilar-restrepo'
   },
   {
     imgSrc: 'assets/img/speakers/midudev/midudev.webp',
     speakerName: 'Miguel Ángel Durán',
-    speakerInfo: '¡El Futuro de la Web! Lo nuevo de JavaScript, HTML y CSS',
-    speakerBrand: 'assets/img/speakers/midudev/midulogo.webp',
-    link: '#'
+    company: 'Midudev',
+    link: '/charlistas/midudev'
   },
   {
     imgSrc: 'assets/img/speakers/lewis-liu/lewis-liu-1.webp',
     speakerName: 'Lewis Liu',
-    speakerInfo: 'Building the world´s fastest JavaScript bundler... with JavaScript!?',
-    speakerBrand: '',
-    link: '#'
+    company: 'Reflame',
+    link: '/charlistas/lewis-liu'
   },
   {
-    imgSrc: '',
+    imgSrc: 'assets/img/speakers/rita-kozlov/rita-kozlov-1.webp',
     speakerName: 'Rita Kozlov',
-    speakerInfo: 'Building a platform for 2 Million Developers',
-    speakerBrand: '',
-    link: '#'
+    company: 'Cloudflare',
+    link: '/charlistas/rita-kozlov'
   },
   {
     imgSrc: 'assets/img/speakers/maja-wichrowska/maja-wichrowska-1.webp',
     speakerName: 'Maja Wichrowska',
-    speakerInfo: 'Codemods in the Era of AI',
-    speakerBrand: '',
-    link: '#'
+    company: 'Notion',
+    link: '/charlistas/maja-wichrowska'
   },
   {
     imgSrc: 'assets/img/speakers/juan-pablo-ortiz/juan-pablo-ortiz-1.webp',
     speakerName: 'Juan Pablo Ortiz',
-    speakerInfo: 'Multithread in Javascript with web workers',
-    speakerBrand: '',
-    link: '#'
+    company: 'Audible - Amazon',
+    link: '/charlistas/juan-pablo-ortiz'
   }
 ];
 ---
@@ -62,8 +56,7 @@ const speakers = [
         <SpeakerCard
           imgSrc={speaker.imgSrc}
           speakerName={speaker.speakerName}
-          speakerInfo={speaker.speakerInfo}
-          speakerBrand={speaker.speakerBrand}
+          company={speaker.company}
           link={speaker.link}
         />
       ))
@@ -88,6 +81,7 @@ const speakers = [
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      gap: 2rem;
 
       & p {
         text-align: center;
