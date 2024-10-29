@@ -1,7 +1,7 @@
 ---
 import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
 
-interface agendaDay {
+interface AgendaDay {
   time_start: string;
   time_end: string;
   speaker_name: string;
@@ -13,7 +13,7 @@ type Props = {
     triggerTitle: string;
     status: string;
     ContentTab: AstroComponentFactory;
-    agendaDay: agendaDay[];
+    agendaDay: AgendaDay[];
     day: string;
   }[];
 };
