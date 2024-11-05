@@ -114,7 +114,6 @@ const { agendaDay, day } = Astro.props;
       padding: 1rem var(--card-demo-px);
       font-family: Barlow;
       text-align: left;
-      filter: grayscale(1);
       opacity: 0.5;
       transition:
         opacity 0.3s ease-in-out,
@@ -129,7 +128,6 @@ const { agendaDay, day } = Astro.props;
         );
 
       &.is-online {
-        filter: grayscale(0);
         opacity: 1;
 
         .time-info {
