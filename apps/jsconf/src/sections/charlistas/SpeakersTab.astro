@@ -1,6 +1,6 @@
 ---
 import { SpeakerCard } from '@components';
-import speakers from '../../data/speakers/charlistas.json';
+import speakers from '@data/speakers/charlistas.json';
 ---
 
 <div class="speakers-wrapper">
@@ -9,8 +9,8 @@ import speakers from '../../data/speakers/charlistas.json';
       <SpeakerCard
         imgSrc={speaker.imgSrc}
         speakerName={speaker.fullName}
-        speakerInfo={speaker.event[0].eventTitle}
         speakerBrand={speaker.speakerBrand}
+        role={speaker.role}
         link={'/charlistas/' + speaker.slug}
       />
     ))

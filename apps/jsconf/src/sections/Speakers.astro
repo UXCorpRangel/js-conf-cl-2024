@@ -1,50 +1,6 @@
 ---
 import { Button, SpeakerCard } from '@components';
-
-const speakers = [
-  {
-    imgSrc: '',
-    speakerName: 'Estefany Aguilar',
-    speakerInfo: 'Ingeniero de Software y Divulgador de Programación',
-    speakerBrand: '',
-    link: '#'
-  },
-  {
-    imgSrc: 'assets/img/speakers/midudev/midudev.webp',
-    speakerName: 'Miguel Ángel Durán',
-    speakerInfo: '¡El Futuro de la Web! Lo nuevo de JavaScript, HTML y CSS',
-    speakerBrand: 'assets/img/speakers/midudev/midulogo.webp',
-    link: '#'
-  },
-  {
-    imgSrc: 'assets/img/speakers/lewis-liu/lewis-liu-1.webp',
-    speakerName: 'Lewis Liu',
-    speakerInfo: 'Building the world´s fastest JavaScript bundler... with JavaScript!?',
-    speakerBrand: '',
-    link: '#'
-  },
-  {
-    imgSrc: '',
-    speakerName: 'Rita Kozlov',
-    speakerInfo: 'Building a platform for 2 Million Developers',
-    speakerBrand: '',
-    link: '#'
-  },
-  {
-    imgSrc: 'assets/img/speakers/maja-wichrowska/maja-wichrowska-1.webp',
-    speakerName: 'Maja Wichrowska',
-    speakerInfo: 'Codemods in the Era of AI',
-    speakerBrand: '',
-    link: '#'
-  },
-  {
-    imgSrc: 'assets/img/speakers/juan-pablo-ortiz/juan-pablo-ortiz-1.webp',
-    speakerName: 'Juan Pablo Ortiz',
-    speakerInfo: 'Multithread in Javascript with web workers',
-    speakerBrand: '',
-    link: '#'
-  }
-];
+import speakers from '@data/speakers/charlistas.json';
 ---
 
 <section class="speakers">
@@ -61,10 +17,10 @@ const speakers = [
       speakers.map(speaker => (
         <SpeakerCard
           imgSrc={speaker.imgSrc}
-          speakerName={speaker.speakerName}
-          speakerInfo={speaker.speakerInfo}
+          speakerName={speaker.fullName}
           speakerBrand={speaker.speakerBrand}
-          link={speaker.link}
+          role={speaker.role}
+          link={'/charlistas/' + speaker.slug}
         />
       ))
     }

@@ -1,6 +1,6 @@
 ---
-import { TabsSchedule } from '@components';
-import { HeroSpeakers, SpeakersTab, WorkshopsTab } from '@sections';
+import { TabsScheduleCharlistas } from '@components';
+import { HeroSpeakers, SpeakersTab } from '@sections';
 import Layout from '@layouts/Layout.astro';
 ---
 
@@ -10,18 +10,18 @@ import Layout from '@layouts/Layout.astro';
   ogImg="home.png"
 >
   <HeroSpeakers />
-  <TabsSchedule
+  <TabsScheduleCharlistas
     data={[
       {
         status: 'open',
         Content: SpeakersTab,
         triggerTitle: 'Charlistas'
-      },
-      {
-        status: 'closed',
-        Content: WorkshopsTab,
-        triggerTitle: 'Workshops'
       }
+      // {
+      //   status: 'closed',
+      //   Content: WorkshopsTab,
+      //   triggerTitle: 'Workshops'
+      // }
     ]}
   />
 </Layout>
