@@ -1,6 +1,44 @@
 ---
 import { Button, SpeakerCard } from '@components';
-import speakers from '@data/speakers/charlistas.json';
+
+const speakers = [
+  {
+    imgSrc: 'assets/img/speakers/estefany-aguilar-restrepo/estefany-aguilar-restrepo-1.webp',
+    speakerName: 'Estefany Aguilar',
+    speakerBrand: '/assets/img/speakers/estefany-aguilar-restrepo/estefany-aguilar-restrepo-5.webp',
+    link: '/charlistas/estefany-aguilar-restrepo'
+  },
+  {
+    imgSrc: 'assets/img/speakers/midudev/midudev.webp',
+    speakerName: 'Miguel Ángel Durán',
+    speakerBrand: '/assets/img/speakers/midudev/midudev-5.webp',
+    link: '/charlistas/midudev'
+  },
+  {
+    imgSrc: 'assets/img/speakers/lewis-liu/lewis-liu-1.webp',
+    speakerName: 'Lewis Liu',
+    speakerBrand: '/assets/img/speakers/lewis-liu/lewis-liu-5.webp',
+    link: '/charlistas/lewis-liu'
+  },
+  {
+    imgSrc: 'assets/img/speakers/rita-kozlov/rita-kozlov-1.webp',
+    speakerName: 'Rita Kozlov',
+    speakerBrand: '/assets/img/speakers/rita-kozlov/rita-kozlov-5.webp',
+    link: '/charlistas/rita-kozlov'
+  },
+  {
+    imgSrc: 'assets/img/speakers/maja-wichrowska/maja-wichrowska-1.webp',
+    speakerName: 'Maja Wichrowska',
+    speakerBrand: '/assets/img/speakers/maja-wichrowska/maja-wichrowska-5.webp',
+    link: '/charlistas/maja-wichrowska'
+  },
+  {
+    imgSrc: 'assets/img/speakers/juan-pablo-ortiz/juan-pablo-ortiz-1.webp',
+    speakerName: 'Juan Pablo Ortiz',
+    speakerBrand: '/assets/img/speakers/juan-pablo-ortiz/juan-pablo-ortiz-5.webp',
+    link: '/charlistas/juan-pablo-ortiz'
+  }
+];
 ---
 
 <section class="speakers">
@@ -17,10 +55,9 @@ import speakers from '@data/speakers/charlistas.json';
       speakers.map(speaker => (
         <SpeakerCard
           imgSrc={speaker.imgSrc}
-          speakerName={speaker.fullName}
+          speakerName={speaker.speakerName}
           speakerBrand={speaker.speakerBrand}
-          role={speaker.role}
-          link={'/charlistas/' + speaker.slug}
+          link={speaker.link}
         />
       ))
     }
