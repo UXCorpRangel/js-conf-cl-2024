@@ -23,7 +23,7 @@
       {
         "eventType": "Charla",
         "eventTitle": "Sharing Business Logic with JS and React across multiple apps",
-        "eventDate": "05 Dec 2024",
+        "eventDate": "06 Dec 2024",
         "eventHour": "15:30",
         "eventEquipment": null,
         "eventBrief": "En esta charla aprenderemos a como compartir nuestra lógica de negocio a través de múltiples aplicaciones que usan React mediante Nx monorepo, aprendiendo a crear módulos compartidos que pueden ser utilizados en aplicaciones de React o React Native. En este ejemplo usaremos Redux como gestor de estado."
@@ -53,7 +53,7 @@
       {
         "eventType": "Charla",
         "eventTitle": "El desconocido y hostil mundo de los Smart TV",
-        "eventDate": "05 Dec 2024",
+        "eventDate": "06 Dec 2024",
         "eventHour": "12:00",
         "eventEquipment": null,
         "eventBrief": "Los desarrolladores a menudo nos enfocamos en crear aplicaciones para dispositivos como smartphones y computadoras, pero tendemos a olvidar otros como las SmartTV. Desarrollar para un nuevo dispositivo implica explorar un terreno desconocido y hay veces que puede llegar a ser pantanoso y accidentado. De eso se trata esta historia, llena de dudas y aprendizajes."
@@ -84,7 +84,7 @@
       {
         "eventType": "Charla",
         "eventTitle": "Sorting Algorithms Illustrated: A Step-by-Step Guide to Mastering Complexity",
-        "eventDate": "05 Dec 2024",
+        "eventDate": "06 Dec 2024",
         "eventHour": "09:30",
         "eventEquipment": null,
         "eventBrief": "Sorting algorithms are essential tools in any developer's toolkit, but they can be tough to grasp. In this session, we'll make them approachable and engaging with clear, step-by-step illustrations. You'll see how popular algorithms like BubbleSort, InsertionSort and MergeSort work and learn the basics of algorithmic complexity, all in a visual, easy-to-understand format. Whether you're just starting out or looking to deepen your knowledge, this talk will help you confidently tackle sorting in your projects."
@@ -115,7 +115,7 @@
       {
         "eventType": "Charla",
         "eventTitle": "Patrones infinitos en el lienzo digital: Desatando la creatividad con P5.js en el arte algorítmico",
-        "eventDate": "05 Dec 2024",
+        "eventDate": "06 Dec 2024",
         "eventHour": "11:30",
         "eventEquipment": null,
         "eventBrief": "El núcleo de la presentación gira en torno al concepto de arte algorítmico como medio de expresión creativa, donde arte y tecnología se cruzan. Pretendo demostrar cómo la librería p5.js basada en JavaScript, ofrece oportunidades únicas para que artistas y programadores exploren nuevas formas de arte digital."
@@ -146,7 +146,7 @@
       {
         "eventType": "Charla",
         "eventTitle": "Collect, Ingest, Observe: A New Era for (free) JS Monitoring!",
-        "eventDate": "05 Dec 2024",
+        "eventDate": "06 Dec 2024",
         "eventHour": "15:00",
         "eventEquipment": null,
         "eventBrief": "Monitorear aplicaciones en JavaScript puede parecer un desafío complejo, pero es hora de cambiar esa perspectiva. Esta charla está diseñada para desmitificar las complejidades de la observabilidad, trazando un camino simple y efectivo a través de OpenTelemetry (OTel) y una selección de potentes herramientas OSS. Navegaremos por las intrincadas aguas de la observabilidad, enfocándonos en lo esencial de la recolección de telemetría y cómo (y porque) generar visibilidad sobre el rendimiento y la salud de tu plataforma."
@@ -177,7 +177,7 @@
       {
         "eventType": "Charla",
         "eventTitle": "Building a Browser Based Code Editor",
-        "eventDate": "06 Dec 2024",
+        "eventDate": "07 Dec 2024",
         "eventHour": "10:00",
         "eventEquipment": null,
         "eventBrief": "Monitorear aplicaciones en JavaScript puede parecer un desafío complejo, pero es hora de cambiar esa perspectiva. Esta charla está diseñada para desmitificar las complejidades de la observabilidad, trazando un camino simple y efectivo a través de OpenTelemetry (OTel) y una selección de potentes herramientas OSS. Navegaremos por las intrincadas aguas de la observabilidad, enfocándonos en lo esencial de la recolección de telemetría y cómo (y porque) generar visibilidad sobre el rendimiento y la salud de tu plataforma."
@@ -208,7 +208,7 @@
       {
         "eventType": "Charla",
         "eventTitle": "Plugin architecture, Abstract Syntax Trees y Visitor Pattern",
-        "eventDate": "06 Dec 2024",
+        "eventDate": "07 Dec 2024",
         "eventHour": "15:00",
         "eventEquipment": null,
         "eventBrief": "¿Sabes lo que ESLint, babel y prettier tienen en común? Todos usan Plugin architecture, Abstract Syntax Trees y Visitor Pattern para analizar código. Vamos a explorar a detalle como estos 3 temas nos ayudan a crear nuestro propio plugin de ESLint"
@@ -239,7 +239,7 @@
       {
         "eventType": "Charla",
         "eventTitle": "Multithread in Javascript with web workers",
-        "eventDate": "06 Dec 2024",
+        "eventDate": "07 Dec 2024",
         "eventHour": "12:30",
         "eventEquipment": null,
         "eventBrief": "Discover how to harness JavaScript’s multithreading capabilities using web workers in the browser, breaking the single-threaded misconception. Learn to utilize concurrency and parallelism to optimizing CPU-intensive tasks. This will be also a refresher on the Javascript Runtime."
@@ -270,7 +270,7 @@
       {
         "eventType": "Charla",
         "eventTitle": "Integrating AI and Browser API Voice Recognition on Web Application",
-        "eventDate": "05 Dec 2024",
+        "eventDate": "06 Dec 2024",
         "eventHour": "10:00",
         "eventEquipment": null,
         "eventBrief": "In this talk we will understand the WebXR and Virtual Reality universe, where the border between the real and the virtual disappears before our eyes."
@@ -301,7 +301,7 @@
       {
         "eventType": "Charla",
         "eventTitle": "Unleash the Power of Server Actions",
-        "eventDate": "06 Dec 2024",
+        "eventDate": "07 Dec 2024",
         "eventHour": "11:30",
         "eventEquipment": null,
         "eventBrief": "React 19 and Server Components are already on our doorstep. In this talk, we will cover the usage of Server Actions, how we should use them, why they exist, and why we should care about them. We will also walk through the new hooks: useFormStatus, useActionState, useOptimistic, and the new action prop for the form tag, as well as how we can use them for mutations and data management. React Server Component will soon be available, and if you don't want to fall behind, stay tuned for the latest React features."
@@ -332,7 +332,7 @@
       {
         "eventType": "Charla",
         "eventTitle": "Building the world's fastest JavaScript bundler... with JavaScript!?",
-        "eventDate": "05 Dec 2024",
+        "eventDate": "06 Dec 2024",
         "eventHour": "11:00",
         "eventEquipment": null,
         "eventBrief": "All the crazy fast new bundlers that have come out recently are written in compiled languages like Rust, Zig, and Go. In this talk, we'll see how we can build a bundler in JS that can go toe-to-toe with the fastest bundlers out there, by challenging the very notion of what a bundler is."
@@ -363,7 +363,7 @@
       {
         "eventType": "Charla",
         "eventTitle": "Codemods in the Era of AI",
-        "eventDate": "06 Dec 2024",
+        "eventDate": "07 Dec 2024",
         "eventHour": "16:30",
         "eventEquipment": null,
         "eventBrief": "It’s 2024, your startup is growing, and you’re still using Javascript patterns from six (8? 12?) years ago. What do you do? You could do nothing—engineers are already leveraging modern best practices in new code and eventually, the legacy code will disappear on its own. You could shut down feature development—if the entire engineering organization is working together, maybe you could complete the code migration in just a few weeks. You could also leverage any number of AI tools that have cropped up to rewrite your code en masse—perhaps these tools could empower a single engineer to do the entire migration. These were the options we were weighing when faced with the task of converting hundreds of React class components to functional components at the end of last year. It was urgent enough to prioritize now, not quite urgent enough to stop other feature development, and too custom and potentially risky for an out-of-the-box AI tool. With two engineers, we converted nearly 70% of our components and dramatically simplified the remaining components with a more primitive tool—the humble codemod. This talk explores the role of codemods, AI, and manual intervention in code migrations in 2024."
@@ -394,7 +394,7 @@
       {
         "eventType": "Charla",
         "eventTitle": "¡El Futuro de la Web! Lo nuevo de JavaScript, HTML y CSS",
-        "eventDate": "06 Dec 2024",
+        "eventDate": "07 Dec 2024",
         "eventHour": "09:30",
         "eventEquipment": null,
         "eventBrief": "¡Descubre las últimas innovaciones que están transformando el desarrollo web! Conoce las nuevas características y mejoras en JavaScript, HTML y CSS que están redefiniendo las aplicaciones web. No te quedes atrás y lleva tus proyectos al siguiente nivel."
@@ -425,7 +425,7 @@
       {
         "eventType": "Charla",
         "eventTitle": "Y si Daft Punk hiciera JavaScript?: Síntesis de audio con Tone.js y VueJS",
-        "eventDate": "05 Dec 2024",
+        "eventDate": "06 Dec 2024",
         "eventHour": "16:30",
         "eventEquipment": null,
         "eventBrief": "Te imaginas que Thomas Bangalter y Guy-Manuel de Homem-Christo hubiesen producido todos sus grandes hits solo con JavaScript? No es algo tan descabellado actualmente."
@@ -456,7 +456,7 @@
       {
         "eventType": "Charla",
         "eventTitle": "Building a platform for 2 Million Developers",
-        "eventDate": "06 Dec 2024",
+        "eventDate": "07 Dec 2024",
         "eventHour": "11:00",
         "eventEquipment": null,
         "eventBrief": ""
@@ -487,7 +487,7 @@
       {
         "eventType": "Charla",
         "eventTitle": "JavaScript para una Web Accesible: Receta de Inclusión",
-        "eventDate": "06 Dec 2024",
+        "eventDate": "07 Dec 2024",
         "eventHour": "15:30",
         "eventEquipment": null,
         "eventBrief": "Explora cómo crear experiencias web accesibles y enriquecedoras usando JavaScript. En esta charla, descubrirás métodos efectivos y técnicas prácticas para desarrollar sitios web inclusivos e intuitivos. Nos centraremos en el uso estratégico de JavaScript y HTML semántico para garantizar que los usuarios disfruten de una experiencia web óptima."
@@ -518,7 +518,7 @@
       {
         "eventType": "Charla",
         "eventTitle": "Recreemos el test runner de Node.js desde cero",
-        "eventDate": "06 Dec 2024",
+        "eventDate": "07 Dec 2024",
         "eventHour": "12:00",
         "eventEquipment": null,
         "eventBrief": "En esta sesión, desglosaremos las capas y desentrañaremos la magia de los test runners detrás de escena. Acompáñame mientras recreamos el test runner de Node.js desde cero, brindando una visión de cómo Node.js utiliza asyncHooks, una de las APIs más potentes, para rastrear contextos asíncronos y reportar errores. Prepárate para una exploración práctica que desmitificará las funcionalidades centrales de los test runners."
@@ -549,7 +549,7 @@
       {
         "eventType": "Charla",
         "eventTitle": "Optimiza tu Web: Minimiza retrasos y acelera la ejecución de JavaScript.",
-        "eventDate": "06 Dec 2024",
+        "eventDate": "07 Dec 2024",
         "eventHour": "17:00",
         "eventEquipment": null,
         "eventBrief": "Explorar estrategias para reducir tiempos y capacidad de respuesta en aplicaciones web. Optimiza la ejecución de JavaScript, la gestión de tareas en scripts largos y la minimización del impacto de scripts de terceros; con esto, los desarrolladores pueden garantizar una experiencia de usuario más fluida. Aprenda a mantener aplicaciones web ágiles y con capacidad de respuesta."
