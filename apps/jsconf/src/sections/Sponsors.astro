@@ -21,7 +21,14 @@ import { Button, RadiusGradientFrame } from '@components';
       <img src="/assets/img/misc/gold-sponsor.webp" alt="Gold Sponsor" />
       <h2>Gold Sponsor</h2>
     </div>
-    <img src="/assets/img/sponsors/AudienceView-Logo.webp" alt="AudienceView" />
+    <div class="sponsors-gold-logos">
+      <a href="https://audienceview.com/" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/img/sponsors/AudienceView-Logo.webp" alt="AudienceView" />
+      </a>
+      <a href="https://front.com/" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/img/sponsors/front.svg" alt="Front" />
+      </a>
+    </div>
     <!-- <Button variant="ghost" link="#" icon="arrow-up-right">Ver más</Button> -->
   </RadiusGradientFrame>
 </section>
@@ -31,7 +38,12 @@ import { Button, RadiusGradientFrame } from '@components';
       <img src="/assets/img/misc/bronze-sponsor.webp" alt="Gold Sponsor" />
       <h2>Bronze Sponsor</h2>
     </div>
-    <img src="/assets/img/sponsors/BCI-Logo.webp" alt="BCI" />
+    <div class="sponsors-logos">
+      <img src="/assets/img/sponsors/BCI-Logo.webp" alt="BCI" />
+      <img src="/assets/img/sponsors/Cloudflare-Logo.webp" alt="Cloudflare" />
+      <img src="/assets/img/sponsors/boolean.webp" alt="Boolean Academy" />
+      <img src="/assets/img/sponsors/deno.svg" alt="Deno" />
+    </div>
   </RadiusGradientFrame>
 </section>
 
@@ -105,8 +117,17 @@ import { Button, RadiusGradientFrame } from '@components';
         }
       }
 
-      & img {
-        max-width: 400px;
+      & .sponsors-gold-logos {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        padding: 0 1rem;
+
+        & img {
+          max-width: 12rem;
+        }
       }
     }
 
@@ -156,8 +177,14 @@ import { Button, RadiusGradientFrame } from '@components';
         margin: 0;
       }
 
-      & img {
-        max-width: 120px;
+      & .sponsors-logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        & img {
+          max-height: 60px;
+        }
       }
     }
   }
@@ -179,6 +206,20 @@ import { Button, RadiusGradientFrame } from '@components';
 
         & img {
           max-width: 300px;
+        }
+      }
+
+      & .sponsors-bronze {
+        height: fit-content;
+        padding: 1rem 0 2rem;
+        & .sponsors-logos {
+          margin-top: 2rem;
+          flex-wrap: wrap;
+          gap: 2rem;
+          padding: 0 2rem;
+          & img {
+            max-height: 60px;
+          }
         }
       }
     }

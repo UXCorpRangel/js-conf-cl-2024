@@ -1,7 +1,7 @@
 ---
 const { imgSrc, speakerName, role, speakerBrand, company, link } = Astro.props;
 
-const defaultImgSrc = 'assets/img/misc/speaker-stock.webp';
+const defaultImgSrc = '/assets/img/misc/speaker-stock.webp';
 
 const speakerImage = imgSrc || defaultImgSrc;
 ---
@@ -13,6 +13,7 @@ const speakerImage = imgSrc || defaultImgSrc;
   <div class="speaker-info">
     <h3>{speakerName}</h3>
     <img class="speaker-company" src={speakerBrand} alt={company} />
+    <p>{company}</p>
     <small>{role}</small>
   </div>
 </a>
@@ -64,11 +65,12 @@ const speakerImage = imgSrc || defaultImgSrc;
 
       & p {
         margin-bottom: 0;
+        font-weight: 600;
       }
 
-      & .speaker-company {
+      /* & .speaker-company {
         max-height: 1.5rem;
-      }
+      } */
     }
 
     &::before,

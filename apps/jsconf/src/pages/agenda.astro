@@ -1,7 +1,10 @@
 ---
 import { TabsSchedule } from '@components';
-import { ContentTab1, ContentTab2, ContentTab3 } from '@sections';
+import { ContentTab } from '@sections';
 import Layout from '@layouts/Layout.astro';
+import agenda from '@data/agenda/agenda';
+
+const { friday, saturday } = agenda;
 ---
 
 <Layout
@@ -9,32 +12,38 @@ import Layout from '@layouts/Layout.astro';
   description="Descubre la agenda de JSConf Chile 2024. Explora las charlas y workshops programados del 5 al 7 de diciembre en Santiago, con expertos en JavaScript y tecnología web. ¡Planifica tu experiencia ahora!"
   ogImg="agenda.png"
 >
-  <h1 class="title-page">AGENDA DE LA CONFERENCIA</h1>
-  <p class="description-page">
-    Lorem ipsum dolor sit amet consectetur. Eget eget eu imperdiet quis molestie nulla.
-  </p>
-  <TabsSchedule
-    data={[
-      {
-        status: 'open',
-        Content: ContentTab1,
-        triggerTitle: 'Viernes 00 Nov'
-      },
-      {
-        status: 'closed',
-        Content: ContentTab2,
-        triggerTitle: 'Sábado 00 Nov'
-      },
-      {
-        status: 'closed',
-        Content: ContentTab3,
-        triggerTitle: 'Domingo 00 Nov'
-      }
-    ]}
-  />
+  <section>
+    <h1 class="title-page">AGENDA DE LA CONFERENCIA</h1>
+    <p class="description-page">
+      Descubre la agenda de JSConf Chile 2024. Explora las charlas y workshops programados del 5 al
+      7 de diciembre en Santiago, con expertos en JavaScript y tecnología web. ¡Planifica tu
+      experiencia ahora!
+    </p>
+    <TabsSchedule
+      data={[
+        {
+          status: 'open',
+          ContentTab: ContentTab,
+          agendaDay: friday,
+          day: 'friday',
+          triggerTitle: 'Viernes 06 Dec'
+        },
+        {
+          status: 'closed',
+          ContentTab: ContentTab,
+          agendaDay: saturday,
+          day: 'saturday',
+          triggerTitle: 'Sábado 07 Dec'
+        }
+      ]}
+    />
+  </section>
 </Layout>
 
 <style>
+  section {
+    margin: 5rem auto;
+  }
   .title-page {
     color: var(--white);
     font-family: Barlow;
@@ -87,9 +96,9 @@ import Layout from '@layouts/Layout.astro';
     line-height: 28px;
     text-align: center;
     color: var(--white);
-    margin: 0 auto;
-    margin-bottom: 3rem;
+    margin: 3rem auto 8rem;
     height: 28px;
+    max-width: 600px;
 
     @media (width <= 720px) {
       max-width: 325px;
