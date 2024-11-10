@@ -2,7 +2,7 @@
 import { Button, RadiusGradientFrame } from '@components';
 ---
 
-<section class="sponsors">
+<section class="sponsors-principal">
   <div class="sponsors-info">
     <img src="/assets/img/misc/volcan-info-sponsors.webp" alt="Volcán Osorno" />
     <div class="sponsors-desc">
@@ -16,12 +16,27 @@ import { Button, RadiusGradientFrame } from '@components';
       <Button color="white" icon="star" link="/sponsors">Quiero ser sponsor</Button>
     </div>
   </div>
+  <RadiusGradientFrame class="sponsors-platinum">
+    <div class="principal-title">
+      <img src="/assets/img/misc/platinum-sponsor.webp" alt="Platinum Sponsor" />
+      <h2>Platinum Sponsor</h2>
+    </div>
+    <div class="sponsors-platinum-logos">
+      <a href="https://www.salesforce.com/es/" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/img/sponsors/salesforce.webp" alt="salesforce" />
+      </a>
+    </div>
+    <!-- <Button variant="ghost" link="#" icon="arrow-up-right">Ver más</Button> -->
+  </RadiusGradientFrame>
+</section>
+
+<section class="sponsors">
   <RadiusGradientFrame class="sponsors-gold">
     <div class="principal-title">
       <img src="/assets/img/misc/gold-sponsor.webp" alt="Gold Sponsor" />
       <h2>Gold Sponsor</h2>
     </div>
-    <div class="sponsors-gold-logos">
+    <div class="sponsors-logos">
       <a href="https://audienceview.com/" target="_blank" rel="noopener noreferrer">
         <img src="/assets/img/sponsors/AudienceView-Logo.webp" alt="AudienceView" />
       </a>
@@ -31,8 +46,6 @@ import { Button, RadiusGradientFrame } from '@components';
     </div>
     <!-- <Button variant="ghost" link="#" icon="arrow-up-right">Ver más</Button> -->
   </RadiusGradientFrame>
-</section>
-<section class="sponsors">
   <RadiusGradientFrame class="sponsors-bronze">
     <div class="principal-title">
       <img src="/assets/img/misc/bronze-sponsor.webp" alt="Gold Sponsor" />
@@ -48,7 +61,7 @@ import { Button, RadiusGradientFrame } from '@components';
 </section>
 
 <style>
-  .sponsors {
+  .sponsors-principal {
     width: 100%;
     max-width: 71rem;
     margin: 8rem auto;
@@ -68,6 +81,73 @@ import { Button, RadiusGradientFrame } from '@components';
         margin: 2rem 0;
       }
     }
+
+    & .sponsors-platinum {
+      --border-color: linear-gradient(327deg, #fff 31.78%, #272727 63.2%, #656565 93.99%);
+      --border-width: 2px;
+      --shadow: 0px 4px 85.3px rgba(85, 85, 46, 0.1);
+      --radius: 20px;
+
+      @media (width <= 768px) {
+        --shadow: 0px 4px 85.3px rgba(64, 64, 64, 0.1);
+        --radius: 10px;
+        --border-color: linear-gradient(327deg, #fff 31.78%, #272727 63.2%, #656565 93.99%);
+
+        background: radial-gradient(
+            95.25% 166.54% at 98.39% 2.85%,
+            #272727 8%,
+            rgba(9, 9, 7, 0) 80%
+          ),
+          linear-gradient(0.07deg, rgba(64, 64, 64, 0.2) 0.03%, rgba(255, 255, 255, 0) 95.96%);
+      }
+    }
+
+    & .sponsors-platinum {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 300px;
+      width: 556px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+      background: radial-gradient(95.25% 166.54% at 98.39% 2.85%, #272727 8%, rgba(9, 9, 7, 0) 80%),
+        linear-gradient(0.07deg, rgba(64, 64, 64, 0.2) 0.03%, rgba(255, 255, 255, 0) 95.96%);
+
+      & .principal-title {
+        display: flex;
+        align-items: center;
+
+        & img {
+          width: 64px;
+        }
+      }
+
+      & .sponsors-platinum-logos {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        padding: 0 1rem;
+
+        & img {
+          max-height: 140px;
+        }
+      }
+    }
+  }
+
+  .sponsors {
+    width: 100%;
+    max-width: 71rem;
+    margin: 8rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 
     & .sponsors-gold {
       --border-color: linear-gradient(180deg, #2a2401 0%, #9a8025 39.57%, #ede060 100%);
@@ -95,10 +175,10 @@ import { Button, RadiusGradientFrame } from '@components';
     & .sponsors-gold {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
       height: 300px;
-      width: 556px;
+      width: 100%;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
       background: linear-gradient(0.07deg, rgba(80, 72, 29, 0.2) 0.03%, rgba(0, 0, 0, 0) 95.96%),
@@ -117,18 +197,17 @@ import { Button, RadiusGradientFrame } from '@components';
         }
       }
 
-      & .sponsors-gold-logos {
+      & .sponsors-logos {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
+        gap: 6rem;
         flex-wrap: wrap;
         padding: 0 1rem;
 
         & img {
-          /* max-width: 12rem; */
-          max-height: 2.25rem;
+          max-height: 4rem;
         }
       }
     }
@@ -190,9 +269,8 @@ import { Button, RadiusGradientFrame } from '@components';
       }
     }
   }
-
   @media (width <= 768px) {
-    .sponsors {
+    .sponsors-principal {
       display: flex;
       flex-direction: column;
       gap: 2rem;
@@ -203,11 +281,29 @@ import { Button, RadiusGradientFrame } from '@components';
         gap: 1rem;
       }
 
-      & .sponsors-gold {
+      & .sponsors-platinum {
         width: 100%;
 
         & img {
           max-width: 300px;
+        }
+      }
+    }
+
+    .sponsors {
+      margin: 1rem 0 8rem;
+      & .sponsors-gold {
+        height: fit-content;
+        padding: 1rem 0 2rem;
+
+        & .sponsors-logos {
+          margin-top: 2rem;
+          flex-wrap: wrap;
+          gap: 3rem;
+          padding: 0 2rem;
+          & img {
+            max-height: 60px;
+          }
         }
       }
 
