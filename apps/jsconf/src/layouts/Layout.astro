@@ -10,6 +10,7 @@ import 'sanitize.css/typography.css';
 
 import { Footer, Navbar } from '@components';
 import { Schema } from 'astro-seo-schema';
+import FacebookPixel from '@components/FacebookPixel.astro';
 
 interface Props {
   title: string;
@@ -62,6 +63,8 @@ const ogURL = `${site}/og/${ogImg}`;
     <meta name="twitter:title" content=`${title}` />
     <meta name="twitter:description" content=`${description}` />
     <meta name="twitter:image" content={ogURL} />
+
+    <FacebookPixel />
   </head>
   <body>
     <Navbar />
