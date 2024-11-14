@@ -22,8 +22,21 @@ import { Button, RadiusGradientFrame } from '@components';
       <h2>Platinum Sponsor</h2>
     </div>
     <div class="sponsors-platinum-logos">
-      <a href="https://www.heroku.com/home" target="_blank" rel="noopener noreferrer">
+      <a
+        class="platinum-1"
+        href="https://www.heroku.com/home"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src="/assets/img/sponsors/heroku.svg" alt="heroku from salesforce" />
+      </a>
+      <a
+        class="platinum-2"
+        href="https://cloud.google.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="/assets/img/sponsors/Google-Cloud.webp" alt="google cloud" />
       </a>
     </div>
     <!-- <Button variant="ghost" link="#" icon="arrow-up-right">Ver más</Button> -->
@@ -107,8 +120,10 @@ import { Button, RadiusGradientFrame } from '@components';
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      height: 300px;
-      width: 556px;
+      padding: 1.75rem;
+      min-height: 18.75rem;
+      height: fit-content;
+      width: 34.75rem;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
       background: radial-gradient(95.25% 166.54% at 98.39% 2.85%, #272727 8%, rgba(9, 9, 7, 0) 80%),
@@ -128,12 +143,16 @@ import { Button, RadiusGradientFrame } from '@components';
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
+        gap: 2.5rem;
         flex-wrap: wrap;
-        padding: 0 1rem;
+        padding: 2rem 1rem 0;
 
-        & img {
-          max-height: 100px;
+        & .platinum-1 {
+          max-width: 21.25rem;
+        }
+
+        & .platinum-2 {
+          max-width: 25rem;
         }
       }
     }
@@ -284,8 +303,20 @@ import { Button, RadiusGradientFrame } from '@components';
       & .sponsors-platinum {
         width: 100%;
 
-        & img {
-          max-width: 300px;
+        & .principal-title {
+          flex-direction: column;
+          gap: 0.15rem;
+          width: 100%;
+        }
+
+        & .sponsors-platinum-logos {
+          & .platinum-1 {
+            max-width: 100%;
+          }
+
+          & .platinum-2 {
+            max-width: 100%;
+          }
         }
       }
     }
