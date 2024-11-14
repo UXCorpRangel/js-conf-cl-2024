@@ -9,8 +9,8 @@ const agenda = {
     {
       time_start: '2024-12-06T10:00:00.000Z',
       time_end: '2024-12-06T10:30:00.000Z',
-      speaker_name: 'Kevin Uehara',
-      description: 'Integrating AI and Browser API Voice Recognition on Web Application'
+      speaker_name: 'Próximamente',
+      description: '???????????????????????'
     },
     {
       time_start: '2024-12-06T10:30:00.000Z',
