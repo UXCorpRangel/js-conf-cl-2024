@@ -60,5 +60,15 @@ export const sliderItems: CommunityItem[] = [
     title: 'UX Friends',
     image: '/assets/img/communities/ux-friends.webp',
     url: 'https://www.instagram.com/uxfriends_podcast/'
+  },
+  {
+    title: 'Caribe Dev',
+    image: '/assets/img/communities/caribe-dev.webp',
+    url: 'https://caribedev.org/'
+  },
+  {
+    title: 'Pioneras Dev',
+    image: '/assets/img/communities/pioneras.webp',
+    url: 'https://www.pionerasdev.org/'
   }
 ];
