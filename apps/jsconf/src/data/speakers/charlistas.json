@@ -247,33 +247,33 @@
     ]
   },
   {
-    "slug": "proximamente",
-    "fullName": "???",
-    "company": "Próximamente",
-    "imgSrc": "",
+    "slug": "santiago-bosio",
+    "fullName": "Santiago Bosio",
+    "company": "Heroku",
+    "imgSrc": "/assets/img/speakers/santiago-bosio/santiago-bosio-1.webp",
     "imgSrc2": "",
     "imgSrc3": "",
     "imgSrc4": "",
     "speakerInfo": "",
-    "speakerBrand": "/assets/img/speakers/proximamente.webp",
-    "linkedin": "",
+    "speakerBrand": "/assets/img/speakers/santiago-bosio/santiago-bosio-5.webp",
+    "linkedin": "http://www.linkedin.com/in/santiago-bosio",
     "instagram": "",
     "twitter": "",
     "twitch": "",
     "youtube": "",
-    "web": "",
-    "github": "",
+    "web": "https://www.heroku.com/",
+    "github": "https://github.com/sbosio",
     "discord": "",
-    "bio": "",
-    "role": "??????",
+    "bio": "Amplia experiencia en el análisis de requerimientos y desarrollo de software. Programador de Back-End y QA-Automation sénior.",
+    "role": "Lead Software Engineer",
     "event": [
       {
         "eventType": "Charla",
-        "eventTitle": "Próximamente",
+        "eventTitle": "pnpm (your new favorite package manager)",
         "eventDate": "06 Dec 2024",
-        "eventHour": "10:00",
+        "eventHour": "17:00",
         "eventEquipment": null,
-        "eventBrief": "..."
+        "eventBrief": "An entry-level talk on pnpm's features and evolution of package managers for Node.js projects"
       }
     ]
   },
