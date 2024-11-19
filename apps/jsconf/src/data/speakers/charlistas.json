@@ -557,33 +557,33 @@
     ]
   },
   {
-    "slug": "proximamente",
-    "fullName": "???",
-    "company": "Próximamente",
-    "imgSrc": "",
+    "slug": "dany-fuentes-y-jeremy-bogatirsky",
+    "fullName": "Dany Fuentes & Jeremy Bogatirsky",
+    "company": "FRONT",
+    "imgSrc": "/assets/img/speakers/dany-fuentes-y-jeremy-bogatirsky/dany-fuentes-y-jeremy-bogatirsky-1.webp",
     "imgSrc2": "",
-    "imgSrc3": "",
-    "imgSrc4": "",
+    "imgSrc3": "/assets/img/speakers/dany-fuentes-y-jeremy-bogatirsky/dany-fuentes-y-jeremy-bogatirsky-3.webp",
+    "imgSrc4": "/assets/img/speakers/dany-fuentes-y-jeremy-bogatirsky/dany-fuentes-y-jeremy-bogatirsky-4.webp",
     "speakerInfo": "",
-    "speakerBrand": "/assets/img/speakers/proximamente.webp",
+    "speakerBrand": "/assets/img/speakers/dany-fuentes-y-jeremy-bogatirsky/dany-fuentes-y-jeremy-bogatirsky-5.webp",
     "linkedin": "",
     "instagram": "",
     "twitter": "",
     "twitch": "",
     "youtube": "",
-    "web": "",
+    "web": "https://front.com/",
     "github": "",
     "discord": "",
-    "bio": "",
-    "role": "??????",
+    "bio": "Dany Fuentes - Originally from Venezuela, Dany is a Paris-based engineering manager at Front with over seven years of experience in software engineering. Outside of work, she enjoys reading and exploring new destinations. Jeremy Bogatirsky - Staff Software Engineer @ Front. French-Argentinian based in San Francisco, I've been working on Software Engineering for more than 20 years. I like to learn new things, and review and write code, in that order. Oh and of course I love soccer, I mean fútbol!",
+    "role": "",
     "event": [
       {
         "eventType": "Charla",
-        "eventTitle": "Próximamente",
-        "eventDate": "00 Dec 2024",
-        "eventHour": "00:00",
+        "eventTitle": "10 years of scaling with NodeJS",
+        "eventDate": "06 Dec 2024",
+        "eventHour": "12:30",
         "eventEquipment": null,
-        "eventBrief": "..."
+        "eventBrief": "How we scale our architecture with NodeJS over the past 10 years, starting from scratch."
       }
     ]
   },
@@ -610,7 +610,7 @@
     "event": [
       {
         "eventType": "Charla",
-        "eventTitle": "Próximamente",
+        "eventTitle": "Próximamen",
         "eventDate": "00 Dec 2024",
         "eventHour": "00:00",
         "eventEquipment": null,
