@@ -271,7 +271,7 @@
         "eventType": "Charla",
         "eventTitle": "pnpm (your new favorite package manager)",
         "eventDate": "06 Dec 2024",
-        "eventHour": "17:00",
+        "eventHour": "10:00",
         "eventEquipment": null,
         "eventBrief": "An entry-level talk on pnpm's features and evolution of package managers for Node.js projects"
       }
