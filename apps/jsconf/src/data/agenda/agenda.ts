@@ -40,8 +40,8 @@ const agenda = {
     {
       time_start: '2024-12-06T12:30:00.000Z',
       time_end: '2024-12-06T13:00:00.000Z',
-      speaker_name: 'Próximamente',
-      description: '???????????????????????'
+      speaker_name: 'Dany Fuentes & Jeremy Bogatirsky',
+      description: '10 years of scaling with NodeJS'
     },
     {
       time_start: '2024-12-06T13:00:00.000Z',
