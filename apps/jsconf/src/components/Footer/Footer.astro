@@ -63,10 +63,18 @@ import LogoJSConf from './LogoJSConf.astro';
 <style>
   footer {
     margin-block-start: 1rem;
+    flex-shrink: 0;
     width: 100%;
     background-image: var(--gradient-footer);
     backdrop-filter: blur(1rem);
-    padding-block-end: 1.5rem;
+    /* padding-block-end: 1.5rem; */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    @media (width >= 768px) {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
 
     & .container {
       width: min(80rem, 100vw);
