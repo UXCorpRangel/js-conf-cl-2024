@@ -33,9 +33,8 @@ const agenda = {
     {
       time_start: '2024-12-06T11:30:00.000Z',
       time_end: '2024-12-06T12:00:00.000Z',
-      speaker_name: 'Francisca Medina',
-      description:
-        'Patrones infinitos en el lienzo digital: Desatando la creatividad con P5.js en el arte algorítmico'
+      speaker_name: 'Marian Villa',
+      description: 'Optimiza tu Web: Minimiza retrasos y acelera la ejecución de JavaScript.'
     },
     {
       time_start: '2024-12-06T12:00:00.000Z',
@@ -174,8 +173,9 @@ const agenda = {
     {
       time_start: '2024-12-07T17:00:00.000Z',
       time_end: '2024-12-07T17:30:00.000Z',
-      speaker_name: 'Marian Villa',
-      description: 'Optimiza tu Web: Minimiza retrasos y acelera la ejecución de JavaScript.'
+      speaker_name: 'Francisca Medina',
+      description:
+        'Patrones infinitos en el lienzo digital: Desatando la creatividad con P5.js en el arte algorítmico'
     },
     {
       time_start: '2024-12-07T17:30:00.000Z',

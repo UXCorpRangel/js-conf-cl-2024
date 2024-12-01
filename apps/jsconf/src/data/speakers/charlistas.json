@@ -115,8 +115,8 @@
       {
         "eventType": "Charla",
         "eventTitle": "Patrones infinitos en el lienzo digital: Desatando la creatividad con P5.js en el arte algorítmico",
-        "eventDate": "06 Dec 2024",
-        "eventHour": "11:30",
+        "eventDate": "07 Dec 2024",
+        "eventHour": "17:00",
         "eventEquipment": null,
         "eventBrief": "El núcleo de la presentación gira en torno al concepto de arte algorítmico como medio de expresión creativa, donde arte y tecnología se cruzan. Pretendo demostrar cómo la librería p5.js basada en JavaScript, ofrece oportunidades únicas para que artistas y programadores exploren nuevas formas de arte digital."
       }
@@ -549,8 +549,8 @@
       {
         "eventType": "Charla",
         "eventTitle": "Optimiza tu Web: Minimiza retrasos y acelera la ejecución de JavaScript.",
-        "eventDate": "07 Dec 2024",
-        "eventHour": "17:00",
+        "eventDate": "06 Dec 2024",
+        "eventHour": "11:30",
         "eventEquipment": null,
         "eventBrief": "Explorar estrategias para reducir tiempos y capacidad de respuesta en aplicaciones web. Optimiza la ejecución de JavaScript, la gestión de tareas en scripts largos y la minimización del impacto de scripts de terceros; con esto, los desarrolladores pueden garantizar una experiencia de usuario más fluida. Aprenda a mantener aplicaciones web ágiles y con capacidad de respuesta."
       }
