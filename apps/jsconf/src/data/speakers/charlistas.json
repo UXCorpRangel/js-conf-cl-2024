@@ -588,16 +588,16 @@
     ]
   },
   {
-    "slug": "proximamente",
-    "fullName": "???",
-    "company": "Próximamente",
-    "imgSrc": "",
+    "slug": "melisa-arenas",
+    "fullName": "Melisa Arenas",
+    "company": "Google Cloud",
+    "imgSrc": "/assets/img/speakers/melisa-arenas/melisa-arenas-1.webp",
     "imgSrc2": "",
     "imgSrc3": "",
     "imgSrc4": "",
     "speakerInfo": "",
-    "speakerBrand": "/assets/img/speakers/proximamente.webp",
-    "linkedin": "",
+    "speakerBrand": "/assets/img/speakers/melisa-arenas/melisa-arenas-5.webp",
+    "linkedin": "https://www.linkedin.com/in/meliarenas",
     "instagram": "",
     "twitter": "",
     "twitch": "",
@@ -606,44 +606,13 @@
     "github": "",
     "discord": "",
     "bio": "",
-    "role": "??????",
+    "role": "Cloud Solutions Architect",
     "event": [
       {
         "eventType": "Charla",
-        "eventTitle": "Próximamente",
-        "eventDate": "00 Dec 2024",
-        "eventHour": "00:00",
-        "eventEquipment": null,
-        "eventBrief": "..."
-      }
-    ]
-  },
-  {
-    "slug": "proximamente",
-    "fullName": "???",
-    "company": "Próximamente",
-    "imgSrc": "",
-    "imgSrc2": "",
-    "imgSrc3": "",
-    "imgSrc4": "",
-    "speakerInfo": "",
-    "speakerBrand": "/assets/img/speakers/proximamente.webp",
-    "linkedin": "",
-    "instagram": "",
-    "twitter": "",
-    "twitch": "",
-    "youtube": "",
-    "web": "",
-    "github": "",
-    "discord": "",
-    "bio": "",
-    "role": "??????",
-    "event": [
-      {
-        "eventType": "Charla",
-        "eventTitle": "Próximamente",
-        "eventDate": "00 Dec 2024",
-        "eventHour": "00:00",
+        "eventTitle": "El futuro del software con IA generativa",
+        "eventDate": "06 Dec 2024",
+        "eventHour": "17:00",
         "eventEquipment": null,
         "eventBrief": "..."
       }
