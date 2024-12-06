@@ -81,8 +81,8 @@ const agenda = {
     {
       time_start: '2024-12-06T17:00:00.000Z',
       time_end: '2024-12-06T17:30:00.000Z',
-      speaker_name: 'Próximamente',
-      description: '???????????????????????'
+      speaker_name: 'Melisa Arenas',
+      description: 'El futuro del software con IA generativa'
     },
     {
       time_start: '2024-12-06T17:30:00.000Z',
